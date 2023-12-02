@@ -13,6 +13,9 @@ import App from './App.vue'
 // Composables
 import { createApp } from 'vue'
 
+
+import './styles.css'; // Путь к вашему файлу стилей
+
 const app = createApp(App)
 
 registerPlugins(app)

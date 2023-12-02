@@ -1,6 +1,15 @@
 <template>
-  <div class="home-container">
-  </div>
+  <v-container>
+    <div class="home-main-pic">
+    </div>
+
+    <v-row class="pa-12">
+      <v-col>
+        <div class="main-h text-center h-neucha">Студенческие работы</div>
+      </v-col>
+    </v-row>
+
+  </v-container>
 </template>
     
 <script>
@@ -10,14 +19,15 @@ export default {
 </script>
 
 <style scoped>
-/* Стили для главной страницы */
-.home-container {
-  background-image: url('../images/main-top-img.jpg'); /* Используйте / перед именем файла */
+.home-main-pic {
+  background-image: url('../images/main-top-img.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 58vh;
 }
 
-/* Дополнительные стили, если необходимо */
+.main-h {
+  font-size: 50px;
+}
 </style>
