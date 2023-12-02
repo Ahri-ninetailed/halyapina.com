@@ -1,8 +1,17 @@
 @font-face {
-    font-family: 'Neucha';
+    font-family: 'Neucha-Regular';
     src: url('./fonts/Neucha-Regular.ttf') format('truetype');
 }
 
-.h-neucha {
-    font-family: 'Neucha', sans-serif;
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+.h-neucha-regular {
+    font-family: 'Neucha-Regular', sans-serif;
+}
+
+.h-montserrat-regular {
+    font-family: 'Montserrat-Regular', sans-serif;
 }

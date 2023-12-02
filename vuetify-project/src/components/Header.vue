@@ -1,6 +1,6 @@
 <template>
-  <header :class="{ 'main-header': isHomePage }">
-    <h1>Мой общий хедер</h1>
+  <header :class="{ 'main-header': isHomePage }" class="h-montserrat-regular">
+    <p>Мой общий хедер</p>
     <!-- Здесь размещайте содержимое вашего хедера -->
   </header>
 </template>

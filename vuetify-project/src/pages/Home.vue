@@ -5,7 +5,7 @@
 
     <v-row class="pa-12">
       <v-col>
-        <div class="main-h text-center h-neucha">Студенческие работы</div>
+        <div class="main-h text-center h-neucha-regular">Студенческие работы</div>
       </v-col>
     </v-row>
 
