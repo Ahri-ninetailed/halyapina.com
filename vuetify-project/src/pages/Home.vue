@@ -11,37 +11,37 @@
 
     <v-row>
       <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainCards/many_chairs_hover.jpg" />
+        <main-card name="Lines" :imageHeight="cardHeight" imgPath="src/images/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainCards/many_chairs_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/flys.jpg" imgHoverPath="src/images/MainCards/flys_hover.jpg" />
+        <main-card name="Dragonfly" :imageHeight="cardHeight" imgPath="src/images/MainCards/flys.jpg" imgHoverPath="src/images/MainCards/flys_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/another_flys.jpg" imgHoverPath="src/images/MainCards/another_flys_hover.jpg" />
+        <main-card name="Fireflfly" :imageHeight="cardHeight" imgPath="src/images/MainCards/another_flys.jpg" imgHoverPath="src/images/MainCards/another_flys_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/3.jpg" imgHoverPath="src/images/MainCards/3_hover.jpg"/>
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/wave.jpg" imgHoverPath="src/images/MainCards/wave_hover.jpg" />
-      </v-col>
-      <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/ufo.jpg" imgHoverPath="src/images/MainCards/ufo_hover.jpg" />
-      </v-col>
-      <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/launch.jpg" imgHoverPath="src/images/MainCards/launch_hover.jpg"/>
-      </v-col>
-      <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/bubble.jpg" imgHoverPath="src/images/MainCards/bubble_hover.jpg"/>
+        <main-card name="Fennel" :imageHeight="cardHeight" imgPath="src/images/MainCards/3.jpg" imgHoverPath="src/images/MainCards/3_hover.jpg"/>
       </v-col>
     </v-row>
 
     <v-row>
       <v-col xs="3" sm="3" class="text-center">
-        <main-card :imageHeight="cardHeight" imgPath="src/images/MainCards/tree.jpg" imgHoverPath="src/images/MainCards/tree_hover.jpg"/>
+        <main-card name="Alien" :imageHeight="cardHeight" imgPath="src/images/MainCards/wave.jpg" imgHoverPath="src/images/MainCards/wave_hover.jpg" />
+      </v-col>
+      <v-col xs="3" sm="3" class="text-center">
+        <main-card name="UFO" :imageHeight="cardHeight" imgPath="src/images/MainCards/ufo.jpg" imgHoverPath="src/images/MainCards/ufo_hover.jpg" />
+      </v-col>
+      <v-col xs="3" sm="3" class="text-center">
+        <main-card name="SpaceJam" :imageHeight="cardHeight" imgPath="src/images/MainCards/launch.jpg" imgHoverPath="src/images/MainCards/launch_hover.jpg"/>
+      </v-col>
+      <v-col xs="3" sm="3" class="text-center">
+        <main-card name="Bubble" :imageHeight="cardHeight" imgPath="src/images/MainCards/bubble.jpg" imgHoverPath="src/images/MainCards/bubble_hover.jpg"/>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col xs="3" sm="3" class="text-center">
+        <main-card name="Crown bed" :imageHeight="cardHeight" imgPath="src/images/MainCards/tree.jpg" imgHoverPath="src/images/MainCards/tree_hover.jpg"/>
       </v-col>
         
       <v-col xs="6" sm="6" class="text-center">
