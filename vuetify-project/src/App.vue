@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <Layout />
-  </div>
+  <v-app>
+    <v-main>
+      <MyHeader />
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
 <script setup>
-import Layout from "@/components/Layout.vue";
+import MyHeader from '@/components/Header.vue'; // Подставьте правильный путь к вашему компоненту Header
+
 </script>
 
 <style scoped>
