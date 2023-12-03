@@ -1,5 +1,5 @@
 <template>
-  <img :style="{ height: imageHeight }" :src="this.$props.imgPath" alt="sketch">
+  <img @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" :height="this.$props.imageHeight" :src="this.currentImg" alt="sketch">
 </template>
   
 <script>
@@ -12,11 +12,24 @@ export default {
     },
     imgHoverPath: {
       type: String,
-      required: false,
+      required: true,
     },
     imageHeight: {
       type: String,
-      default: "100px"
+      default: "50"
+    },
+  },
+  data() {
+    return {
+      currentImg: this.$props.imgPath,
+    };
+  },
+  methods: {
+    handleMouseOver() {
+      this.currentImg = this.$props.imgHoverPath
+    },
+    handleMouseLeave() {
+      this.currentImg = this.$props.imgPath
     },
   },
 }
