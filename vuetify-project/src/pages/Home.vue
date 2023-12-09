@@ -40,12 +40,12 @@
     </v-row>
 
     <v-row class="row-margin-horizontal">
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical pr-0">
         <main-card name="Crown bed" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
         
-      <v-col xs="6" sm="6" class="text-center">
-        <img class="pr-12" height="500" src="../images/MainPage/drawing.png" alt="drawing_image">
+      <v-col xs="9" sm="9" class="text-start pl-8 pt-0">
+        <img class="pr-12" height="425" src="../images/MainPage/drawing.png" alt="drawing_image">
       </v-col>
     </v-row>
   </v-container>
