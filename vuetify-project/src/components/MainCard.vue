@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <img @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" :height="this.$props.imageHeight" :src="this.currentImg" alt="sketch">
-    <p style="font-size: 25px; font-style: italic;" class="h-neucha-regular">{{ nameVal }}</p>
-  </div>
+  <v-row>
+    <v-col cols="12" class="pa-0">
+      <img @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" :height="this.$props.imageHeight" :src="this.currentImg" alt="sketch">
+    </v-col>
+    <v-col cols="12" class="pa-0">
+      <p :style="opacity"  style="font-size: 22px; font-style: italic;" class="h-neucha-regular">{{ this.$props.name }}</p>
+    </v-col>
+  </v-row>
 </template>
   
 <script>
@@ -29,17 +33,19 @@ export default {
   data() {
     return {
       currentImg: this.$props.imgPath,
-      nameVal: "",
+      opacity: {
+        opacity: '0'
+      }
     };
   },
   methods: {
     handleMouseOver() {
       this.currentImg = this.$props.imgHoverPath;
-      this.nameVal = this.$props.name;
+      this.opacity.opacity = '1';
     },
     handleMouseLeave() {
       this.currentImg = this.$props.imgPath;
-      this.nameVal = "";
+      this.opacity.opacity = '0';
     },
   },
 }

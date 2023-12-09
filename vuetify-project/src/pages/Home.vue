@@ -3,23 +3,23 @@
     <div class="home-main-pic">
     </div>
 
-    <v-row class="pt-12 pb-4" >
+    <v-row class="pt-6 pb-4" >
       <v-col>
         <div class="main-h text-center h-neucha-regular">Проекты</div>
       </v-col>
     </v-row>
 
-    <v-row class="row-margin-horizontal">
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+    <v-row class="row-margin-horizontal pt-3">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Lines" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Dragonfly" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Fireflfly" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Fennel" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
     </v-row>
@@ -57,7 +57,7 @@ import MainCard from '@/components/MainCard.vue';
 export default {
   data() {
     return {
-      cardHeight: "200",
+      cardHeight: "160",
     };
   },
   components: { MainCard },
@@ -80,10 +80,10 @@ export default {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 58vh;
+  height: 55vh;
 }
 
 .main-h {
-  font-size: 50px;
+  font-size: 40px;
 }
 </style>
