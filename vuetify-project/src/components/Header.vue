@@ -1,6 +1,6 @@
 <template>
-  <header :class="{ 'main-header': isHomePage }" class="h-montserrat-regular">
-    <p>Мой общий хедер</p>
+  <header :class="{ 'mainpage-header': isHomePage }" class="h-montserrat-regular header">
+    <a>О себе</a>
     <!-- Здесь размещайте содержимое вашего хедера -->
   </header>
 </template>
@@ -18,7 +18,12 @@ export default {
 
 <style scoped>
 
-.main-header {
+.header {
+  font-size: 2.5vh;
+  padding-top: 2.7vh;
+  padding-left: 4.1vh;
+}
+.mainpage-header {
     /* background-color: transparent; */
 
     position: fixed;
