@@ -1,6 +1,6 @@
 <template>
   <header :class="{ 'mainpage-header': isHomePage }" class="h-montserrat-regular header">
-    <a>О себе</a>
+    <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
     <!-- Здесь размещайте содержимое вашего хедера -->
   </header>
 </template>
@@ -33,4 +33,10 @@ export default {
     /* background-color: #ffffff; */
     z-index: 1000;
 }
+
+.no-default-styles {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
 </style>
