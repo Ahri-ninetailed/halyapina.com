@@ -11,37 +11,37 @@
 
     <v-row class="row-margin-horizontal pt-3">
       <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Lines" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
+        <main-card name="Lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Dragonfly" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
+        <main-card name="Dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Fireflfly" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
+        <main-card name="Fireflfly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Fennel" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
+        <main-card name="Fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
     </v-row>
 
     <v-row class="row-margin-horizontal">
       <v-col xs="3" sm="3" class="text-center col-padding-vertical">
-        <main-card name="Alien" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
+        <main-card name="Alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center col-padding-vertical">
-        <main-card name="UFO" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
+        <main-card name="UFO" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
       <v-col xs="3" sm="3" class="text-center col-padding-vertical">
-        <main-card name="SpaceJam" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
+        <main-card name="SpaceJam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
       <v-col xs="3" sm="3" class="text-center col-padding-vertical">
-        <main-card name="Bubble" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
+        <main-card name="Bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
     </v-row>
 
     <v-row class="row-margin-horizontal">
       <v-col xs="3" sm="3" class="text-center col-padding-vertical pr-0">
-        <main-card name="Crown bed" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
+        <main-card name="Crown bed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
         
       <v-col xs="9" sm="9" class="text-start pl-8 pt-0">
@@ -57,7 +57,7 @@ import MainCard from '@/components/MainCard.vue';
 export default {
   data() {
     return {
-      cardHeight: "160",
+      
     };
   },
   components: { MainCard },
@@ -67,13 +67,13 @@ export default {
 
 <style scoped>
 .col-padding-vertical {
-  padding-bottom: 75px; 
-  padding-left: 20px;
+  padding-bottom: 11vh; 
+  padding-left: 3vh;
 }
 
 .row-margin-horizontal {
-  margin-left: 8px; 
-  margin-right: 8px;
+  margin-left: 1vh; 
+  margin-right: 1vh;
 }
 .home-main-pic {
   background-image: url('../images/MainPage/maintable.jpg');
@@ -84,6 +84,6 @@ export default {
 }
 
 .main-h {
-  font-size: 40px;
+  font-size: 6vh;
 }
 </style>
