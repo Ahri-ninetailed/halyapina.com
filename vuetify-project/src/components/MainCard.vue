@@ -1,7 +1,7 @@
 <template>
   <div>
     <img @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" :height="this.$props.imageHeight" :src="this.currentImg" alt="sketch">
-    <p style="font-size: 50px; font-style: italic;" class="h-neucha-regular">{{ nameVal }}</p>
+    <p style="font-size: 25px; font-style: italic;" class="h-neucha-regular">{{ nameVal }}</p>
   </div>
 </template>
   

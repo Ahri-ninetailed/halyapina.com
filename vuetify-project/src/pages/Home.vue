@@ -3,44 +3,44 @@
     <div class="home-main-pic">
     </div>
 
-    <v-row class="pa-12">
+    <v-row class="pt-12 pb-4" >
       <v-col>
-        <div class="main-h text-center h-neucha-regular">Студенческие работы</div>
+        <div class="main-h text-center h-neucha-regular">Проекты</div>
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col xs="3" sm="3" class="text-center">
+    <v-row class="row-margin-horizontal">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Lines" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Dragonfly" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Fireflfly" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Fennel" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col xs="3" sm="3" class="text-center">
+    <v-row class="row-margin-horizontal">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Alien" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="UFO" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="SpaceJam" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
-      <v-col xs="3" sm="3" class="text-center">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Bubble" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col xs="3" sm="3" class="text-center">
+    <v-row class="row-margin-horizontal">
+      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
         <main-card name="Crown bed" :imageHeight="cardHeight" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
         
@@ -66,12 +66,21 @@ export default {
 </script>
 
 <style scoped>
+.col-padding-vertical {
+  padding-bottom: 75px; 
+  padding-left: 20px;
+}
+
+.row-margin-horizontal {
+  margin-left: 8px; 
+  margin-right: 8px;
+}
 .home-main-pic {
   background-image: url('../images/MainPage/maintable.jpg');
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 58vh;
 }
 
 .main-h {
