@@ -1,7 +1,7 @@
 <template>
   <header :class="pagesStyles" class="h-montserrat-regular header">
-    <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
-    <!-- Здесь размещайте содержимое вашего хедера -->
+    <a v-if="!isAboutPage" class="no-default-styles" href="/aboutme"><p>О себе</p></a>
+    <a v-if="!isHomePage" class="no-default-styles" href="/"><p>Главная</p></a>
   </header>
 </template>
   
