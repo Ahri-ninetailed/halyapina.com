@@ -10,40 +10,33 @@
     </v-row>
 
     <v-row class="row-margin-horizontal pt-3">
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Fireflfly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
-    </v-row>
-
-    <v-row class="row-margin-horizontal">
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical">
         <main-card name="Alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical">
         <main-card name="UFO" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical">
         <main-card name="SpaceJam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical">
         <main-card name="Bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
-    </v-row>
-
-    <v-row class="row-margin-horizontal">
-      <v-col xs="3" sm="3" class="text-center col-padding-vertical pr-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pr-0">
         <main-card name="Crown bed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
-        
       <v-col xs="9" sm="9" class="text-start pl-8 pt-0 pl-11">
         <img class="pr-12" height="425" src="../images/MainPage/drawing.jpg" alt="drawing_image">
       </v-col>
