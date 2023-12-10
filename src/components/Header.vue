@@ -1,5 +1,5 @@
 <template>
-  <header :class="{ 'mainpage-header': isHomePage }" class="h-montserrat-regular header">
+  <header :class="pagesStyles" class="h-montserrat-regular header">
     <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
     <!-- Здесь размещайте содержимое вашего хедера -->
   </header>
@@ -12,6 +12,24 @@ export default {
     isHomePage() {
       return window.location.pathname === '/'; // Замените на реальный путь главной страницы
     },
+    isAboutPage() {
+      return window.location.pathname === '/aboutme'; // Замените на реальный путь главной страницы
+    },
+    pagesStyles() {
+      if (this.isHomePage) {
+
+        return 'mainpage-header';
+
+      } else if (this.isAboutPage) {
+
+        return 'aboutpage-header';
+
+      } else {
+
+        return '';
+
+      }
+    }
   },
 }
 </script>
@@ -23,6 +41,12 @@ export default {
   padding-top: 2.7vh;
   padding-left: 4.1vh;
 }
+
+.aboutpage-header {
+  background-color: black;
+  color: white
+}
+
 .mainpage-header {
     /* background-color: transparent; */
 
