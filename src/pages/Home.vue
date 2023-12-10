@@ -44,8 +44,8 @@
         <main-card name="Crown bed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
         
-      <v-col xs="9" sm="9" class="text-start pl-8 pt-0">
-        <img class="pr-12" height="425" src="../images/MainPage/drawing.png" alt="drawing_image">
+      <v-col xs="9" sm="9" class="text-start pl-8 pt-0 pl-11">
+        <img class="pr-12" height="425" src="../images/MainPage/drawing.jpg" alt="drawing_image">
       </v-col>
     </v-row>
   </v-container>
