@@ -11,9 +11,32 @@
           <v-carousel-item>
             <!-- Ваш первый слайд -->
             <v-row class="slide">
-              <v-col>
-                <h1 style="color: white;">Слайд 1</h1>
-                <p>Описание слайда 1</p>
+              <v-col cols="6">
+                <img style="height: 20vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+              </v-col>
+              <v-col cols="6" class="align-self-center">
+                <h1 class="text-start h-neucha-regular">
+                  Образование:
+                </h1>
+                <p class="text-start h-montserrat-regular">
+                  РГХПУ им. С. Г. Строганова<br>
+                  кафедра «Дизайн мебели» 
+                </p>
+                <h1 class="text-start h-neucha-regular">
+                  Владение программами: 
+                </h1>
+                <p class="text-start h-montserrat-regular">Autodesk 3ds Мах, Corona,<br>
+                  AutoCAD, Adobe lllustrator,<br>
+                  Adobe Photoshop, CorelDraw,<br>
+                  SketchUp, Layout
+                </p>
+                <h1 class="text-start h-neucha-regular">
+                  Контакты:
+                </h1>
+                <p class="text-start h-montserrat-regular">
+                  halyapinamari@gmail.com<br>
+                  WhatsApp +79671930086
+                </p>
               </v-col>
             </v-row>
           </v-carousel-item>
@@ -51,32 +74,34 @@
     
 <script>
 export default {
-  name: 'AboutPage',
-  data() {
-    return {
-      carouselModel: 0,
-      totalSlides: 3, // Общее количество слайдов (вам нужно установить актуальное значение)
-      heightArr: {
-        height: '10vh'
-      }
-    };
-  },
-  methods: {
-    nextSlide() {
-      if ((this.carouselModel + 1) === this.totalSlides) {
-        this.carouselModel = 0;
-      } else {
-        this.carouselModel++;
-      }
+    name: 'AboutPage',
+    data() {
+        return {
+            carouselModel: 0,
+            totalSlides: 3, // Общее количество слайдов (вам нужно установить актуальное значение)
+            heightArr: {
+                height: '10vh'
+            }
+        };
     },
-    prevSlide() {
-      if ((this.carouselModel - 1) < 0) {
-        this.carouselModel = this.totalSlides - 1;
-      } else {
-        this.carouselModel--;
-      }
-    },
-  }
+    methods: {
+        nextSlide() {
+            if ((this.carouselModel + 1) === this.totalSlides) {
+                this.carouselModel = 0;
+            }
+            else {
+                this.carouselModel++;
+            }
+        },
+        prevSlide() {
+            if ((this.carouselModel - 1) < 0) {
+                this.carouselModel = this.totalSlides - 1;
+            }
+            else {
+                this.carouselModel--;
+            }
+        },
+    }
 }
 </script>
 
@@ -98,5 +123,13 @@ export default {
 .aboutpage {
   background-color: black;
   height: 100vh;
+}
+
+h1, p {
+  color: white;
+}
+
+h1 {
+  font-size: 3.5vh;
 }
 </style>
