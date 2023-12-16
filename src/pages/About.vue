@@ -45,8 +45,10 @@
             <!-- Ваш второй слайд -->
             <v-row class="slide" :style="heightSlideRowProp">
               <v-col>
-                <h1 style="color: white;">Слайд 2</h1>
-                <p>Описание слайда 2</p>
+                
+              </v-col>
+              <v-col>
+                
               </v-col>
             </v-row>
           </v-carousel-item>
@@ -70,6 +72,7 @@
       </v-col>
     </v-row>
   </v-container>
+  <img class="popkorn" src="../images/AboutMePage/popkorn.png" alt="GirlWithPopkorn"/>
 </template>
     
 <script>
@@ -122,6 +125,13 @@ export default {
 </script>
 
 <style scoped>
+.popkorn {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000; /* Помещает изображение за основной контент */
+  right: 0vh;
+  height: 50vh;
+}
 .transparent-button {
   background-color: transparent;
   padding: 0;
