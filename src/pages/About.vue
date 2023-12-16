@@ -43,7 +43,7 @@
 
           <v-carousel-item>
             <!-- Ваш второй слайд -->
-            <v-row class="slide">
+            <v-row class="slide" :style="heightSlideRowProp">
               <v-col>
                 <h1 style="color: white;">Слайд 2</h1>
                 <p>Описание слайда 2</p>
@@ -52,7 +52,7 @@
           </v-carousel-item>
           <v-carousel-item>
             <!-- Ваш второй слайд -->
-            <v-row class="slide">
+            <v-row class="slide" :style="heightSlideRowProp">
               <v-col>
                 <h1 style="color: white;">Слайд 3</h1>
                 <p>Описание слайда 3</p>
