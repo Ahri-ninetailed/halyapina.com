@@ -37,8 +37,9 @@
       <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pr-0">
         <main-card name="Crown bed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
-      <v-col xs="9" sm="9" class="text-start pl-8 pt-0 pl-11">
-        <img class="pr-12" height="425" src="../images/MainPage/drawing.jpg" alt="drawing_image">
+      <v-col xs="9" sm="9" class="text-start pt-0">
+      <!-- <v-col xs="9" sm="9" :style="dawingGirlLeftPadding" class="text-start pt-0"> -->
+        <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">
       </v-col>
     </v-row>
   </v-container>
@@ -50,11 +51,98 @@ import MainCard from '@/components/MainCard.vue';
 export default {
   data() {
     return {
-      
+      // dawingGirlLeftPadding: {}
     };
   },
+  // created() {
+  //   window.addEventListener('resize', this.handleResize);
+  //   this.handleResize();
+  // },
   components: { MainCard },
   name: 'HomePage',
+  methods: {
+    // getDrawingGirlLeftPadding() {
+    //   let currVw = this.currentWidthToVw();
+    //   console.log(currVw);
+
+    //   if (currVw <= 79 && currVw >= 76) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 79 && currVw >= 76) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 79 && currVw >= 76) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 79 && currVw >= 76) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 79 && currVw >= 76) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 79 && currVw >= 76) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 82 && currVw >= 79) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 85 && currVw >= 82) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 88 && currVw >= 85) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 91 && currVw >= 88) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 94 && currVw >= 91) {
+    //     return {
+    //       paddingLeft: '20vw'
+    //     };
+    //   }
+    //   if (currVw <= 97 && currVw >= 94) {
+    //     return {
+    //       paddingLeft: '2.8vw'
+    //     };
+    //   }
+    //   if (currVw <= 100 && currVw >= 97) {
+    //     return {
+    //       paddingLeft: '3vw'
+    //     };
+    //   }
+    // },
+    // currentWidthToVw() {
+    //   const currWidth = window.innerWidth;
+    //   const maxWidth = window.screen.width;
+    //   return (100 * currWidth) / maxWidth
+    // },
+    // handleResize() {
+    //   this.dawingGirlLeftPadding = this.getDrawingGirlLeftPadding();
+    // },
+    // beforeDestroy() {
+    //   window.removeEventListener('resize', this.handleResize);
+    // },
+  }
 }
 </script>
 
@@ -74,6 +162,10 @@ export default {
   background-position: top;
   background-repeat: no-repeat;
   height: 55vh;
+}
+
+.drawing-girl {
+  height: 59.5vh;
 }
 
 .main-h {
