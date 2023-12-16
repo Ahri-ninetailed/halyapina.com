@@ -73,6 +73,7 @@
               </v-col>
             </v-row>
           </v-carousel-item>
+          
           <v-carousel-item>
             <!-- Ваш второй слайд -->
             <v-row class="slide" :style="heightSlideRowProp">
