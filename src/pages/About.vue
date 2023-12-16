@@ -44,10 +44,15 @@
           <v-carousel-item>
             <!-- Ваш второй слайд -->
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-col>
-                
+              <v-col cols="5">
+                <div>
+                  <img style="height: 20vh;" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Maria Halyapina img"/>
+                </div>
+                <div>
+                  <img style="height: 20vh;" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Maria Halyapina img"/>
+                </div>
               </v-col>
-              <v-col>
+              <v-col cols="6">
                 
               </v-col>
             </v-row>
@@ -129,8 +134,8 @@ export default {
   position: fixed;
   bottom: 0;
   z-index: 1000; /* Помещает изображение за основной контент */
-  right: 0vh;
-  height: 50vh;
+  right: 8vh;
+  height: 17vw;
 }
 .transparent-button {
   background-color: transparent;
