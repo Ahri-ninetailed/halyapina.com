@@ -1,6 +1,6 @@
 <template>
   <v-container class="aboutpage pa-0" fluid>
-    <v-row class="text-center" justify="center" style="height: 73vh; padding-top: 10vh;">
+    <v-row class="text-center" justify="center" :style="heightSlideProp" style="padding-top: 12vh;">
       <v-col cols="2" sm="2" md="2" lg="2" class="d-flex align-center text-center justify-center">
         <v-btn :style="heightArr" @click="prevSlide" class="transparent-button">
           <img :style="heightArr" src="../images/AboutMePage/arr-left.svg" alt="Prev slide" />
@@ -10,11 +10,11 @@
         <v-carousel style="width: 100%; height: inherit;" :show-arrows="false" :cycle="false" hide-delimiters v-model="carouselModel">
           <v-carousel-item>
             <!-- Ваш первый слайд -->
-            <v-row class="slide">
-              <v-col cols="6">
-                <img style="height: 20vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+            <v-row no-gutters class="slide" :style="heightSlideRowProp">
+              <v-col offset="1" cols="5" class="align-self-center">
+                <img style="height: 46vh;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
               </v-col>
-              <v-col cols="6" class="align-self-center">
+              <v-col offset="1" cols="5" class="align-self-center">
                 <h1 class="text-start h-neucha-regular">
                   Образование:
                 </h1>
@@ -81,8 +81,24 @@ export default {
             totalSlides: 3, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '10vh'
+            },
+            heightSlide: {
+                measure: 'vh',
+                value: 76,
             }
         };
+    },
+    computed: {
+      heightSlideProp() {
+        return {
+          height: this.heightSlide.value + this.heightSlide.measure,
+        };
+      },
+      heightSlideRowProp() {
+        return {
+          height: (this.heightSlide.value - 10) + this.heightSlide.measure,
+        };
+      }
     },
     methods: {
         nextSlide() {
@@ -131,5 +147,8 @@ h1, p {
 
 h1 {
   font-size: 3.5vh;
+}
+p {
+  font-size: 2.3vh;
 }
 </style>
