@@ -9,20 +9,19 @@
       <v-col cols="8" sm="8" md="8" lg="8" class="slide">
         <v-carousel style="width: 100%; height: inherit;" :show-arrows="false" :cycle="false" hide-delimiters v-model="carouselModel">
           <v-carousel-item>
-            <!-- Ваш первый слайд -->
             <v-row no-gutters class="slide" :style="heightSlideRowProp">
               <v-col offset="1" cols="5" class="align-self-center">
                 <img style="height: 46vh;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
               </v-col>
               <v-col offset="1" cols="5" class="align-self-center">
-                <h1 class="text-start h-neucha-regular">
+                <h1 class="text-start h-neucha-regular slide1">
                   Образование:
                 </h1>
                 <p class="text-start h-montserrat-regular">
                   РГХПУ им. С. Г. Строганова<br>
                   кафедра «Дизайн мебели» 
                 </p>
-                <h1 class="text-start h-neucha-regular">
+                <h1 class="text-start h-neucha-regular slide1">
                   Владение программами: 
                 </h1>
                 <p class="text-start h-montserrat-regular">Autodesk 3ds Мах, Corona,<br>
@@ -30,7 +29,7 @@
                   Adobe Photoshop, CorelDraw,<br>
                   SketchUp, Layout
                 </p>
-                <h1 class="text-start h-neucha-regular">
+                <h1 class="text-start h-neucha-regular slide1">
                   Контакты:
                 </h1>
                 <p class="text-start h-montserrat-regular">
@@ -42,18 +41,35 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            <!-- Ваш второй слайд -->
-            <v-row class="slide" :style="heightSlideRowProp">
-              <v-col cols="5">
+            <v-row class="slide pl-13" :style="heightSlideRowProp">
+              <v-col cols="5" class="align-self-center" style="padding-top: 5vh;">
                 <div>
-                  <img style="height: 20vh;" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Maria Halyapina img"/>
+                  <img :style="heightImgSlide2" style="margin-bottom: 2vh;" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                 </div>
                 <div>
-                  <img style="height: 20vh;" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Maria Halyapina img"/>
+                  <img :style="heightImgSlide2" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                 </div>
+                <p style="font-size: 1.5vh; font-style: italic; padding-top: 1vh;">Мудборд концептуального проекта</p>
               </v-col>
-              <v-col cols="6">
-                
+              <v-col cols="6" class="align-self-center">
+                <p class="text-start h-montserrat-regular slide2">
+                  Меня зовут Мария, я с детства любила рисовать<br>
+                  и фантазировать, и эти две, казалось бы, безобидные<br>
+                  привычки превратили меня в дизайнера. В 2019 году<br>
+                  <span style="letter-spacing: 0.03vh;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span><br>
+                  <span style="letter-spacing: 0.03vh;">«Дизайн мебели». Преподаватели кафедры — дей-</span><br>
+                  <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие профессионалы</span><br>
+                  и настоящие фанаты своего дела!<br>
+                  <br>
+                  <b>Как проходило обучение?</b><br>
+                  Обучение с самого начала было направлено на раз-<br>
+                  витие креативного мышления. Мы активно занима-<br>
+                  лись макетированием, познавая особенности<br>
+                  и специфику различных материалов, продумывали<br>
+                  графические решения для подачи наших проектов,<br>
+                  и, конечно, всегда стремились работать над актуаль-<br>
+                  ными проблемами.  
+                </p>
               </v-col>
             </v-row>
           </v-carousel-item>
@@ -93,7 +109,10 @@ export default {
             heightSlide: {
                 measure: 'vh',
                 value: 76,
-            }
+            },
+            heightImgSlide2: {
+                height: '24vh'
+            },
         };
     },
     computed: {
@@ -160,10 +179,13 @@ h1, p {
   color: white;
 }
 
-h1 {
-  font-size: 3.5vh;
+h1.slide1 {
+  font-size: 3.1vh;
 }
 p {
   font-size: 2.3vh;
+}
+p.slide2 {
+  font-size: 2.2vh;
 }
 </style>
