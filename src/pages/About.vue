@@ -76,20 +76,20 @@
           
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-col cols="4" class="d-flex align-center justify-center">
-                <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 60px;" alt="Maria with earrings">
+              <v-row class="slide3">
+                <v-col cols="4" class="pa-0 d-flex align-center justify-start">
+                <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 55vh;" alt="Maria with earrings">
               </v-col>
-              <v-col cols="4">
-                <v-col cols="12" class="d-flex align-center justify-center" style="height: 50%;">
-                  <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="height: 60px;" alt="Prototype of Dragonfly">
+              <v-col class="pa-0" cols="4">
+                <v-col cols="12" class="pa-0 d-flex flex-column align-center justify-center" style="height: 100%;">
+                  <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="height: 18vh; margin-bottom: 19vh;" alt="Prototype of Dragonfly">
+                  <img src="../images/AboutMePage/Slide3/dragonfly2.jpg" style="height: 18vh;" alt="Prototype of Dragonfly">
                 </v-col>
-                <v-col cols="12" class="d-flex align-center justify-center" style="height: 50%;">
-                  <img src="../images/AboutMePage/Slide3/dragonfly2.jpg" style="height: 60px;" alt="Prototype of Dragonfly">
-                </v-col>
               </v-col>
-              <v-col cols="4" class="d-flex align-center justify-center">
-                <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="height: 60px;" alt="Prototype of Line chair">
+              <v-col cols="4" class="pa-0 d-flex align-center justify-end">
+                <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="height: 55vh;" alt="Prototype of Line chair">
               </v-col>
+              </v-row>
             </v-row>
           </v-carousel-item>
         </v-carousel>
@@ -157,6 +157,13 @@ export default {
 </script>
 
 <style scoped>
+.slide3 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .popkorn {
   position: fixed;
   bottom: 0;
