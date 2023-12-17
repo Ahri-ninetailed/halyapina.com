@@ -75,16 +75,23 @@
           </v-carousel-item>
           
           <v-carousel-item>
-            <!-- Ваш второй слайд -->
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-col>
-                <h1 style="color: white;">Слайд 3</h1>
-                <p>Описание слайда 3</p>
+              <v-col cols="4" class="d-flex align-center justify-center">
+                <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 60px;" alt="Maria with earrings">
+              </v-col>
+              <v-col cols="4">
+                <v-col cols="12" class="d-flex align-center justify-center" style="height: 50%;">
+                  <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="height: 60px;" alt="Prototype of Dragonfly">
+                </v-col>
+                <v-col cols="12" class="d-flex align-center justify-center" style="height: 50%;">
+                  <img src="../images/AboutMePage/Slide3/dragonfly2.jpg" style="height: 60px;" alt="Prototype of Dragonfly">
+                </v-col>
+              </v-col>
+              <v-col cols="4" class="d-flex align-center justify-center">
+                <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="height: 60px;" alt="Prototype of Line chair">
               </v-col>
             </v-row>
           </v-carousel-item>
-          <!-- Добавьте дополнительные слайды, если необходимо -->
-
         </v-carousel>
       </v-col>
       <v-col cols="2" sm="2" md="2" lg="2" class="d-flex align-center text-center justify-center">
