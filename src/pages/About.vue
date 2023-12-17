@@ -150,6 +150,29 @@
               </v-row>
             </v-row>
           </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="slide" :style="heightSlideRowProp">
+              <v-row class="slidesPadding">
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
+                  <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 50vh;" alt="Thonet chair">
+                </v-col>
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
+                  <p class="text-start h-montserrat-regular slidesFont">
+                    Не мало внимания уделялось и умению  работать<br>
+                    в команде. Для достижения поставленной цели не-<br>
+                    обходимо уметь нахо- дить компромиссы. Данный<br>
+                    проект создавался совместно с В. Декалиной<br>
+                    и П. Ерёмичевой. Идея заключалась в создании<br>
+                    ателье по восстановлению старинной мебели с по-<br>
+                    мощью замены сломанных элементов деталями<br>
+                    из переработанного пластика. А лицом нашего ателье<br>
+                    стала бы вечно нестареющая классика — Thonet!
+                  </p>
+                </v-col>  
+              </v-row>
+            </v-row>
+          </v-carousel-item>
         </v-carousel>
       </v-col>
       <v-col cols="2" sm="2" md="2" lg="2" class="d-flex align-center text-center justify-center">
@@ -157,7 +180,7 @@
           <img :style="heightArr" src="../images/AboutMePage/arr-right.svg" alt="Next slide" />
         </v-btn>
       </v-col>
-    </v-row>
+    </v-row>z
   </v-container>
   <img class="popkorn" src="../images/AboutMePage/popkorn.png" alt="GirlWithPopkorn"/>
 </template>
@@ -168,7 +191,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 6, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 7, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '10vh'
             },
