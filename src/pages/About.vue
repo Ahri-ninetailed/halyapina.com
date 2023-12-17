@@ -42,7 +42,7 @@
 
           <v-carousel-item>
             <v-row class="slide pl-13" :style="heightSlideRowProp">
-              <v-col cols="5" class="align-self-center" style="padding-top: 5vh;">
+              <v-col cols="5" align="center" justify="center" style="padding-top: 7vh;">
                 <div>
                   <img :style="heightImgSlide2" style="margin-bottom: 2vh;" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                 </div>
