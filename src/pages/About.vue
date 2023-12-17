@@ -113,6 +113,27 @@
               </v-row>
             </v-row>
           </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="slide" :style="heightSlideRowProp">
+              <v-row class="slidesPadding">
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
+                  <img src="../images/AboutMePage/Slide5/PosterVitra.jpg" style="height: 50vh;" alt="Poster Vitra">
+                  <p class="title">Плакат для Vitra</p>
+                </v-col>
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
+                  <p class="text-start h-montserrat-regular slidesFont">
+                    Во время обучения нас старались ознакомить с раз-<br>
+                    личными сферами дизайна. Замечательным опытом<br>
+                    стало участие в конкурсе плакатов всемирно извес-<br>
+                    тной фирмы Vitra. Мы старались выявить ключевой<br>
+                    посыл фирмы и выразить его с помощью яркой гра-<br>
+                    фической подачи.
+                  </p>
+                </v-col>    
+              </v-row>
+            </v-row>
+          </v-carousel-item>
         </v-carousel>
       </v-col>
       <v-col cols="2" sm="2" md="2" lg="2" class="d-flex align-center text-center justify-center">
@@ -131,7 +152,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 4, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 5, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '10vh'
             },
