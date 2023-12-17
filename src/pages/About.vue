@@ -49,10 +49,10 @@
                 <div>
                   <img :style="heightImgSlide2" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                 </div>
-                <p style="font-size: 1.5vh; font-style: italic; padding-top: 1vh;">Мудборд концептуального проекта</p>
+                <p class="title" style="padding-top: 1vh;">Мудборд концептуального проекта</p>
               </v-col>
-              <v-col cols="6" class="align-self-center">
-                <p class="text-start h-montserrat-regular slide2">
+              <v-col cols="6" class="pl-6 align-self-center">
+                <p class="text-start h-montserrat-regular slidesFont">
                   Меня зовут Мария, я с детства любила рисовать<br>
                   и фантазировать, и эти две, казалось бы, безобидные<br>
                   привычки превратили меня в дизайнера. В 2019 году<br>
@@ -76,7 +76,7 @@
           
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slide3">
+              <v-row class="slidesPadding">
                 <v-col cols="4" class="pa-0 d-flex align-center justify-start">
                 <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 55vh;" alt="Maria with earrings">
               </v-col>
@@ -89,6 +89,27 @@
               <v-col cols="4" class="pa-0 d-flex align-center justify-end">
                 <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="height: 55vh;" alt="Prototype of Line chair">
               </v-col>
+              </v-row>
+            </v-row>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="slide" :style="heightSlideRowProp">
+              <v-row class="slidesPadding">
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
+                  <img src="../images/AboutMePage/Slide4/factory.jpg" style="height: 50vh;" alt="Factory">
+                  <p class="title">Посещение фабрики Ангстрем</p>
+                </v-col>
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
+                  <p class="text-start h-montserrat-regular slidesFont">
+                  Руководство кафедры считает необходи-<br>
+                  мым дать студентам возможность работать<br>
+                  с реальными заказчиками. Благодаря тако-<br>
+                  му опыту учишься следовать не только<br>
+                  ТЗ, но и учитывать настоящие возможности<br>
+                  производства.
+                  </p>
+                </v-col>    
               </v-row>
             </v-row>
           </v-carousel-item>
@@ -110,7 +131,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 3, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 4, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '10vh'
             },
@@ -157,7 +178,7 @@ export default {
 </script>
 
 <style scoped>
-.slide3 {
+.slidesPadding {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 10%;
@@ -200,7 +221,11 @@ h1.slide1 {
 p {
   font-size: 2.3vh;
 }
-p.slide2 {
+p.slidesFont {
   font-size: 2.2vh;
+}
+
+.title {
+  font-size: 1.5vh; font-style: italic;
 }
 </style>
