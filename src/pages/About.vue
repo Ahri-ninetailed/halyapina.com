@@ -173,6 +173,16 @@
               </v-row>
             </v-row>
           </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="slide" :style="heightSlideRowProp">
+              <v-row class="slidesPadding">
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
+                  <img src="../images/AboutMePage/Slide8/AboutTheAtelier.jpg" style="height: 43vh;" alt="About the atelier">
+                </v-col> 
+              </v-row>
+            </v-row>
+          </v-carousel-item>
         </v-carousel>
       </v-col>
       <v-col cols="2" sm="2" md="2" lg="2" class="d-flex align-center text-center justify-center">
@@ -191,7 +201,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 7, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 8, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '10vh'
             },
