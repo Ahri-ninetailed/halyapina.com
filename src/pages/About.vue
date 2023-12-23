@@ -261,10 +261,10 @@ export default {
 
 <style scoped>
 .slidesPadding {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .popkorn {
