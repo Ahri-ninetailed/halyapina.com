@@ -78,16 +78,16 @@
             <v-row class="slide" :style="heightSlideRowProp">
               <v-row class="slidesPadding">
                 <v-col cols="4" class="pa-0 d-flex align-center justify-start">
-                <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 55vh;" alt="Maria with earrings">
+                <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 23.570638020833332vw;" alt="Maria with earrings">
               </v-col>
               <v-col class="pa-0" cols="4">
                 <v-col cols="12" class="pa-0 d-flex flex-column align-center justify-center" style="height: 100%;">
-                  <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="height: 18vh; margin-bottom: 19vh;" alt="Prototype of Dragonfly">
-                  <img src="../images/AboutMePage/Slide3/dragonfly2.jpg" style="height: 18vh;" alt="Prototype of Dragonfly">
+                  <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="height: 11.1216796875vw; margin-bottom: 1.3501627604166666vw;" alt="Prototype of Dragonfly">
+                  <img src="../images/AboutMePage/Slide3/dragonfly2.jpg" style="height: 11.1216796875vw;" alt="Prototype of Dragonfly">
                 </v-col>
               </v-col>
               <v-col cols="4" class="pa-0 d-flex align-center justify-end">
-                <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="height: 55vh;" alt="Prototype of Line chair">
+                <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="height: 23.570638020833332vw;" alt="Prototype of Line chair">
               </v-col>
               </v-row>
             </v-row>
