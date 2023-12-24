@@ -10,16 +10,16 @@
     </v-row>
 
     <v-row class="row-margin-horizontal pt-3">
-      <v-col cols="3" class="text-center col-padding-vertical pt-xs-0 pt-sm-0 pt-md-0">
+      <v-col cols="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical pt-xs-0 pt-sm-0 pt-md-0">
+      <v-col cols="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical pt-xs-0 pt-sm-0 pt-md-0">
+      <v-col cols="3" class="text-center col-padding-vertical pt-0 ">
         <main-card name="Fireflfly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical pt-xs-0 pt-md-0">
+      <v-col cols="3" class="text-center col-padding-vertical pt-0">
         <main-card name="Fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical">
