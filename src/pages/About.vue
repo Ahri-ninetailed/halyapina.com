@@ -142,14 +142,14 @@
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
               <v-row class="slidesPadding">
-                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
-                  <img src="../images/AboutMePage/Slide6/DiplomaFromVitra.jpg" style="height: 50vh;" alt="Diploma from Vitra">
+                <v-col class="pa-0 d-flex flex-column align-start justify-center" cols="6">
+                  <img src="../images/AboutMePage/Slide6/DiplomaFromVitra.jpg" style="height: 50.8vh;" alt="Diploma from Vitra">
                 </v-col>
-                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
-                  <img src="../images/AboutMePage/Slide6/MariaNearPoster.jpg" style="height: 50vh;" alt="I near poster">
+                <v-col class="pa-0 d-flex flex-column align-end justify-center" cols="6">
+                  <img src="../images/AboutMePage/Slide6/MariaNearPoster.jpg" style="height: 50.8vh;" alt="I near poster">
                 </v-col>  
                 <v-col cols="12" class="pa-0">
-                  <p class="title text-center">Диплом за 3-е место</p>
+                  <p style="padding-top: 1.6vh;" class="title text-center">Диплом за 3-е место</p>
                 </v-col> 
               </v-row>
             </v-row>
