@@ -119,12 +119,11 @@
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
               <v-row class="slidesPadding">
-                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
-                  <img src="../images/AboutMePage/Slide5/PosterVitra.jpg" style="height: 50vh;" alt="Poster Vitra">
-                  <p class="title">Плакат для Vitra</p>
+                <v-col class="pa-0 d-flex flex-column align-start justify-end" cols="5">
+                  <img src="../images/AboutMePage/Slide5/PosterVitra.jpg" style="height: 51vh;" alt="Poster Vitra">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
-                  <p class="text-start h-montserrat-regular slidesFont">
+                  <p style="padding-left: 1.3vw;" class="text-start h-montserrat-regular slidesFont">
                     Во время обучения нас старались ознакомить с раз-<br>
                     личными сферами дизайна. Замечательным опытом<br>
                     стало участие в конкурсе плакатов всемирно извес-<br>
@@ -132,7 +131,10 @@
                     посыл фирмы и выразить его с помощью яркой гра-<br>
                     фической подачи.
                   </p>
-                </v-col>    
+                </v-col>
+                <v-col cols="5" class="pa-0 d-flex flex-column align-center">
+                  <p style="padding-right: 4.5vw; padding-top: 1.6vh;" class="title">Плакат для Vitra</p>
+                </v-col>
               </v-row>
             </v-row>
           </v-carousel-item>
