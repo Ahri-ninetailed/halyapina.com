@@ -159,18 +159,18 @@
             <v-row class="slide" :style="heightSlideRowProp">
               <v-row class="slidesPadding">
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
-                  <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 50vh;" alt="Thonet chair">
+                  <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 51vh; padding-right: 4vw;" alt="Thonet chair">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
-                  <p class="text-start h-montserrat-regular slidesFont">
-                    Не мало внимания уделялось и умению  работать<br>
+                  <p style="padding-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
+                    <span style="letter-spacing: 0.015vw;">Не мало внимания уделялось и умению  работать</span><br>
                     в команде. Для достижения поставленной цели не-<br>
-                    обходимо уметь нахо- дить компромиссы. Данный<br>
-                    проект создавался совместно с В. Декалиной<br>
+                    <span style="letter-spacing: 0.015vw;">обходимо уметь находить компромиссы. Данный</span><br>
+                    <span style="letter-spacing: 0.020vw;">проект создавался совместно с В. Декалиной</span><br>
                     и П. Ерёмичевой. Идея заключалась в создании<br>
                     ателье по восстановлению старинной мебели с по-<br>
                     мощью замены сломанных элементов деталями<br>
-                    из переработанного пластика. А лицом нашего ателье<br>
+                    <span style="letter-spacing: -0.020vw;">из переработанного пластика. А лицом нашего ателье</span><br>
                     стала бы вечно нестареющая классика — Thonet!
                   </p>
                 </v-col>  
