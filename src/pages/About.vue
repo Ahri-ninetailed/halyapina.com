@@ -96,20 +96,22 @@
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
               <v-row class="slidesPadding">
-                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
-                  <img src="../images/AboutMePage/Slide4/factory.jpg" style="height: 50vh;" alt="Factory">
-                  <p class="title">Посещение фабрики Ангстрем</p>
+                <v-col class="pa-0 d-flex flex-column align-start justify-end" cols="6">
+                  <img src="../images/AboutMePage/Slide4/factory.jpg" style="height: 51.5vh;" alt="Factory">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
-                  <p class="text-start h-montserrat-regular slidesFont">
-                  Руководство кафедры считает необходи-<br>
+                  <p style="padding-left: 2vw;" class="text-start h-montserrat-regular slidesFont">
+                  <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
                   мым дать студентам возможность работать<br>
                   с реальными заказчиками. Благодаря тако-<br>
-                  му опыту учишься следовать не только<br>
+                  <span style="letter-spacing: 0.020vw;">му опыту учишься следовать не только</span><br>
                   ТЗ, но и учитывать настоящие возможности<br>
                   производства.
                   </p>
-                </v-col>    
+                </v-col> 
+                <v-col cols="5" class="pa-0 d-flex flex-column align-center">
+                  <p style="padding-left: 1vw; padding-top: 1.6vh;" class="title">Посещение фабрики Ангстрем</p>
+                </v-col>
               </v-row>
             </v-row>
           </v-carousel-item>
@@ -234,7 +236,7 @@ export default {
       },
       heightSlideRowProp() {
         return {
-          height: (this.heightSlide.value - 10) + this.heightSlide.measure,
+          height: (this.heightSlide.value - 10.6) + this.heightSlide.measure,
         };
       }
     },
