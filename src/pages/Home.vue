@@ -10,16 +10,16 @@
     </v-row>
 
     <v-row class="row-margin-horizontal pt-3">
-      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-xs-0 pt-sm-0 pt-md-0">
         <main-card name="Lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-xs-0 pt-sm-0 pt-md-0">
         <main-card name="Dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-xs-0 pt-sm-0 pt-md-0">
         <main-card name="Fireflfly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-0">
+      <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pt-xs-0 pt-md-0">
         <main-card name="Fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
       <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical">
@@ -37,7 +37,7 @@
       <v-col xs="3" sm="4" md="3" class="text-center col-padding-vertical pr-0">
         <main-card name="Crown bed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
-      <v-col xs="9" sm="9" class="text-start pt-0">
+      <v-col xs="9" sm="8" md="9" class="text-start">
       <!-- <v-col xs="9" sm="9" :style="dawingGirlLeftPadding" class="text-start pt-0"> -->
         <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">
       </v-col>
