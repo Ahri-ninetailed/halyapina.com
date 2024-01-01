@@ -1,7 +1,13 @@
 <template>
   <header :class="pagesStyles" class="h-montserrat-regular header">
-    <a v-if="!isAboutPage" class="no-default-styles" href="/aboutme"><p>О себе</p></a>
-    <a v-if="!isHomePage" class="no-default-styles" href="/"><p>Главная</p></a>
+    <v-row>
+      <v-col v-if="!isHomePage" cols="auto" class="pt-0 pb-0 pl-0">
+        <a class="no-default-styles" href="/"><p>Главная</p></a>
+      </v-col>
+      <v-col v-if="!isAboutPage" cols="auto" class="pt-0 pb-0 pl-0">
+        <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
+      </v-col>
+    </v-row>
   </header>
 </template>
   
@@ -16,18 +22,10 @@ export default {
       return window.location.pathname === '/aboutme'; // Замените на реальный путь главной страницы
     },
     pagesStyles() {
-      if (this.isHomePage) {
-
-        return 'mainpage-header';
-
-      } else if (this.isAboutPage) {
-
+      if (this.isAboutPage) {
         return 'aboutpage-header';
-
       } else {
-
-        return '';
-
+        return 'covering-header';
       }
     }
   },
@@ -47,7 +45,7 @@ export default {
   color: white
 }
 
-.mainpage-header {
+.covering-header {
     /* background-color: transparent; */
 
     position: fixed;
