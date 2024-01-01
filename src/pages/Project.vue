@@ -71,6 +71,12 @@ export default {
       return;
     }
   },
+  mounted() {
+    document.documentElement.style.overflow = 'hidden';
+  },
+  beforeUnmount() {
+    document.documentElement.style.overflow = '';
+  }
 }
 </script>
 
