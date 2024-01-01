@@ -1,7 +1,9 @@
 <template>
   <v-row>
     <v-col cols="12" class="pa-0">
-      <img @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" style="height: 22vh;" :src="this.currentImg" :alt="this.$props.name">
+      <a :href="this.$props.href">
+        <img @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" style="height: 22vh;" :src="this.currentImg" :alt="this.$props.name">
+      </a>
     </v-col>
     <v-col cols="12" class="pa-0">
       <p :style="opacity"  style="font-size: 3vh; font-style: italic;" class="h-neucha-regular">{{ this.$props.name }}</p>
@@ -22,6 +24,10 @@ export default {
       required: true,
     },
     name: {
+      type: String,
+      required: true,
+    },
+    href: {
       type: String,
       required: true,
     }

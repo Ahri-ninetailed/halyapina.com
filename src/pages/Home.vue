@@ -11,31 +11,31 @@
 
     <v-row class="row-margin-horizontal pt-3">
       <v-col cols="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
+        <main-card name="Lines" href="lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
+        <main-card name="Dragonfly" href="dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical pt-0 ">
-        <main-card name="Fireflfly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
+        <main-card name="Firefly" href="firefly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical pt-0">
-        <main-card name="Fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
+        <main-card name="Fennel" href="fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical">
-        <main-card name="Alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
+        <main-card name="Alien" href="alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical">
-        <main-card name="UFO" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
+        <main-card name="UFO" href="ufo" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical">
-        <main-card name="SpaceJam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
+        <main-card name="SpaceJam" href="/spacejam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical">
-        <main-card name="Bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
+        <main-card name="Bubble" href="/bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
       <v-col cols="3" class="text-center col-padding-vertical">
-        <main-card name="Crown bed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
+        <main-card name="Crown bed" href="/crownbed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
       <v-col cols="9" :style="dawingGirlLeftPadding" class="pt-2">
         <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">
