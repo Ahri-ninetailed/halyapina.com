@@ -1,10 +1,10 @@
 <template>
   <header :class="pagesStyles" class="h-montserrat-regular header">
     <v-row>
-      <v-col v-if="!isHomePage" cols="auto" class="pt-0 pb-0 pl-0">
+      <v-col v-if="!isHomePage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
         <a class="no-default-styles" href="/"><p>Главная</p></a>
       </v-col>
-      <v-col v-if="!isAboutPage" cols="auto" class="pt-0 pb-0 pl-0">
+      <v-col v-if="!isAboutPage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
         <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
       </v-col>
     </v-row>
