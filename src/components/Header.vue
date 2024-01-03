@@ -7,6 +7,9 @@
       <v-col v-if="!isAboutPage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
         <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
       </v-col>
+      <v-col v-if="!isAnimaPage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
+        <a class="no-default-styles" href="/anima"><p>Anima</p></a>
+      </v-col>
     </v-row>
   </header>
 </template>
@@ -20,6 +23,9 @@ export default {
     },
     isAboutPage() {
       return window.location.pathname === '/aboutme'; // Замените на реальный путь главной страницы
+    },
+    isAnimaPage() {
+      return window.location.pathname === '/anima'; // Замените на реальный путь главной страницы
     },
     pagesStyles() {
       if (this.isAboutPage) {
