@@ -10,34 +10,34 @@
     </v-row>
 
     <v-row class="row-margin-horizontal pt-3">
-      <v-col cols="3" class="text-center col-padding-vertical pt-0">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0">
         <main-card name="Lines" href="lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical pt-0">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0">
         <main-card name="Dragonfly" href="dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical pt-0 ">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0 ">
         <main-card name="Firefly" href="firefly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical pt-0">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0">
         <main-card name="Fennel" href="fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
         <main-card name="Alien" href="alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
         <main-card name="UFO" href="ufo" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
         <main-card name="SpaceJam" href="/spacejam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
         <main-card name="Bubble" href="/bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
-      <v-col cols="3" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-padding-vertical" id="CrownBed">
         <main-card name="Crown bed" href="/crownbed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
-      <v-col cols="9" :style="dawingGirlLeftPadding" class="pt-2">
+      <v-col lg="3" md="4" sm="12" cols="12" :style="dawingGirlLeftPadding" class="pt-2">
         <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">
       </v-col>
     </v-row>
@@ -57,46 +57,41 @@ export default {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
   },
+  mounted() {
+    this.handleResize()
+  },
   components: { MainCard },
   name: 'HomePage',
-  methods: {
-    getDrawingGirlLeftPadding() {
-      let currVw = this.currentWidthToVw();
-
-      const breakpoints = [
-        { start: 55, end: 58, value: 2.3 },
-        { start: 58, end: 61, value: 2.5 },
-        { start: 61, end: 64, value: 2.7 },
-        { start: 64, end: 67, value: 3.2 },
-        { start: 67, end: 70, value: 3.6 },
-        { start: 70, end: 73, value: 4.1 },
-        { start: 73, end: 76, value: 4.3 },
-        { start: 76, end: 79, value: 4.5 },
-        { start: 79, end: 82, value: 4.7 },
-        { start: 82, end: 85, value: 5 },
-        { start: 85, end: 88, value: 5.3 },
-        { start: 88, end: 91, value: 5.5 },
-        { start: 91, end: 94, value: 6 },
-        { start: 94, end: 97, value: 6 },
-        { start: 97, end: 100, value: 6 },
-      ];
-
-      for (const breakpoint of breakpoints) {
-        if (currVw <= breakpoint.end && currVw >= breakpoint.start) {
-          return {
-            paddingLeft: `${breakpoint.value}vw`,
-          };
-        }
+  computed: {
+    getAdditonalVWPaddingValueForDrawingGirl() {
+      if (this.$vuetify.display.md) {
+        return 1.5;
+      } else if (this.$vuetify.display.sm) {
+        return 2.5;
+      } else if (this.$vuetify.display.xs) {
+        return 3;
+      } else {
+        return 0.9;
       }
-
-      return {
-        paddingLeft: '6vw',
-      };
+    }
+  },
+  methods: {
+    pxToVw(px){
+      const windowWidth = window.innerWidth; // Получение ширины окна браузера
+      return 100 * px / windowWidth; // Вычисление процента
     },
-    currentWidthToVw() {
-      const currWidth = window.innerWidth;
-      const maxWidth = window.screen.width;
-      return (100 * currWidth) / maxWidth
+    getDrawingGirlLeftPadding() {
+      this.widthColumnOfProject  = document.getElementById('CrownBed')?.getBoundingClientRect()?.width;
+      this.widthImgOfProject = document.getElementById('projectImage')?.getBoundingClientRect()?.width;
+      if (this.widthColumnOfProject === undefined || this.widthImgOfProject === undefined) {
+        return {
+          paddingLeft: '0vw',
+        };
+      } else {
+        return {
+          paddingLeft: `${this.pxToVw((this.widthColumnOfProject-this.widthImgOfProject)/2) + this.getAdditonalVWPaddingValueForDrawingGirl}vw`,
+        };
+      }
     },
     handleResize() {
       this.dawingGirlLeftPadding = this.getDrawingGirlLeftPadding();
