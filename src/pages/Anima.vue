@@ -115,44 +115,7 @@ export default {
   mounted() {
     document.documentElement.style.overflow = 'hidden';
 
-    let tables2 = document.getElementById('2tables');
-    this.slidesWidth['2tables'] = this.getWidthForSlide(tables2.naturalWidth, tables2.naturalHeight);
-
-    let tables_grey2 = document.getElementById('2tables_grey');
-    this.slidesWidth['2tables_grey'] = this.getWidthForSlide(tables_grey2.naturalWidth, tables_grey2.naturalHeight);
-
-    let function_of_boxes = document.getElementById('function_of_boxes');
-    this.slidesWidth['function_of_boxes'] = this.getWidthForSlide(function_of_boxes.naturalWidth, function_of_boxes.naturalHeight);
-
-    let function_of_boxes2 = document.getElementById('function_of_boxes2');
-    this.slidesWidth['function_of_boxes2'] = this.getWidthForSlide(function_of_boxes2.naturalWidth, function_of_boxes2.naturalHeight);
-
-    let function_of_boxes3 = document.getElementById('function_of_boxes3');
-    this.slidesWidth['function_of_boxes3'] = this.getWidthForSlide(function_of_boxes3.naturalWidth, function_of_boxes3.naturalHeight);
-
-    let interyer = document.getElementById('interyer');
-    this.slidesWidth['interyer'] = this.getWidthForSlide(interyer.naturalWidth, interyer.naturalHeight);
-
-    let constructor = document.getElementById('constructor');
-    this.slidesWidth['constructor'] = this.getWidthForSlide(constructor.naturalWidth, constructor.naturalHeight);
-
-    let prototype = document.getElementById('prototype');
-    this.slidesWidth['prototype'] = this.getWidthForSlide(prototype.naturalWidth, prototype.naturalHeight);
-
-    let render_with_child = document.getElementById('render_with_child');
-    this.slidesWidth['render_with_child'] = this.getWidthForSlide(render_with_child.naturalWidth, render_with_child.naturalHeight);
-
-    let separate_pieces = document.getElementById('separate_pieces');
-    this.slidesWidth['separate_pieces'] = this.getWidthForSlide(separate_pieces.naturalWidth, separate_pieces.naturalHeight);
-
-    let separate_pieces2 = document.getElementById('separate_pieces2');
-    this.slidesWidth['separate_pieces2'] = this.getWidthForSlide(separate_pieces2.naturalWidth, separate_pieces2.naturalHeight);
-
-    let table_with_child = document.getElementById('table_with_child');
-    this.slidesWidth['table_with_child'] = this.getWidthForSlide(table_with_child.naturalWidth, table_with_child.naturalHeight);
-
-    let table_with_child2 = document.getElementById('table_with_child2');
-    this.slidesWidth['table_with_child2'] = this.getWidthForSlide(table_with_child2.naturalWidth, table_with_child2.naturalHeight);
+    this.fillSlidesWidth();
   },
   beforeUnmount() {
     document.documentElement.style.overflow = '';
@@ -172,6 +135,46 @@ export default {
       return {
         width: `${this.slidesWidth[id]}`
       }
+    },
+    fillSlidesWidth() {
+      let tables2 = document.getElementById('2tables');
+      this.slidesWidth['2tables'] = this.getWidthForSlide(tables2.naturalWidth, tables2.naturalHeight);
+
+      let tables_grey2 = document.getElementById('2tables_grey');
+      this.slidesWidth['2tables_grey'] = this.getWidthForSlide(tables_grey2.naturalWidth, tables_grey2.naturalHeight);
+
+      let function_of_boxes = document.getElementById('function_of_boxes');
+      this.slidesWidth['function_of_boxes'] = this.getWidthForSlide(function_of_boxes.naturalWidth, function_of_boxes.naturalHeight);
+
+      let function_of_boxes2 = document.getElementById('function_of_boxes2');
+      this.slidesWidth['function_of_boxes2'] = this.getWidthForSlide(function_of_boxes2.naturalWidth, function_of_boxes2.naturalHeight);
+
+      let function_of_boxes3 = document.getElementById('function_of_boxes3');
+      this.slidesWidth['function_of_boxes3'] = this.getWidthForSlide(function_of_boxes3.naturalWidth, function_of_boxes3.naturalHeight);
+
+      let interyer = document.getElementById('interyer');
+      this.slidesWidth['interyer'] = this.getWidthForSlide(interyer.naturalWidth, interyer.naturalHeight);
+
+      let constructor = document.getElementById('constructor');
+      this.slidesWidth['constructor'] = this.getWidthForSlide(constructor.naturalWidth, constructor.naturalHeight);
+
+      let prototype = document.getElementById('prototype');
+      this.slidesWidth['prototype'] = this.getWidthForSlide(prototype.naturalWidth, prototype.naturalHeight);
+
+      let render_with_child = document.getElementById('render_with_child');
+      this.slidesWidth['render_with_child'] = this.getWidthForSlide(render_with_child.naturalWidth, render_with_child.naturalHeight);
+
+      let separate_pieces = document.getElementById('separate_pieces');
+      this.slidesWidth['separate_pieces'] = this.getWidthForSlide(separate_pieces.naturalWidth, separate_pieces.naturalHeight);
+
+      let separate_pieces2 = document.getElementById('separate_pieces2');
+      this.slidesWidth['separate_pieces2'] = this.getWidthForSlide(separate_pieces2.naturalWidth, separate_pieces2.naturalHeight);
+
+      let table_with_child = document.getElementById('table_with_child');
+      this.slidesWidth['table_with_child'] = this.getWidthForSlide(table_with_child.naturalWidth, table_with_child.naturalHeight);
+
+      let table_with_child2 = document.getElementById('table_with_child2');
+      this.slidesWidth['table_with_child2'] = this.getWidthForSlide(table_with_child2.naturalWidth, table_with_child2.naturalHeight);
     }
   }
 }
