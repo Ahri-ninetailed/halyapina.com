@@ -2,7 +2,7 @@
    <v-container class="background-img project pa-0" fluid>
     <v-row style="height: 100vh;">
         <v-col cols="6" class="pa-0 d-flex flex-column align-center justify-center">
-          <div style="padding-right: 0vw; padding-left: 3vw">
+          <div style="margin-right: 0vw; margin-left: 3vw">
             <v-carousel
             cycle
             hide-delimiters
@@ -40,8 +40,8 @@
 
         </v-col>
         <v-col cols="6" class="pa-0 d-flex flex-column align-center justify-center">
-          <div style="padding-right: 3vw;">
-            <h1 class="h-neucha-regular" style="padding-bottom: 2vh; font-size: 3.8vh;">{{ h }}</h1>
+          <div style="margin-right: 3vw;">
+            <h1 class="h-neucha-regular" style="margin-bottom: 2vh; font-size: 3.8vh;">{{ h }}</h1>
             <p class="h-montserrat-regular" v-html="description" style="font-size: 2.35vh;"></p>
           </div>
         </v-col>

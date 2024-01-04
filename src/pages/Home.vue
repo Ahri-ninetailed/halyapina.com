@@ -10,34 +10,34 @@
     </v-row>
 
     <v-row class="row-margin-horizontal pt-3">
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
         <main-card name="Lines" href="lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
         <main-card name="Dragonfly" href="dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0 ">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
         <main-card name="Firefly" href="firefly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical pt-0">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
         <main-card name="Fennel" href="fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
         <main-card name="Alien" href="alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
         <main-card name="UFO" href="ufo" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
         <main-card name="SpaceJam" href="/spacejam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-padding-vertical">
+      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
         <main-card name="Bubble" href="/bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
-      <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-padding-vertical" id="CrownBed">
+      <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-margin-padding" id="CrownBed">
         <main-card name="Crown bed" href="/crownbed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
-      <v-col lg="3" md="4" sm="12" cols="12" :style="dawingGirlLeftPadding" class="pt-2">
+      <v-col lg="3" md="4" sm="12" cols="12" :style="dawingGirlLeftMargin" class="pt-2 pl-0">
         <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">
       </v-col>
     </v-row>
@@ -50,7 +50,7 @@ import MainCard from '@/components/MainCard.vue';
 export default {
   data() {
     return {
-      dawingGirlLeftPadding: {}
+      dawingGirlLeftMargin: {}
     };
   },
   created() {
@@ -63,7 +63,7 @@ export default {
   components: { MainCard },
   name: 'HomePage',
   computed: {
-    getAdditonalVWPaddingValueForDrawingGirl() {
+    getAdditonalVWMarginValueForDrawingGirl() {
       if (this.$vuetify.display.md) {
         return 1.5;
       } else if (this.$vuetify.display.sm) {
@@ -80,21 +80,21 @@ export default {
       const windowWidth = window.innerWidth; // Получение ширины окна браузера
       return 100 * px / windowWidth; // Вычисление процента
     },
-    getDrawingGirlLeftPadding() {
+    getDrawingGirlLeftMargin() {
       this.widthColumnOfProject  = document.getElementById('CrownBed')?.getBoundingClientRect()?.width;
       this.widthImgOfProject = document.getElementById('projectImage')?.getBoundingClientRect()?.width;
       if (this.widthColumnOfProject === undefined || this.widthImgOfProject === undefined) {
         return {
-          paddingLeft: '0vw',
+          marginLeft: '0vw',
         };
       } else {
         return {
-          paddingLeft: `${this.pxToVw((this.widthColumnOfProject-this.widthImgOfProject)/2) + this.getAdditonalVWPaddingValueForDrawingGirl}vw`,
+          marginLeft: `${this.pxToVw((this.widthColumnOfProject-this.widthImgOfProject)/2) + this.getAdditonalVWMarginValueForDrawingGirl}vw`,
         };
       }
     },
     handleResize() {
-      this.dawingGirlLeftPadding = this.getDrawingGirlLeftPadding();
+      this.dawingGirlLeftMargin = this.getDrawingGirlLeftMargin();
     },
     beforeDestroy() {
       window.removeEventListener('resize', this.handleResize);
@@ -104,8 +104,9 @@ export default {
 </script>
 
 <style scoped>
-.col-padding-vertical {
-  padding-bottom: 11vh; 
+.col-margin-padding {
+  margin-bottom: 11vh; 
+  padding-bottom: 0vh;
   padding-left: 3vh;
 }
 
