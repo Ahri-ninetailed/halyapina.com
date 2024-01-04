@@ -42,14 +42,14 @@
 
           <v-carousel-item>
             <v-row class="slide pl-13" :style="heightSlideRowProp">
-              <v-col cols="5" align="center" justify="center" style="padding-top: 7vh;">
+              <v-col cols="5" align="center" justify="center" style="margin-top: 7vh; padding-top: 0vh">
                 <div>
                   <img :style="heightImgSlide2" style="margin-bottom: 2vh;" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                 </div>
                 <div>
                   <img :style="heightImgSlide2" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                 </div>
-                <p class="title" style="padding-top: 1vh;">Мудборд концептуального проекта</p>
+                <p class="title" style="margin-top: 1vh;">Мудборд концептуального проекта</p>
               </v-col>
               <v-col cols="6" class="pl-6 align-self-center">
                 <p class="text-start h-montserrat-regular slidesFont">
@@ -76,7 +76,7 @@
           
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col cols="4" class="pa-0 d-flex align-center justify-start">
                 <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="height: 23.570638020833332vw;" alt="Maria with earrings">
               </v-col>
@@ -95,12 +95,12 @@
 
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col class="pa-0 d-flex flex-column align-start justify-end" cols="6">
                   <img src="../images/AboutMePage/Slide4/factory.jpg" style="height: 51.5vh;" alt="Factory">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="6">
-                  <p style="padding-left: 2vw;" class="text-start h-montserrat-regular slidesFont">
+                  <p style="margin-left: 2vw;" class="text-start h-montserrat-regular slidesFont">
                   <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
                   мым дать студентам возможность работать<br>
                   с реальными заказчиками. Благодаря тако-<br>
@@ -110,7 +110,7 @@
                   </p>
                 </v-col> 
                 <v-col cols="5" class="pa-0 d-flex flex-column align-center">
-                  <p style="padding-left: 1vw; padding-top: 1.6vh;" class="title">Посещение фабрики Ангстрем</p>
+                  <p style="margin-left: 1vw; margin-top: 1.6vh;" class="title">Посещение фабрики Ангстрем</p>
                 </v-col>
               </v-row>
             </v-row>
@@ -118,12 +118,12 @@
 
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col class="pa-0 d-flex flex-column align-start justify-end" cols="5">
                   <img src="../images/AboutMePage/Slide5/PosterVitra.jpg" style="height: 51vh;" alt="Poster Vitra">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
-                  <p style="padding-left: 1.3vw;" class="text-start h-montserrat-regular slidesFont">
+                  <p style="margin-left: 1.3vw;" class="text-start h-montserrat-regular slidesFont">
                     Во время обучения нас старались ознакомить с раз-<br>
                     личными сферами дизайна. Замечательным опытом<br>
                     стало участие в конкурсе плакатов всемирно извес-<br>
@@ -133,7 +133,7 @@
                   </p>
                 </v-col>
                 <v-col cols="5" class="pa-0 d-flex flex-column align-center">
-                  <p style="padding-right: 4.5vw; padding-top: 1.6vh;" class="title">Плакат для Vitra</p>
+                  <p style="margin-right: 4.5vw; margin-top: 1.6vh;" class="title">Плакат для Vitra</p>
                 </v-col>
               </v-row>
             </v-row>
@@ -141,7 +141,7 @@
 
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col class="pa-0 d-flex flex-column align-start justify-center" cols="6">
                   <img src="../images/AboutMePage/Slide6/DiplomaFromVitra.jpg" style="height: 50.8vh;" alt="Diploma from Vitra">
                 </v-col>
@@ -149,7 +149,7 @@
                   <img src="../images/AboutMePage/Slide6/MariaNearPoster.jpg" style="height: 50.8vh;" alt="I near poster">
                 </v-col>  
                 <v-col cols="12" class="pa-0">
-                  <p style="padding-top: 1.6vh;" class="title text-center">Диплом за 3-е место</p>
+                  <p style="margin-top: 1.6vh;" class="title text-center">Диплом за 3-е место</p>
                 </v-col> 
               </v-row>
             </v-row>
@@ -157,12 +157,12 @@
 
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
-                  <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 51vh; padding-right: 4vw;" alt="Thonet chair">
+                  <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 51vh; margin-right: 4vw;" alt="Thonet chair">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
-                  <p style="padding-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
+                  <p style="margin-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
                     <span style="letter-spacing: 0.015vw;">Не мало внимания уделялось и умению  работать</span><br>
                     в команде. Для достижения поставленной цели не-<br>
                     <span style="letter-spacing: 0.015vw;">обходимо уметь находить компромиссы. Данный</span><br>
@@ -180,7 +180,7 @@
 
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
                   <img src="../images/AboutMePage/Slide8/AboutTheAtelier.jpg" style="height: 51vh;" alt="About the atelier">
                 </v-col> 
@@ -190,7 +190,7 @@
 
           <v-carousel-item>
             <v-row class="slide" :style="heightSlideRowProp">
-              <v-row class="slidesPadding">
+              <v-row class="slidesMarginPadding">
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
                   <p class="text-start h-montserrat-regular slidesFont">
                     Отныне я в свободном плавании, и мне не терпится применить и приумножить  свои знания!
@@ -264,11 +264,11 @@ export default {
 </script>
 
 <style scoped>
-.slidesPadding {
-  padding-top: 6%;
+.slidesMarginPadding {
+  margin-top: 5.1%;
   padding-bottom: 6%;
-  padding-left: 12%;
-  padding-right: 12%;
+  margin-left: 11.1%;
+  margin-right: 11.1%;
 }
 
 .popkorn {
