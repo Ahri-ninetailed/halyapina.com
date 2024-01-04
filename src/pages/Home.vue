@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0" fluid>
+  <v-container class="pa-0" fluid style="overflow: hidden;">
     <div class="home-main-pic">
     </div>
 
@@ -67,7 +67,7 @@ export default {
       if (this.$vuetify.display.md) {
         return 1.5;
       } else if (this.$vuetify.display.sm) {
-        return 2.5;
+        return 1;
       } else if (this.$vuetify.display.xs) {
         return 3;
       } else {
