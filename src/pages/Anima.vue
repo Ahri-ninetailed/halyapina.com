@@ -21,43 +21,43 @@
           class="mySwiper"
         >
           <swiper-slide style="width: 19.20vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/2tables.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/2tables.jpg" :style="heightOfImageSlideProp" alt="Two tables"/>
           </swiper-slide>
           <swiper-slide style="width: 25.58vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/2tables_grey.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/2tables_grey.jpg" :style="heightOfImageSlideProp" alt="Two tables with grey wings"/>
           </swiper-slide>
           <swiper-slide style="width: 25.58vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/function_of_boxes.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/function_of_boxes.jpg" :style="heightOfImageSlideProp" alt="Functionality of boxes 1"/>
           </swiper-slide>
           <swiper-slide style="width: 19.19vw;">
-            <img  :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/function_of_boxes2.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/function_of_boxes2.jpg" :style="heightOfImageSlideProp" alt="Functionality of boxes 2"/>
           </swiper-slide>
           <swiper-slide style="width: 25.58vw;">
-            <img  :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/function_of_boxes3.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/function_of_boxes3.jpg" :style="heightOfImageSlideProp" alt="Functionality of boxes 3"/>
           </swiper-slide>
           <swiper-slide style="width: 25.58vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/interyer.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/interyer.jpg" :style="heightOfImageSlideProp" alt="Interyer"/>
           </swiper-slide>
           <swiper-slide style="width: 19.19vw;">
-            <img  :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/constructor.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/constructor.jpg" :style="heightOfImageSlideProp" alt="Constructor"/>
           </swiper-slide>
           <swiper-slide style="width: 19.20vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/prototype.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/prototype.jpg" :style="heightOfImageSlideProp" alt="Prototype"/>
           </swiper-slide>
           <swiper-slide style="width: 25.58vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/render_with_child.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/render_with_child.jpg" :style="heightOfImageSlideProp" alt="Render with child"/>
           </swiper-slide>
           <swiper-slide style="width: 19.20vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/separate_pieces.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/separate_pieces.jpg" :style="heightOfImageSlideProp" alt="Separate pieces 1"/>
           </swiper-slide>
           <swiper-slide style="width: 19.19vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/separate_pieces2.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/separate_pieces2.jpg" :style="heightOfImageSlideProp" alt="Separate pieces 2"/>
           </swiper-slide>
           <swiper-slide style="width: 25.57vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/table_with_child.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/table_with_child.jpg" :style="heightOfImageSlideProp" alt="Child near table 1"/>
           </swiper-slide>
           <swiper-slide style="width: 25.57vw;">
-            <img :style="heightOfImageSlideProp" src="../images/AnimaPage/Carousel/table_with_child2.jpg" alt="">
+            <full-image src="../src/images/AnimaPage/Carousel/table_with_child2.jpg" :style="heightOfImageSlideProp" alt="Child near table 2"/>
           </swiper-slide>
         </swiper>
       </v-col>
@@ -79,6 +79,8 @@
   import { Autoplay } from 'swiper/modules';
   import { Mousewheel } from 'swiper/modules';
 
+  import FullImage from '@/components/FullImage.vue';
+
 export default {
   name: "AnimaPage",
   data() {
@@ -92,6 +94,7 @@ export default {
   components: {
       Swiper,
       SwiperSlide,
+      FullImage
     },
   setup() {
     return {
