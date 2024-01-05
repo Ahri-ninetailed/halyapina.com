@@ -73,28 +73,28 @@
                       Меня зовут Мария, я с детства любила рисовать<br>
                       и фантазировать, и эти две, казалось бы, безобидные<br>
                       привычки превратили меня в дизайнера. В 2019 году<br>
-                      <span style="letter-spacing: 0.03vh;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span><br>
-                      <span style="letter-spacing: 0.03vh;">«Дизайн мебели». Преподаватели кафедры — дей-</span><br>
-                      <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие профессионалы</span><br>
+                      <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span><br>
+                      <span style="letter-spacing: 0.014359375vw;">«Дизайн мебели». Преподаватели кафедры — дей-</span><br>
+                      <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span><br>
                       и настоящие фанаты своего дела!<br> 
                     </p>
                     <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.5vh; margin-left: 2vw;">
-                      <span style="letter-spacing: 0.02vh;">Меня зовут Мария, я с детства любила рисовать</span><br>
+                      <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисовать</span><br>
                       и фантазировать, и эти две, казалось бы, безобид-<br>ные
-                      <span style="letter-spacing: 0.02vh;">привычки превратили меня в дизайнера.</span><br>В 2019 году
-                      <span style="letter-spacing: 0.03vh;">я поступила в РГХПУ им. С.Г. Строга-<br>нова на кафедру</span>
+                      <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня в дизайнера.</span><br>В 2019 году
+                      <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строга-<br>нова на кафедру</span>
                       «Дизайн мебели». Преподаватели кафедры — дей
-                      <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие профессионалы</span>
+                      <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span>
                       и настоящие фанаты своего дела!
                     </p>
                     <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5vw; margin-top: 4.5vw">
                       Меня зовут Мария, я с детства лю-<br>била рисовать
-                      и фантазировать,<br><span style="letter-spacing: -0.02vh;">и эти две, казалось бы, безобидные</span>
+                      и фантазировать,<br><span style="letter-spacing: -0.009572916666666665vw;">и эти две, казалось бы, безобидные</span>
                       привычки превратили меня в ди-<br>зайнера. В 2019 году
-                      <span style="letter-spacing: 0.03vh;">я поступила<br>в РГХПУ им. С.Г. Строганова на ка-<br></span>
-                      <span style="letter-spacing: 0.06vh;">федру «Дизайн мебели». Преподаватели кафедры — дей-</span>
-                      <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие</span><br>
-                      <span style="letter-spacing: 0.03vh;">профессионалы и настоящие</span><br>фанаты своего дела!
+                      <span style="letter-spacing: 0.014359375vw;">я поступила<br>в РГХПУ им. С.Г. Строганова на ка-<br></span>
+                      <span style="letter-spacing: 0.02871875vw;">федру «Дизайн мебели». Преподаватели кафедры — дей-</span>
+                      <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие</span><br>
+                      <span style="letter-spacing: 0.014359375vw;">профессионалы и настоящие</span><br>фанаты своего дела!
                     </p>
                   </v-col>
                   <v-col lg="12" sm="6" cols="12">
@@ -119,10 +119,10 @@
                     </p>
                     <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5.1vw;">
                       <b>Как проходило обучение?</b><br>
-                      <span style="letter-spacing: 0.03vh;">Обучение с самого начала было</span><br>
-                      <span style="letter-spacing: 0.05vh;">направлено на развитие креа-<br></span>тивного мышления. 
+                      <span style="letter-spacing: 0.014359375vw;">Обучение с самого начала было</span><br>
+                      <span style="letter-spacing: 0.023932291666666668vw;">направлено на развитие креа-<br></span>тивного мышления. 
                       Мы активно занимались макетированием, познавая особенности
-                      и специ-<br><span style="letter-spacing: 0.05vh;">фику различных материалов, продумывали</span>
+                      и специ-<br><span style="letter-spacing: 0.023932291666666668vw;">фику различных материалов, продумывали</span>
                       графические ре-<br>шения для подачи наших проек-<br>тов,
                       и, конечно, всегда стремились работать над актуаль-
                       ными проблемами.  
@@ -298,7 +298,7 @@ h1, p {
   position: fixed;
   bottom: 0;
   z-index: 1000; /* Помещает изображение за основной контент */
-  right: 8vh;
+  right: 3.8291666666666666vw;
   height: 17vw;
 }
 </style>
