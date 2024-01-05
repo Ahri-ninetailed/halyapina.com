@@ -14,7 +14,7 @@
         <v-carousel style="height: 100%;" :show-arrows="false" :cycle="false" hide-delimiters v-model="carouselModel">
           <v-carousel-item>
             <v-row class="fill-height mt-0 ml-0">
-              <v-col align="center"  cols="6" class="pa-0 align-self-center">
+              <v-col align="center" cols="6" class="pa-0 align-self-center">
                 <img style="height: 22vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
               </v-col>
               <v-col cols="6" class="pa-0 align-self-center">
@@ -45,6 +45,42 @@
               </v-col>
             </v-row>
           </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="fill-height mt-0 ml-13">
+              <v-col cols="5" align="center" class="pa-0 align-self-center mt-9">
+                <div>
+                  <img :style="heightImgSlide2" style="margin-bottom: 2vh;" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+                </div>
+                <div>
+                  <img :style="heightImgSlide2" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+                </div>
+                <p class="title" style="margin-top: 1vh;">Мудборд концептуального проекта</p>
+              </v-col>
+              <v-col cols="7" class="pl-6 align-self-center">
+                <div style="display: inline-block; margin-bottom: 1vh;">
+                  <p class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
+                    Меня зовут Мария, я с детства любила рисовать<br>
+                    и фантазировать, и эти две, казалось бы, безобидные<br>
+                    привычки превратили меня в дизайнера. В 2019 году<br>
+                    <span style="letter-spacing: 0.03vh;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span><br>
+                    <span style="letter-spacing: 0.03vh;">«Дизайн мебели». Преподаватели кафедры — дей-</span><br>
+                    <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие профессионалы</span><br>
+                    и настоящие фанаты своего дела!<br>
+                    <br>
+                    <b>Как проходило обучение?</b><br>
+                    Обучение с самого начала было направлено на раз-<br>
+                    витие креативного мышления. Мы активно занима-<br>
+                    лись макетированием, познавая особенности<br>
+                    и специфику различных материалов, продумывали<br>
+                    графические решения для подачи наших проектов,<br>
+                    и, конечно, всегда стремились работать над актуаль-<br>
+                    ными проблемами.  
+                  </p>
+                </div>
+              </v-col>
+            </v-row>
+          </v-carousel-item>
         </v-carousel>
       </v-col>
       <v-col 
@@ -67,11 +103,14 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 1, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 2, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
-                height: '10vh'
+                height: '4.786458333333333vw'
             },
-            marginArr: '3vw'
+            marginArr: '3vw',
+            heightImgSlide2: {
+                height: '11.4875vw'
+            },
         };
     },
     mounted() {
@@ -111,6 +150,17 @@ export default {
 </script>
 
 <style scoped>
+
+p {
+  font-size: 1.1008854166666666vw;
+}
+p.slidesFont {
+  font-size: 1.0530208333333335vw;
+}
+
+.title {
+  font-size: 0.71796875vw; font-style: italic;
+}
 
 .transparent-button {
   background-color: transparent;
