@@ -11,7 +11,7 @@
           <v-carousel-item>
             <v-row no-gutters class="slide" :style="heightSlideRowProp">
               <v-col offset="1" cols="5" class="align-self-center">
-                <img style="height: 46vh;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+                <img style="height: 22vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
               </v-col>
               <v-col offset="1" cols="5" class="align-self-center">
                 <h1 class="text-start h-neucha-regular slide1">
@@ -302,16 +302,16 @@ h1, p {
 }
 
 h1.slide1 {
-  font-size: 3.1vh;
+  font-size: 1.484vw;
 }
 p {
-  font-size: 2.3vh;
+  font-size: 1.1008854166666666vw;
 }
 p.slidesFont {
-  font-size: 2.2vh;
+  font-size: 1.0530208333333335vw;
 }
 
 .title {
-  font-size: 1.5vh; font-style: italic;
+  font-size: 0.71796875vw; font-style: italic;
 }
 </style>
