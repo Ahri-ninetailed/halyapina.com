@@ -1,6 +1,6 @@
 <template>
   <header style="height: 6.5vh;" :class="pagesStyles" class="h-montserrat-regular header">
-    <v-row>
+    <v-row :style="this.$vuetify.display.xs ? 'width: 100%;' : 'width: auto;'">
       <v-col v-if="!isHomePage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
         <a class="no-default-styles" href="/"><p>Главная</p></a>
       </v-col>

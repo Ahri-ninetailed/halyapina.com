@@ -1,10 +1,15 @@
 <template>
-  <v-container class="pa-0" fluid style="height: 84%; background-color: black;">
-    <v-row class="d-flex justify-center" style="height: 80%; margin-top: 9vh">
+  <v-container class="pa-0" fluid :style="this.$vuetify.display.xs ? 'height: 100%;' : 'height: 84%;'" style="background-color: black;">
+    <v-row 
+      class="d-flex justify-center" 
+      style="height: 80%; margin-top: 9vh; width: 100%;"
+      :style="this.$vuetify.display.xs ? 'margin-left: 0vw;' : ''"
+    >
       <v-col 
         cols="1" 
         class="d-flex align-center text-center justify-center" 
         :style="{ 'margin-right': marginArr }"
+        v-if="this.$vuetify.display.smAndUp"
       >
         <v-btn :style="heightArr" @click="prevSlide" class="transparent-button">
           <img :style="heightArr" src="../images/AboutMePage/arr-left.svg" alt="Prev slide" />
@@ -47,23 +52,23 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            <v-row class="fill-height mt-0 ml-lg-13 ml-sm-0" style="width: 100%;">
-              <v-col lg="5" sm="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
+            <v-row class="fill-height mt-0 ml-lg-13 ml-sm-0" :style="this.$vuetify.display.smAndUp ? 'width: 100%;' : ''">
+              <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
                 <v-row style="width: 100%;">
-                  <v-col lg="12" sm="6" class="pa-0 slide2ImgMargin">
-                    <img class="height-img-slide2 ml-lg-0 ml-sm-6" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+                  <v-col lg="12" sm="6" cols="12" class="pa-0 slide2ImgMargin">
+                    <img class="height-img-slide2 ml-lg-0 ml-sm-6 mt-sm-0 mt-12" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col lg="12" sm="6" class="pa-0 ma-0">
-                    <img class="height-img-slide2 mr-lg-0 mr-sm-6" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+                  <v-col lg="12" sm="6" cols="12" class="pa-0 ma-0">
+                    <img class="height-img-slide2 mr-lg-0 mr-sm-6 mt-sm-0 mt-5" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0" style="margin-top: 1vh;">
                     <p class="title">Мудборд концептуального проекта</p>
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col lg="7" sm="12" class="pl-6 align-self-center mb-lg-2 mb-sm-14">
+              <v-col lg="7" cols="12" class="pl-sm-6 align-self-center mb-lg-2 mb-sm-14">
                 <v-row class="d-lg-inline-block">
-                  <v-col lg="12" sm="6" class="mb-lg-1">
+                  <v-col lg="12" sm="6" cols="12" class="mb-lg-1">
                     <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
                       Меня зовут Мария, я с детства любила рисовать<br>
                       и фантазировать, и эти две, казалось бы, безобидные<br>
@@ -82,8 +87,17 @@
                       <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие профессионалы</span>
                       и настоящие фанаты своего дела!
                     </p>
+                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5vw; margin-top: 4.5vw">
+                      Меня зовут Мария, я с детства лю-<br>била рисовать
+                      и фантазировать,<br><span style="letter-spacing: -0.02vh;">и эти две, казалось бы, безобидные</span>
+                      привычки превратили меня в ди-<br>зайнера. В 2019 году
+                      <span style="letter-spacing: 0.03vh;">я поступила<br>в РГХПУ им. С.Г. Строганова на ка-<br></span>
+                      <span style="letter-spacing: 0.06vh;">федру «Дизайн мебели». Преподаватели кафедры — дей-</span>
+                      <span style="letter-spacing: 0.03vh;">ствующие дизайнеры, большие</span><br>
+                      <span style="letter-spacing: 0.03vh;">профессионалы и настоящие</span><br>фанаты своего дела!
+                    </p>
                   </v-col>
-                  <v-col lg="12" sm="6">
+                  <v-col lg="12" sm="6" cols="12">
                     <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
                       <b>Как проходило обучение?</b><br>
                       Обучение с самого начала было направлено на раз-<br>
@@ -103,6 +117,16 @@
                       и, конечно, всегда стре-<br>мились работать над актуаль
                       ными проблемами.  
                     </p>
+                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5.1vw;">
+                      <b>Как проходило обучение?</b><br>
+                      <span style="letter-spacing: 0.03vh;">Обучение с самого начала было</span><br>
+                      <span style="letter-spacing: 0.05vh;">направлено на развитие креа-<br></span>тивного мышления. 
+                      Мы активно занимались макетированием, познавая особенности
+                      и специ-<br><span style="letter-spacing: 0.05vh;">фику различных материалов, продумывали</span>
+                      графические ре-<br>шения для подачи наших проек-<br>тов,
+                      и, конечно, всегда стремились работать над актуаль-
+                      ными проблемами.  
+                    </p>
                   </v-col>
                 </v-row>
               </v-col>
@@ -114,6 +138,7 @@
         cols="1" 
         class="d-flex align-center text-center justify-center"
         :style="{ 'margin-left': marginArr }"
+        v-if="this.$vuetify.display.smAndUp"
       >
         <v-btn :style="heightArr" @click="nextSlide" class="transparent-button">
           <img :style="heightArr" src="../images/AboutMePage/arr-right.svg" alt="Next slide" />
@@ -138,11 +163,15 @@ export default {
         };
     },
     mounted() {
-      document.documentElement.style.overflow = 'hidden';
+      if (this.$vuetify.display.smAndUp) {
+        document.documentElement.style.overflow = 'hidden';
+      }
       this.changeBackground();
     },
     beforeUnmount() {
-      document.documentElement.style.overflow = '';
+      if (this.$vuetify.display.smAndUp) {
+        document.documentElement.style.overflow = '';
+      } 
     },
     methods: {
       changeBackground() {
@@ -177,6 +206,11 @@ export default {
 .height-img-slide2 {
   height: 11.4875vw;
 }
+
+p.slidesFont {
+  font-size: 1.0530208333333335vw;
+}
+
 .slide2ImgMargin {
   margin-bottom:  0.9587897756911842vw;
 }
@@ -221,12 +255,19 @@ export default {
   }
 }
 
+@media (max-width: 599px) { 
+  .height-img-slide2 {
+    height: 33vw;
+  }
+  p.slidesFont {
+    font-size: 3vw;
+  }
+}
+
 p {
   font-size: 1.1008854166666666vw;
 }
-p.slidesFont {
-  font-size: 1.0530208333333335vw;
-}
+
 
 .title {
   font-size: 0.71796875vw; font-style: italic;
