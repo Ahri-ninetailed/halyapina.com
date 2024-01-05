@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/pages/Home.vue';
 import About from '@/pages/About.vue';
+import About1 from '@/pages/About1.vue';
 import Project from '@/pages/Project.vue';
 import Anima from '@/pages/Anima.vue';
 
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/aboutme',
     component: About,
+  },
+  {
+    path: '/aboutme1',
+    component: About1,
   },
   {
     path: '/anima',

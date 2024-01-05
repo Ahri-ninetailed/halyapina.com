@@ -1,5 +1,5 @@
 <template>
-  <header :class="pagesStyles" class="h-montserrat-regular header">
+  <header style="height: 6.5vh;" :class="pagesStyles" class="h-montserrat-regular header">
     <v-row>
       <v-col v-if="!isHomePage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
         <a class="no-default-styles" href="/"><p>Главная</p></a>
@@ -22,7 +22,7 @@ export default {
       return window.location.pathname === '/'; // Замените на реальный путь главной страницы
     },
     isAboutPage() {
-      return window.location.pathname === '/aboutme'; // Замените на реальный путь главной страницы
+      return window.location.pathname === '/aboutme' || window.location.pathname === '/aboutme1'; // Замените на реальный путь главной страницы
     },
     isAnimaPage() {
       return window.location.pathname === '/anima'; // Замените на реальный путь главной страницы
