@@ -134,7 +134,7 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            <v-row class="fill-height ma-0">
+            <row-aboutme>
               <v-col cols="12" class="pa-0 align-self-center">
                 <v-row class="slide3-row-margin">
                   <v-col cols="4" align="start" class="pa-0">
@@ -155,7 +155,7 @@
                   </v-col>
                 </v-row>
               </v-col>
-            </v-row>
+            </row-aboutme>
           </v-carousel-item>
         </v-carousel>
       </v-col>
@@ -236,12 +236,6 @@ export default {
 
 <style scoped>
 
-.slide3-row-margin {
-  margin-left: 7vw;
-  margin-right: 7vw;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-}
 
 p.slidesFont {
   font-size: 1.0530208333333335vw;
@@ -254,12 +248,6 @@ p.slidesFont {
   .slide2ImgMargin {
     margin-bottom: 2.5vw;
   }
-  .slide3-row-margin {
-    margin-left: 3.5vw;
-    margin-right: 3.5vw;
-    margin-top: 0vh;
-    margin-bottom: 0vh;
-}
 }
 @media (max-width: 1670px) { 
   .slide2ImgMargin {
