@@ -56,10 +56,10 @@
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
                 <v-row style="width: 100%;">
                   <v-col lg="12" sm="6" cols="12" class="pa-0 slide2ImgMargin">
-                    <img class="height-img-slide2 ml-lg-0 ml-sm-6 mt-sm-0 mt-12" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2 ml-lg-0 ml-sm-6 mt-sm-0 mt-12" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col lg="12" sm="6" cols="12" class="pa-0 ma-0">
-                    <img class="height-img-slide2 mr-lg-0 mr-sm-6 mt-sm-0 mt-5" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2 mr-lg-0 mr-sm-6 mt-sm-0 mt-5" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-2">
                     <p class="title">Мудборд концептуального проекта</p>
@@ -150,8 +150,13 @@
 </template>
     
 <script>
+import FullImage from '@/components/FullImage.vue';
+
 export default {
     name: 'AboutPage1',
+    components: {
+      FullImage
+    },
     data() {
         return {
             carouselModel: 0,
@@ -203,9 +208,6 @@ export default {
 </script>
 
 <style scoped>
-.height-img-slide2 {
-  height: 11.4875vw;
-}
 
 p.slidesFont {
   font-size: 1.0530208333333335vw;
@@ -218,47 +220,30 @@ p.slidesFont {
   .slide2ImgMargin {
     margin-bottom: 2.5vw;
   }
-  .height-img-slide2 {
-    height: 12vw;
-  }
+
 }
 @media (max-width: 1670px) { 
   .slide2ImgMargin {
     margin-bottom: 3.5vw;
-  }
-  .height-img-slide2 {
-    height: 12.5vw;
   }
 }
 @media (max-width: 1560px) { 
   .slide2ImgMargin {
     margin-bottom: 2.5vw;
   }
-  .height-img-slide2 {
-    height: 13.5vw;
-  }
 }
 @media (max-width: 1420px) { 
   .slide2ImgMargin {
     margin-bottom: 2.5vw;
-  }
-  .height-img-slide2 {
-    height: 14.5vw;
   }
 }
 @media (max-width: 1280px) { 
   .slide2ImgMargin {
     margin-bottom: 2.5vw;
   }
-  .height-img-slide2 {
-    height: 17vw;
-  }
 }
 
 @media (max-width: 599px) { 
-  .height-img-slide2 {
-    height: 33vw;
-  }
   p.slidesFont {
     font-size: 3vw;
   }
@@ -300,5 +285,43 @@ h1, p {
   z-index: 1000; /* Помещает изображение за основной контент */
   right: 3.8291666666666666vw;
   height: 17vw;
+}
+</style>
+
+<style>
+.aboutme-height-img-slide2 {
+  height: 11.4875vw;
+}
+
+@media (max-width: 1800px) { 
+  .aboutme-height-img-slide2 {
+    height: 12vw;
+  }
+}
+@media (max-width: 1670px) { 
+  .aboutme-height-img-slide2 {
+    height: 12.5vw;
+  }
+}
+@media (max-width: 1560px) { 
+  .aboutme-height-img-slide2 {
+    height: 13.5vw;
+  }
+}
+@media (max-width: 1420px) { 
+  .aboutme-height-img-slide2 {
+    height: 14.5vw;
+  }
+}
+@media (max-width: 1280px) { 
+  .aboutme-height-img-slide2 {
+    height: 17vw;
+  }
+}
+
+@media (max-width: 599px) { 
+  .aboutme-height-img-slide2 {
+    height: 33vw;
+  }
 }
 </style>

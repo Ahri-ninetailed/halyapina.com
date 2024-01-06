@@ -2,6 +2,7 @@
   <div>
     <img
       class="pointer" 
+      :class="this.$props.class"
       :src="this.$props.src" 
       :style="this.$props.style" 
       :alt="this.$props.alt"
@@ -22,6 +23,10 @@ export default {
     }
   },
   props: {
+    class: {
+      type: String,
+      required: false,
+    },
     src: {
       type: String,
       required: true,
