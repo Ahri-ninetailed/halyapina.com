@@ -52,13 +52,13 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            <v-row class="fill-height mt-0 ml-lg-13 ml-sm-0" :style="this.$vuetify.display.sm || this.$vuetify.display.md ? 'width: 100%;' : ''">
+            <row-aboutme>
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
                 <v-row style="width: 100%;">
-                  <v-col lg="12" sm="6" cols="12" class="pa-0 slide2ImgMargin">
+                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 slide2ImgMargin">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2 ml-lg-0 ml-sm-6 mt-sm-0 mt-12" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col lg="12" sm="6" cols="12" class="pa-0 ma-0">
+                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 ma-0">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2 mr-lg-0 mr-sm-6 mt-sm-0 mt-5" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-2">
@@ -130,7 +130,7 @@
                   </v-col>
                 </v-row>
               </v-col>
-            </v-row>
+            </row-aboutme>
           </v-carousel-item>
 
           <v-carousel-item>
@@ -176,11 +176,13 @@
     
 <script>
 import FullImage from '@/components/FullImage.vue';
+import RowAboutme from '@/components/RowAboutme.vue';
 
 export default {
     name: 'AboutPage1',
     components: {
-      FullImage
+      FullImage,
+      RowAboutme
     },
     data() {
         return {
