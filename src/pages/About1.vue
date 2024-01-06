@@ -55,11 +55,11 @@
             <row-aboutme>
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
                 <v-row style="width: 100%;">
-                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 slide2ImgMargin">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2 ml-lg-0 ml-sm-6 mt-sm-0 mt-12" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 ma-0">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2 mr-lg-0 mr-sm-6 mt-sm-0 mt-5" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0">
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-2">
                     <p class="title">Мудборд концептуального проекта</p>
@@ -159,13 +159,13 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            <v-row class="fill-height ma-0">
-              <v-col cols="6" align="center" class="pa-0 align-self-center" style="margin-top: 4vh; margin-left:0px">
+            <row-aboutme>
+              <v-col cols="6" align="start" class="pa-0 align-self-center" style="margin-top: 4vh; margin-left:0px">
                 <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide4/factory.jpg" style="height: 24.650260416666665vw;" alt="Factory" />
-                <p class="title" style="margin-top: 1vh;">Посещение фабрики Ангстрем</p>
+                <p class="title text-center" style="margin-top: 1vh; margin-right: 5vw">Посещение фабрики Ангстрем</p>
               </v-col>
               <v-col cols="6" align="center" class="pa-0 align-self-center">
-                <div style="display: inline-block; margin-right: 2vw">
+                <div style="display: inline-block;">
                   <p class="text-start h-montserrat-regular slidesFont">
                     <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
                     мым дать студентам возможность работать<br>
@@ -176,7 +176,11 @@
                  </p>
                 </div>
               </v-col>
-            </v-row>
+            </row-aboutme>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            
           </v-carousel-item>
         </v-carousel>
       </v-col>
@@ -208,7 +212,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 4, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 5, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '4.786458333333333vw'
             },
@@ -259,34 +263,34 @@ export default {
 
 
 p.slidesFont {
-  font-size: 1.0530208333333335vw;
+  font-size: 1.053vw;
 }
 
-.slide2ImgMargin {
-  margin-bottom:  0.9587897756911842vw;
+.slide2-img-margin {
+  margin-bottom:  0.96vw;
 }
 @media (max-width: 1800px) { 
-  .slide2ImgMargin {
+  .slide2-img-margin {
     margin-bottom: 2.5vw;
   }
 }
 @media (max-width: 1670px) { 
-  .slide2ImgMargin {
+  .slide2-img-margin {
     margin-bottom: 3.5vw;
   }
 }
 @media (max-width: 1560px) { 
-  .slide2ImgMargin {
+  .slide2-img-margin {
     margin-bottom: 2.5vw;
   }
 }
 @media (max-width: 1420px) { 
-  .slide2ImgMargin {
+  .slide2-img-margin {
     margin-bottom: 2.5vw;
   }
 }
 @media (max-width: 1280px) { 
-  .slide2ImgMargin {
+  .slide2-img-margin {
     margin-bottom: 2.5vw;
   }
 }
@@ -298,12 +302,12 @@ p.slidesFont {
 }
 
 p {
-  font-size: 1.1008854166666666vw;
+  font-size: 1.1vw;
 }
 
 
 .title {
-  font-size: 0.71796875vw; font-style: italic;
+  font-size: 0.718vw; font-style: italic;
 }
 
 .transparent-button {
@@ -331,17 +335,17 @@ h1, p {
   position: fixed;
   bottom: 0;
   z-index: 1000; /* Помещает изображение за основной контент */
-  right: 3.8291666666666666vw;
+  right: 3.83vw;
   height: 17vw;
 }
 </style>
 
 <style>
 .aboutme-height-img-slide2 {
-  height: 11.4875vw;
+  height: 11.5vw;
 }
 .aboutme-slide3-height-img1 {
-  height: 23.570638020833332vw;
+  height: 23.57vw;
 }
 .aboutme-slide3-height-img2 {
   height: 10.9vw;
