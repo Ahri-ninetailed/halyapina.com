@@ -61,7 +61,7 @@
                   <v-col lg="12" sm="6" cols="12" class="pa-0 ma-0">
                     <img class="height-img-slide2 mr-lg-0 mr-sm-6 mt-sm-0 mt-5" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0" style="margin-top: 1vh;">
+                  <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-2">
                     <p class="title">Мудборд концептуального проекта</p>
                   </v-col>
                 </v-row>
