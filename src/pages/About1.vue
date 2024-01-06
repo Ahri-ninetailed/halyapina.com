@@ -180,7 +180,22 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            
+            <row-aboutme>
+              <v-col cols="5" align="start" class="pa-0 align-self-center" style="margin-top: 3vh;">
+                <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide5/PosterVitra.jpg" style="height: 24.41vw;" alt="Poster Vitra" />
+                <p class="text-center title" style="margin-right: 5.7vw;">Плакат для Vitra</p>
+              </v-col>
+              <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
+                <p style="margin-left: 2vw;" class="text-start h-montserrat-regular slidesFont">
+                  Во время обучения нас старались ознакомить с раз-<br>
+                  личными сферами дизайна. Замечательным опытом<br>
+                  стало участие в конкурсе плакатов всемирно извес-<br>
+                  тной фирмы Vitra. Мы старались выявить ключевой<br>
+                  посыл фирмы и выразить его с помощью яркой гра-<br>
+                  фической подачи.
+                </p>
+              </v-col>
+            </row-aboutme>
           </v-carousel-item>
         </v-carousel>
       </v-col>
