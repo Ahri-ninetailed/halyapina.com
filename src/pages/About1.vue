@@ -132,6 +132,31 @@
               </v-col>
             </v-row>
           </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="fill-height ma-0">
+              <v-col cols="12" class="pa-0 align-self-center">
+                <v-row class="slide3-row-margin">
+                  <v-col cols="4" align="start" class="pa-0">
+                    <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" class="aboutme-slide3-height-img1" alt="Maria with earrings">
+                  </v-col>
+                  <v-col cols="4" align="center" class="pa-0">
+                    <v-row class="fill-height ma-0">
+                      <v-col cols="12" class="pa-0 align-self-start">
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" src="../src/images/AboutMePage/Slide3/dragonfly1.jpg" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                      </v-col>
+                      <v-col cols="12" class="pa-0 align-self-end">
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" src="../src/images/AboutMePage/Slide3/dragonfly2.jpg" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                      </v-col>
+                    </v-row>
+                  </v-col>
+                  <v-col cols="4" align="end" class="pa-0">
+                    <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=55 d-h-u="vh" src="../src/images/AboutMePage/Slide3/prototypeOfLine.jpg" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
+                  </v-col>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-carousel-item>
         </v-carousel>
       </v-col>
       <v-col 
@@ -160,7 +185,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 2, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 3, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '4.786458333333333vw'
             },
@@ -209,6 +234,13 @@ export default {
 
 <style scoped>
 
+.slide3-row-margin {
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
 p.slidesFont {
   font-size: 1.0530208333333335vw;
 }
@@ -220,7 +252,12 @@ p.slidesFont {
   .slide2ImgMargin {
     margin-bottom: 2.5vw;
   }
-
+  .slide3-row-margin {
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
 }
 @media (max-width: 1670px) { 
   .slide2ImgMargin {
@@ -292,10 +329,22 @@ h1, p {
 .aboutme-height-img-slide2 {
   height: 11.4875vw;
 }
+.aboutme-slide3-height-img1 {
+  height: 23.570638020833332vw;
+}
+.aboutme-slide3-height-img2 {
+  height: 10.9vw;
+}
 
 @media (max-width: 1800px) { 
   .aboutme-height-img-slide2 {
     height: 12vw;
+  }
+  .aboutme-slide3-height-img1 {
+    height: 27vw;
+  }
+  .aboutme-slide3-height-img2 {
+    height: 12.7vw;
   }
 }
 @media (max-width: 1670px) { 
