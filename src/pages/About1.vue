@@ -52,7 +52,7 @@
           </v-carousel-item>
 
           <v-carousel-item>
-            <v-row class="fill-height mt-0 ml-lg-13 ml-sm-0" :style="this.$vuetify.display.smAndUp ? 'width: 100%;' : ''">
+            <v-row class="fill-height mt-0 ml-lg-13 ml-sm-0" :style="this.$vuetify.display.sm || this.$vuetify.display.md ? 'width: 100%;' : ''">
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
                 <v-row style="width: 100%;">
                   <v-col lg="12" sm="6" cols="12" class="pa-0 slide2ImgMargin">
