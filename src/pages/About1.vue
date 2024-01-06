@@ -151,11 +151,32 @@
                     </v-row>
                   </v-col>
                   <v-col cols="4" align="end" class="pa-0">
-                    <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=55 d-h-u="vh" src="../src/images/AboutMePage/Slide3/prototypeOfLine.jpg" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
+                    <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide3/prototypeOfLine.jpg" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
                   </v-col>
                 </v-row>
               </v-col>
             </row-aboutme>
+          </v-carousel-item>
+
+          <v-carousel-item>
+            <v-row class="fill-height ma-0">
+              <v-col cols="6" align="center" class="pa-0 align-self-center" style="margin-top: 4vh; margin-left:0px">
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide4/factory.jpg" style="height: 24.650260416666665vw;" alt="Factory" />
+                <p class="title" style="margin-top: 1vh;">Посещение фабрики Ангстрем</p>
+              </v-col>
+              <v-col cols="6" align="center" class="pa-0 align-self-center">
+                <div style="display: inline-block; margin-right: 2vw">
+                  <p class="text-start h-montserrat-regular slidesFont">
+                    <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
+                    мым дать студентам возможность работать<br>
+                    с реальными заказчиками. Благодаря тако-<br>
+                    <span style="letter-spacing: 0.020vw;">му опыту учишься следовать не только</span><br>
+                    ТЗ, но и учитывать настоящие возможности<br>
+                    производства.
+                 </p>
+                </div>
+              </v-col>
+            </v-row>
           </v-carousel-item>
         </v-carousel>
       </v-col>
@@ -187,7 +208,7 @@ export default {
     data() {
         return {
             carouselModel: 0,
-            totalSlides: 3, // Общее количество слайдов (вам нужно установить актуальное значение)
+            totalSlides: 4, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '4.786458333333333vw'
             },
