@@ -75,7 +75,7 @@
               <v-col lg="7" cols="12" align="end" class="pa-0 slide2-text-col-margin" :class="this.$vuetify.display.lgAndUp ? 'align-self-center' : 'align-self-start'">
                 <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-0 mt-sm-0 mr-sm-0 ml-sm-0">
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
-                    <p class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
+                    <p class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh;">
                       Меня зовут Мария, я с детства любила рисовать<br>
                       и фантазировать, и эти две, казалось бы, безобидные<br>
                       привычки превратили меня в дизайнера. В 2019 году<br>
@@ -86,7 +86,7 @@
                     </p>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.md || this.$vuetify.display.sm" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
-                    <p class="text-start h-montserrat-regular slidesFont" style="line-height: 3.1vh;">
+                    <p class="text-start h-montserrat-regular slides-font" style="line-height: 3.1vh;">
                       <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисо-<br>вать</span>
                       и фантазировать, и эти две, казалось бы, безобидные
                       <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня<br>в дизайнера. </span>В 2019 году
@@ -97,7 +97,7 @@
                   </v-col>
                   
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="pa-0">
-                    <p class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="line-height: 3.2vh;">
+                    <p class="text-start h-montserrat-regular slides-font slide2-p-margin" style="line-height: 3.2vh;">
                       <b>Как проходило обучение?</b><br>
                       Обучение с самого начала было направлено на раз-<br>
                       витие креативного мышления. Мы активно занима-<br>
@@ -109,7 +109,7 @@
                     </p>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.md || this.$vuetify.display.sm" lg="12" sm="6" cols="12" class="pa-0">
-                    <p class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="margin-left: 1.6vw; line-height: 3.1vh;">
+                    <p class="text-start h-montserrat-regular slides-font slide2-p-margin" style="margin-left: 1.6vw; line-height: 3.1vh;">
                       <b>Как проходило обучение?</b>
                       Обучение с самого начала было направлено на развитие креа-<br>
                       тивного мышления. Мы активно занимались макетированием, познавая особенности<br>
@@ -171,6 +171,27 @@
               </v-col>
             </row-aboutme>
           </swiper-slide>
+
+          <swiper-slide>
+            <row-aboutme>
+              <v-col cols="6" class="pa-0 align-self-center" style="margin-top: 4.2vh;">
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide4/factory.jpg" class="slide4-img-height" alt="Factory" />
+                <p class="title text-center slide4-title-margin">Посещение фабрики Ангстрем</p>
+              </v-col>
+              <v-col align="end" cols="6" class="pa-0 align-self-center">
+                <v-row class="ma-0 d-inline-block">
+                    <p class="text-start h-montserrat-regular slides4-font">
+                    <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
+                    мым дать студентам возможность работать<br>
+                    с реальными заказчиками. Благодаря тако-<br>
+                    <span style="letter-spacing: 0.020vw;">му опыту учишься следовать не только</span><br>
+                    ТЗ, но и учитывать настоящие возможности<br>
+                    производства.
+                  </p>
+                </v-row>
+              </v-col>
+            </row-aboutme>
+          </swiper-slide>
         </swiper>
         <!-- <v-carousel style="height: 100%;" :show-arrows="false" :cycle="false" hide-delimiters v-model="carouselModel">
           <v-carousel-item>
@@ -225,7 +246,7 @@
               <v-col lg="7" cols="12" class="pl-sm-6 align-self-center mb-lg-2 mb-sm-14">
                 <v-row class="d-lg-inline-block">
                   <v-col lg="12" sm="6" cols="12" class="mb-lg-1">
-                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
+                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh;">
                       Меня зовут Мария, я с детства любила рисовать<br>
                       и фантазировать, и эти две, казалось бы, безобидные<br>
                       привычки превратили меня в дизайнера. В 2019 году<br>
@@ -234,7 +255,7 @@
                       <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span><br>
                       и настоящие фанаты своего дела!<br> 
                     </p>
-                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.5vh; margin-left: 2vw;">
+                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slides-font" style="line-height: 3.5vh; margin-left: 2vw;">
                       <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисовать</span><br>
                       и фантазировать, и эти две, казалось бы, безобид-<br>ные
                       <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня в дизайнера.</span><br>В 2019 году
@@ -243,7 +264,7 @@
                       <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span>
                       и настоящие фанаты своего дела!
                     </p>
-                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5vw; margin-top: 4.5vw">
+                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh; margin-left: 5vw; margin-top: 4.5vw">
                       Меня зовут Мария, я с детства лю-<br>била рисовать
                       и фантазировать,<br><span style="letter-spacing: -0.009572916666666665vw;">и эти две, казалось бы, безобидные</span>
                       привычки превратили меня в ди-<br>зайнера. В 2019 году
@@ -254,7 +275,7 @@
                     </p>
                   </v-col>
                   <v-col lg="12" sm="6" cols="12">
-                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
+                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh;">
                       <b>Как проходило обучение?</b><br>
                       Обучение с самого начала было направлено на раз-<br>
                       витие креативного мышления. Мы активно занима-<br>
@@ -264,7 +285,7 @@
                       и, конечно, всегда стремились работать над актуаль-<br>
                       ными проблемами.  
                     </p>
-                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.5vh; margin-left: 0.8vw;">
+                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slides-font" style="line-height: 3.5vh; margin-left: 0.8vw;">
                       <b>Как проходило обучение?</b>
                       Обучение с самого начала было направлено на развитие креативного мыш-<br>ления.
                       Мы активно занимались макетированием, познавая особенности
@@ -273,7 +294,7 @@
                       и, конечно, всегда стре-<br>мились работать над актуаль
                       ными проблемами.  
                     </p>
-                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5.1vw;">
+                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh; margin-left: 5.1vw;">
                       <b>Как проходило обучение?</b><br>
                       <span style="letter-spacing: 0.014359375vw;">Обучение с самого начала было</span><br>
                       <span style="letter-spacing: 0.023932291666666668vw;">направлено на развитие креа-<br></span>тивного мышления. 
@@ -322,7 +343,7 @@
               </v-col>
               <v-col cols="6" align="center" class="pa-0 align-self-center">
                 <div style="display: inline-block;">
-                  <p class="text-start h-montserrat-regular slidesFont">
+                  <p class="text-start h-montserrat-regular slides-font">
                     <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
                     мым дать студентам возможность работать<br>
                     с реальными заказчиками. Благодаря тако-<br>
@@ -342,7 +363,7 @@
                 <p class="text-center title" style="margin-right: 5.7vw;">Плакат для Vitra</p>
               </v-col>
               <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
-                <p style="margin-left: 2vw;" class="text-start h-montserrat-regular slidesFont">
+                <p style="margin-left: 2vw;" class="text-start h-montserrat-regular slides-font">
                   Во время обучения нас старались ознакомить с раз-<br>
                   личными сферами дизайна. Замечательным опытом<br>
                   стало участие в конкурсе плакатов всемирно извес-<br>
@@ -452,7 +473,15 @@ export default {
   margin-bottom:  0.96vw;
 }
 
-p.slidesFont {
+.slide4-title-margin {
+  margin-top: 1.2vh; 
+  margin-right: 5vw
+}
+
+p.slides-font {
+  font-size: 1.053vw;
+}
+p.slides4-font {
   font-size: 1.053vw;
 }
 
@@ -484,6 +513,10 @@ p.slidesFont {
   .slide2-title-margin {
     margin-right: 2vw;
   }
+  .slide4-title-margin {
+    margin-top: 1.2vh; 
+    margin-right: 2.9vw
+  } 
 }
 @media (max-width: 1560px) { 
   .slide2-img-margin {
@@ -495,6 +528,10 @@ p.slidesFont {
   .slide2-p-margin {
     margin-top: 0vh;
   }
+  .slide4-title-margin {
+    margin-top: 1.2vh; 
+    margin-right: 0vw;
+  } 
 }
 @media (max-width: 1420px) { 
   .slide2-img-margin {
@@ -529,10 +566,13 @@ p.slidesFont {
   .slide3-row-margin-left {
     margin-left: 2vw;
   }
+  p.slides4-font {
+  font-size: 1.053vw;
+}
 }
 
 @media (max-width: 599px) { 
-  p.slidesFont {
+  p.slides-font {
     font-size: 3vw;
   }
 }
@@ -570,6 +610,10 @@ h1, p {
 </style>
 
 <style>
+.slide4-img-height {
+  height: 24.650260416666665vw;
+}
+
 .aboutme-height-img-slide2 {
   height: 11.5vw;
 }
@@ -589,11 +633,17 @@ h1, p {
   .aboutme-height-img-slide2 {
     height: 12.5vw;
   }
+  .slide4-img-height {
+    height: 27vw;
+  } 
 }
 @media (max-width: 1560px) { 
   .aboutme-height-img-slide2 {
     height: 13.5vw;
   }
+  .slide4-img-height {
+    height: 30vw;
+  } 
 }
 @media (max-width: 1420px) { 
   .aboutme-height-img-slide2 {
