@@ -4,7 +4,7 @@
     :style="this.$vuetify.display.sm || this.$vuetify.display.md ? 'width: 100%;' : ''"
   >
     <v-col cols="12" class="pa-0">
-      <v-row class="fill-height margin">
+      <v-row class="fill-height margin" :style="this.$props.style">
         <slot></slot>
       </v-row>
     </v-col>
@@ -15,7 +15,12 @@
 <script>
 export default {
   name: 'RowAboutme',
-  // Your component's JavaScript logic goes here
+  props: {
+    style: {
+      type: Object,
+      required: false,
+    },
+  },
 }
 </script>
 

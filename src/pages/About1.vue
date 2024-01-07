@@ -57,13 +57,13 @@
           </swiper-slide>
           
           <swiper-slide>
-            <row-aboutme>
+            <row-aboutme :style="{ 'margin-top': (this.$vuetify.display.lgAndUp ? 'unset' : '3vh')}">
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center slide2-col-img-margin">
                 <v-row style="width: 100%;" class="ma-0">
-                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
+                  <v-col :align="this.$vuetify.display.lgAndUp ? 'start' : 'start'" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col align="start" lg="12" sm="6" cols="12" class="pa-0">
+                  <v-col :align="this.$vuetify.display.lgAndUp ? 'start' : 'end'" lg="12" sm="6" cols="12" class="pa-0">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-3">
@@ -71,10 +71,10 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col lg="7" cols="12" class="pa-0 align-self-center">
-                <v-row class="d-lg-inline-block mt-0 mb-0 mr-0" style="margin-left: 2.4vw">
-                  <v-col lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
-                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
+              <v-col lg="7" cols="12" align="end" class="pa-0 slide2-text-col-margin" :class="this.$vuetify.display.lgAndUp ? 'align-self-center' : 'align-self-start'">
+                <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-16 mt-sm-0 mr-sm-0 ml-sm-0">
+                  <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
+                    <p class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
                       Меня зовут Мария, я с детства любила рисовать<br>
                       и фантазировать, и эти две, казалось бы, безобидные<br>
                       привычки превратили меня в дизайнера. В 2019 году<br>
@@ -83,27 +83,20 @@
                       <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span><br>
                       и настоящие фанаты своего дела!<br> 
                     </p>
-                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.5vh; margin-left: 2vw;">
-                      <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисовать</span><br>
-                      и фантазировать, и эти две, казалось бы, безобид-<br>ные
-                      <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня в дизайнера.</span><br>В 2019 году
-                      <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строга-<br>нова на кафедру</span>
-                      «Дизайн мебели». Преподаватели кафедры — дей
-                      <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span>
-                      и настоящие фанаты своего дела!
-                    </p>
-                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5vw; margin-top: 4.5vw">
-                      Меня зовут Мария, я с детства лю-<br>била рисовать
-                      и фантазировать,<br><span style="letter-spacing: -0.009572916666666665vw;">и эти две, казалось бы, безобидные</span>
-                      привычки превратили меня в ди-<br>зайнера. В 2019 году
-                      <span style="letter-spacing: 0.014359375vw;">я поступила<br>в РГХПУ им. С.Г. Строганова на ка-<br></span>
-                      <span style="letter-spacing: 0.02871875vw;">федру «Дизайн мебели». Преподаватели кафедры — дей-</span>
-                      <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие</span><br>
-                      <span style="letter-spacing: 0.014359375vw;">профессионалы и настоящие</span><br>фанаты своего дела!
+                  </v-col>
+                  <v-col v-if="this.$vuetify.display.md || this.$vuetify.display.sm" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
+                    <p class="text-start h-montserrat-regular slidesFont" style="line-height: 3.1vh;">
+                      <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисо-<br>вать</span>
+                      и фантазировать, и эти две, казалось бы, безобидные
+                      <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня<br>в дизайнера. </span>В 2019 году
+                      <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span>
+                      «Дизайн ме-<br>бели». Преподаватели кафедры — дей<span style="letter-spacing: 0.014359375vw;">ству-<br>ющие дизайнеры, большие профессионалы</span>
+                      <br>и настоящие фанаты своего дела!
                     </p>
                   </v-col>
-                  <v-col lg="12" sm="6" cols="12" class="pa-0">
-                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="line-height: 3.2vh;">
+                  
+                  <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="pa-0">
+                    <p class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="line-height: 3.2vh;">
                       <b>Как проходило обучение?</b><br>
                       Обучение с самого начала было направлено на раз-<br>
                       витие креативного мышления. Мы активно занима-<br>
@@ -113,14 +106,16 @@
                       и, конечно, всегда стремились работать над актуаль-<br>
                       ными проблемами.  
                     </p>
-                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="line-height: 3.5vh; margin-left: 0.8vw;">
+                  </v-col>
+                  <v-col v-if="this.$vuetify.display.md || this.$vuetify.display.sm" lg="12" sm="6" cols="12" class="pa-0">
+                    <p class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="margin-left: 1.6vw; line-height: 3.1vh;">
                       <b>Как проходило обучение?</b>
-                      Обучение с самого начала было направлено на развитие креативного мыш-<br>ления.
-                      Мы активно занимались макетированием, познавая особенности
-                      и специфику различных материалов, продумывали
-                      графические решения<br>для подачи наших проектов,
-                      и, конечно, всегда стре-<br>мились работать над актуаль
-                      ными проблемами.  
+                      Обучение с самого начала было направлено на развитие креа-<br>
+                      тивного мышления. Мы активно занимались макетированием, познавая особенности<br>
+                      и специфику различных материалов, проду-<br>
+                      мывали графические решения для подачи наших проектов,
+                      и, конечно, всегда стреми-<br>
+                      лись работать над актуальными проблемами.  
                     </p>
                   </v-col>
                 </v-row>
@@ -496,6 +491,12 @@ p.slidesFont {
   .slide2-img-margin {
     margin-bottom: 2.5vw;
   }
+  .slide2-col-img-margin {
+    margin-top: 2.5vh;
+  }
+  .slide2-text-col-margin {
+    margin-bottom: 5vh;
+  }
 }
 
 @media (max-width: 599px) { 
@@ -580,9 +581,9 @@ h1, p {
     height: 14.5vw;
   }
 }
-@media (max-width: 1280px) { 
+@media (max-width: 1279px) { 
   .aboutme-height-img-slide2 {
-    height: 17vw;
+    height: 15.5vw;
   }
 }
 
