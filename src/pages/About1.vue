@@ -17,6 +17,7 @@
       </v-col>
       <v-col cols="8" class="pa-0 slide">
         <swiper 
+          :loop="true"
           :simulateTouch="false"
           style="height: 100%;" 
           class="mySwiper"
