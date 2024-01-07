@@ -145,18 +145,27 @@
                   </v-col>
                 </v-row>
                 <v-row v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="ma-0 slide3-row-margin">
-                  <v-col sm="6" align="end" class="pa-0">
-                    <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" class="aboutme-slide3-height-img1" alt="Maria with earrings">
+                  <v-col sm="6" align="end" class="pa-0 align-self-center">
+                    <v-row class="slide3-row-margin-right ">
+                      <v-col cols="12" class="pa-0 slide3-margin-vertical-bot">
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" src="../src/images/AboutMePage/Slide3/dragonfly1.jpg" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                      </v-col>
+                      <v-col cols="12" class="pa-0">
+                        <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" class="aboutme-slide3-height-img1" alt="Maria with earrings">
+                      </v-col>
+                    </v-row>
                   </v-col>
                   <v-col sm="6" align="start" class="pa-0">
-                    <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide3/prototypeOfLine.jpg" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
+                    <v-row class="slide3-row-margin-left">
+                      <v-col cols="12" class="pa-0">
+                        <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide3/prototypeOfLine.jpg" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
+                      </v-col>
+                      <v-col cols="12" class="pa-0 slide3-margin-vertical-top">
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" src="../src/images/AboutMePage/Slide3/dragonfly2.jpg" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                      </v-col>
+                    </v-row>
                   </v-col>
-                  <v-col sm="6" align="end" class="pa-0 align-self-start">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" src="../src/images/AboutMePage/Slide3/dragonfly1.jpg" class="aboutme-slide3-height-img2" alt="My earrings"/>
-                  </v-col>
-                  <v-col sm="6" align="start" class="pa-0 align-self-start">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" src="../src/images/AboutMePage/Slide3/dragonfly2.jpg" class="aboutme-slide3-height-img2" alt="My earrings"/>
-                  </v-col>
+                  
                 </v-row>
               </v-col>
             </row-aboutme>
@@ -507,6 +516,18 @@ p.slidesFont {
   .popkorn {
     height: 25vw;
   }
+  .slide3-margin-vertical-top {
+    margin-top: 2.5vh;
+  }
+  .slide3-margin-vertical-bot {
+    margin-bottom: 2.5vh;
+  }
+  .slide3-row-margin-right {
+    margin-right: 2vw;
+  }
+  .slide3-row-margin-left {
+    margin-left: 2vw;
+  }
 }
 
 @media (max-width: 599px) { 
@@ -552,7 +573,7 @@ h1, p {
   height: 11.5vw;
 }
 .aboutme-slide3-height-img1 {
-  height: 23.57vw;
+  height: 24.25vw;
 }
 .aboutme-slide3-height-img2 {
   height: 10.9vw;
@@ -561,12 +582,6 @@ h1, p {
 @media (max-width: 1800px) { 
   .aboutme-height-img-slide2 {
     height: 12vw;
-  }
-  .aboutme-slide3-height-img1 {
-    height: 27vw;
-  }
-  .aboutme-slide3-height-img2 {
-    height: 12.7vw;
   }
 }
 @media (max-width: 1670px) { 
@@ -587,6 +602,12 @@ h1, p {
 @media (max-width: 1279px) { 
   .aboutme-height-img-slide2 {
     height: 15.5vw;
+  }
+  .aboutme-slide3-height-img1 {
+    height: 25vw;
+  }
+  .aboutme-slide3-height-img2 {
+    height: 10.9vw;
   }
 }
 
