@@ -211,6 +211,20 @@
               </v-col>
             </row-aboutme>
           </swiper-slide>
+
+          <swiper-slide>
+            <row-aboutme style="margin-top: 2vh">
+              <v-col cols="6" class="pa-0 d-flex flex-column align-start justify-end">
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide6/DiplomaFromVitra.jpg" class="aboutme-slide6-img-height" alt="Diploma from Vitra" />
+              </v-col>
+              <v-col cols="6" class="pa-0 d-flex flex-column align-end justify-end">
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide6/MariaNearPoster.jpg" class="aboutme-slide6-img-height" alt="I'm near poster" />
+              </v-col>
+              <v-col cols="12" class="pa-0">
+                <p class="title text-center" style="margin-top: 1.5vh;">Диплом за 3-е место</p>
+              </v-col> 
+            </row-aboutme>
+          </swiper-slide>
         </swiper>
       </v-col>
       <v-col 
@@ -472,6 +486,9 @@ h1, p {
 }
 .aboutme-slide5-img-height {
   height: 24.41vw;
+}
+.aboutme-slide6-img-height {
+  height: 24.31520833333333vw;
 }
 
 @media (max-width: 1800px) { 
