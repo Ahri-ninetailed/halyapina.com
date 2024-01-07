@@ -62,10 +62,10 @@
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center slide2-col-img-margin">
                 <v-row style="width: 100%;" class="ma-0">
                   <v-col :class="this.$vuetify.display.lgAndUp ? '' : 'align-self-end'" :align="this.$vuetify.display.lgAndUp ? 'start' : 'start'" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col :class="this.$vuetify.display.lgAndUp ? '' : 'align-self-end'" :align="this.$vuetify.display.lgAndUp ? 'start' : 'end'" lg="12" sm="6" cols="12" class="pa-0">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-3">
                     <p class="title slide2-title-margin">Мудборд концептуального проекта</p>
@@ -175,7 +175,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col cols="6" class="pa-0 align-self-center" style="margin-top: 4.2vh;">
-                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide4/factory.jpg" class="slide4-img-height" alt="Factory" />
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide4/factory.jpg" class="aboutme-slide4-img-height" alt="Factory" />
                 <p class="title text-center slide4-title-margin">Посещение фабрики Ангстрем</p>
               </v-col>
               <v-col align="end" cols="6" class="pa-0 align-self-center">
@@ -196,7 +196,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col cols="5" align="start" class="pa-0 align-self-center" style="margin-top: 4vh;">
-                <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide5/PosterVitra.jpg" class="slide5-img-height" alt="Poster Vitra" />
+                <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide5/PosterVitra.jpg" class="aboutme-slide5-img-height" alt="Poster Vitra" />
                 <p class="text-center title slide5-title-margin">Плакат для Vitra</p>
               </v-col>
               <v-col class="pa-0 d-flex flex-column align-end justify-center" cols="7">
@@ -252,10 +252,10 @@
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center mt-lg-9 mt-sm-16">
                 <v-row style="width: 100%;">
                   <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col align="start" lg="12" sm="6" cols="12" class="pa-0">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-2">
                     <p class="title">Мудборд концептуального проекта</p>
@@ -639,11 +639,8 @@ h1, p {
 </style>
 
 <style>
-.slide4-img-height {
-  height: 24.650260416666665vw;
-}
 
-.aboutme-height-img-slide2 {
+.aboutme-slide2-img-height {
   height: 11.5vw;
 }
 .aboutme-slide3-height-img1 {
@@ -652,45 +649,47 @@ h1, p {
 .aboutme-slide3-height-img2 {
   height: 10.9vw;
 }
-
-.slide5-img-height {
+.aboutme-slide4-img-height {
+  height: 24.65vw;
+}
+.aboutme-slide5-img-height {
   height: 24.41vw;
 }
 
 @media (max-width: 1800px) { 
-  .aboutme-height-img-slide2 {
+  .aboutme-slide2-img-height {
     height: 12vw;
   }
 }
 @media (max-width: 1670px) { 
-  .aboutme-height-img-slide2 {
+  .aboutme-slide2-img-height {
     height: 12.5vw;
   }
-  .slide4-img-height {
+  .aboutme-slide4-img-height {
     height: 27vw;
   } 
-  .slide5-img-height {
+  .aboutme-slide5-img-height {
     height: 28vw;
   }
 }
 @media (max-width: 1560px) { 
-  .aboutme-height-img-slide2 {
+  .aboutme-slide2-img-height {
     height: 13.5vw;
   }
-  .slide4-img-height {
+  .aboutme-slide4-img-height {
     height: 30vw;
   }
 }
 @media (max-width: 1420px) { 
-  .aboutme-height-img-slide2 {
+  .aboutme-slide2-img-height {
     height: 14.5vw;
   }
-  .slide5-img-height {
+  .aboutme-slide5-img-height {
     height: 32vw;
   }
 }
 @media (max-width: 1279px) { 
-  .aboutme-height-img-slide2 {
+  .aboutme-slide2-img-height {
     height: 15.5vw;
   }
   .aboutme-slide3-height-img1 {
@@ -702,7 +701,7 @@ h1, p {
 }
 
 @media (max-width: 599px) { 
-  .aboutme-height-img-slide2 {
+  .aboutme-slide2-img-height {
     height: 33vw;
   }
 }
