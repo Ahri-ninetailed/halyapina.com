@@ -192,6 +192,25 @@
               </v-col>
             </row-aboutme>
           </swiper-slide>
+
+          <swiper-slide>
+            <row-aboutme>
+              <v-col cols="5" align="start" class="pa-0 align-self-center" style="margin-top: 4vh;">
+                <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide5/PosterVitra.jpg" class="slide5-img-height" alt="Poster Vitra" />
+                <p class="text-center title slide5-title-margin">Плакат для Vitra</p>
+              </v-col>
+              <v-col class="pa-0 d-flex flex-column align-end justify-center" cols="7">
+                <p class="text-start h-montserrat-regular slides-font">
+                  Во время обучения нас старались ознакомить с раз-<br>
+                  личными сферами дизайна. Замечательным опытом<br>
+                  стало участие в конкурсе плакатов всемирно извес-<br>
+                  тной фирмы Vitra. Мы старались выявить ключевой<br>
+                  посыл фирмы и выразить его с помощью яркой гра-<br>
+                  фической подачи.
+                </p>
+              </v-col>
+            </row-aboutme>
+          </swiper-slide>
         </swiper>
         <!-- <v-carousel style="height: 100%;" :show-arrows="false" :cycle="false" hide-delimiters v-model="carouselModel">
           <v-carousel-item>
@@ -456,6 +475,10 @@ export default {
 </script>
 
 <style scoped>
+.slide5-title-margin {
+  margin-right: 5.7vw; 
+  margin-top: 1vh;
+}
 
 .slide2-title-margin {
   margin-right: 3.8vw;
@@ -517,6 +540,9 @@ p.slides4-font {
     margin-top: 1.2vh; 
     margin-right: 2.9vw
   } 
+  .slide5-title-margin {
+    margin-right: 3.4vw; 
+  }
 }
 @media (max-width: 1560px) { 
   .slide2-img-margin {
@@ -539,6 +565,9 @@ p.slides4-font {
   }
   .slide2-title-margin {
     margin-left: 1vw;
+  }
+  .slide5-title-margin {
+    margin-right: 0vw; 
   }
 }
 @media (max-width: 1279px) { 
@@ -624,6 +653,10 @@ h1, p {
   height: 10.9vw;
 }
 
+.slide5-img-height {
+  height: 24.41vw;
+}
+
 @media (max-width: 1800px) { 
   .aboutme-height-img-slide2 {
     height: 12vw;
@@ -636,6 +669,9 @@ h1, p {
   .slide4-img-height {
     height: 27vw;
   } 
+  .slide5-img-height {
+    height: 28vw;
+  }
 }
 @media (max-width: 1560px) { 
   .aboutme-height-img-slide2 {
@@ -643,11 +679,14 @@ h1, p {
   }
   .slide4-img-height {
     height: 30vw;
-  } 
+  }
 }
 @media (max-width: 1420px) { 
   .aboutme-height-img-slide2 {
     height: 14.5vw;
+  }
+  .slide5-img-height {
+    height: 32vw;
   }
 }
 @media (max-width: 1279px) { 
