@@ -534,14 +534,14 @@ p.slides4-font {
   }
 
   .slide2-title-margin {
-    margin-right: 2vw;
+    margin-right: 2.6vw;
   }
   .slide4-title-margin {
     margin-top: 1.2vh; 
-    margin-right: 2.9vw
+    margin-right: 3.8vw
   } 
   .slide5-title-margin {
-    margin-right: 3.4vw; 
+    margin-right: 4.6vw; 
   }
 }
 @media (max-width: 1560px) { 
@@ -549,14 +549,14 @@ p.slides4-font {
     margin-bottom: 1.5vw;
   }
   .slide2-title-margin {
-    margin-right: 0vw;
+    margin-right: 3vw;
   }
   .slide2-p-margin {
     margin-top: 0vh;
   }
   .slide4-title-margin {
     margin-top: 1.2vh; 
-    margin-right: 0vw;
+    margin-right: 3.6vw;
   } 
 }
 @media (max-width: 1420px) { 
@@ -564,7 +564,7 @@ p.slides4-font {
     margin-bottom: 1.5vw;
   }
   .slide2-title-margin {
-    margin-left: 1vw;
+    margin-left: 4vw;
   }
   .slide5-title-margin {
     margin-right: 0vw; 
