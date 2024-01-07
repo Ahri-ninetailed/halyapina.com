@@ -57,13 +57,13 @@
           </swiper-slide>
           
           <swiper-slide>
-            <row-aboutme :style="{ 'margin-top': (this.$vuetify.display.lgAndUp ? 'unset' : '3vh')}">
+            <row-aboutme>
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center slide2-col-img-margin">
                 <v-row style="width: 100%;" class="ma-0">
-                  <v-col :align="this.$vuetify.display.lgAndUp ? 'start' : 'start'" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
+                  <v-col :class="this.$vuetify.display.lgAndUp ? '' : 'align-self-end'" :align="this.$vuetify.display.lgAndUp ? 'start' : 'start'" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col :align="this.$vuetify.display.lgAndUp ? 'start' : 'end'" lg="12" sm="6" cols="12" class="pa-0">
+                  <v-col :class="this.$vuetify.display.lgAndUp ? '' : 'align-self-end'" :align="this.$vuetify.display.lgAndUp ? 'start' : 'end'" lg="12" sm="6" cols="12" class="pa-0">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-3">
@@ -72,7 +72,7 @@
                 </v-row>
               </v-col>
               <v-col lg="7" cols="12" align="end" class="pa-0 slide2-text-col-margin" :class="this.$vuetify.display.lgAndUp ? 'align-self-center' : 'align-self-start'">
-                <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-16 mt-sm-0 mr-sm-0 ml-sm-0">
+                <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-0 mt-sm-0 mr-sm-0 ml-sm-0">
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
                     <p class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
                       Меня зовут Мария, я с детства любила рисовать<br>
@@ -446,6 +446,13 @@ p.slidesFont {
   font-size: 1.053vw;
 }
 
+.popkorn {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000; /* Помещает изображение за основной контент */
+  right: 3.83vw;
+  height: 17vw;
+}
 
 @media (max-width: 1800px) { 
   .slide2-img-margin {
@@ -487,15 +494,18 @@ p.slidesFont {
     margin-left: 1vw;
   }
 }
-@media (max-width: 1280px) { 
+@media (max-width: 1279px) { 
   .slide2-img-margin {
-    margin-bottom: 2.5vw;
+    margin-bottom: 0vw;
   }
   .slide2-col-img-margin {
-    margin-top: 2.5vh;
+    margin-top: 3vh;
   }
   .slide2-text-col-margin {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
+  }
+  .popkorn {
+    height: 25vw;
   }
 }
 
@@ -534,13 +544,6 @@ h1.slide1 {
 
 h1, p {
   color: white;
-}
-.popkorn {
-  position: fixed;
-  bottom: 0;
-  z-index: 1000; /* Помещает изображение за основной контент */
-  right: 3.83vw;
-  height: 17vw;
 }
 </style>
 
