@@ -17,6 +17,7 @@
       </v-col>
       <v-col cols="8" class="pa-0 slide">
         <swiper 
+          :simulateTouch="false"
           style="height: 100%;" 
           class="mySwiper"
           @swiper="onSwiper"
@@ -57,7 +58,7 @@
           
           <swiper-slide>
             <row-aboutme>
-              <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center">
+              <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center slide2-col-img-margin">
                 <v-row style="width: 100%;" class="ma-0">
                   <v-col align="start" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
@@ -65,8 +66,8 @@
                   <v-col align="start" lg="12" sm="6" cols="12" class="pa-0">
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-height-img-slide2" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
-                  <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-2">
-                    <p class="title">Мудборд концептуального проекта</p>
+                  <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-3">
+                    <p class="title slide2-title-margin">Мудборд концептуального проекта</p>
                   </v-col>
                 </v-row>
               </v-col>
@@ -102,7 +103,7 @@
                     </p>
                   </v-col>
                   <v-col lg="12" sm="6" cols="12" class="pa-0">
-                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh;">
+                    <p v-if="this.$vuetify.display.lgAndUp" class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="line-height: 3.2vh;">
                       <b>Как проходило обучение?</b><br>
                       Обучение с самого начала было направлено на раз-<br>
                       витие креативного мышления. Мы активно занима-<br>
@@ -112,23 +113,13 @@
                       и, конечно, всегда стремились работать над актуаль-<br>
                       ными проблемами.  
                     </p>
-                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.5vh; margin-left: 0.8vw;">
+                    <p v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="text-start h-montserrat-regular slidesFont slide2-p-margin" style="line-height: 3.5vh; margin-left: 0.8vw;">
                       <b>Как проходило обучение?</b>
                       Обучение с самого начала было направлено на развитие креативного мыш-<br>ления.
                       Мы активно занимались макетированием, познавая особенности
                       и специфику различных материалов, продумывали
                       графические решения<br>для подачи наших проектов,
                       и, конечно, всегда стре-<br>мились работать над актуаль
-                      ными проблемами.  
-                    </p>
-                    <p v-if="this.$vuetify.display.xs" class="text-start h-montserrat-regular slidesFont" style="line-height: 3.2vh; margin-left: 5.1vw;">
-                      <b>Как проходило обучение?</b><br>
-                      <span style="letter-spacing: 0.014359375vw;">Обучение с самого начала было</span><br>
-                      <span style="letter-spacing: 0.023932291666666668vw;">направлено на развитие креа-<br></span>тивного мышления. 
-                      Мы активно занимались макетированием, познавая особенности
-                      и специ-<br><span style="letter-spacing: 0.023932291666666668vw;">фику различных материалов, продумывали</span>
-                      графические ре-<br>шения для подачи наших проек-<br>тов,
-                      и, конечно, всегда стремились работать над актуаль-
                       ными проблемами.  
                     </p>
                   </v-col>
@@ -440,32 +431,65 @@ export default {
 
 <style scoped>
 
+.slide2-title-margin {
+  margin-right: 3.8vw;
+}
 
-p.slidesFont {
-  font-size: 1.053vw;
+.slide2-col-img-margin {
+  margin-top: 4.5vh;
+}
+
+.slide2-p-margin {
+  margin-top: 3.9vh;
 }
 
 .slide2-img-margin {
   margin-bottom:  0.96vw;
 }
+
+p.slidesFont {
+  font-size: 1.053vw;
+}
+
+
 @media (max-width: 1800px) { 
   .slide2-img-margin {
-    margin-bottom: 2.5vw;
+    margin-bottom: 1.5vw;
+  }
+  .slide2-title-margin {
+  margin-right: 3vw;
   }
 }
 @media (max-width: 1670px) { 
   .slide2-img-margin {
-    margin-bottom: 3.5vw;
+    margin-bottom: 1.8vw;
+  }
+
+  .slide2-p-margin {
+    margin-top: 1.9vh;
+  }
+
+  .slide2-title-margin {
+    margin-right: 2vw;
   }
 }
 @media (max-width: 1560px) { 
   .slide2-img-margin {
-    margin-bottom: 2.5vw;
+    margin-bottom: 1.5vw;
+  }
+  .slide2-title-margin {
+    margin-right: 0vw;
+  }
+  .slide2-p-margin {
+    margin-top: 0vh;
   }
 }
 @media (max-width: 1420px) { 
   .slide2-img-margin {
-    margin-bottom: 2.5vw;
+    margin-bottom: 1.5vw;
+  }
+  .slide2-title-margin {
+    margin-left: 1vw;
   }
 }
 @media (max-width: 1280px) { 
