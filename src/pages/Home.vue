@@ -1,7 +1,9 @@
 <template>
   <v-container class="pa-0" fluid style="overflow: hidden;">
-    <div class="home-main-pic">
-    </div>
+    <a href="anima">
+      <div class="home-main-pic">
+      </div>
+    </a>
 
     <v-row class="pt-6 pb-4" >
       <v-col>
