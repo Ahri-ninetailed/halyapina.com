@@ -246,6 +246,14 @@
                 </v-col>  
             </row-aboutme>
           </swiper-slide>
+
+          <swiper-slide>
+            <row-aboutme>
+              <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
+                <img src="../images/AboutMePage/Slide8/AboutTheAtelier.jpg" style="height: 24.4109375vw;" alt="About the atelier">
+              </v-col> 
+            </row-aboutme>
+          </swiper-slide>
         </swiper>
       </v-col>
       <v-col 
