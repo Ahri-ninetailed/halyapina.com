@@ -84,7 +84,7 @@ export default {
     },
     getDrawingGirlLeftMargin() {
       this.widthColumnOfProject  = document.getElementById('CrownBed')?.getBoundingClientRect()?.width;
-      this.widthImgOfProject = document.getElementById('projectImage')?.getBoundingClientRect()?.width;
+      this.widthImgOfProject = document.getElementById('projectSketch')?.getBoundingClientRect()?.width;
       if (this.widthColumnOfProject === undefined || this.widthImgOfProject === undefined) {
         return {
           marginLeft: '0vw',

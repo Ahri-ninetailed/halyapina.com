@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" class="pa-0">
       <a :href="this.$props.href">
-        <img id="projectImage" @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" style="width: 29.33vh;" :src="this.currentImg" :alt="this.$props.name">
+        <img id="projectSketch" @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" style="width: 29.33vh;" :src="this.currentImg" :alt="this.$props.name">
       </a>
     </v-col>
     <v-col cols="12" class="pa-0">
