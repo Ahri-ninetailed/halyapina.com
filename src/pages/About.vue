@@ -289,7 +289,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
 export default {
-    name: 'AboutPage1',
+    name: 'AboutMePage',
     components: {
       FullImage,
       RowAboutme,
@@ -304,8 +304,6 @@ export default {
     data() {
         return {
             swiper: null,
-            carouselModel: 0,
-            totalSlides: 5, // Общее количество слайдов (вам нужно установить актуальное значение)
             heightArr: {
                 height: '4.786458333333333vw'
             },
