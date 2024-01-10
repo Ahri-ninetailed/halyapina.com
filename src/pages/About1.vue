@@ -254,6 +254,16 @@
               </v-col> 
             </row-aboutme>
           </swiper-slide>
+
+          <swiper-slide>
+            <row-aboutme>
+              <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
+                <p class="text-start h-montserrat-regular slides-font">
+                  Отныне я в свободном плавании, и мне не терпится применить и приумножить  свои знания!
+                </p>
+              </v-col>  
+            </row-aboutme>
+          </swiper-slide>
         </swiper>
       </v-col>
       <v-col 
