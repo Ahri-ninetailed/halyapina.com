@@ -225,6 +225,27 @@
               </v-col> 
             </row-aboutme>
           </swiper-slide>
+
+          <swiper-slide>
+            <row-aboutme>
+              <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
+                <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 24.4109375vw; margin-right: 4vw;" alt="Thonet chair">
+                </v-col>
+                <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
+                  <p style="margin-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
+                    <span style="letter-spacing: 0.015vw;">Не мало внимания уделялось и умению  работать</span><br>
+                    в команде. Для достижения поставленной цели не-<br>
+                    <span style="letter-spacing: 0.015vw;">обходимо уметь находить компромиссы. Данный</span><br>
+                    <span style="letter-spacing: 0.020vw;">проект создавался совместно с В. Декалиной</span><br>
+                    и П. Ерёмичевой. Идея заключалась в создании<br>
+                    ателье по восстановлению старинной мебели с по-<br>
+                    мощью замены сломанных элементов деталями<br>
+                    <span style="letter-spacing: -0.020vw;">из переработанного пластика. А лицом нашего ателье</span><br>
+                    стала бы вечно нестареющая классика — Thonet!
+                  </p>
+                </v-col>  
+            </row-aboutme>
+          </swiper-slide>
         </swiper>
       </v-col>
       <v-col 
