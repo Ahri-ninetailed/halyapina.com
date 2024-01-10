@@ -22,7 +22,7 @@ export default {
       return window.location.pathname === '/'; // Замените на реальный путь главной страницы
     },
     isAboutPage() {
-      return window.location.pathname === '/aboutme' || window.location.pathname === '/aboutme1'; // Замените на реальный путь главной страницы
+      return window.location.pathname === '/aboutme'; // Замените на реальный путь главной страницы
     },
     isAnimaPage() {
       return window.location.pathname === '/anima'; // Замените на реальный путь главной страницы
