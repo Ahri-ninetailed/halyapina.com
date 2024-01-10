@@ -18,6 +18,9 @@ import './styles.css'; // Путь к вашему файлу стилей
 
 const app = createApp(App)
 
+app.config.globalProperties.$headerHeightValue = '6.5';
+app.config.globalProperties.$headerHeightUnit = 'vh';
+
 registerPlugins(app)
 
 app.mount('#app')
