@@ -19,6 +19,8 @@
         <swiper 
           :loop="true"
           :simulateTouch="false"
+          :mousewheel="true"
+          :modules="modules"
           style="height: 100%;" 
           class="mySwiper"
           @swiper="onSwiper"
@@ -285,6 +287,7 @@
 import FullImage from '@/components/FullImage.vue';
 import RowAboutme from '@/components/RowAboutme.vue';
 
+import { Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
@@ -298,7 +301,7 @@ export default {
     },
     setup() {
       return {
-        modules: [],
+        modules: [Mousewheel],
       };
     },
     data() {
