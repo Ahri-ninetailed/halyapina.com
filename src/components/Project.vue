@@ -44,25 +44,6 @@
             </v-btn>
           </v-col>
         </v-row>
-
-        <!-- <div style="margin-right: 0vw; margin-left: 3vw">
-            <v-carousel
-            cycle
-            hide-delimiters
-            show-arrows="hover"
-            height="auto"
-            style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); width: 30vw;"
-          >
-            <v-carousel-item
-              v-for="(img, index) in this.$props.swiperImgs"
-              :key="index"
-            >
-              <v-col class="pa-0 d-flex flex-column align-center justify-center">
-                <img class="carousel-height" :src="img.src" :alt="img.alt" />
-              </v-col>
-            </v-carousel-item>
-          </v-carousel>
-        </div> -->
       </v-col>
       <v-col align="center" md="6" cols="12" class="pa-0 project-text-margin-bottom" :class="this.$vuetify.display.mdAndUp ? 'align-self-center' : 'align-self-start'">
         <v-row class="pa-0 ma-0 d-inline-block" style="background-color: white;">
