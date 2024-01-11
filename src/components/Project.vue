@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-0 background-img" fluid :style="backgroundImgProp" style="overflow: hidden; height: 100vh;">
     <v-row class="ma-0 pa-0 fill-height">
-      <v-col align="center" cols="6" class="pa-0 align-self-center">
+      <v-col align="center" md="6" cols="12" class="pa-0 align-self-center project-swiper-margin-top">
         <v-row class="ma-0 pa-0 imgs-container">
           <v-col cols="2" align="end" class="pa-0 align-self-center">
             <v-btn @click="prevSlide" icon class="button-borderless animated-button">
@@ -18,19 +18,19 @@
               :simulateTouch="true"
               :mousewheel="true"
               :modules="modules"
-              class="mySwiper"
+              class="mySwiper project-swiper-width"
               :autoplay="{
                 delay: 3500,
                 disableOnInteraction: true,
               }"
               @swiper="onSwiper"
-              style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); width: 30vw; margin: 3px;"
+              style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); margin: 3px; background-color: white;"
             >
               <swiper-slide
                 v-for="(img, index) in this.$props.swiperImgs"
                 :key="index"
               >
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="crownbed-img-height" :src="img.src" :alt="img.alt"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-height" :src="img.src" :alt="img.alt"/>
               </swiper-slide>
             </swiper>
           </v-col>
@@ -64,9 +64,9 @@
           </v-carousel>
         </div> -->
       </v-col>
-      <v-col align="center" cols="6" class="pa-0 align-self-center">
-        <v-row class="pa-0 ma-0 d-inline-block">
-          <h1 class="h-neucha-regular text-start" style="margin-bottom: 2vh; font-size: 3.8vh;">
+      <v-col align="center" md="6" cols="12" class="pa-0 project-text-margin-bottom" :class="this.$vuetify.display.mdAndUp ? 'align-self-center' : 'align-self-start'">
+        <v-row class="pa-0 ma-0 d-inline-block" style="background-color: white;">
+          <h1 class="h-neucha-regular project-header-size project-h-margin-bottom" :class="hPosition">
             {{  headerText }}
           </h1>
           <slot></slot>
@@ -121,6 +121,13 @@ export default {
         backgroundImage: `url(${this.$props.backgroundImg})`,
       };
     },
+    hPosition() {
+      if (this.$vuetify.display.mdAndUp) {
+        return "text-start"
+      } else {
+        return "text-center"
+      }
+    }
   },
   methods: {
     onSwiper(swiper) {
@@ -169,7 +176,121 @@ export default {
 </style>
 
 <style>
-.crownbed-img-height {
+.project-img-height {
   height: 19.166666666666668vw;
+}
+.project-header-size {
+  font-size: 1.8188541666666667vw;
+}
+.p-project-size {
+  font-size: 1.14vw;
+}
+.project-swiper-width {
+  width: 30vw;
+}
+.project-h-margin-bottom {
+  margin-bottom: 2vh;
+}
+@media (max-width: 1625px) { 
+.project-img-height {
+  height: 21vw;
+}
+.project-header-size {
+  font-size: 2vw;
+}
+.p-project-size {
+    font-size: 1.3vw;
+}
+.project-swiper-width {
+  width: 31.84vw;
+}
+}
+@media (max-width: 1400px) { 
+.project-img-height {
+  height: 21vw;
+}
+.project-header-size {
+  font-size: 2.2vw;
+}
+.p-project-size {
+    font-size: 1.35vw;
+}
+.project-swiper-width {
+  width: 31.84vw;
+}
+}
+@media (max-width: 1280px) { 
+.project-img-height {
+  height: 24vw;
+}
+.project-header-size {
+  font-size: 2.3vw;
+}
+.p-project-size {
+  font-size: 1.45vw;
+}
+.project-swiper-width {
+  width: 34.84vw;
+}
+}
+@media (max-width: 1280px) { 
+.project-img-height {
+  height: 24vw;
+}
+.project-header-size {
+  font-size: 2.5vw;
+}
+.p-project-size {
+  font-size: 1.6vw;
+}
+.project-swiper-width {
+  width: 34.84vw;
+}
+}
+@media (max-width: 959px) { 
+.project-img-height {
+  height: 30vw;
+}
+.project-header-size {
+  font-size: 3.1vw;
+}
+.p-project-size {
+  font-size: 2vw;
+}
+.project-swiper-width {
+  width: 52vw;
+}
+.project-text-margin-bottom {
+  margin-bottom: 8vh;
+}
+.project-swiper-margin-top {
+  margin-top: 2.5vh;
+}
+.project-h-margin-bottom {
+  margin-bottom: 3vh;
+}
+}
+@media (max-width: 750px) { 
+.project-img-height {
+  height: 35vw;
+}
+.project-header-size {
+  font-size: 4vw;
+}
+.p-project-size {
+  font-size: 2.5vw;
+}
+.project-swiper-width {
+  width:67vw;
+}
+.project-text-margin-bottom {
+  margin-bottom: 8vh;
+}
+.project-swiper-margin-top {
+  margin-top: 2.5vh;
+}
+.project-h-margin-bottom {
+  margin-bottom: 3vh;
+}
 }
 </style>

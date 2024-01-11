@@ -1,6 +1,6 @@
 <template>
   <project header-text="Crown bed" :swiper-imgs="images" background-img="../src/images/Projects/CrownBed/background.png">
-    <p class="h-montserrat-regular text-start" style="font-size: 2.35vh;">
+    <p class="h-montserrat-regular text-start p-project-size">
       Коллекция кроватей «Crown bed» создаст в вашей<br>
       квартире атмосферу единения с природой. Уни-<br>
       версальное для всех моделей изголовье упростит<br>
