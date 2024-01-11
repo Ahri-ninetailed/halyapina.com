@@ -1,6 +1,6 @@
 <template>
   <header :style="height" :class="pagesStyles" class="h-montserrat-regular header">
-    <v-row :style="this.$vuetify.display.xs ? 'width: 100%;' : 'width: auto;'">
+    <v-row>
       <v-col v-if="!isHomePage" cols="auto" class="pt-0 pb-0 pl-0 pr-6">
         <a class="no-default-styles" href="/"><p>Главная</p></a>
       </v-col>
@@ -53,7 +53,13 @@ export default {
 
 .aboutpage-header {
   background-color: black;
-  color: white
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  /* background-color: #ffffff; */
+  z-index: 1000;
 }
 
 .covering-header {
