@@ -3,7 +3,7 @@
     <v-row class="ma-0 pa-0 fill-height">
       <v-col align="center" md="6" cols="12" class="pa-0 align-self-center project-swiper-margin-top">
         <v-row class="ma-0 pa-0 imgs-container">
-          <v-col cols="2" align="end" class="pa-0 align-self-center">
+          <v-col v-if="showArrow" cols="2" align="end" class="pa-0 align-self-center">
             <v-btn @click="prevSlide" icon class="button-borderless animated-button">
               <svg class="arrow-size" xmlns="http://www.w3.org/2000/svg" viewBox="-7.5 -5 24 24">
                 <g transform="rotate(-90 7 7)">
@@ -12,7 +12,7 @@
               </svg>
             </v-btn>
           </v-col>
-          <v-col cols="8" class="pa-0">
+          <v-col :cols="swiperCols" class="pa-0">
             <swiper 
               :loop="true"
               :simulateTouch="true"
@@ -34,7 +34,7 @@
               </swiper-slide>
             </swiper>
           </v-col>
-          <v-col cols="2" align="start" class="pa-0 align-self-center">
+          <v-col v-if="showArrow" cols="2" align="start" class="pa-0 align-self-center">
             <v-btn @click="nextSlide" icon class="button-borderless animated-button">
               <svg class="arrow-size" xmlns="http://www.w3.org/2000/svg" viewBox="-7.5 -5 24 24">
                 <g transform="rotate(90 4.5 4.5)">
@@ -107,6 +107,16 @@ export default {
         return "text-start"
       } else {
         return "text-center"
+      }
+    },
+    showArrow() {
+      return this.$vuetify.display.width > 1280;
+    },
+    swiperCols() {
+      if (this.showArrow) {
+        return 8;
+      } else {
+        return 12;
       }
     }
   },
