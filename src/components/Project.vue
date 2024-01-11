@@ -10,29 +10,12 @@
             height="auto"
             style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); width: 30vw;"
           >
-            <v-carousel-item>
+            <v-carousel-item
+              v-for="(img, index) in this.$props.swiperImgs"
+              :key="index"
+            >
               <v-col class="pa-0 d-flex flex-column align-center justify-center">
-                <img class="carousel-height" src="../images/Projects/CrownBed/Images/bed1.jpg" alt="Bed1" />
-              </v-col>
-            </v-carousel-item>
-            <v-carousel-item>
-              <v-col class="pa-0 d-flex flex-column align-center justify-center">
-                <img class="carousel-height" src="../images/Projects/CrownBed/Images/bed3.jpg" alt="Bed3" />
-              </v-col>
-            </v-carousel-item>
-            <v-carousel-item>
-              <v-col class="pa-0 d-flex flex-column align-center justify-center">
-                <img class="carousel-height" src="../images/Projects/CrownBed/Images/bed2.jpg" alt="Bed2" />
-              </v-col>
-            </v-carousel-item>
-            <v-carousel-item>
-              <v-col class="pa-0 d-flex flex-column align-center justify-center">
-                <img class="carousel-height" src="../images/Projects/CrownBed/Images/beds.jpg" alt="Three beds" />
-              </v-col>
-            </v-carousel-item>
-            <v-carousel-item>
-              <v-col class="pa-0 d-flex flex-column align-center justify-center">
-                <img class="carousel-height" src="../images/Projects/CrownBed/Images/child_bed.jpg" alt="Bed for child" />
+                <img class="carousel-height" :src="img.src" :alt="img.alt" />
               </v-col>
             </v-carousel-item>
           </v-carousel>
@@ -60,6 +43,10 @@ export default {
     },
     headerText: {
       type: String,
+      required: true,
+    },
+    swiperImgs: {
+      type: Array,
       required: true,
     },
   },

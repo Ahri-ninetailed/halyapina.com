@@ -1,5 +1,5 @@
 <template>
-  <project header-text="Crown bed" background-img="../src/images/Projects/CrownBed/background.png">
+  <project header-text="Crown bed" :swiper-imgs="images" background-img="../src/images/Projects/CrownBed/background.png">
     <p class="h-montserrat-regular text-start" style="font-size: 2.35vh;">
       Коллекция кроватей «Crown bed» создаст в вашей<br>
       квартире атмосферу единения с природой. Уни-<br>
@@ -17,6 +17,17 @@ export default {
   name: 'CrownBed',
   components: {
     Project
+  },
+  data() {
+    return {
+      images: [
+        { src: "../src/images/Projects/CrownBed/Images/bed1.jpg", alt: "Bed1" },
+        { src: "../src/images/Projects/CrownBed/Images/bed3.jpg", alt: "Bed3" },
+        { src: "../src/images/Projects/CrownBed/Images/bed2.jpg", alt: "Bed2" },
+        { src: "../src/images/Projects/CrownBed/Images/beds.jpg", alt: "Three beds" },
+        { src: "../src/images/Projects/CrownBed/Images/child_bed.jpg", alt: "Bed for child" },
+      ]
+    }
   }
 }
 </script>
