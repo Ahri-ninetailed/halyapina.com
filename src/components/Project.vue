@@ -4,7 +4,7 @@
       <v-col align="center" cols="6" class="pa-0 align-self-center">
         <v-row class="ma-0 pa-0 imgs-container">
           <v-col cols="1" align="center" class="pa-0 align-self-center">
-            <v-btn icon class="button-borderless animated-button">
+            <v-btn @click="prevSlide" icon class="button-borderless animated-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-7.5 -5 24 24">
                 <g transform="rotate(-90 7 7)">
                   <path fill="#a2a2a2" d="m7.071 2.828l-4.95 4.95A1 1 0 0 1 .707 6.364L6.364.707a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414l-4.95-4.95z" />
@@ -13,10 +13,24 @@
             </v-btn>
           </v-col>
           <v-col cols="10" class="pa-0">
-            123
+            <swiper 
+              :loop="true"
+              :simulateTouch="true"
+              :mousewheel="true"
+              :modules="modules"
+              class="mySwiper"
+              @swiper="onSwiper"
+            >
+              <swiper-slide
+                v-for="(img, index) in this.$props.swiperImgs"
+                :key="index"
+              >
+                <img class="img-height" :src="img.src" :alt="img.alt" />
+              </swiper-slide>
+            </swiper>
           </v-col>
           <v-col cols="1" align="center" class="pa-0 align-self-center">
-            <v-btn icon class="button-borderless animated-button">
+            <v-btn @click="nextSlide" icon class="button-borderless animated-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-7.5 -5 24 24">
                 <g transform="rotate(90 4.5 4.5)">
                   <path fill="#a2a2a2" d="m7.071 2.828l-4.95 4.95A1 1 0 0 1 .707 6.364L6.364.707a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414l-4.95-4.95z" />
@@ -58,8 +72,18 @@
 </template>
 
 <script>
+import FullImage from '@/components/FullImage.vue';
+
+import { Mousewheel } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
 export default {
   name: 'DefaultProject',
+  components: {
+    FullImage,
+    Swiper,
+    SwiperSlide,
+  },
   props: {
     backgroundImg: {
       type: String,
@@ -74,6 +98,12 @@ export default {
       required: true,
     },
   },
+  setup() {
+      return {
+        swiper: null,
+        modules: [Mousewheel],
+      };
+  },
   mounted() {
     document.documentElement.style.overflow = 'hidden';
   },
@@ -85,6 +115,17 @@ export default {
       return {
         backgroundImage: `url(${this.$props.backgroundImg})`,
       };
+    },
+  },
+  methods: {
+    onSwiper(swiper) {
+      this.swiper = swiper;
+    },
+    nextSlide() {
+      this.swiper.slideNext();
+    },
+    prevSlide() {
+      this.swiper.slidePrev();
     },
   },
 }
@@ -99,6 +140,9 @@ export default {
   border: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
+}
+.img-height {
+  height: 40vh;
 }
 .imgs-container {
   position: relative;
