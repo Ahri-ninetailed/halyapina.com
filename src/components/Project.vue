@@ -1,5 +1,5 @@
 <template>
-  <v-imgs-container class="pa-0 background-img" fluid :style="backgroundImgProp" style="overflow: hidden; height: 100vh;">
+  <v-container class="pa-0 background-img" fluid :style="backgroundImgProp" style="overflow: hidden; height: 100vh;">
     <v-row class="ma-0 pa-0 fill-height">
       <v-col align="center" cols="6" class="pa-0 align-self-center">
         <v-row class="ma-0 pa-0 imgs-container">
@@ -20,6 +20,7 @@
               :modules="modules"
               class="mySwiper"
               @swiper="onSwiper"
+              style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); width: 30vw; margin: 3px;"
             >
               <swiper-slide
                 v-for="(img, index) in this.$props.swiperImgs"
@@ -68,7 +69,7 @@
         </v-row>
       </v-col>
     </v-row>
-  </v-imgs-container>
+  </v-container>
 </template>
 
 <script>
@@ -142,7 +143,7 @@ export default {
   box-shadow: none !important;
 }
 .img-height {
-  height: 40vh;
+  height: 19.166666666666668vw;
 }
 .imgs-container {
   position: relative;
