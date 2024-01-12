@@ -1,9 +1,13 @@
 <template>
-  <v-container class="pa-0" fluid :style="this.$vuetify.display.xs ? 'height: 100%;' : 'height: 84%;'" style="background-color: black;">
+  <v-container 
+    fluid 
+    class="pa-0" 
+    style="background-color: black; height: 100vh;" 
+    :style="{ 'padding-top': `${this.$headerHeightValue}${this.$headerHeightUnit} !important` }"
+  >
     <v-row 
-      class="d-flex justify-center" 
-      style="height: 80%; margin-top: 9vh; width: 100%;"
-      :style="this.$vuetify.display.xs ? 'margin-left: 0vw;' : ''"
+      class="mb-0 ml-0 mr-0 d-flex justify-center" 
+      style="height: 67.173913vh; width: 100%; margin-top: 9vh;"
     >
       <v-col 
         cols="1" 
