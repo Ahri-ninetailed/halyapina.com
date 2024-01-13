@@ -270,16 +270,31 @@
             <row-aboutme>
               <v-col cols="5" align="start" class="pa-0 align-self-center" style="margin-top: 4vh;">
                 <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide5/PosterVitra.jpg" class="aboutme-slide5-img-height" alt="Poster Vitra" />
-                <p class="text-center title slide5-title-margin">Плакат для Vitra</p>
+                <p class="text-center title slide5-title-margin">
+                  <span v-if="$i18n.locale === 'ru'">
+                    Плакат для Vitra
+                  </span>
+                  <span v-else>
+                    Poster for Vitra
+                  </span>
+                </p>
               </v-col>
               <v-col class="pa-0 d-flex flex-column align-end justify-center" cols="7">
                 <p class="text-start h-montserrat-regular slides-font">
-                  Во время обучения нас старались ознакомить с раз-<br>
-                  личными сферами дизайна. Замечательным опытом<br>
-                  стало участие в конкурсе плакатов всемирно извес-<br>
-                  тной фирмы Vitra. Мы старались выявить ключевой<br>
-                  посыл фирмы и выразить его с помощью яркой гра-<br>
-                  фической подачи.
+                  <span v-if="$i18n.locale === 'ru'">
+                    Во время обучения нас старались ознакомить с раз-<br>
+                    личными сферами дизайна. Замечательным опытом<br>
+                    стало участие в конкурсе плакатов всемирно извес-<br>
+                    тной фирмы Vitra. Мы старались выявить ключевой<br>
+                    посыл фирмы и выразить его с помощью яркой гра-<br>
+                    фической подачи.
+                  </span>
+                  <span v-else>
+                    During the training, they tried to familiarize us with various areas 
+                    of design. Participation in the poster competition of the world famous 
+                    company Vitra was a wonderful experience. We tried to identify the key 
+                    message of the company and express it with the help of a bright graphic presentation.
+                  </span>
                 </p>
               </v-col>
             </row-aboutme>
