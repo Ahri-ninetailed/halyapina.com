@@ -1,11 +1,17 @@
 <template>
   <project header-text="Crown bed" :swiper-imgs="images" background-img="../src/images/Projects/CrownBed/background.png">
     <p class="h-montserrat-regular text-start p-project-size">
-      Коллекция кроватей «Crown bed» создаст в вашей<br>
-      квартире атмосферу единения с природой. Уни-<br>
-      версальное для всех моделей изголовье упростит<br>
-      производство, а вы сможете побаловать себя лю-<br>
-      бым вариантом «кроны»!
+      <span v-if="$i18n.locale === 'ru'">
+        Коллекция кроватей «Crown bed» создаст в вашей<br>
+        квартире атмосферу единения с природой. Уни-<br>
+        версальное для всех моделей изголовье упростит<br>
+        производство, а вы сможете побаловать себя лю-<br>
+        бым вариантом «кроны»!
+      </span>
+      <span v-else>
+        The Crown bed collection will create an atmosphere of unity with nature in your apartment. 
+        A headboard that is universal for all models will simplify production, and you can pamper yourself with any “crown” option!
+      </span>
     </p>
   </project>
 </template>
