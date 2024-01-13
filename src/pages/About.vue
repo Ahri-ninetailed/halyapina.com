@@ -309,7 +309,14 @@
                 <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide6/MariaNearPoster.jpg" class="aboutme-slide6-img-height" alt="I'm near poster" />
               </v-col>
               <v-col cols="12" class="pa-0">
-                <p class="title text-center" style="margin-top: 1.5vh;">Диплом за 3-е место</p>
+                <p class="title text-center" style="margin-top: 1.5vh;">
+                  <span v-if="$i18n.locale === 'ru'">
+                    Диплом за 3-е место
+                  </span>
+                  <span v-else>
+                    Diploma for 3rd place
+                  </span>
+                </p>
               </v-col> 
             </row-aboutme>
           </swiper-slide>
