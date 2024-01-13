@@ -4,11 +4,11 @@
       <v-col v-if="!isHomePage" cols="auto" class="pa-0 align-self-center ml-6">
         <a class="no-default-styles" href="/"><p>{{ $t('header.home') }}</p></a>
       </v-col>
-      <v-col v-if="!isAboutPage" cols="auto" class="pa-0 ml-6 align-self-center">
-        <a class="no-default-styles" href="/aboutme"><p>{{ $t('header.about') }}</p></a>
-      </v-col>
       <v-col v-if="!isAnimaPage" cols="auto" class="pa-0 ml-6 align-self-center">
         <a class="no-default-styles" href="/anima"><p>{{ $t('header.anima') }}</p></a>
+      </v-col>
+      <v-col v-if="!isAboutPage" cols="auto" class="pa-0 ml-6 align-self-center">
+        <a class="no-default-styles" href="/aboutme"><p>{{ $t('header.about') }}</p></a>
       </v-col>
 
       <v-spacer></v-spacer>
