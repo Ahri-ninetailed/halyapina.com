@@ -1,14 +1,30 @@
 <template>
   <header ref="header" :style="{...height, ...textColor, ...headerColor, ...headerOtherStyleProp}" class="h-montserrat-regular header">
-    <v-row class="ma-0 fill-height">
+    <v-row class="mb-0 mt-0 ml-0 mr-7 fill-height">
       <v-col v-if="!isHomePage" cols="auto" class="pa-0 align-self-center ml-6">
-        <a class="no-default-styles" href="/"><p>Главная</p></a>
+        <a class="no-default-styles" href="/"><p>{{ $t('header.home') }}</p></a>
       </v-col>
       <v-col v-if="!isAboutPage" cols="auto" class="pa-0 ml-6 align-self-center">
-        <a class="no-default-styles" href="/aboutme"><p>О себе</p></a>
+        <a class="no-default-styles" href="/aboutme"><p>{{ $t('header.about') }}</p></a>
       </v-col>
       <v-col v-if="!isAnimaPage" cols="auto" class="pa-0 ml-6 align-self-center">
-        <a class="no-default-styles" href="/anima"><p>Anima</p></a>
+        <a class="no-default-styles" href="/anima"><p>{{ $t('header.anima') }}</p></a>
+      </v-col>
+
+      <v-spacer></v-spacer>
+
+      <v-col cols="auto" class="pa-0 align-self-center">
+        <v-row class="ma-0">
+          <v-col cols="auto" class="pa-0">
+            <button type="button" class="no-default-styles" :style="underLineRu" @click="setLanguage('ru')"><p>Ru</p></button>
+          </v-col>
+          <v-col cols="auto" class="pa-0 ml-2 mr-2">
+            <p>/</p>
+          </v-col>
+          <v-col cols="auto" class="pa-0">
+            <button type="button" class="no-default-styles" :style="underLineEn" @click="setLanguage('en')"><p>En</p></button>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </header>
@@ -23,6 +39,10 @@ export default {
       backgroundColor: null,
       headerOtherStyle: null,
     }
+  },
+  beforeCreate() {
+    const savedLanguage = localStorage.getItem('language') || this.$i18n.fallbackLocale;
+    this.$i18n.locale = savedLanguage;
   },
   mounted() {
     this.setBackgroundColor();
@@ -61,7 +81,25 @@ export default {
     },
     headerOtherStyleProp() {
       return this.headerOtherStyle
-    }
+    },
+    underLineRu() {
+      if (this.$i18n.locale === 'ru') {
+        return {
+          textDecoration: 'underline'
+        }
+      } else {
+        return {}
+      }
+    },
+    underLineEn() {
+      if (this.$i18n.locale === 'en') {
+        return {
+          textDecoration: 'underline'
+        }
+      } else {
+        return {}
+      }
+    },
   },
   methods: {
     scrollOnStart() {
@@ -112,6 +150,10 @@ export default {
           transition: 'all 0.2s ease-in-out'
         }
       }
+    },
+    setLanguage(lang) {
+      localStorage.setItem('language', lang);
+      this.$i18n.locale = lang;
     },
   },
 }

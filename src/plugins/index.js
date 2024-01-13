@@ -12,10 +12,18 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
   en: {
-
+    header: {
+      home: 'Home',
+      about: 'About Me',
+      anima: 'Anima',
+    },
   },
   ru: {
-
+    header: {
+      home: 'Главная',
+      about: 'О себе',
+      anima: 'Анима',
+    },
   }
 };
 
