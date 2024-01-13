@@ -367,7 +367,12 @@
             <row-aboutme>
               <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
                 <p class="text-start h-montserrat-regular slides-font">
-                  Отныне я в свободном плавании, и мне не терпится применить и приумножить  свои знания!
+                  <span v-if="$i18n.locale === 'ru'">
+                    Отныне я в свободном плавании, и мне не терпится применить и приумножить  свои знания!
+                  </span>
+                  <span v-else>
+                    From now on I am free to swim, and I can't wait to apply and increase my knowledge!
+                  </span>
                 </p>
               </v-col>  
             </row-aboutme>
