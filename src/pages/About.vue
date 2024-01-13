@@ -328,15 +328,28 @@
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
                   <p style="margin-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
-                    <span style="letter-spacing: 0.015vw;">Не мало внимания уделялось и умению  работать</span><br>
-                    в команде. Для достижения поставленной цели не-<br>
-                    <span style="letter-spacing: 0.015vw;">обходимо уметь находить компромиссы. Данный</span><br>
-                    <span style="letter-spacing: 0.020vw;">проект создавался совместно с В. Декалиной</span><br>
-                    и П. Ерёмичевой. Идея заключалась в создании<br>
-                    ателье по восстановлению старинной мебели с по-<br>
-                    мощью замены сломанных элементов деталями<br>
-                    <span style="letter-spacing: -0.020vw;">из переработанного пластика. А лицом нашего ателье</span><br>
-                    стала бы вечно нестареющая классика — Thonet!
+                    <span v-if="$i18n.locale === 'ru'">
+                      <span style="letter-spacing: 0.015vw;">Не мало внимания уделялось и умению  работать</span><br>
+                      в команде. Для достижения поставленной цели не-<br>
+                      <span style="letter-spacing: 0.015vw;">обходимо уметь находить компромиссы. Данный</span><br>
+                      <span style="letter-spacing: 0.020vw;">проект создавался совместно с В. Декалиной</span><br>
+                      и П. Ерёмичевой. Идея заключалась в создании<br>
+                      ателье по восстановлению старинной мебели с по-<br>
+                      мощью замены сломанных элементов деталями<br>
+                      <span style="letter-spacing: -0.020vw;">из переработанного пластика. А лицом нашего ателье</span><br>
+                      стала бы вечно нестареющая классика — Thonet!
+                    </span>
+                    <span v-else>
+                      Much attention was paid to the ability to work<br>
+                      in a team. To achieve this goal, not<br>
+                      you need to be able to find compromises. The<br>
+                      the project was created jointly with V. Dekalina<br>
+                      and P. Eryomicheva. The idea was to create<br>
+                      studio for restoration of antique furniture with<br>
+                      the power of replacing broken elements with parts<br>
+                      made from recycled plastic. And the face of our atelier<br>
+                      would become the ever-ageless classic — Thonet!<br>
+                    </span>
                   </p>
                 </v-col>  
             </row-aboutme>
