@@ -74,7 +74,14 @@
                     <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" src="../src/images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-3">
-                    <p class="title slide2-title-margin">Мудборд концептуального проекта</p>
+                    <p class="title slide2-title-margin">
+                      <span v-if="$i18n.locale === 'ru'">
+                        Мудборд концептуального проекта
+                      </span>
+                      <span v-else>
+                        Conceptual project moodboard
+                      </span>
+                    </p>
                   </v-col>
                 </v-row>
               </v-col>
@@ -82,47 +89,93 @@
                 <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-0 mt-sm-0 mr-sm-0 ml-sm-0">
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
                     <p class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh;">
-                      Меня зовут Мария, я с детства любила рисовать<br>
-                      и фантазировать, и эти две, казалось бы, безобидные<br>
-                      привычки превратили меня в дизайнера. В 2019 году<br>
-                      <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span><br>
-                      <span style="letter-spacing: 0.014359375vw;">«Дизайн мебели». Преподаватели кафедры — дей-</span><br>
-                      <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span><br>
-                      и настоящие фанаты своего дела!<br> 
+                      <span v-if="$i18n.locale === 'ru'">
+                        Меня зовут Мария, я с детства любила рисовать<br>
+                        и фантазировать, и эти две, казалось бы, безобидные<br>
+                        привычки превратили меня в дизайнера. В 2019 году<br>
+                        <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span><br>
+                        <span style="letter-spacing: 0.014359375vw;">«Дизайн мебели». Преподаватели кафедры — дей-</span><br>
+                        <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span><br>
+                        и настоящие фанаты своего дела!<br> 
+                      </span>
+                      <span v-else>
+                        My name is Maria, I loved to draw since childhood
+                        and fantasize, and these two seemingly harmless
+                        habits turned me into a designer. In 2019
+                        I entered the Russian State University of Arts and Sciences named after. S.G. Stroganov to the department
+                        "Furniture design". The teachers of the department are active
+                        existing designers, great professionals
+                        and true fans of their business!
+                      </span>
                     </p>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.md || this.$vuetify.display.sm" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
                     <p class="text-start h-montserrat-regular slides-font" style="line-height: 3.1vh;">
-                      <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисо-<br>вать</span>
-                      и фантазировать, и эти две, казалось бы, безобидные
-                      <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня<br>в дизайнера. </span>В 2019 году
-                      <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span>
-                      «Дизайн ме-<br>бели». Преподаватели кафедры — дей<span style="letter-spacing: 0.014359375vw;">ству-<br>ющие дизайнеры, большие профессионалы</span>
-                      <br>и настоящие фанаты своего дела!
+                      <span v-if="$i18n.locale === 'ru'">
+                        <span style="letter-spacing: 0.009572916666666665vw;">Меня зовут Мария, я с детства любила рисо-<br>вать</span>
+                        и фантазировать, и эти две, казалось бы, безобидные
+                        <span style="letter-spacing: 0.009572916666666665vw;">привычки превратили меня<br>в дизайнера. </span>В 2019 году
+                        <span style="letter-spacing: 0.014359375vw;">я поступила в РГХПУ им. С.Г. Строганова на кафедру</span>
+                        «Дизайн ме-<br>бели». Преподаватели кафедры — дей<span style="letter-spacing: 0.014359375vw;">ству-<br>ющие дизайнеры, большие профессионалы</span>
+                        <br>и настоящие фанаты своего дела!
+                      </span>
+                      <span v-else>
+                        My name is Maria, I loved to draw since childhood
+                        and fantasize, and these two seemingly harmless
+                        habits turned me into a designer. In 2019
+                        I entered the Russian State University of Arts and Sciences named after. S.G. Stroganov to the department
+                        "Furniture design". The teachers of the department are active
+                        existing designers, great professionals
+                        and true fans of their business!
+                      </span>
                     </p>
                   </v-col>
                   
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="pa-0">
                     <p class="text-start h-montserrat-regular slides-font slide2-p-margin" style="line-height: 3.2vh;">
-                      <b>Как проходило обучение?</b><br>
-                      Обучение с самого начала было направлено на раз-<br>
-                      витие креативного мышления. Мы активно занима-<br>
-                      лись макетированием, познавая особенности<br>
-                      и специфику различных материалов, продумывали<br>
-                      графические решения для подачи наших проектов,<br>
-                      и, конечно, всегда стремились работать над актуаль-<br>
-                      ными проблемами.  
+                      <span v-if="$i18n.locale === 'ru'">
+                        <b>Как проходило обучение?</b><br>
+                        Обучение с самого начала было направлено на раз-<br>
+                        витие креативного мышления. Мы активно занима-<br>
+                        лись макетированием, познавая особенности<br>
+                        и специфику различных материалов, продумывали<br>
+                        графические решения для подачи наших проектов,<br>
+                        и, конечно, всегда стремились работать над актуаль-<br>
+                        ными проблемами.  
+                      </span>
+                      <span v-else>
+                        <b>How was the training?</b><br>
+                        Training from the very beginning was aimed at developing
+                        development of creative thinking. We are actively engaged
+                        were involved in prototyping, learning the features
+                        and the specifics of various materials, thought through
+                        graphic solutions for presenting our projects,
+                        and, of course, always strived to work on up-to-date
+                        new problems.
+                      </span>
                     </p>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.md || this.$vuetify.display.sm" lg="12" sm="6" cols="12" class="pa-0">
                     <p class="text-start h-montserrat-regular slides-font slide2-p-margin" style="margin-left: 1.6vw; line-height: 3.1vh;">
-                      <b>Как проходило обучение?</b>
-                      Обучение с самого начала было направлено на развитие креа-<br>
-                      тивного мышления. Мы активно занимались макетированием, познавая особенности<br>
-                      и специфику различных материалов, проду-<br>
-                      мывали графические решения для подачи наших проектов,
-                      и, конечно, всегда стреми-<br>
-                      лись работать над актуальными проблемами.  
+                      <span v-if="$i18n.locale === 'ru'">
+                        <b>Как проходило обучение?</b><br>
+                        Обучение с самого начала было направлено на развитие креа-<br>
+                        тивного мышления. Мы активно занимались макетированием, познавая особенности<br>
+                        и специфику различных материалов, проду-<br>
+                        мывали графические решения для подачи наших проектов,
+                        и, конечно, всегда стреми-<br>
+                        лись работать над актуальными проблемами.  
+                      </span>
+                      <span v-else>
+                        <b>How was the training?</b>
+                        Training from the very beginning was aimed at developing
+                        development of creative thinking. We are actively engaged
+                        were involved in prototyping, learning the features
+                        and the specifics of various materials, thought through
+                        graphic solutions for presenting our projects,
+                        and, of course, always strived to work on up-to-date
+                        new problems.
+                      </span>
                     </p>
                   </v-col>
                 </v-row>
