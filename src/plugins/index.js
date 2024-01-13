@@ -17,6 +17,9 @@ const messages = {
       about: 'About Me',
       anima: 'Anima',
     },
+    home: {
+      h: "Projects"
+    }
   },
   ru: {
     header: {
@@ -24,6 +27,9 @@ const messages = {
       about: 'О себе',
       anima: 'Анима',
     },
+    home: {
+      h: "Проекты"
+    }
   }
 };
 

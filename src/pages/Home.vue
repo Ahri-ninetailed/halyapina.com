@@ -7,7 +7,7 @@
 
     <v-row class="pt-6 pb-4" >
       <v-col>
-        <div class="main-h text-center h-neucha-regular">Проекты</div>
+        <div class="main-h text-center h-neucha-regular">{{ $t('home.h') }}</div>
       </v-col>
     </v-row>
 
