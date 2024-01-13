@@ -235,17 +235,31 @@
             <row-aboutme>
               <v-col cols="6" class="pa-0 align-self-center" style="margin-top: 4.2vh;">
                 <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" src="../src/images/AboutMePage/Slide4/factory.jpg" class="aboutme-slide4-img-height" alt="Factory" />
-                <p class="title text-center slide4-title-margin">Посещение фабрики Ангстрем</p>
+                <p class="title text-center slide4-title-margin">
+                  <span v-if="$i18n.locale === 'ru'">
+                    Посещение фабрики Ангстрем
+                  </span>
+                  <span v-else>
+                    Visit to the Angstrom factory
+                  </span>
+                </p>
               </v-col>
               <v-col align="end" cols="6" class="pa-0 align-self-center">
                 <v-row class="ma-0 d-inline-block">
-                    <p class="text-start h-montserrat-regular slides4-font">
-                    <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
-                    мым дать студентам возможность работать<br>
-                    с реальными заказчиками. Благодаря тако-<br>
-                    <span style="letter-spacing: 0.020vw;">му опыту учишься следовать не только</span><br>
-                    ТЗ, но и учитывать настоящие возможности<br>
-                    производства.
+                  <p class="text-start h-montserrat-regular slides4-font">
+                    <span v-if="$i18n.locale === 'ru'">
+                      <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
+                      мым дать студентам возможность работать<br>
+                      с реальными заказчиками. Благодаря тако-<br>
+                      <span style="letter-spacing: 0.020vw;">му опыту учишься следовать не только</span><br>
+                      ТЗ, но и учитывать настоящие возможности<br>
+                      производства.
+                    </span>
+                    <span v-else>
+                      The management of the department considers it necessary to give students the 
+                      opportunity to work with real customers. Thanks to this experience, you learn to 
+                      follow not only technical specifications, but also take into account real production capabilities.
+                    </span>
                   </p>
                 </v-row>
               </v-col>
