@@ -383,7 +383,7 @@
             </row-aboutme>
           </swiper-slide>
 
-          <swiper-slide>
+          <swiper-slide style="background-image: url('../src/images/AboutMePage/Slide9/background.png'); background-size: cover;">
             <row-aboutme>
               <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
                 <p class="text-start h-montserrat-regular slides-font">
