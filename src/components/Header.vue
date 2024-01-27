@@ -135,7 +135,7 @@ export default {
         }
 
         this.headerOtherStyle = {
-          backdropFilter: 'saturate(180%) blur(20px)',
+          backdropFilter: 'blur(5px)',
           transition: 'all 0.8s ease-in-out'
         }
 
