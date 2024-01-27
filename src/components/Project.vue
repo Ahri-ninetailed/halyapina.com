@@ -13,26 +13,6 @@
             </v-btn>
           </v-col>
           <v-col :cols="swiperCols" class="pa-0">
-            <swiper 
-              :loop="true"
-              :simulateTouch="true"
-              :mousewheel="true"
-              :modules="modules"
-              class="mySwiper project-swiper-width"
-              :autoplay="{
-                delay: 3500,
-                disableOnInteraction: true,
-              }"
-              @swiper="onSwiper"
-              style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); margin: 3px; background-color: white;"
-            >
-              <swiper-slide
-                v-for="(img, index) in this.$props.swiperImgs"
-                :key="index"
-              >
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-height" :src="img.src" :alt="img.alt"/>
-              </swiper-slide>
-            </swiper>
           </v-col>
           <v-col v-if="showArrow" cols="2" align="start" class="pa-0 align-self-center">
             <v-btn @click="nextSlide" icon class="button-borderless animated-button">
@@ -60,15 +40,11 @@
 <script>
 import FullImage from '@/components/FullImage.vue';
 
-import { Mousewheel, Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
 export default {
   name: 'DefaultProject',
   components: {
     FullImage,
-    Swiper,
-    SwiperSlide,
+
   },
   props: {
     backgroundImg: {
@@ -86,8 +62,7 @@ export default {
   },
   setup() {
       return {
-        swiper: null,
-        modules: [Mousewheel, Autoplay],
+        
       };
   },
   mounted() {
@@ -121,14 +96,11 @@ export default {
     }
   },
   methods: {
-    onSwiper(swiper) {
-      this.swiper = swiper;
-    },
     nextSlide() {
-      this.swiper.slideNext();
+      
     },
     prevSlide() {
-      this.swiper.slidePrev();
+      
     },
   },
 }
