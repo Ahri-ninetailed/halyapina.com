@@ -13,6 +13,19 @@
             </v-btn>
           </v-col>
           <v-col :cols="swiperCols" class="pa-0">
+            <Splide 
+              ref="splide"
+              class="project-swiper-width" 
+              :options="splideOptions"
+              style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); margin: 3px; background-color: white;"
+            >
+              <SplideSlide class="project-swiper-width"
+                v-for="(img, index) in this.$props.swiperImgs"
+                :key="index"
+              >
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-height" :src="img.src" :alt="img.alt"/>
+              </SplideSlide>
+            </Splide>
           </v-col>
           <v-col v-if="showArrow" cols="2" align="start" class="pa-0 align-self-center">
             <v-btn @click="nextSlide" icon class="button-borderless animated-button">
@@ -40,11 +53,31 @@
 <script>
 import FullImage from '@/components/FullImage.vue';
 
+///splide
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/vue-splide/css/core';
+
 export default {
   name: 'DefaultProject',
+  data() {
+    return {
+      splideOptions: {
+        arrows: false, 
+        pagination: false, 
+        autoWidth: false, 
+        type: 'loop', 
+        drag: true,
+        wheel: true,
+        autoplay: true,
+        interval: 3500
+      }
+    }
+  },
   components: {
     FullImage,
-
+    ///splide
+    Splide,
+    SplideSlide,
   },
   props: {
     backgroundImg: {
@@ -97,10 +130,10 @@ export default {
   },
   methods: {
     nextSlide() {
-      
+      this.$refs.splide.go('+1');
     },
     prevSlide() {
-      
+      this.$refs.splide.go('-1');
     },
   },
 }
