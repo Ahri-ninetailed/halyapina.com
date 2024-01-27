@@ -1,6 +1,6 @@
 <template>
   <v-container class="pa-0 background-img" fluid :style="backgroundImgProp" style="overflow: hidden; height: 100vh;">
-    <v-row class="ma-0 pa-0 fill-height">
+    <v-row class="ma-0 pa-0" :class="fillHeight">
       <v-col align="center" md="6" cols="12" class="pa-0 align-self-center project-swiper-margin-top">
         <v-row class="ma-0 pa-0 imgs-container">
           <v-col v-if="showArrow" cols="2" align="end" class="pa-0 align-self-center">
@@ -12,12 +12,13 @@
               </svg>
             </v-btn>
           </v-col>
-          <v-col :cols="swiperCols" class="pa-0">
+          <v-col :cols="swiperCols" class="pa-0 mt-sm-0 mt-6">
             <Splide 
               ref="splide"
               class="project-swiper-width" 
               :options="splideOptions"
-              style="box-shadow: 0px 0px 3px 1px rgb(236, 236, 236); margin: 3px; background-color: white;"
+              style="margin: 3px;"
+              :style="shadowBorder"
             >
               <SplideSlide class="project-swiper-width"
                 v-for="(img, index) in this.$props.swiperImgs"
@@ -39,7 +40,7 @@
         </v-row>
       </v-col>
       <v-col align="center" md="6" cols="12" class="pa-0 project-text-margin-bottom" :class="this.$vuetify.display.mdAndUp ? 'align-self-center' : 'align-self-start'">
-        <v-row class="pa-0 ma-0 d-inline-block" style="background-color: white;">
+        <v-row class="pa-0 ma-sm-0 mt-2 mb-0 ml-10 mr-10 d-inline-block" style="background-color: white;">
           <h1 class="h-neucha-regular project-header-size project-h-margin-bottom" :class="hPosition">
             {{  headerText }}
           </h1>
@@ -126,6 +127,25 @@ export default {
       } else {
         return 12;
       }
+    },
+    fillHeight() {
+      if (this.$vuetify.display.smAndUp) {
+        return "fill-height";
+      } else {
+        return "";
+      }
+    },
+    shadowBorder() {
+      if (this.$vuetify.display.smAndUp) {
+        return {
+          boxShadow: "0px 0px 3px 1px rgb(236, 236, 236)",
+        }
+      } else {
+        return {
+          boxShadow: 'unset',
+        }
+      }
+      
     }
   },
   methods: {
@@ -288,5 +308,21 @@ export default {
 .project-h-margin-bottom {
   margin-bottom: 3vh;
 }
+}
+
+@media (max-width: 599px) { 
+  .project-img-height {
+    height: unset;
+    width: 100vw;
+  }
+  .project-swiper-width {
+    width: 100vw;
+  }
+  .project-header-size {
+    font-size: 7vw;
+  }
+  .p-project-size {
+    font-size: 4vw;
+  }
 }
 </style>
