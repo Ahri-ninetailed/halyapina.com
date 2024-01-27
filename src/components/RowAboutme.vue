@@ -1,10 +1,10 @@
 <template>
   <v-row 
-    class="fill-height ma-0" 
-    :style="this.$vuetify.display.sm || this.$vuetify.display.md ? 'width: 100%;' : ''"
+    :class="fillHeight"
+    class="ma-0" 
   >
     <v-col cols="12" class="pa-0">
-      <v-row class="fill-height margin" :style="this.$props.style">
+      <v-row :class="fillHeight" class="margin" :style="this.$props.style">
         <slot></slot>
       </v-row>
     </v-col>
@@ -21,6 +21,15 @@ export default {
       required: false,
     },
   },
+  computed: {
+    fillHeight() {
+      if (this.$vuetify.display.smAndUp) {
+        return "fill-height";
+      } else {
+        return "";
+      }
+    }
+  }
 }
 </script>
 

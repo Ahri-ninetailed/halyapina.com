@@ -3,19 +3,18 @@
     fluid 
     class="pa-0" 
     style="background-color: black; height: 100vh;" 
-    :style="{ 'padding-top': `${this.$headerHeightValue}${this.$headerHeightUnit} !important` }"
+    :style="{...containerHeight, ...containerPadding}"
   >
-    <v-row 
+    <v-row v-if="this.$vuetify.display.smAndUp" 
       class="mb-0 ml-0 mr-0 d-flex justify-center" 
       style="height: 67.173913vh; width: 100%; margin-top: 9vh;"
     >
       <v-col 
         cols="1" 
         class="d-flex align-center text-center justify-center" 
-        :style="{ 'margin-right': marginArr }"
-        v-if="this.$vuetify.display.smAndUp"
+        :style="leftArrMargin"
       >
-        <v-btn :style="heightArr" @click="prevSlide" class="transparent-button">
+        <v-btn icon :style="heightArr" @click="prevSlide" class="transparent-button">
           <img :style="heightArr" src="../images/AboutMePage/arr-left.svg" alt="Prev slide" />
         </v-btn>
       </v-col>
@@ -30,37 +29,58 @@
           @swiper="onSwiper"
         >
           <swiper-slide>
-            <v-row class="fill-height mt-0 ml-0">
-              <v-col align="center" cols="6" class="pa-0 align-self-center">
+            <row-aboutme>
+              <v-col align="start" cols="6" class="pa-0 align-self-center">
                 <img style="height: 22vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
               </v-col>
               <v-col cols="6" class="pa-0 align-self-center">
                 <div style="display: inline-block;">
-                  <h1 class="text-start h-neucha-regular slide1">
-                    Образование:
+                  <h1 class="text-start h-neucha-regular slide1-h">
+                    <span v-if="$i18n.locale === 'ru'">
+                      Образование:
+                    </span>
+                    <span v-else>
+                      Education:
+                    </span>
                   </h1>
-                  <p class="text-start h-montserrat-regular">
-                    РГХПУ им. С. Г. Строганова<br>
-                    кафедра «Дизайн мебели» 
+                  <p class="text-start h-montserrat-regular slides-font">
+                    <span v-if="$i18n.locale === 'ru'">
+                      РГХПУ им. С. Г. Строганова<br>
+                      кафедра «Дизайн мебели» 
+                    </span>
+                    <span v-else>
+                      Stroganov Russian State University of Design and Applied Arts<br>
+                      Department of "Furniture Design"
+                    </span>
                   </p>
-                  <h1 class="text-start h-neucha-regular slide1">
-                    Владение программами: 
+                  <h1 class="text-start h-neucha-regular slide1-h">
+                    <span v-if="$i18n.locale === 'ru'">
+                      Владение программами: 
+                    </span>
+                    <span v-else>
+                      Skills:
+                    </span>
                   </h1>
-                  <p class="text-start h-montserrat-regular">Autodesk 3ds Мах, Corona,<br>
+                  <p class="text-start h-montserrat-regular slides-font">Autodesk 3ds Мах, Corona,<br>
                     AutoCAD, Adobe lllustrator,<br>
                     Adobe Photoshop, CorelDraw,<br>
                     SketchUp, Layout
                   </p>
-                  <h1 class="text-start h-neucha-regular slide1">
-                    Контакты:
+                  <h1 class="text-start h-neucha-regular slide1-h">
+                    <span v-if="$i18n.locale === 'ru'">
+                      Контакты:
+                    </span>
+                    <span v-else>
+                      Contacts:
+                    </span>
                   </h1>
-                  <p class="text-start h-montserrat-regular">
+                  <p class="text-start h-montserrat-regular slides-font">
                     halyapinamari@gmail.com<br>
                     WhatsApp +79671930086
                   </p>
                 </div>
               </v-col>
-            </v-row>
+            </row-aboutme>
           </swiper-slide>
           
           <swiper-slide>
@@ -382,16 +402,272 @@
       <v-col 
         cols="1" 
         class="d-flex align-center text-center justify-center"
-        :style="{ 'margin-left': marginArr }"
-        v-if="this.$vuetify.display.smAndUp"
+        :style="rightArrMargin"
       >
-        <v-btn :style="heightArr" @click="nextSlide" class="transparent-button">
+        <v-btn icon :style="heightArr" @click="nextSlide" class="transparent-button">
           <img :style="heightArr" src="../images/AboutMePage/arr-right.svg" alt="Next slide" />
         </v-btn>
       </v-col>
     </v-row>
+    <v-row v-else class="ma-0 pt-2 pl-8 pr-9 pb-12">
+      <v-col align="center" cols="12" class="pa-0 align-self-center">
+        <img style="width: 83vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+      </v-col>
+      <v-col align="start" cols="12" class="pa-0 align-self-center">
+        <h1 class="text-start h-neucha-regular xs-h-size mt-5">
+          <span v-if="$i18n.locale === 'ru'">
+            Образование:
+          </span>
+          <span v-else>
+            Education:
+          </span>
+        </h1>
+        <p class="text-start h-montserrat-regular xs-text-size">
+          <span v-if="$i18n.locale === 'ru'">
+            РГХПУ им. С. Г. Строганова<br>
+            кафедра «Дизайн мебели» 
+          </span>
+          <span v-else>
+            Stroganov Russian State University of Design and Applied Arts<br>
+            Department of "Furniture Design"
+          </span>
+        </p>
+        <h1 class="text-start h-neucha-regular xs-h-size mt-3">
+          <span v-if="$i18n.locale === 'ru'">
+            Владение программами: 
+          </span>
+          <span v-else>
+            Skills:
+          </span>
+        </h1>
+        <ul class="text-start h-montserrat-regular xs-text-size" style="color:white; width: fit-content; padding-left: 5vw;">
+          <li>Autodesk 3ds Мах</li>
+          <li>Corona</li>
+          <li>AutoCAD</li>
+          <li>Adobe Photoshop</li>
+          <li>CorelDraw</li>
+          <li>SketchUp</li>
+          <li>Layout</li>
+        </ul>
+        <h1 class="text-start h-neucha-regular xs-h-size mt-3">
+          <span v-if="$i18n.locale === 'ru'">
+            Контакты:
+          </span>
+          <span v-else>
+            Contacts:
+          </span>
+        </h1>
+        <p class="text-start h-montserrat-regular xs-text-size">
+          halyapinamari@gmail.com<br>
+          WhatsApp +79671930086
+        </p>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
+        <img style="width: 83vw" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
+        <img style="width: 83vw" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center">
+        <p class="title">
+          <span v-if="$i18n.locale === 'ru'">
+            Мудборд концептуального проекта
+          </span>
+          <span v-else>
+            Conceptual project moodboard
+          </span>
+        </p>
+      </v-col>
+      <v-col cols="12" class="pa-0">
+        <p class="text-start h-montserrat-regular xs-text-size mt-5">
+          <span v-if="$i18n.locale === 'ru'">
+            Меня зовут Мария, я с детства лю-<br>
+            била рисовать и фантазировать,<br>
+            и эти две, казалось бы, безобид-<br>
+            ные привычки превратили меня<br>
+            в дизайнера. В 2019 году я посту-<br>
+            пила в РГХПУ им. С.Г. Строганова<br>
+            на кафедру «Дизайн мебели». Преподаватели кафедры — дей-<br>
+            ствующие дизайнеры, большие<br>
+            профессионалы и настоящие<br>
+            фанаты своего дела!<br>
+            <br>
+            <span style="font-weight: bold;">Как проходило обучение?</span>
+            <br>
+            Обучение с самого начала было<br>
+            направлено на развитие креатив-<br>
+            ного мышления. Мы активно за-<br>
+            нимались макетированием, поз-<br>
+            навая особенности и специфику<br>
+            различных материалов, проду-<br>
+            мывали графические решения<br>
+            для подачи наших проектов,<br>
+            и, конечно, всегда стремились<br>
+            работать над актуальными проблемами.
+          </span>
+          <span v-else>
+            My name is Maria, I loved to draw since childhood and fantasize, and these two seemingly 
+            harmless habits turned me into a designer. In 2019 I entered the Russian State University
+            of Arts and Sciences named after. S.G. Stroganov to the department "Furniture design". The
+            teachers of the department are active existing designers, great professionals and true fans
+            of their business!<br>
+            <br>
+            <span style="font-weight: bold;">How was the training?</span>
+            <br>
+            Training from the very beginning was aimed at developing development
+            of creative thinking. We are actively engaged were involved in prototyping,
+            learning the features and the specifics of various materials, thought
+            through graphic solutions for presenting our projects, and, of course,
+            always strived to work on up-to-date new problems.
+          </span>
+        </p>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
+        <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="width: 80vw;" alt="Prototype of Line chair"/>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
+        <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="width: 80vw;" alt="Maria with earrings"/>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
+        <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="width: 80vw;" alt="My earrings"/>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center">
+        <p class="title">
+          <span v-if="$i18n.locale === 'ru'">
+            Макетирование
+          </span>
+          <span v-else>
+            Mockup creation
+          </span>
+        </p>
+      </v-col>
+      <v-col cols="12" class="pa-0">
+        <p class="text-start h-montserrat-regular xs-text-size mt-5">
+          <span v-if="$i18n.locale === 'ru'">
+            Руководство кафедры считает не-<br>
+            обходимым дать студентам воз-<br>
+            можность работать с реальными<br>
+            заказчиками. Благодаря такому<br>
+            опыту учишься следовать не толь-<br>
+            ко ТЗ, но и учитывать настоящие<br>
+            возможности производства.
+          </span>
+          <span v-else>
+            The management of the department considers it necessary 
+            to give students the opportunity to work with real customers. 
+            Thanks to this experience, you learn to follow not only technical 
+            specifications, but also take into account real production capabilities.
+          </span>
+        </p>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
+        <img src="../images/AboutMePage/Slide4/factory.jpg" style="width: 83vw" alt="Factory" />
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center">
+        <p class="title">
+          <span v-if="$i18n.locale === 'ru'">
+            Посещение фабрики Ангстрем
+          </span>
+          <span v-else>
+            Visit to the Angstrom factory
+          </span>
+        </p>
+      </v-col>
+      <v-col cols="12" class="pa-0">
+        <p class="text-start h-montserrat-regular xs-text-size mt-5">
+          <span v-if="$i18n.locale === 'ru'">
+            Во время обучения нас старались<br>
+            ознакомить с различными сфе-<br>
+            рами дизайна. Замечательным<br>
+            опытом стало участие в конкурсе<br>
+            плакатов всемирно известной<br>
+            фирмы Vitra. Мы старались выя-<br>
+            вить ключевой посыл фирмы<br>
+            и выразить его с помощью яркой<br>
+            графической подачи.
+          </span>
+          <span v-else>
+            During the training, they tried to familiarize
+            us with various areas of design. Participation 
+            in the poster competition of the world famous company 
+            Vitra was a wonderful experience. We tried to identify 
+            the key message of the company and express it with the 
+            help of a bright graphic presentation.
+          </span>
+        </p>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
+        <img src="../images/AboutMePage/Slide5/PosterVitra.jpg" style="width: 83vw" alt="Poster Vitra" />
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center">
+        <p class="title">
+          <span v-if="$i18n.locale === 'ru'">
+            Плакат для Vitra
+          </span>
+          <span v-else>
+            Poster for Vitra
+          </span>
+        </p>
+      </v-col>
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
+        <img src="../images/AboutMePage/Slide6/DiplomaFromVitra.jpg" style="width: 83vw" alt="Diploma from Vitra" />
+      </v-col>
+      
+      <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
+        <img src="../images/AboutMePage/Mobile/Atelier.png" style="width: 83vw;" alt="Diploma from Vitra" />
+      </v-col>
+      <v-col cols="12" class="pa-0">
+        <p class="text-start h-montserrat-regular xs-text-size mt-5">
+          <span v-if="$i18n.locale === 'ru'">
+            Не мало внимания уделялось ум-<br>
+            ению работать в команде. Для до-<br>
+            стижения поставленной цели не-<br>
+            обходимо уметь находить<br>
+            компромиссы. Данный проект со-<br>
+            здавался совместно с одногруп-<br>
+            пниками. Идея заключалась<br>
+            в создании ателье по восста-<br>
+            новлению старинной мебели<br>
+            с помощью замены сломанных<br>
+            элементов деталями из перера-<br>
+            ботанного пластика. А лицом<br>
+            нашего ателье стала бы вечно<br>
+            нестареющая классика — Thonet!
+          </span>
+          <span v-else>
+            Much attention was paid to the ability to work
+            in a team. To achieve this goal, not
+            you need to be able to find compromises. The
+            the project was created jointly with V. Dekalina
+            and P. Eryomicheva. The idea was to create
+            studio for restoration of antique furniture with
+            the power of replacing broken elements with parts
+            made from recycled plastic. And the face of our atelier
+            would become the ever-ageless classic — Thonet!
+          </span>
+        </p>
+      </v-col>
+      <v-col align="center" cols="6" class="pa-0 align-self-center mt-6">
+        <img src="../images/AboutMePage/Mobile/ThonetBlue.png" style="width: 35vw;" alt="Blue thonet chair" />
+      </v-col>
+      <v-col align="center" cols="6" class="pa-0 align-self-center mt-6">
+        <img src="../images/AboutMePage/Mobile/ThonetWhite.png" style="width: 35vw;" alt="White thonet chair" />
+      </v-col>
+
+      <v-col cols="12" class="pa-0">
+
+      </v-col>
+        <p class="text-start h-montserrat-regular xs-text-size mt-5">
+          <span v-if="$i18n.locale === 'ru'">
+            Отныне я в свободном плавании, и мне не терпится применить и приумножить свои знания!
+          </span>
+          <span v-else>
+            From now on I am free to swim, and I can't wait to apply and increase my knowledge!
+          </span>
+        </p>
+    </v-row>
   </v-container>
-  <img class="popkorn" src="../images/AboutMePage/popkorn.png" alt="GirlWithPopkorn"/>
+  <img v-if="this.$vuetify.display.smAndUp" class="popkorn" src="../images/AboutMePage/popkorn.png" alt="GirlWithPopkorn"/>
 </template>
     
 <script>
@@ -420,8 +696,7 @@ export default {
             swiper: null,
             heightArr: {
                 height: '4.786458333333333vw'
-            },
-            marginArr: '3vw',
+            }
         };
     },
     mounted() {
@@ -453,11 +728,55 @@ export default {
       prevSlide() {
         this.swiper.slidePrev();
       },
-    }
+    },
+    computed: {
+      leftArrMargin() {
+        return {
+          marginRight: '3vw'
+        };
+      },
+      rightArrMargin() {
+        return {
+          marginLeft: '3vw'
+        };
+      },
+      containerPadding() {
+        return {
+          paddingTop:`${this.$headerHeightValue}${this.$headerHeightUnit} !important`
+        }
+      },
+      containerHeight() {
+        if (this.$vuetify.display.smAndUp) {
+          return {
+            height: '100vh'
+          }
+        } else {
+          return {
+            height: 'unset'
+          }
+        }
+      },
+   }
 }
 </script>
 
 <style scoped>
+
+.title {
+  font-size: 0.718vw; font-style: italic;
+}
+
+.xs-text-size {
+  font-size: 4.5vw;
+}
+.xs-h-size {
+  font-size: 6vw;
+}
+
+h1.slide1-h {
+  font-size: 1.484vw;
+}
+
 .slide5-title-margin {
   margin-right: 5.7vw; 
   margin-top: 1vh;
@@ -584,8 +903,8 @@ p.slides4-font {
 }
 
 @media (max-width: 599px) { 
-  p.slides-font {
-    font-size: 3vw;
+  .title {
+    font-size: 3vw; font-style: italic;
   }
 }
 
@@ -593,20 +912,11 @@ p {
   font-size: 1.1vw;
 }
 
-
-.title {
-  font-size: 0.718vw; font-style: italic;
-}
-
 .transparent-button {
   background-color: transparent;
   padding: 0;
   /* Убрать отступы кнопки */
   border: none;
-}
-
-h1.slide1 {
-  font-size: 1.484vw;
 }
 
 .slide {
@@ -701,12 +1011,6 @@ h1, p {
   }
   .aboutme-slide3-height-img2 {
     height: 10.9vw;
-  }
-}
-
-@media (max-width: 599px) { 
-  .aboutme-slide2-img-height {
-    height: 33vw;
   }
 }
 </style>
