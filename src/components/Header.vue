@@ -110,7 +110,7 @@ export default {
         this.backgroundColor = {
           backgroundColor: 'black'
         }
-      } else if (this.isHomePage) {
+      } else if (this.isHomePage || this.isAnimaPage) {
         this.backgroundColor = {
           backgroundColor: 'unset'
         }
