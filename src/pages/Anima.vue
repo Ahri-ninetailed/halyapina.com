@@ -1,6 +1,6 @@
 <template>
   <v-container class="pa-0" fluid>
-    <v-parallax src="../images/AnimaPage/anima.jpg">
+    <v-parallax src="../images/AnimaPage/anima.jpg" v-if="this.$vuetify.display.smAndUp">
       <v-row class="ma-0" style="height: 100vh;">
         <v-col cols="12" class="pa-0 align-self-center">
           <p class="text-center h-neucha-regular" style="font-weight: bold; font-size: 9.094270833333333vw;">
@@ -9,6 +9,13 @@
         </v-col>
       </v-row>
     </v-parallax>
+    <v-row class="ma-0" style="height: 100vh;" v-else>
+        <v-col cols="12" class="pa-0 align-self-center">
+          <p class="text-center h-neucha-regular" style="font-weight: bold; font-size: 20vw;">
+            ANIMA
+          </p>
+        </v-col>
+    </v-row>
 
     <Splide :options="splideOptions" :extensions="extensions">
       <SplideSlide>
@@ -52,9 +59,9 @@
       </SplideSlide>
     </Splide>
 
-    <v-row class="ma-0 def-pad-top" style="padding-left: 8vw; padding-right: 8vw;">
+    <v-row class="ma-0 def-pad-top padding">
       <v-row class="ma-0">
-        <v-col cols="6" class="pa-0" >
+        <v-col cols="12" sm="6" class="pa-0" >
           <h1 class="h-neucha-regular">
             Anima
           </h1>
@@ -68,19 +75,19 @@
             и интуитивными.
           </p>
         </v-col>
-        <v-col align="end" cols="6" class="pa-0" >
+        <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right">
           <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" src="../src/images/AnimaPage/interior.jpg" alt="Interior"/>
         </v-col>
       </v-row>
 
       <v-row class="ml-0 mr-0 mb-0 def-mar-top">
         <v-col align="center" cols="12" class="pa-0 align-self-center">
-          <img style="width: 70vw;" src="../images/AnimaPage/sheepOfImages.jpg" alt="Sheep of images" />
+          <img src="../images/AnimaPage/sheepOfImages.jpg" class="sheep-width" alt="Sheep of images" />
         </v-col>
       </v-row>
 
       <v-row class="ml-0 mr-0 mb-0 def-mar-top">
-        <v-col cols="6" class="pa-0">
+        <v-col cols="12" sm="6" class="pa-0">
           <h1 class="h-neucha-regular">
             Эргономика
           </h1>
@@ -119,12 +126,12 @@
             ящиков. 
           </p>
         </v-col>
-        <v-col cols="6" class="pa-0">
+        <v-col cols="12" sm="6" class="pa-0">
           <v-row class="ma-0">
-            <v-col align="end" cols="12" class="pa-0 align-self-start">
+            <v-col cols="12" class="pa-0 align-self-start text-center text-sm-right">
               <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" src="../src/images/AnimaPage/drawingGirl.jpg" alt="Drawing girl"/>
             </v-col>
-            <v-col align="end" cols="12" class="pa-0 align-self-end">
+            <v-col cols="12" class="pa-0 align-self-end text-center text-sm-right">
               <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" src="../src/images/AnimaPage/removableTabletop.jpg" alt="Removable table top"/>
             </v-col>
           </v-row>
@@ -138,7 +145,7 @@
       </v-row>
 
       <v-row class="ml-0 mr-0 mb-0 def-mar-top">
-        <v-col cols="6" class="pa-0">
+        <v-col cols="12" sm="6" class="pa-0">
           <h1 class="h-neucha-regular">
             Образ
           </h1>
@@ -181,15 +188,15 @@
             с детьми! 
           </p>
         </v-col>
-        <v-col cols="6" class="pa-0">
+        <v-col cols="12" sm="6" class="pa-0">
           <v-row class="ma-0">
-            <v-col cols="12" align="end" class="pa-0">
+            <v-col cols="12" class="pa-0 text-center text-sm-right">
               <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/constructor.jpg" alt="Сonstructor"/>
             </v-col>
-            <v-col cols="12" align="end" class="pa-0">
+            <v-col cols="12" class="pa-0 text-center text-sm-right">
               <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/table.jpg" alt="Tables"/>
             </v-col>
-            <v-col cols="12" align="end" class="pa-0">
+            <v-col cols="12" class="pa-0 text-center text-sm-right">
               <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/tableWithChild.jpg" alt="Tables with child"/>
             </v-col>
           </v-row>
@@ -197,7 +204,7 @@
       </v-row>
 
       <v-row class="ml-0 mr-0 mb-0 def-mar-top">
-        <v-col cols="6" class="pa-0">
+        <v-col cols="12" sm="6" class="pa-0">
           <h1 class="h-neucha-regular">
             Материалы
           </h1>
@@ -227,7 +234,7 @@
             жит испытания пластилином и клеем!
           </p>
         </v-col>
-        <v-col cols="6" align="end" class="pa-0">
+        <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right">
           <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img8-h" src="../src/images/AnimaPage/explosionDiagram.jpg" alt="Explosion diagram"/>
         </v-col>
       </v-row>
@@ -274,10 +281,17 @@ export default {
   },
   computed: {
     styleOfImageSlideProp() {
-      return {
-        height: "19.145833333333332vw",
-        marginRight: "25px",
-      } 
+      if (this.$vuetify.display.smAndUp) {
+        return {
+          height: "19.145833333333332vw",
+          marginRight: "25px",
+        } 
+      } else {
+        return {
+          height: "70vw",
+          marginRight: "15px",
+        } 
+      }
     }
   }
 }
@@ -285,6 +299,13 @@ export default {
 
 <style scoped>
 
+  .sheep-width {
+    width: 70vw;
+  }
+  .padding {
+    padding-left: 8vw; 
+    padding-right: 8vw;
+  }
   .red-line {
     text-indent: 1.4vw;
   }
@@ -303,6 +324,26 @@ export default {
 
   h1 {
     font-size: 2.5vw;
+  }
+
+  @media (max-width: 599px) { 
+
+    p {
+      font-size: 4.3vw;
+    }
+
+    h1 {
+      font-size: 9vw;
+    }
+
+    .padding {
+      padding-left: 4vw; 
+      padding-right: 4vw;
+    }
+
+    .sheep-width {
+      width: 90vw;
+    }
   }
 </style>
 
@@ -326,6 +367,24 @@ export default {
 
   .anima-img8-h {
     width: 35vw;
+  }
+
+  @media (max-width: 599px) { 
+    .anima-img1-h {
+      width: 90vw;
+    }
+
+    .anima-img2-img3-h {
+      width: 90vw;
+    }
+
+    .anima-img567-h {
+      width: 90vw;
+    }
+
+    .anima-img8-h {
+      width: 90vw;
+    }
   }
 
 </style>
