@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0" fluid>
+  <v-container class="pa-0" fluid style="overflow: hidden;">
     <v-parallax src="../images/AnimaPage/anima.jpg" v-if="this.$vuetify.display.smAndUp">
       <v-row class="ma-0" style="height: 100vh;">
         <v-col cols="12" class="pa-0 align-self-center">
@@ -17,7 +17,7 @@
         </v-col>
     </v-row>
 
-    <v-row class="ma-0" style="background-image: url('../src/images/AnimaPage/background.png'); background-size: cover;">
+    <v-row class="ma-0 background1">
       <Splide :options="splideOptions" :extensions="extensions">
         <SplideSlide>
           <full-image :d-md-h-v=66 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" src="../src/images/AnimaPage/Carousel/2tables.jpg" :style="styleOfImageSlideProp" alt="Two tables"/>
@@ -81,7 +81,7 @@
               и интуитивными.
             </p>
           </v-col>
-          <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right">
+          <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12 mb-sm-0 mb-5">
             <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" src="../src/images/AnimaPage/interior.jpg" alt="Interior"/>
           </v-col>
         </v-row>
@@ -156,10 +156,10 @@
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
-              <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right">
+              <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" src="../src/images/AnimaPage/drawingGirl.jpg" alt="Drawing girl"/>
               </v-col>
-              <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right">
+              <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" src="../src/images/AnimaPage/removableTabletop.jpg" alt="Removable table top"/>
               </v-col>
             </v-row>
@@ -182,7 +182,7 @@
             <p class="h-montserrat-regular" style="font-weight: bold;">
               Зачем крылья?
             </p>
-            <p class="h-montserrat-regular red-line">
+            <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
               На мой взгляд,<br>
               крылья всегда до-<br>
               бавляют некой ска-<br>
@@ -198,7 +198,22 @@
               бросаться в глаза, и внешний вид сто-<br>
               ла станет более взрослым, сместив<br>
               акцент на выразительную форму ножек.<br>
-            </p><br>
+            </p>
+            <p class="h-montserrat-regular red-line" v-else>
+              На мой взгляд,
+              крылья всегда до
+              бавляют некой сказочности любому, даже
+              самому простому предмету, ведь Пегас
+              без крыльев — обычная лошадь, а дракон — ящерица-переросток. Это сильно
+              влияет на образ предмета, но не менее
+              важно то, что со временем ребёнок
+              всё чаще будет использовать столешницу в разложенном виде, 
+              а поддерживающие её крылья не будут
+              бросаться в глаза, и внешний вид стола станет более взрослым, сместив
+              акцент на выразительную форму ножек.
+            </p>
+            
+            <br>
             <p class="h-montserrat-regular" style="font-weight: bold;">
               Почему без привычной фурнитуры?
             </p>
@@ -220,13 +235,13 @@
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
-              <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right">
+              <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/constructor.jpg" alt="Сonstructor"/>
               </v-col>
-              <v-col cols="12" class="pa-0 align-self-sm-center text-center text-sm-right">
+              <v-col cols="12" class="pa-0 align-self-sm-center text-center text-sm-right mt-sm-0 mt-12">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/table.jpg" alt="Tables"/>
               </v-col>
-              <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right">
+              <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/tableWithChild.jpg" alt="Tables with child"/>
               </v-col>
             </v-row>
@@ -235,7 +250,7 @@
       </v-row>
     </v-row>
 
-    <v-row class="ma-0 def-pad-top" style="background-image: url('../src/images/AnimaPage/background2.png'); background-size: cover;">
+    <v-row class="ma-0 def-pad-top background2">
       <v-row class="ma-0 padding">
         <v-col cols="12" class="pa-0">
           <h1 class="h-neucha-regular h-mb">
@@ -277,24 +292,27 @@
             жит испытания пластилином и клеем!
           </p>
         </v-col>
-        <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right">
+        <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
           <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img8-h" src="../src/images/AnimaPage/explosionDiagram.jpg" alt="Explosion diagram"/>
         </v-col>
       </v-row>
 
       <v-row class="ma-0 padding2">
-        <v-col cols="12" class="pa-0 text-center">
-          <h1 class="h-neucha-regular tex-center" style="font-size: 2.8vw;">
+        <v-col cols="12" class="pa-0 text-center mt-sm-0 mt-12 mb-sm-0 mb-10">
+          <h1 class="h-neucha-regular tex-center" style="font-size: 2.8vw;" v-if="this.$vuetify.display.smAndUp">
+            История создания
+          </h1>
+          <h1 class="h-neucha-regular tex-center" style="font-size: 10vw;" v-else>
             История создания
           </h1>
         </v-col>
 
-        <v-row class="ml-0 mr-0 mb-0" style="margin-top: 330px">
+        <v-row class="ml-0 mr-0 mb-0 spec-mt">
           <v-col cols="12" class="pa-0">
             <h1 class="h-neucha-regular h-mb">
               Анализ потребностей
             </h1>
-            <p class="h-montserrat-regular red-line">
+            <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
               Детство — это время, наполненное чудесами и яркими впе-<br>
               чатлениями. И это важный процесс формирования личности.<br>
               Каждый этап уникален и требует соответствующих решений.<br>
@@ -309,6 +327,16 @@
                 с нестандартным набором функций или внешним видом пос-
               </span><br>
               пособствуют развитию гибкого мышления и фантазии.
+            </p>
+            <p class="h-montserrat-regular red-line" v-else>
+              Детство — это время, наполненное чудесами и яркими впечатлениями. 
+              И это важный процесс формирования личности.
+              Каждый этап уникален и требует соответствующих решений.
+              Для грамотного, целостного развития ребёнка необходимо
+              создать благоприятные условия. Окружающая обстановка должна 
+              подталкивать малыша к изучению мира. Необычные вещи
+              с нестандартным набором функций или внешним видом поспособствуют 
+              развитию гибкого мышления и фантазии.
             </p><br>
 
             <p class="h-montserrat-regular mb-2" style="font-weight: bold;">
@@ -440,9 +468,8 @@
               <li>
                 <p>
                   если крылья надоели, хочется более «взрослый» стол,<br>
-                  то мож
                   <span style="letter-spacing: -0.2px;">
-                    но разложить столешницу и переключить внимание на фактурные ножки 
+                    то можно разложить столешницу и переключить внимание на фактурные ножки 
                   </span>
                 </p>
               </li>
@@ -458,7 +485,7 @@
             <img style="width: 100%;" src="../images/AnimaPage/sketches.jpg" alt="Sketches" />
           </v-col>
           <v-col cols="12" class="pa-0">
-            <p class="h-montserrat-regular red-line">
+            <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
               В начале эскизирования я ставила для себя задачу выявить<br>
               <span style="letter-spacing: 0.3px;">
                 наиболее яркие образные решения и лишь потом продумы-<br>
@@ -483,6 +510,23 @@
               </span>
               ния с детства приучит ребёнка к порядку и самоорганизации.
             </p>
+            <p class="h-montserrat-regular red-line" v-else>
+              В начале эскизирования я ставила для себя задачу выявить
+              наиболее яркие образные решения и лишь потом продумывать 
+              конструктивную часть. Также я искала возможность кастомизировать
+              те или иные элементы. Чтобы прийти к наиболее
+              яркому визуальному решению я стремилась разрушить
+              стереотипные конструкции, фиксировались все сумасшедшие 
+              идеи. Не менее важно было создать предмет мебели, который
+              впишется в любую конфигурацию квартиры, необходимо было сделать доступ к нему с наибольшего количества
+              сторон. Рассматривались варианты того, чтобы стол был удобен для разновозрастных детей. Постепенно я обозначила
+              для себя наиболее желаемый функционал. Обязательно
+              включить наклонную плоскость, которая будет соответствовать 
+              потребностям ребёнка в разные периоды жизни. Выделить 
+              систему хранения, как отдельный элемент, до определённого 
+              возраста ребёнка. Наличие собственной зоны хранения с детства приучит ребёнка к порядку и самоорганизации.
+            </p>
+
           </v-col>
         </v-row>
 
@@ -493,24 +537,24 @@
 
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
-              <v-col cols="6" class="pa-0 text-start">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping1.jpg" alt="Prototyping"/>
               </v-col>
-              <v-col cols="6" class="pa-0 text-end">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping2.jpg" alt="Prototyping"/>
               </v-col>
             </v-row>
             <v-row class="ml-0 mr-0 mb-0 mt-6">
-              <v-col cols="6" class="pa-0 text-start">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping3.jpg" alt="Prototyping"/>
               </v-col>
-              <v-col cols="6" class="pa-0 text-end">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping4.jpg" alt="Prototyping"/>
               </v-col>
             </v-row>
           </v-col>
 
-          <v-col cols="12" class="pa-0">
+          <v-col cols="12" class="pa-0" v-if="this.$vuetify.display.smAndUp">
             <p class="h-montserrat-regular red-line">
               Для лучшего понимания конструктивных особенностей был<br>
               создан габаритный макет стола. Макетирование, в отличие<br>
@@ -558,6 +602,33 @@
               тандартные решения. Форма и функция
             </p>
           </v-col>
+          <v-col cols="12" class="pa-0" v-else>
+            <p class="h-montserrat-regular red-line">
+              Для лучшего понимания конструктивных особенностей был
+              создан габаритный макет стола. Макетирование, в отличие
+              от 3d моделирования и скетчинга, помогает нашему мозгу более целостно воспринять предмет. 
+              На макете, даже таком условном и лишённом эстетической составляющей, мы можем
+              сразу обсудить сценарии использования, возможные проблемы и методы решения.
+            </p>
+            <p class="h-montserrat-regular red-line">
+              Макет дал понимание того, что подвижным частям столешницы необходима дополнительная поддержка. Также активно
+              обсуждался поворотный механизм. В мастерской был изготовлен небольшой прототип деревянной петли, 
+              внутрь которой устанавливался металлический плунжер, но так как избранная толщина элементов столешницы была 8 мм, пришлось признать, 
+              что внедрять в неё какую-либо фурнитуру небезопасно с точки зрения срока эксплуатации.
+            </p>
+            <p class="h-montserrat-regular red-line">
+              Следующим вариантом стала идея крепления из ткани.
+              И в макете, и в прототипе была использована ткань под названием оксфорд, которая применяется для изготовления
+              тентов торговых палаток, туристической мебели, снаряжения,
+              курток, рассчитанных на экстремальные условия, отличается
+              повышенной прочностью, имеет водоотталкивающую пропитку. В ткань был вшит деревянный штырь диаметром 8 мм.
+              Далее ткань закрепили под оргстекло на статичной части
+              столешницы, а другую сторону вклеили между мебельным
+              линолеумом и вальхроматом. Подобная конструкция оказалась более безопасной для детских пальчиков и сохранила
+              возможность использовать минимальную толщину столешницы, значительно облегчив конструкцию. Благодаря макетированию были выявлены проблемные зоны и найдены нес-
+              тандартные решения. Форма и функция
+            </p>
+          </v-col>
         </v-row>
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
@@ -567,37 +638,37 @@
 
           <v-col cols="12" class="pa-0 mb-6">
             <v-row class="ma-0">
-              <v-col cols="6" class="pa-0 text-start">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction1.jpg" alt="Dragon"/>
               </v-col>
-              <v-col cols="6" class="pa-0 text-end">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction2.jpg" alt="Boxes"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 mb-6">
             <v-row class="ma-0">
-              <v-col cols="6" class="pa-0 text-start">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction3.jpg" alt="Table legs 1"/>
               </v-col>
-              <v-col cols="6" class="pa-0 text-end">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction4.jpg" alt="Table legs 2"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
-              <v-col cols="6" class="pa-0 text-start">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction5.jpg" alt="Baby and adult table"/>
               </v-col>
-              <v-col cols="6" class="pa-0 text-end">
+              <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
                 <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction6.jpg" alt="Table with opened wings"/>
               </v-col>
             </v-row>
           </v-col>
 
           <v-col cols="12" class="pa-0">
-            <p class="h-montserrat-regular red-line h-mb">
+            <p class="h-montserrat-regular red-line h-mb" v-if="this.$vuetify.display.smAndUp">
               <span style="letter-spacing: 0.3px;">
                 «Стул не должен быть «вертикальным» или «горизонталь-<br>
                 ным», он не должен быть «экспрессивным» или «конструк-<br>
@@ -607,10 +678,18 @@
               вать столу; он должен быть просто хорошим стулом и в таком<br>
               качестве хорошему столу он обязательно подойдет». 
             </p>
+            <p class="h-montserrat-regular red-line h-mb" v-else>
+              «Стул не должен быть «вертикальным» или «горизонтальным», 
+              он не должен быть «экспрессивным» или «конструктивистским»; не должен быть произведен исключительно
+              из соображений целесообразности, или чтобы соответствовать столу; 
+              он должен быть просто хорошим стулом и в таком
+              качестве хорошему столу он обязательно подойдет».
+            </p>
+
             <p class="h-montserrat-regular text-end mb-10">
               Марсель Бройер
             </p>
-            <p class="h-montserrat-regular red-line h-mb">
+            <p class="h-montserrat-regular red-line h-mb" v-if="this.$vuetify.display.smAndUp">
               <span style="letter-spacing: 0.3px;">
                 На мой взгляд декоративный элемент становится в разы<br>
               </span>
@@ -622,6 +701,13 @@
               вая возрастной диапазон и разницу восприятия, было важно<br>
               выполнить их деликатно.  
             </p>
+            <p class="h-montserrat-regular red-line h-mb" v-else>
+              На мой взгляд декоративный элемент становится в разы
+              интереснее, когда в нём прослеживается логика, форма должна быть неразрывно связана с функцией. Каждая деталь
+              стола должна была иметь яркое образное решение, но учитывая возрастной диапазон и разницу восприятия, было важно
+              выполнить их деликатно.
+            </p>
+
             <p class="h-montserrat-regular" style="font-weight: bold;">
               Система хранения:
             </p>
@@ -742,6 +828,14 @@ export default {
 
 <style scoped>
 
+  .background1 {
+    background-image: url('../src/images/AnimaPage/background.png'); 
+    background-size: cover;
+  }
+  .background2 {
+    background-image: url('../src/images/AnimaPage/background2.png'); 
+    background-size: cover;
+  }
   .sheep-width {
     width: 70vw;
   }
@@ -769,6 +863,10 @@ export default {
     margin-top: 9.572916666666666vw;
   }
 
+  .spec-mt {
+    margin-top: 330px;
+  }
+
   p {
     font-size: 1.5vw;
   }
@@ -792,8 +890,32 @@ export default {
       padding-right: 4vw;
     }
 
+    .padding2 {
+      padding-top: unset;
+      padding-left: 4vw; 
+      padding-right: 4vw;
+    }
+
     .sheep-width {
       width: 90vw;
+    }
+
+    .h-mb {
+      margin-bottom: 1vh;
+    }
+
+    .background2 {
+      background-image: unset; 
+      background-size: unset;
+    }
+
+    .background1 {
+      background-image: unset; 
+      background-size: unset;
+    }
+
+    .spec-mt {
+      margin-top: 0px;
     }
   }
 </style>
@@ -842,6 +964,14 @@ export default {
     }
 
     .anima-img8-h {
+      width: 90vw;
+    }
+
+    .anima-img9-h {
+      width: 90vw;
+    }
+
+    .anima-img10-h {
       width: 90vw;
     }
   }
