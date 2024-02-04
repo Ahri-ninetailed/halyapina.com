@@ -66,19 +66,30 @@
               Anima
             </h1>
             <p class="h-montserrat-regular">
-              Anima — в переводе с латыни «душа».<br>
-              <span style="letter-spacing: 0.3px;">
-                Столик трансформируется не только
-              </span><br>
-              в плане эргономики, но и эволюцио-<br>
-              нирует с точки зрения образного<br>
-              <span style="letter-spacing: 0.3px;">
-                решения. Акценты смещаются, ассо-
-              </span><br>
-              <span style="letter-spacing: 0.3px;">
-                циации становятся более сложными
-              </span><br>
-              и интуитивными.
+              <span v-if="$i18n.locale === 'ru'">
+                Anima — в переводе с латыни «душа».<br>
+                <span style="letter-spacing: 0.3px;">
+                  Столик трансформируется не только
+                </span><br>
+                в плане эргономики, но и эволюцио-<br>
+                нирует с точки зрения образного<br>
+                <span style="letter-spacing: 0.3px;">
+                  решения. Акценты смещаются, ассо-
+                </span><br>
+                <span style="letter-spacing: 0.3px;">
+                  циации становятся более сложными
+                </span><br>
+                и интуитивными.
+              </span>
+              <span v-else>
+                Anima — means "soul" in Latin.
+                The table is transformed not only
+                in terms of ergonomics, but also evolutionary
+                niziruetsya from the point of view of the figurative
+                solutions. Emphases are shifting, asso-
+                tions become more complex
+                and intuitive.
+              </span>
             </p>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12 mb-sm-0 mb-5">
@@ -95,63 +106,95 @@
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <v-col cols="12" class="pa-0">
             <h1 class="h-neucha-regular h-mb">
-              Эргономика
+              <span v-if="$i18n.locale === 'ru'">
+                Эргономика
+              </span>
+              <span v-else>
+                Ergonomics
+              </span>
             </h1>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
             <p class="h-montserrat-regular red-line">
-              Я стремилась создать детский стол,<br>
-              который будет ассоциироваться<br>
-              не с первыми прописями и вычисле-<br>
-              ниями, а будет источником вдохнове-<br>
-              ния и пространством для реализации<br>
-              самых смелых идей малыша. Деревца<br>
-              и булыжники станут любимым конст-<br>
-              <span style="letter-spacing: -0.5px;">
-                руктором и разовьют мелкую моторику,
-              </span><br>
-              <span style="letter-spacing: -0.1px;">
-                которая важна при формировании ре-
-              </span><br>
-              <span style="letter-spacing: 0.2px;">
-                чи. Подвижные части столешницы ос-
-              </span><br>
-              нащены отверстиями для кисточек<br>
-              и стакана с водой. Фигурки носорога<br>
-              <span style="letter-spacing: -0.2px;">
-                и буйвола — функциональные элемен-
-              </span><br>
-              ты, при помощи которых регулируется<br>
-              <span style="letter-spacing: 0.2px;">
-                наклон подвижных частей, а их рожки
-              </span><br>
-              <span style="letter-spacing: 0.2px;">
-                выполнены из мягких материалов, ко-
-              </span><br>
-              торые подарят контраст в тактильных<br>
-              ощущениях.<br>
+              <span v-if="$i18n.locale === 'ru'">
+                Я стремилась создать детский стол,<br>
+                который будет ассоциироваться<br>
+                не с первыми прописями и вычисле-<br>
+                ниями, а будет источником вдохнове-<br>
+                ния и пространством для реализации<br>
+                самых смелых идей малыша. Деревца<br>
+                и булыжники станут любимым конст-<br>
+                <span style="letter-spacing: -0.5px;">
+                  руктором и разовьют мелкую моторику,
+                </span><br>
+                <span style="letter-spacing: -0.1px;">
+                  которая важна при формировании ре-
+                </span><br>
+                <span style="letter-spacing: 0.2px;">
+                  чи. Подвижные части столешницы ос-
+                </span><br>
+                нащены отверстиями для кисточек<br>
+                и стакана с водой. Фигурки носорога<br>
+                <span style="letter-spacing: -0.2px;">
+                  и буйвола — функциональные элемен-
+                </span><br>
+                ты, при помощи которых регулируется<br>
+                <span style="letter-spacing: 0.2px;">
+                  наклон подвижных частей, а их рожки
+                </span><br>
+                <span style="letter-spacing: 0.2px;">
+                  выполнены из мягких материалов, ко-
+                </span><br>
+                торые подарят контраст в тактильных<br>
+                ощущениях.<br>
+              </span>
+              <span v-else>
+                I wanted to create a children's table,
+                which will be associated
+                not with the first copybooks and calculations, but will be a source of inspiration and space for implementation
+                the baby's wildest ideas. Trees
+                and the cobblestones will become your favorite construction set and develop fine motor skills,
+                which is important in the formation of speech. The moving parts of the tabletop are equipped with holes for brushes
+                and glasses of water. Rhino figures
+                and buffalo - functional elements with the help of which the
+                the inclination of the moving parts, and their horns
+                made of soft materials that will provide contrast in tactile
+                sensations.
+              </span>
             </p>
             <p class="h-montserrat-regular red-line">
-              Трансформация стола происходит<br>
-              при помощи ростовых насадок для но-<br>
-              <span style="letter-spacing: 0.3px;">
-                жек и ящиков, которые до определён-
-              </span><br>
-              ного момента являются отдельной<br>
-              системой хранения. Ящики ставятся<br>
-              <span style="letter-spacing: 0.3px;">
-                на подстолье, а сверху кладется сто-
-              </span><br>
-              лешница, попадая в пазы на крышках,<br>
-              так как их местоположение и размер<br>
-              <span style="letter-spacing: -0.3px;">
-                схожи с отверстиями в подстолье, кры-
-              </span><br>
-              <span style="letter-spacing: 0.3px;">
-                лья же вынимаются из нижней части
-              </span><br>
-              стола и вставляются в боковые пазы<br>
-              ящиков. 
+              <span v-if="$i18n.locale === 'ru'">
+                Трансформация стола происходит<br>
+                при помощи ростовых насадок для но-<br>
+                <span style="letter-spacing: 0.3px;">
+                  жек и ящиков, которые до определён-
+                </span><br>
+                ного момента являются отдельной<br>
+                системой хранения. Ящики ставятся<br>
+                <span style="letter-spacing: 0.3px;">
+                  на подстолье, а сверху кладется сто-
+                </span><br>
+                лешница, попадая в пазы на крышках,<br>
+                так как их местоположение и размер<br>
+                <span style="letter-spacing: -0.3px;">
+                  схожи с отверстиями в подстолье, кры-
+                </span><br>
+                <span style="letter-spacing: 0.3px;">
+                  лья же вынимаются из нижней части
+                </span><br>
+                стола и вставляются в боковые пазы<br>
+                ящиков. 
+              </span>
+              <span v-else>
+                Table transformation takes place
+                using growth attachments for legs and drawers, which up to a certain point are separate
+                storage system. Boxes are placed
+                on the underframe, and the tabletop is placed on top, falling into the grooves on the lids,
+                because their location and size
+                similar to the holes in the underframe, the wings are removed from the bottom
+                table and inserted into the side grooves
+                boxes.
+              </span>
             </p>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
@@ -175,62 +218,100 @@
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <v-col cols="12" class="pa-0">
             <h1 class="h-neucha-regular h-mb">
-              Образ
+              <span v-if="$i18n.locale === 'ru'">
+                Образ
+              </span>
+              <span v-else>
+                Image
+              </span>
             </h1>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
             <p class="h-montserrat-regular" style="font-weight: bold;">
-              Зачем крылья?
+              <span v-if="$i18n.locale === 'ru'">
+                Зачем крылья?
+              </span>
+              <span v-else>
+                Why wings?
+              </span>
             </p>
-            <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
-              На мой взгляд,<br>
-              крылья всегда до-<br>
-              бавляют некой ска-<br>
-              зочности любому, даже<br>
-              самому простому предмету, ведь Пегас<br>
-              без крыльев — обычная лошадь, а дра-<br>
-              кон — ящерица-переросток. Это сильно<br>
-              влияет на образ предмета, но не менее<br>
-              важно то, что со временем ребёнок<br>
-              всё чаще будет использовать столеш-<br>
-              ницу в разложенном виде, а поддер-<br>
-              живающие её крылья не будут<br>
-              бросаться в глаза, и внешний вид сто-<br>
-              ла станет более взрослым, сместив<br>
-              акцент на выразительную форму ножек.<br>
-            </p>
-            <p class="h-montserrat-regular red-line" v-else>
-              На мой взгляд,
-              крылья всегда до
-              бавляют некой сказочности любому, даже
-              самому простому предмету, ведь Пегас
-              без крыльев — обычная лошадь, а дракон — ящерица-переросток. Это сильно
-              влияет на образ предмета, но не менее
-              важно то, что со временем ребёнок
-              всё чаще будет использовать столешницу в разложенном виде, 
-              а поддерживающие её крылья не будут
-              бросаться в глаза, и внешний вид стола станет более взрослым, сместив
-              акцент на выразительную форму ножек.
-            </p>
+            <span v-if="$i18n.locale === 'ru'">
+              <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
+                На мой взгляд,<br>
+                крылья всегда до-<br>
+                бавляют некой ска-<br>
+                зочности любому, даже<br>
+                самому простому предмету, ведь Пегас<br>
+                без крыльев — обычная лошадь, а дра-<br>
+                кон — ящерица-переросток. Это сильно<br>
+                влияет на образ предмета, но не менее<br>
+                важно то, что со временем ребёнок<br>
+                всё чаще будет использовать столеш-<br>
+                ницу в разложенном виде, а поддер-<br>
+                живающие её крылья не будут<br>
+                бросаться в глаза, и внешний вид сто-<br>
+                ла станет более взрослым, сместив<br>
+                акцент на выразительную форму ножек.<br>
+              </p>
+              <p class="h-montserrat-regular red-line" v-else>
+                На мой взгляд,
+                крылья всегда до
+                бавляют некой сказочности любому, даже
+                самому простому предмету, ведь Пегас
+                без крыльев — обычная лошадь, а дракон — ящерица-переросток. Это сильно
+                влияет на образ предмета, но не менее
+                важно то, что со временем ребёнок
+                всё чаще будет использовать столешницу в разложенном виде, 
+                а поддерживающие её крылья не будут
+                бросаться в глаза, и внешний вид стола станет более взрослым, сместив
+                акцент на выразительную форму ножек.
+              </p>
+            </span>
+            <span v-else>
+              <p class="h-montserrat-regular red-line">
+                In my opinion, wings always add a certain fabulousness to any, even the simplest object, 
+                because Pegasus without wings is an ordinary horse, and a dragon is an overgrown lizard. 
+                This greatly influences the image of the object, but no less important is that over time, 
+                the child will increasingly use the tabletop unfolded, and the wings supporting it will not 
+                be conspicuous, and the appearance of the table will become more adult, shifting the emphasis 
+                to the expressive shape of the legs.
+              </p>
+            </span>
             
             <br>
             <p class="h-montserrat-regular" style="font-weight: bold;">
-              Почему без привычной фурнитуры?
+              <span v-if="$i18n.locale === 'ru'">
+                Почему без привычной фурнитуры?
+              </span>
+              <span v-else>
+                Why without the usual fittings?
+              </span>
             </p>
             <p class="h-montserrat-regular red-line">
-              Я хотела, чтобы ребёнок самостоя-<br>
-              тельно взаимодействовал со столом<br>
-              без риска травмировать себя. Я счи-<br>
-              таю, что суровые металлические дета-<br>
-              ли лишают детскую мебель нежности<br>
-              и лёгкости, а благодаря тканевым пет-<br>
-              лям столик выглядит не типичным<br>
-              предметом мебели, а сказочным кон-<br>
-              структором. Столик «Anima» не просто<br>
-              предмет мебели, а сказочное сущес-<br>
-              тво, прибывшее к нам из невиданных<br>
-              миров, чтобы творить и расти вместе<br>
-              с детьми! 
+              <span v-if="$i18n.locale === 'ru'">
+                Я хотела, чтобы ребёнок самостоя-<br>
+                тельно взаимодействовал со столом<br>
+                без риска травмировать себя. Я счи-<br>
+                таю, что суровые металлические дета-<br>
+                ли лишают детскую мебель нежности<br>
+                и лёгкости, а благодаря тканевым пет-<br>
+                лям столик выглядит не типичным<br>
+                предметом мебели, а сказочным кон-<br>
+                структором. Столик «Anima» не просто<br>
+                предмет мебели, а сказочное сущес-<br>
+                тво, прибывшее к нам из невиданных<br>
+                миров, чтобы творить и расти вместе<br>
+                с детьми! 
+              </span>
+              <span v-else>
+                I wanted the child to independently interact with the table
+                without the risk of injuring yourself. I believe that harsh metal parts take away the tenderness of children's furniture
+                and lightness, and thanks to the fabric loops the table looks atypical
+                a piece of furniture, but a fabulous designer. The "Anima" table is not just
+                a piece of furniture, but a fabulous creature that came to us from unprecedented
+                worlds to create and grow together
+                with kids!
+              </span>
             </p>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
@@ -254,42 +335,65 @@
       <v-row class="ma-0 padding">
         <v-col cols="12" class="pa-0">
           <h1 class="h-neucha-regular h-mb">
-            Материалы
+            <span v-if="$i18n.locale === 'ru'">
+              Материалы
+            </span>
+            <span v-else>
+              Materials
+            </span>
           </h1>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0">
           <p class="h-montserrat-regular red-line">
-            Материалы, выбранные для проекта,<br>
-            безопасны и экологичны. Valchromat,<br>
-            используемый для изготовления сто-<br>
-            <span style="letter-spacing: -0.3px;">
-              лешницы и крыльев, давно применяют<br>
-              в отделке детских игровых помещений,<br>
+            <span v-if="$i18n.locale === 'ru'">
+              Материалы, выбранные для проекта,<br>
+              безопасны и экологичны. Valchromat,<br>
+              используемый для изготовления сто-<br>
+              <span style="letter-spacing: -0.3px;">
+                лешницы и крыльев, давно применяют<br>
+                в отделке детских игровых помещений,<br>
+              </span>
+              <span style="letter-spacing: -0.4px;">
+                так как он обладает повышенной влаго-<br>
+              </span>
+              стойкостью, большой плотностью<br>
+              <span style="letter-spacing: 0.4px;">
+                и экологичностью. Подвижные части<br>
+                столешницы с внешней стороны пок-<br>
+                рыты мебельным линолеумом Forbo<br>
+                Furniture, который прост в уходе и за-<br>
+                щитит поверхность от влаги и краски.<br>
+                Также столешница оснащена силико-<br>
+              </span>
+              новыми выступами и накладками<br>
+              из Valchromat, обеспечивающими бе-<br>
+              зопасный зазор, который не позволит<br>
+              <span style="letter-spacing: 0.4px;">
+                малышу придавить себе пальцы. Под<br>
+              </span>
+              органическое стекло можно подкла-<br>
+              дывать шедевры юного творца, такая<br>
+              визуализация рабочего процесса бла-<br>
+              готворно повлияет на самооценку,<br>
+              и, конечно, оргстекло отважно выдер-<br>
+              жит испытания пластилином и клеем!
             </span>
-            <span style="letter-spacing: -0.4px;">
-              так как он обладает повышенной влаго-<br>
+            <span v-else>
+              Materials selected for the project
+              safe and environmentally friendly. Valchromat,
+              used for making tabletops and wings, has long been used
+              in the decoration of children's playrooms,
+              since it has increased moisture resistance and high density
+              and environmental friendliness. Moving parts
+              The outside countertops are covered with Forbo furniture linoleum
+              Furniture that is easy to clean and will protect the surface from moisture and paint.
+              The tabletop is also equipped with silicone protrusions and pads
+              made of Valchromat, providing a safe gap that will not allow
+              press the baby's fingers. Under
+              organic glass can be used to lay the masterpieces of a young creator, such
+              visualization of the work process will have a beneficial effect on self-esteem,
+              and, of course, plexiglass will bravely withstand the tests of plasticine and glue!
             </span>
-            стойкостью, большой плотностью<br>
-            <span style="letter-spacing: 0.4px;">
-              и экологичностью. Подвижные части<br>
-              столешницы с внешней стороны пок-<br>
-              рыты мебельным линолеумом Forbo<br>
-              Furniture, который прост в уходе и за-<br>
-              щитит поверхность от влаги и краски.<br>
-              Также столешница оснащена силико-<br>
-            </span>
-            новыми выступами и накладками<br>
-            из Valchromat, обеспечивающими бе-<br>
-            зопасный зазор, который не позволит<br>
-            <span style="letter-spacing: 0.4px;">
-              малышу придавить себе пальцы. Под<br>
-            </span>
-            органическое стекло можно подкла-<br>
-            дывать шедевры юного творца, такая<br>
-            визуализация рабочего процесса бла-<br>
-            готворно повлияет на самооценку,<br>
-            и, конечно, оргстекло отважно выдер-<br>
-            жит испытания пластилином и клеем!
           </p>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
@@ -297,203 +401,374 @@
         </v-col>
       </v-row>
 
-      <v-row class="ma-0 padding2">
+      <v-row class="ma-0" :style="padding2">
         <v-col cols="12" class="pa-0 text-center mt-sm-0 mt-12 mb-sm-0 mb-10">
           <h1 class="h-neucha-regular text-center" style="font-size: 2.8vw;" v-if="this.$vuetify.display.smAndUp">
-            История создания
+            <span v-if="$i18n.locale === 'ru'">
+              История создания
+            </span>
+            <span v-else>
+              History of creation
+            </span>
           </h1>
           <h1 class="h-neucha-regular text-center" style="font-size: 10vw;" v-else>
-            История создания
+            <span v-if="$i18n.locale === 'ru'">
+              История создания
+            </span>
+            <span v-else>
+              History of creation
+            </span>
           </h1>
         </v-col>
 
         <v-row class="ml-0 mr-0 mb-0 spec-mt">
           <v-col cols="12" class="pa-0">
             <h1 class="h-neucha-regular h-mb">
-              Анализ потребностей
+              <span v-if="$i18n.locale === 'ru'">
+                Анализ потребностей
+              </span>
+              <span v-else>
+                Needs Analysis
+              </span>
             </h1>
-            <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
-              Детство — это время, наполненное чудесами и яркими впе-<br>
-              чатлениями. И это важный процесс формирования личности.<br>
-              Каждый этап уникален и требует соответствующих решений.<br>
-              Для грамотного, целостного развития ребёнка необходимо<br>
-              <span style="letter-spacing: -0.3px;">
-                создать благоприятные условия. Окружающая обстановка дол-
-              </span><br>
-              <span style="letter-spacing: -0.3px;">
-                жна подталкивать малыша к изучению мира. Необычные вещи
-              </span><br>
-              <span style="letter-spacing: 0.1px;">
-                с нестандартным набором функций или внешним видом пос-
-              </span><br>
-              пособствуют развитию гибкого мышления и фантазии.
-            </p>
-            <p class="h-montserrat-regular red-line" v-else>
-              Детство — это время, наполненное чудесами и яркими впечатлениями. 
-              И это важный процесс формирования личности.
-              Каждый этап уникален и требует соответствующих решений.
-              Для грамотного, целостного развития ребёнка необходимо
-              создать благоприятные условия. Окружающая обстановка должна 
-              подталкивать малыша к изучению мира. Необычные вещи
-              с нестандартным набором функций или внешним видом поспособствуют 
-              развитию гибкого мышления и фантазии.
-            </p><br>
+            <span v-if="$i18n.locale === 'ru'">
+              <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
+                Детство — это время, наполненное чудесами и яркими впе-<br>
+                чатлениями. И это важный процесс формирования личности.<br>
+                Каждый этап уникален и требует соответствующих решений.<br>
+                Для грамотного, целостного развития ребёнка необходимо<br>
+                <span style="letter-spacing: -0.3px;">
+                  создать благоприятные условия. Окружающая обстановка дол-
+                </span><br>
+                <span style="letter-spacing: -0.3px;">
+                  жна подталкивать малыша к изучению мира. Необычные вещи
+                </span><br>
+                <span style="letter-spacing: 0.1px;">
+                  с нестандартным набором функций или внешним видом пос-
+                </span><br>
+                пособствуют развитию гибкого мышления и фантазии.
+              </p>
+              <p class="h-montserrat-regular red-line" v-else>
+                Детство — это время, наполненное чудесами и яркими впечатлениями. 
+                И это важный процесс формирования личности.
+                Каждый этап уникален и требует соответствующих решений.
+                Для грамотного, целостного развития ребёнка необходимо
+                создать благоприятные условия. Окружающая обстановка должна 
+                подталкивать малыша к изучению мира. Необычные вещи
+                с нестандартным набором функций или внешним видом поспособствуют 
+                развитию гибкого мышления и фантазии.
+              </p>
+            </span>
+            <span v-else>
+              <p class="h-montserrat-regular red-line">
+                Childhood — is a time filled with miracles and vivid impressions. 
+                And this is an important process of personality formation. Each 
+                stage is unique and requires appropriate solutions. For the competent, 
+                holistic development of a child, it is necessary to create favorable 
+                conditions. The environment should encourage the baby to explore the world. 
+                Unusual things with a non-standard set of functions or appearance will contribute
+                to the development of flexible thinking and imagination.
+              </p>
+            </span>
+            <br>
 
             <p class="h-montserrat-regular mb-2" style="font-weight: bold;">
-              Раннее детство 1-3 года
+              <span v-if="$i18n.locale === 'ru'">
+                Раннее детство 1-3 года
+              </span>
+              <span v-else>
+                Early childhood 1-3 years
+              </span>
             </p>
 
-            <p class="h-montserrat-regular">Ребёнок:</p>
+            <p class="h-montserrat-regular">
+              <span v-if="$i18n.locale === 'ru'">
+                Ребёнок:
+              </span>
+              <span v-else>
+                Child:
+              </span>
+            </p>
             <ul class="h-montserrat-regular pl-7">
               <li>
                 <p>
-                  учится ходить и говорить, познаёт мир
+                  <span v-if="$i18n.locale === 'ru'">
+                    учится ходить и говорить, познаёт мир
+                  </span>
+                  <span v-else>
+                    learns to walk and talk, discovers the world
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  хочет всё делать сам, но не всегда может
+                  <span v-if="$i18n.locale === 'ru'">
+                    хочет всё делать сам, но не всегда может
+                  </span>
+                  <span v-else>
+                    wants to do everything himself, but he can’t always
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  наглядно-действенное мышление
+                  <span v-if="$i18n.locale === 'ru'">
+                    наглядно-действенное мышление
+                  </span>
+                  <span v-else>
+                    visual-effective thinking
+                  </span>
                 </p>
               </li>
             </ul>
 
-            <p class="h-montserrat-regular">Столик «Anima»:</p>
+            <p class="h-montserrat-regular">
+              <span v-if="$i18n.locale === 'ru'">
+                Столик «Anima»: 
+              </span>
+              <span v-else>
+                Table "Anima":
+              </span>
+            </p>
             <ul class="h-montserrat-regular pl-7">
               <li>
                 <p>
-                  конструктор отлично подойдёт для развития мелкой<br>
-                  моторики, которая напрямую связана с речью
-                </p>
-              </li>
-              <li>
-                <p>
-                  безопасная фурнитура, интуитивный дизайн
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span style="letter-spacing: -0.5px;">
-                    тактильные ощущения благодаря разнообразным<br>
-                    материалам
+                  <span v-if="$i18n.locale === 'ru'">
+                    конструктор отлично подойдёт для развития мелкой<br>
+                    моторики, которая напрямую связана с речью
                   </span>
-                  стола (ручки ящиков выполнены из ткани,<br>
-                  металла, силикона, дерева, тканевые петли в столешнице,<br>
-                  оргстекло, мебельный линолеум, вальхромат)
+                  <span v-else>
+                    The constructor is perfect for developing fine motor skills, which are directly related to speech.
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span v-if="$i18n.locale === 'ru'">
+                    безопасная фурнитура, интуитивный дизайн
+                  </span>
+                  <span v-else>
+                    safe fittings, intuitive design
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span v-if="$i18n.locale === 'ru'">
+                    <span style="letter-spacing: -0.5px;">
+                      тактильные ощущения благодаря разнообразным<br>
+                      материалам
+                    </span>
+                    стола (ручки ящиков выполнены из ткани,<br>
+                    металла, силикона, дерева, тканевые петли в столешнице,<br>
+                    оргстекло, мебельный линолеум, вальхромат)
+                  </span>
+                  <span v-else>
+                    tactile sensations thanks to various
+                    table materials (drawer handles are made of fabric,
+                    metal, silicone, wood, fabric loops in the tabletop,
+                    plexiglass, furniture linoleum, valchromat)
+                  </span>
                 </p>
               </li>
             </ul><br>
 
             <p class="h-montserrat-regular mb-2" style="font-weight: bold;">
-              Дошкольный возраст 3-7 лет
+              <span v-if="$i18n.locale === 'ru'">
+                Дошкольный возраст 3-7 лет  
+              </span>
+              <span v-else>
+                Preschool age 3-7 years
+              </span>
             </p>
             
-            <p class="h-montserrat-regular">Ребёнок:</p>
+            <p class="h-montserrat-regular">
+              <span v-if="$i18n.locale === 'ru'">
+                Ребёнок: 
+              </span>
+              <span v-else>
+                Child:
+              </span>
+            </p>
             <ul class="h-montserrat-regular pl-7">
               <li>
                 <p>
-                  появление первых фобий и тревог
+                  <span v-if="$i18n.locale === 'ru'">
+                    появление первых фобий и тревог
+                  </span>
+                  <span v-else>
+                    the appearance of the first phobias and anxieties
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  поиск увлечений и способов самовыражения
+                  <span v-if="$i18n.locale === 'ru'">
+                    поиск увлечений и способов самовыражения
+                  </span>
+                  <span v-else>
+                    Finding hobbies and ways to express yourself
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  наглядно-образное мышление
+                  <span v-if="$i18n.locale === 'ru'">
+                    наглядно-образное мышление
+                  </span>
+                  <span v-else>
+                    visual-figurative thinking
+                  </span>
                 </p>
               </li>
             </ul>
 
-            <p class="h-montserrat-regular">Столик «Anima»:</p>
+            <p class="h-montserrat-regular">
+              <span v-if="$i18n.locale === 'ru'">
+                Столик «Anima»:
+              </span>
+              <span v-else>
+                Table "Anima":
+              </span>
+            </p>
             <ul class="h-montserrat-regular pl-7">
               <li>
                 <p>
-                  <span v-if="this.$vuetify.display.smAndUp">
-                    образ дружественного создания, попытка создать атмос-<br>
-                    феру собственного маленького уютного мира в детской комнате
-                  </span>
-                  <span v-else>
-                    образ дружественного создания, попытка создать атмосферу собственного маленького уютного мира в детской комнате
-                  </span>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span v-if="this.$vuetify.display.smAndUp">
-                    наклонные плоскости для рисования и чтения, оргстекло<br>
-                    <span style="letter-spacing: -0.5px;">
-                      для лепки, макетирования, система хранения для органи-<br>
-                      зации
+                  <span v-if="$i18n.locale === 'ru'">
+                    <span v-if="this.$vuetify.display.smAndUp">
+                      образ дружественного создания, попытка создать атмос-<br>
+                      феру собственного маленького уютного мира в детской комнате
                     </span>
-                    личного пространства
+                    <span v-else>
+                      образ дружественного создания, попытка создать атмосферу собственного маленького уютного мира в детской комнате
+                    </span>
                   </span>
                   <span v-else>
-                    наклонные плоскости для рисования и чтения, оргстекло для лепки, 
-                    макетирования, система хранения для организации
+                    the image of a friendly creature, an attempt to create the atmosphere of your own small cozy world in the children's room
                   </span>
                 </p>
               </li>
               <li>
                 <p>
-                  образное решение стола навевает приятные ассоциации,<br>
-                  дизайн способствует развитию воображения, фантазии
+                  <span v-if="$i18n.locale === 'ru'">
+                    <span v-if="this.$vuetify.display.smAndUp">
+                      наклонные плоскости для рисования и чтения, оргстекло<br>
+                      <span style="letter-spacing: -0.5px;">
+                        для лепки, макетирования, система хранения для органи-<br>
+                        зации
+                      </span>
+                      личного пространства
+                    </span>
+                    <span v-else>
+                      наклонные плоскости для рисования и чтения, оргстекло для лепки, 
+                      макетирования, система хранения для организации
+                    </span>
+                  </span>
+                  <span v-else>
+                    inclined planes for drawing and reading, plexiglass for modeling, prototyping, storage system for organization
+                  </span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span v-if="$i18n.locale === 'ru'">
+                    образное решение стола навевает приятные ассоциации,<br>
+                    дизайн способствует развитию воображения, фантазии
+                  </span>
+                  <span v-else>
+                    the figurative design of the table evokes pleasant associations,
+                    design promotes the development of imagination and fantasy
+                  </span>
                 </p>
               </li>
             </ul><br>
 
             <p class="h-montserrat-regular mb-2" style="font-weight: bold;">
-              Младший школьный возраст 7-11 лет
+              <span v-if="$i18n.locale === 'ru'">
+                Младший школьный возраст 7-11 лет 
+              </span>
+              <span v-else>
+                Junior school age 7-11 years
+              </span>
             </p>
 
-            <p class="h-montserrat-regular">Ребёнок:</p>
+            <p class="h-montserrat-regular">
+              <span v-if="$i18n.locale === 'ru'">
+                Ребёнок: 
+              </span>
+              <span v-else>
+                Child:
+              </span>
+            </p>
             <ul class="h-montserrat-regular pl-7">
               <li>
                 <p>
-                  <span v-if="this.$vuetify.display.smAndUp">
-                    зависимость от мнения окружающих, волнение по поводу<br>
-                    успеваемости в школе и своего положения в обществе,<br>
-                    желание быть частью коллектива
+                  <span v-if="$i18n.locale === 'ru'">
+                    <span v-if="this.$vuetify.display.smAndUp">
+                      зависимость от мнения окружающих, волнение по поводу<br>
+                      успеваемости в школе и своего положения в обществе,<br>
+                      желание быть частью коллектива
+                    </span>
+                    <span v-else>
+                      зависимость от мнения окружающих, волнение по поводу
+                      успеваемости в школе и своего положения в обществе,
+                      желание быть частью коллектива
+                    </span>
                   </span>
                   <span v-else>
-                    зависимость от мнения окружающих, волнение по поводу
-                    успеваемости в школе и своего положения в обществе,
-                    желание быть частью коллектива
+                    dependence on the opinions of others, anxiety about school performance and one’s position in society, the desire to be part of a team
                   </span>
                 </p>
               </li>
               <li>
                 <p>
-                  словесно-логическое мышление
+                  <span v-if="$i18n.locale === 'ru'">
+                    словесно-логическое мышление
+                  </span>
+                  <span v-else>
+                    verbal-logical thinking
+                  </span>
                 </p>
               </li>
             </ul>
 
-            <p class="h-montserrat-regular">Столик «Anima»:</p>
+            <p class="h-montserrat-regular">
+              <span v-if="$i18n.locale === 'ru'">
+                Столик «Anima»:
+              </span>
+              <span v-else>
+                Table "Anima":
+              </span>
+            </p>
             <ul class="h-montserrat-regular pl-7">
               <li>
                 <p>
-                  всесторонний доступ стола позволяет нескольким людям<br>
-                  одновремено заниматься, возможность социализации
+                  <span v-if="$i18n.locale === 'ru'">
+                    всесторонний доступ стола позволяет нескольким людям<br>
+                    одновременно заниматься, возможность социализации
+                  </span>
+                  <span v-else>
+                    comprehensive table access allows several people to study at the same time, the possibility of socialization
+                  </span>
                 </p>
               </li>
               <li>
                 <p>
-                  <span v-if="this.$vuetify.display.smAndUp">
-                    если крылья надоели, хочется более «взрослый» стол,<br>
-                    <span style="letter-spacing: -0.2px;">
+                  <span v-if="$i18n.locale === 'ru'">
+                    <span v-if="this.$vuetify.display.smAndUp">
+                      если крылья надоели, хочется более «взрослый» стол,<br>
+                      <span style="letter-spacing: -0.2px;">
+                        то можно разложить столешницу и переключить внимание на фактурные ножки 
+                      </span>
+                    </span>
+                    <span v-else>
+                      если крылья надоели, хочется более «взрослый» стол, 
                       то можно разложить столешницу и переключить внимание на фактурные ножки 
                     </span>
                   </span>
                   <span v-else>
-                    если крылья надоели, хочется более «взрослый» стол, 
-                    то можно разложить столешницу и переключить внимание на фактурные ножки 
+                    if you're tired of the wings and want a more "grown-up" 
+                    table, then you can unfold the tabletop and turn your attention to the textured legs
                   </span>
                 </p>
               </li>
@@ -503,60 +778,89 @@
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <h1 class="h-neucha-regular h-mb">
-            Эскизирование
+            <span v-if="$i18n.locale === 'ru'">
+              Эскизирование    
+            </span>
+            <span v-else>
+              Sketching
+            </span>
           </h1>
           <v-col cols="12" class="pa-0 h-mb">
             <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" src="../src/images/AnimaPage/sketches.jpg" alt="Sketches"/>
           </v-col>
           <v-col cols="12" class="pa-0 mt-sm-0 mt-12">
-            <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
-              В начале эскизирования я ставила для себя задачу выявить<br>
-              <span style="letter-spacing: 0.3px;">
-                наиболее яркие образные решения и лишь потом продумы-<br>
-                вать конструктивную часть. Также я искала возможность кас-<br>
-                томизировать те или иные элементы. Чтобы прийти к наибо-<br>
-                лее яркому визуальному решению я стремилась разрушить<br>
-                стереотипные конструкции, фиксировались все сумасшед-<br>
-              </span>
-              шие идеи. Не менее важно было создать предмет мебели, ко-<br>
-              торый впишется в любую конфигурацию квартиры, необходи-<br>
-              мо было сделать доступ к нему с наибольшего количества<br>
-              сторон. Рассматривались варианты того, чтобы стол был удо-<br>
-              бен для разновозрастных детей. Постепенно я обозначила<br>
-              для себя наиболее желаемый функционал. Обязательно<br>
-              <span style="letter-spacing: 0.3px;">
-                включить наклонную плоскость, которая будет соответство-<br>
-              </span>
-              вать потребностям ребёнка в разные периоды жизни. Выде-<br>
-              лить систему хранения, как отдельный элемент, до опреде-<br>
-              <span style="letter-spacing: -0.1px;">
-                лённого возраста ребёнка. Наличие собственной зоны  хране-<br>
-              </span>
-              ния с детства приучит ребёнка к порядку и самоорганизации.
-            </p>
-            <p class="h-montserrat-regular red-line" v-else>
-              В начале эскизирования я ставила для себя задачу выявить
-              наиболее яркие образные решения и лишь потом продумывать 
-              конструктивную часть. Также я искала возможность кастомизировать
-              те или иные элементы. Чтобы прийти к наиболее
-              яркому визуальному решению я стремилась разрушить
-              стереотипные конструкции, фиксировались все сумасшедшие 
-              идеи. Не менее важно было создать предмет мебели, который
-              впишется в любую конфигурацию квартиры, необходимо было сделать доступ к нему с наибольшего количества
-              сторон. Рассматривались варианты того, чтобы стол был удобен для разновозрастных детей. Постепенно я обозначила
-              для себя наиболее желаемый функционал. Обязательно
-              включить наклонную плоскость, которая будет соответствовать 
-              потребностям ребёнка в разные периоды жизни. Выделить 
-              систему хранения, как отдельный элемент, до определённого 
-              возраста ребёнка. Наличие собственной зоны хранения с детства приучит ребёнка к порядку и самоорганизации.
-            </p>
-
+            <span v-if="$i18n.locale === 'ru'">
+              <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
+                В начале эскизирования я ставила для себя задачу выявить<br>
+                <span style="letter-spacing: 0.3px;">
+                  наиболее яркие образные решения и лишь потом продумы-<br>
+                  вать конструктивную часть. Также я искала возможность кас-<br>
+                  томизировать те или иные элементы. Чтобы прийти к наибо-<br>
+                  лее яркому визуальному решению я стремилась разрушить<br>
+                  стереотипные конструкции, фиксировались все сумасшед-<br>
+                </span>
+                шие идеи. Не менее важно было создать предмет мебели, ко-<br>
+                торый впишется в любую конфигурацию квартиры, необходи-<br>
+                мо было сделать доступ к нему с наибольшего количества<br>
+                сторон. Рассматривались варианты того, чтобы стол был удо-<br>
+                бен для разновозрастных детей. Постепенно я обозначила<br>
+                для себя наиболее желаемый функционал. Обязательно<br>
+                <span style="letter-spacing: 0.3px;">
+                  включить наклонную плоскость, которая будет соответство-<br>
+                </span>
+                вать потребностям ребёнка в разные периоды жизни. Выде-<br>
+                лить систему хранения, как отдельный элемент, до опреде-<br>
+                <span style="letter-spacing: -0.1px;">
+                  лённого возраста ребёнка. Наличие собственной зоны  хране-<br>
+                </span>
+                ния с детства приучит ребёнка к порядку и самоорганизации.
+              </p>
+              <p class="h-montserrat-regular red-line" v-else>
+                В начале эскизирования я ставила для себя задачу выявить
+                наиболее яркие образные решения и лишь потом продумывать 
+                конструктивную часть. Также я искала возможность кастомизировать
+                те или иные элементы. Чтобы прийти к наиболее
+                яркому визуальному решению я стремилась разрушить
+                стереотипные конструкции, фиксировались все сумасшедшие 
+                идеи. Не менее важно было создать предмет мебели, который
+                впишется в любую конфигурацию квартиры, необходимо было сделать доступ к нему с наибольшего количества
+                сторон. Рассматривались варианты того, чтобы стол был удобен для разновозрастных детей. Постепенно я обозначила
+                для себя наиболее желаемый функционал. Обязательно
+                включить наклонную плоскость, которая будет соответствовать 
+                потребностям ребёнка в разные периоды жизни. Выделить 
+                систему хранения, как отдельный элемент, до определённого 
+                возраста ребёнка. Наличие собственной зоны хранения с детства приучит ребёнка к порядку и самоорганизации.
+              </p>    
+            </span>
+            <span v-else>
+              <p class="h-montserrat-regular red-line">
+                At the beginning of sketching, I set myself the task of identifying
+                the most striking imaginative solutions and only then think through
+                structural part. I was also looking for an opportunity to customize
+                certain elements. To come to the most
+                I tried to destroy the bright visual solution
+                stereotypical designs, all the crazy ones were recorded
+                ideas. It was equally important to create a piece of furniture that
+                will fit into any apartment configuration, it was necessary to make it accessible from the greatest number
+                sides Options were considered to make the table convenient for children of different ages. Gradually I identified
+                the most desired functionality for yourself. Necessarily
+                include an inclined plane that will fit
+                the needs of the child at different periods of life. Select
+                storage system, as a separate element, up to a certain
+                child's age. Having your own storage area from childhood will teach your child to order and self-organization.
+              </p>
+            </span>
           </v-col>
         </v-row>
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <h1 class="h-neucha-regular h-mb">
-            Макетирование
+            <span v-if="$i18n.locale === 'ru'">
+              Макетирование   
+            </span>
+            <span v-else>
+              Layout
+            </span>
           </h1>
 
           <v-col cols="12" class="pa-0 h-mb">
@@ -578,86 +882,122 @@
             </v-row>
           </v-col>
 
-          <v-col cols="12" class="pa-0" v-if="this.$vuetify.display.smAndUp">
-            <p class="h-montserrat-regular red-line">
-              Для лучшего понимания конструктивных особенностей был<br>
-              создан габаритный макет стола. Макетирование, в отличие<br>
-              от 3d моделирования и скетчинга, помогает нашему мозгу бо-<br>
-              <span style="letter-spacing: 0.3px;">
-                лее целостно воспринять предмет. На макете, даже таком ус-<br>
-                ловном и лишённом эстетической составляющей, мы можем<br>
-                сразу обсудить сценарии использования, возможные проб-<br>
+          <v-col cols="12" class="pa-0 mt-12 mt-sm-0">
+            <span v-if="$i18n.locale === 'ru'">
+              <span v-if="this.$vuetify.display.smAndUp">
+                <p class="h-montserrat-regular red-line">
+                  Для лучшего понимания конструктивных особенностей был<br>
+                  создан габаритный макет стола. Макетирование, в отличие<br>
+                  от 3d моделирования и скетчинга, помогает нашему мозгу бо-<br>
+                  <span style="letter-spacing: 0.3px;">
+                    лее целостно воспринять предмет. На макете, даже таком ус-<br>
+                    ловном и лишённом эстетической составляющей, мы можем<br>
+                    сразу обсудить сценарии использования, возможные проб-<br>
+                  </span>
+                  лемы и методы решения. 
+                </p>
+                <p class="h-montserrat-regular red-line">
+                  <span style="letter-spacing: 0.3px;">
+                    Макет дал понимание того, что подвижным частям столеш-<br>
+                  </span>
+                  ницы необходима дополнительная поддержка. Также активно<br>
+                  <span style="letter-spacing: 0.3px;">
+                    обсуждался поворотный механизм. В мастерской был изго-<br>
+                    товлен небольшой прототип деревянной петли, внутрь кото-<br>
+                    рой устанавливался металлический плунжер, но так как из-<br>
+                    бранная толщина элементов столешницы была 8 мм, приш-<br>
+                    лось признать, что внедрять в неё какую-либо фурнитуру не-<br>
+                  </span>
+                  безопасно с точки зрения срока эксплуатации. 
+                </p>
+                <p class="h-montserrat-regular red-line">
+                  Следующим вариантом стала идея крепления из ткани.<br>
+                  И в макете, и в прототипе была использована ткань под наз-<br>
+                  ванием оксфорд, которая применяется для изготовления<br>
+                  тентов торговых палаток, туристической мебели, снаряжения,<br>
+                  <span style="letter-spacing: 0.3px;">
+                    курток, рассчитанных на экстремальные условия, отличается<br>
+                    повышенной прочностью, имеет водоотталкивающую про-<br>
+                  </span>
+                  питку. В ткань был вшит деревянный штырь диаметром 8 мм.<br>
+                  <span style="letter-spacing: 0.4px;">
+                    Далее ткань закрепили под оргстекло на статичной части<br>
+                    столешницы, а другую сторону вклеили между мебельным<br>
+                    линолеумом и вальхроматом. Подобная конструкция оказа-<br>
+                    лась более безопасной для детских пальчиков и сохранила<br>
+                    возможность использовать минимальную толщину столеш-<br>
+                  </span>
+                  ницы, значительно облегчив конструкцию. Благодаря макети-<br>
+                  рованию были выявлены проблемные зоны и найдены нес-<br>
+                  тандартные решения. Форма и функция
+                </p>
               </span>
-              лемы и методы решения. 
-            </p>
-            <p class="h-montserrat-regular red-line">
-              <span style="letter-spacing: 0.3px;">
-                Макет дал понимание того, что подвижным частям столеш-<br>
+              <span v-else>
+                <p class="h-montserrat-regular red-line">
+                  Для лучшего понимания конструктивных особенностей был
+                  создан габаритный макет стола. Макетирование, в отличие
+                  от 3d моделирования и скетчинга, помогает нашему мозгу более целостно воспринять предмет. 
+                  На макете, даже таком условном и лишённом эстетической составляющей, мы можем
+                  сразу обсудить сценарии использования, возможные проблемы и методы решения.
+                </p>
+                <p class="h-montserrat-regular red-line">
+                  Макет дал понимание того, что подвижным частям столешницы необходима дополнительная поддержка. Также активно
+                  обсуждался поворотный механизм. В мастерской был изготовлен небольшой прототип деревянной петли, 
+                  внутрь которой устанавливался металлический плунжер, но так как избранная толщина элементов столешницы была 8 мм, пришлось признать, 
+                  что внедрять в неё какую-либо фурнитуру небезопасно с точки зрения срока эксплуатации.
+                </p>
+                <p class="h-montserrat-regular red-line">
+                  Следующим вариантом стала идея крепления из ткани.
+                  И в макете, и в прототипе была использована ткань под названием оксфорд, которая применяется для изготовления
+                  тентов торговых палаток, туристической мебели, снаряжения,
+                  курток, рассчитанных на экстремальные условия, отличается
+                  повышенной прочностью, имеет водоотталкивающую пропитку. В ткань был вшит деревянный штырь диаметром 8 мм.
+                  Далее ткань закрепили под оргстекло на статичной части
+                  столешницы, а другую сторону вклеили между мебельным
+                  линолеумом и вальхроматом. Подобная конструкция оказалась более безопасной для детских пальчиков и сохранила
+                  возможность использовать минимальную толщину столешницы, значительно облегчив конструкцию. Благодаря макетированию были выявлены проблемные зоны и найдены нес-
+                  тандартные решения. Форма и функция
+                </p>
               </span>
-              ницы необходима дополнительная поддержка. Также активно<br>
-              <span style="letter-spacing: 0.3px;">
-                обсуждался поворотный механизм. В мастерской был изго-<br>
-                товлен небольшой прототип деревянной петли, внутрь кото-<br>
-                рой устанавливался металлический плунжер, но так как из-<br>
-                бранная толщина элементов столешницы была 8 мм, приш-<br>
-                лось признать, что внедрять в неё какую-либо фурнитуру не-<br>
-              </span>
-              безопасно с точки зрения срока эксплуатации. 
-            </p>
-            <p class="h-montserrat-regular red-line">
-              Следующим вариантом стала идея крепления из ткани.<br>
-              И в макете, и в прототипе была использована ткань под наз-<br>
-              ванием оксфорд, которая применяется для изготовления<br>
-              тентов торговых палаток, туристической мебели, снаряжения,<br>
-              <span style="letter-spacing: 0.3px;">
-                курток, рассчитанных на экстремальные условия, отличается<br>
-                повышенной прочностью, имеет водоотталкивающую про-<br>
-              </span>
-              питку. В ткань был вшит деревянный штырь диаметром 8 мм.<br>
-              <span style="letter-spacing: 0.4px;">
-                Далее ткань закрепили под оргстекло на статичной части<br>
-                столешницы, а другую сторону вклеили между мебельным<br>
-                линолеумом и вальхроматом. Подобная конструкция оказа-<br>
-                лась более безопасной для детских пальчиков и сохранила<br>
-                возможность использовать минимальную толщину столеш-<br>
-              </span>
-              ницы, значительно облегчив конструкцию. Благодаря макети-<br>
-              рованию были выявлены проблемные зоны и найдены нес-<br>
-              тандартные решения. Форма и функция
-            </p>
-          </v-col>
-          <v-col cols="12" class="mt-12" v-else>
-            <p class="h-montserrat-regular red-line">
-              Для лучшего понимания конструктивных особенностей был
-              создан габаритный макет стола. Макетирование, в отличие
-              от 3d моделирования и скетчинга, помогает нашему мозгу более целостно воспринять предмет. 
-              На макете, даже таком условном и лишённом эстетической составляющей, мы можем
-              сразу обсудить сценарии использования, возможные проблемы и методы решения.
-            </p>
-            <p class="h-montserrat-regular red-line">
-              Макет дал понимание того, что подвижным частям столешницы необходима дополнительная поддержка. Также активно
-              обсуждался поворотный механизм. В мастерской был изготовлен небольшой прототип деревянной петли, 
-              внутрь которой устанавливался металлический плунжер, но так как избранная толщина элементов столешницы была 8 мм, пришлось признать, 
-              что внедрять в неё какую-либо фурнитуру небезопасно с точки зрения срока эксплуатации.
-            </p>
-            <p class="h-montserrat-regular red-line">
-              Следующим вариантом стала идея крепления из ткани.
-              И в макете, и в прототипе была использована ткань под названием оксфорд, которая применяется для изготовления
-              тентов торговых палаток, туристической мебели, снаряжения,
-              курток, рассчитанных на экстремальные условия, отличается
-              повышенной прочностью, имеет водоотталкивающую пропитку. В ткань был вшит деревянный штырь диаметром 8 мм.
-              Далее ткань закрепили под оргстекло на статичной части
-              столешницы, а другую сторону вклеили между мебельным
-              линолеумом и вальхроматом. Подобная конструкция оказалась более безопасной для детских пальчиков и сохранила
-              возможность использовать минимальную толщину столешницы, значительно облегчив конструкцию. Благодаря макетированию были выявлены проблемные зоны и найдены нес-
-              тандартные решения. Форма и функция
-            </p>
+            </span>
+            <span v-else>
+              <p class="h-montserrat-regular red-line">
+                For a better understanding of the design features, there was
+                A dimensional mock-up of the table was created. Layout, in contrast
+                from 3D modeling and sketching, helps our brain perceive the subject more holistically.
+                On a layout, even such a conventional one and devoid of an aesthetic component, we can
+                immediately discuss use cases, possible problems and solutions.
+              </p>
+              <p class="h-montserrat-regular red-line">
+                The layout made it clear that the moving parts of the tabletop needed additional support. Also active
+                the turning mechanism was discussed. A small prototype of a wooden hinge was made in the workshop,
+                inside which a metal plunger was installed, but since the chosen thickness of the tabletop elements was 8 mm, I had to admit that
+                that introducing any accessories into it is unsafe from the point of view of service life.
+              </p>
+              <p class="h-montserrat-regular red-line">
+                The next option was the idea of fastening made of fabric.
+                Both the mockup and the prototype used a fabric called oxford, which is used to make
+                awnings, trade tents, tourist furniture, equipment,
+                jackets designed for extreme conditions are different
+                increased strength, has water-repellent impregnation. A wooden pin with a diameter of 8 mm was sewn into the fabric.
+                Next, the fabric was secured under plexiglass on the static part
+                tabletops, and the other side was glued between the furniture
+                linoleum and valchromate. This design turned out to be safer for children’s fingers and preserved
+                the ability to use the minimum thickness of the tabletop, significantly facilitating the design. Thanks to prototyping, problem areas were identified and deficiencies were found.
+                standard solutions. Form and function
+              </p>
+            </span>
           </v-col>
         </v-row>
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <h1 class="h-neucha-regular h-mb">
-            Форма и функция
+            <span v-if="$i18n.locale === 'ru'">
+              Форма и функция
+            </span>
+            <span v-else>
+              Form and function
+            </span>
           </h1>
 
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
@@ -693,137 +1033,226 @@
 
           <v-col cols="12" class="pa-0">
             <p class="h-montserrat-regular red-line h-mb" style="font-style: italic;">
-              <span v-if="this.$vuetify.display.smAndUp">
-                <span style="letter-spacing: 0.7px;">
-                  «Стул не должен быть «вертикальным» или «горизонталь-<br>
-                  ным», он не должен быть «экспрессивным» или «конструк-<br>
-                  тивистским»; не должен быть произведен исключительно<br>
+              <span v-if="$i18n.locale === 'ru'">
+                <span v-if="this.$vuetify.display.smAndUp">
+                  <span style="letter-spacing: 0.7px;">
+                    «Стул не должен быть «вертикальным» или «горизонталь-<br>
+                    ным», он не должен быть «экспрессивным» или «конструк-<br>
+                    тивистским»; не должен быть произведен исключительно<br>
+                  </span>
+                  <span style="letter-spacing: 0.3px;">
+                    из соображений целесообразности, или чтобы соответство-<br>
+                  </span>
+                  вать столу; он должен быть просто хорошим стулом и в таком<br>
+                  качестве хорошему столу он обязательно подойдет». 
                 </span>
-                <span style="letter-spacing: 0.3px;">
-                  из соображений целесообразности, или чтобы соответство-<br>
+                <span v-else>
+                  «Стул не должен быть «вертикальным» или «горизонтальным», 
+                  он не должен быть «экспрессивным» или «конструктивистским»; 
+                  не должен быть произведен исключительно
+                  из соображений целесообразности, или чтобы соответствовать 
+                  столу; он должен быть просто хорошим стулом и в таком
+                  качестве хорошему столу он обязательно подойдет». 
                 </span>
-                вать столу; он должен быть просто хорошим стулом и в таком<br>
-                качестве хорошему столу он обязательно подойдет». 
               </span>
               <span v-else>
-                «Стул не должен быть «вертикальным» или «горизонтальным», 
-                он не должен быть «экспрессивным» или «конструктивистским»; 
-                не должен быть произведен исключительно
-                из соображений целесообразности, или чтобы соответствовать 
-                столу; он должен быть просто хорошим стулом и в таком
-                качестве хорошему столу он обязательно подойдет». 
+                "A chair should not be "vertical" or "horizontal"
+                it should not be "expressive" or "constructivist";
+                should not be produced exclusively
+                for reasons of expediency, or to comply
+                table; he should just be a good chair and like that
+                It will definitely suit a good table."
               </span>
             </p>
 
             <p class="h-montserrat-regular text-end mb-10" style="font-style: italic;">
-              Марсель Бройер
-            </p>
-            <p class="h-montserrat-regular red-line h-mb" v-if="this.$vuetify.display.smAndUp">
-              <span style="letter-spacing: 0.3px;">
-                На мой взгляд декоративный элемент становится в разы<br>
+              <span v-if="$i18n.locale === 'ru'">
+                Марсель Бройер
               </span>
-              интереснее, когда в нём прослеживается логика, форма дол-<br>
-              жна быть неразрывно связана с функцией. Каждая деталь<br>
-              <span style="letter-spacing: -0.3px;">
-                стола должна была иметь яркое образное решение, но учиты-<br>
+              <span v-else>
+                Marcel Breuer
               </span>
-              вая возрастной диапазон и разницу восприятия, было важно<br>
-              выполнить их деликатно.  
             </p>
-            <p class="h-montserrat-regular red-line h-mb" v-else>
-              На мой взгляд декоративный элемент становится в разы
-              интереснее, когда в нём прослеживается логика, форма должна быть неразрывно связана с функцией. Каждая деталь
-              стола должна была иметь яркое образное решение, но учитывая возрастной диапазон и разницу восприятия, было важно
-              выполнить их деликатно.
+            <p class="h-montserrat-regular red-line h-mb">
+              <span v-if="$i18n.locale === 'ru'">
+                <span v-if="this.$vuetify.display.smAndUp">
+                  <span style="letter-spacing: 0.3px;">
+                    На мой взгляд декоративный элемент становится в разы<br>
+                  </span>
+                  интереснее, когда в нём прослеживается логика, форма дол-<br>
+                  жна быть неразрывно связана с функцией. Каждая деталь<br>
+                  <span style="letter-spacing: -0.3px;">
+                    стола должна была иметь яркое образное решение, но учиты-<br>
+                  </span>
+                  вая возрастной диапазон и разницу восприятия, было важно<br>
+                  выполнить их деликатно.  
+                </span>
+                <span v-else>
+                  На мой взгляд декоративный элемент становится в разы
+                  интереснее, когда в нём прослеживается логика, форма должна быть неразрывно связана с функцией. Каждая деталь
+                  стола должна была иметь яркое образное решение, но учитывая возрастной диапазон и разницу восприятия, было важно
+                  выполнить их деликатно.
+                </span>
+              </span>
+              <span v-else>
+                In my opinion, the decorative element becomes significantly
+                It's more interesting when logic is traced in it; form should be inextricably linked with function. Every detail
+                the table had to have a bright imagery, but given the age range and difference in perception, it was important
+                perform them delicately.
+              </span>
             </p>
 
             <p class="h-montserrat-regular" style="font-weight: bold;">
-              Система хранения:
+              <span v-if="$i18n.locale === 'ru'">
+                Система хранения:
+              </span>
+              <span v-else>
+                Storage system:
+              </span>
             </p>
             <p class="h-montserrat-regular red-line h-mb" style="letter-spacing: 0.3px">
-              Было решено отказаться от «глазастых» ящиков, в отличие<br>
-              от крыльев, их невозможно со временем скрыть, да и слиш-<br>
-              ком прямолинейный образ, быстро наскучит. 
-            </p>
-            <p class="h-montserrat-regular" style="font-weight: bold;">
-              Ножки:
-            </p>
-            <p class="h-montserrat-regular red-line h-mb">
-              <span v-if="this.$vuetify.display.smAndUp">
-                С течением времени акцент смещается на нестандартные<br>
-                ножки. Их расширяющаяся к низу форма придаёт столу до-<br>
-                <span style="letter-spacing: -0.1px;">
-                  полнительную устойчивость, а диагональная направленность<br>
-                </span>
-                <span style="letter-spacing: 0.3px;">
-                  сохраняет больше пространства для ног. Пропорции ножки<br>
-                  отлично сочетаются как с «маленьким» столиком, создавая<br>
-                  ощущение комичных толстых лапок, так и с более высоким,<br>
-                </span>
-                тяжеловесным  «взрослым» столом. 
+              <span v-if="$i18n.locale === 'ru'">
+                Было решено отказаться от «глазастых» ящиков, в отличие<br>
+                от крыльев, их невозможно со временем скрыть, да и слиш-<br>
+                ком прямолинейный образ, быстро наскучит. 
               </span>
               <span v-else>
-                С течением времени акцент смещается на нестандартные
-                ножки. Их расширяющаяся к низу форма придаёт столу 
-                дополнительную устойчивость, а диагональная направленность  
-                сохраняет больше пространства для ног. Пропорции ножки
-                отлично сочетаются как с «маленьким» столиком, создавая
-                ощущение комичных толстых лапок, так и с более высоким,
-                тяжеловесным  «взрослым» столом. 
+                It was decided to abandon the "big-eyed" boxes, in contrast
+                from the wings, they cannot be hidden over time, and a too straightforward image will quickly become boring.
               </span>
             </p>
             <p class="h-montserrat-regular" style="font-weight: bold;">
-              Фиксирующие оргстекло накладки: 
-            </p>
-            <p class="h-montserrat-regular red-line h-mb">
-              <span v-if="this.$vuetify.display.smAndUp">
-                В первых визуализациях накладки были слишком широки-<br>
-                <span style="letter-spacing: 0.4px;">
-                  ми и массивными, забирали много места от рабочего прос-<br>
-                  транства стола, поэтому финальная форма стала более тон-<br>
-                  кой, имела отступы от края стола и скрывала место крепле-<br>
-                </span>
-                ния новой ткневой петли. 
+              <span v-if="$i18n.locale === 'ru'">
+                Ножки:
               </span>
               <span v-else>
-                В первых визуализациях накладки были слишком широкими 
-                и массивными, забирали много места от рабочего пространства 
-                стола, поэтому финальная форма стала более тонкой, 
-                имела отступы от края стола и скрывала место крепления 
-                новой ткневой петли. 
+                Legs:
+              </span>
+            </p>
+            <p class="h-montserrat-regular red-line h-mb">
+              <span v-if="$i18n.locale === 'ru'">
+                <span v-if="this.$vuetify.display.smAndUp">
+                  С течением времени акцент смещается на нестандартные<br>
+                  ножки. Их расширяющаяся к низу форма придаёт столу до-<br>
+                  <span style="letter-spacing: -0.1px;">
+                    полнительную устойчивость, а диагональная направленность<br>
+                  </span>
+                  <span style="letter-spacing: 0.3px;">
+                    сохраняет больше пространства для ног. Пропорции ножки<br>
+                    отлично сочетаются как с «маленьким» столиком, создавая<br>
+                    ощущение комичных толстых лапок, так и с более высоким,<br>
+                  </span>
+                  тяжеловесным  «взрослым» столом. 
+                </span>
+                <span v-else>
+                  С течением времени акцент смещается на нестандартные
+                  ножки. Их расширяющаяся к низу форма придаёт столу 
+                  дополнительную устойчивость, а диагональная направленность  
+                  сохраняет больше пространства для ног. Пропорции ножки
+                  отлично сочетаются как с «маленьким» столиком, создавая
+                  ощущение комичных толстых лапок, так и с более высоким,
+                  тяжеловесным  «взрослым» столом. 
+                </span>
+              </span>
+              <span v-else>
+                Over time, the emphasis shifts to non-standard
+                legs. Their shape, expanding towards the bottom, gives the table
+                additional stability, and diagonal orientation
+                saves more legroom. Leg proportions
+                go well with both a "small" table, creating
+                a feeling of comically thick paws, and with a taller one,
+                a heavy "adult" table.
               </span>
             </p>
             <p class="h-montserrat-regular" style="font-weight: bold;">
-              Уголок-дракончик:
+              <span v-if="$i18n.locale === 'ru'">
+                Фиксирующие оргстекло накладки: 
+              </span>
+              <span v-else>
+                Plexiglas fixing pads:
+              </span>
+            </p>
+            <p class="h-montserrat-regular red-line h-mb">
+              <span v-if="$i18n.locale === 'ru'">
+                <span v-if="this.$vuetify.display.smAndUp">
+                  В первых визуализациях накладки были слишком широки-<br>
+                  <span style="letter-spacing: 0.4px;">
+                    ми и массивными, забирали много места от рабочего прос-<br>
+                    транства стола, поэтому финальная форма стала более тон-<br>
+                    кой, имела отступы от края стола и скрывала место крепле-<br>
+                  </span>
+                  ния новой ткневой петли. 
+                </span>
+                <span v-else>
+                  В первых визуализациях накладки были слишком широкими 
+                  и массивными, забирали много места от рабочего пространства 
+                  стола, поэтому финальная форма стала более тонкой, 
+                  имела отступы от края стола и скрывала место крепления 
+                  новой ткневой петли. 
+                </span>
+              </span>
+              <span v-else>
+                In the first renderings the overlays were too wide
+                and massive, took up a lot of space from the workspace
+                table, so the final shape became thinner,
+                had indentations from the edge of the table and hid the attachment point
+                new fabric loop.
+              </span>
+            </p>
+            <p class="h-montserrat-regular" style="font-weight: bold;">
+              <span v-if="$i18n.locale === 'ru'">
+                Уголок-дракончик:
+              </span>
+              <span v-else>
+                Dragon corner:
+              </span>
             </p>
             <p class="h-montserrat-regular red-line">
-              <span v-if="this.$vuetify.display.smAndUp">
-                <span style="letter-spacing: 0.4px;">
-                Изначально дракончик должен был крепиться рожками<br>
-                в отверстия в подвижных частях столешницы («спинка» 37°,<br>
+              <span v-if="$i18n.locale === 'ru'">
+                <span v-if="this.$vuetify.display.smAndUp">
+                  <span style="letter-spacing: 0.4px;">
+                  Изначально дракончик должен был крепиться рожками<br>
+                  в отверстия в подвижных частях столешницы («спинка» 37°,<br>
+                  </span>
+                  «голова» 55°, а хвостик отсоединялся и имел угол 18°), но из-за<br>
+                  новой формы накладки он потерял своую устойчивость<br>
+                  и превратился в зубра и носорога. 
                 </span>
-                «голова» 55°, а хвостик отсоединялся и имел угол 18°), но из-за<br>
-                новой формы накладки он потерял своую устойчивость<br>
-                и превратился в зубра и носорога. 
+                <span v-else>
+                  Изначально дракончик должен был крепиться рожками
+                  в отверстия в подвижных частях столешницы («спинка» 37°,
+                  «голова» 55°, а хвостик отсоединялся и имел угол 18°), но из-за
+                  новой формы накладки он потерял своую устойчивость
+                  и превратился в зубра и носорога. 
+                </span>
               </span>
               <span v-else>
-                Изначально дракончик должен был крепиться рожками
-                в отверстия в подвижных частях столешницы («спинка» 37°,
-                «голова» 55°, а хвостик отсоединялся и имел угол 18°), но из-за
-                новой формы накладки он потерял своую устойчивость
-                и превратился в зубра и носорога. 
+                Initially, the dragon was supposed to be attached with horns
+                into the holes in the moving parts of the tabletop ("back" 37°,
+                "head" 55°, and the tail was detached and had an angle of 18°), but due to
+                new shape of the lining it has lost its stability
+                and turned into a bison and a rhinoceros.
               </span>
+
+
             </p><br>
             <p class="h-montserrat-regular red-line">
-              <span v-if="this.$vuetify.display.smAndUp">
-                Выражаю огромную благодарность моему дипломному ру-<br>
-                ководителю Еве Гордеевой @evahysum. Это было прекрасное<br>
-                и плодотворное сотрудничество! 
+              <span v-if="$i18n.locale === 'ru'">
+                <span v-if="this.$vuetify.display.smAndUp">
+                  Выражаю огромную благодарность моему дипломному ру-<br>
+                  ководителю Еве Гордеевой @evahysum. Это было прекрасное<br>
+                  и плодотворное сотрудничество! 
+                </span>
+                <span v-else>
+                  Выражаю огромную благодарность моему дипломному руководителю 
+                  Еве Гордеевой @evahysum. Это было прекрасное
+                  и плодотворное сотрудничество! 
+                </span>
               </span>
               <span v-else>
-                Выражаю огромную благодарность моему дипломному руководителю 
-                Еве Гордеевой @evahysum. Это было прекрасное
-                и плодотворное сотрудничество! 
+                I express my deep gratitude to my thesis supervisor
+                Eva Gordeeva @evahysum. It was wonderful
+                and fruitful cooperation!
               </span>
             </p>
           </v-col>
@@ -874,6 +1303,29 @@ export default {
     };
   },
   computed: {
+    padding2() {
+      if (this.$vuetify.display.smAndUp) {
+        if (this.$i18n.locale === 'ru') {
+          return {
+            paddingLeft: "25vw",
+            paddingRight: "25vw",
+            paddingTop: "2500px",
+          };
+        } else {
+          return {
+            paddingLeft: "25vw",
+            paddingRight: "25vw",
+            paddingTop: "2750px",
+          };
+        }
+      } else {
+        return {
+          paddingTop: "unset",
+          paddingLeft: "4vw",
+          paddingRight: "4vw",
+        }
+      }
+    },
     styleOfImageSlideProp() {
       if (this.$vuetify.display.smAndUp) {
         return {
@@ -907,11 +1359,6 @@ export default {
   .padding {
     padding-left: 9vw; 
     padding-right: 9vw;
-  }
-  .padding2 {
-    padding-left: 25vw; 
-    padding-right: 25vw;
-    padding-top: 2500px;
   }
   .h-mb {
     margin-bottom: 2vh;
@@ -955,12 +1402,6 @@ export default {
     }
 
     .padding {
-      padding-left: 4vw; 
-      padding-right: 4vw;
-    }
-
-    .padding2 {
-      padding-top: unset;
       padding-left: 4vw; 
       padding-right: 4vw;
     }
