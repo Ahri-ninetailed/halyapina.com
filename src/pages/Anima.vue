@@ -82,7 +82,7 @@
             </p>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12 mb-sm-0 mb-5">
-            <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" src="../src/images/AnimaPage/interior.jpg" alt="Interior"/>
+            <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" src="../src/images/AnimaPage/interior.jpg" :zoomxs="false" alt="Interior"/>
           </v-col>
         </v-row>
 
@@ -157,10 +157,10 @@
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
               <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" src="../src/images/AnimaPage/drawingGirl.jpg" alt="Drawing girl"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" src="../src/images/AnimaPage/drawingGirl.jpg" alt="Drawing girl"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" src="../src/images/AnimaPage/removableTabletop.jpg" alt="Removable table top"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" src="../src/images/AnimaPage/removableTabletop.jpg" alt="Removable table top"/>
               </v-col>
             </v-row>
           </v-col>
@@ -168,7 +168,7 @@
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <v-col align="center" cols="12" class="pa-0 align-self-center">
-            <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img4-h" src="../src/images/AnimaPage/tableDrawing.jpg" alt="Table drawing"/>
+            <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img4-h" :zoomxs="false" src="../src/images/AnimaPage/tableDrawing.jpg" alt="Table drawing"/>
           </v-col>
         </v-row>
 
@@ -236,13 +236,13 @@
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
               <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/constructor.jpg" alt="Сonstructor"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" src="../src/images/AnimaPage/constructor.jpg" alt="Сonstructor"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-center text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/table.jpg" alt="Tables"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" src="../src/images/AnimaPage/table.jpg" alt="Tables"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" src="../src/images/AnimaPage/tableWithChild.jpg" alt="Tables with child"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" src="../src/images/AnimaPage/tableWithChild.jpg" alt="Tables with child"/>
               </v-col>
             </v-row>
           </v-col>
@@ -293,7 +293,7 @@
           </p>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
-          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" src="../src/images/AnimaPage/explosionDiagram.jpg" alt="Explosion diagram"/>
+          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" src="../src/images/AnimaPage/explosionDiagram.jpg" alt="Explosion diagram"/>
         </v-col>
       </v-row>
 
@@ -506,7 +506,7 @@
             Эскизирование
           </h1>
           <v-col cols="12" class="pa-0 h-mb">
-            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" src="../src/images/AnimaPage/sketches.jpg" alt="Sketches"/>
+            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" src="../src/images/AnimaPage/sketches.jpg" alt="Sketches"/>
           </v-col>
           <v-col cols="12" class="pa-0 mt-sm-0 mt-12">
             <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
@@ -562,18 +562,18 @@
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping1.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping1.jpg" alt="Prototyping"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping2.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping2.jpg" alt="Prototyping"/>
               </v-col>
             </v-row>
             <v-row class="ml-0 mr-0 mb-0 mt-6 mt-md-4 mt-lg-6">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping3.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping3.jpg" alt="Prototyping"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" src="../src/images/AnimaPage/prototyping4.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping4.jpg" alt="Prototyping"/>
               </v-col>
             </v-row>
           </v-col>
@@ -663,30 +663,30 @@
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction1.jpg" alt="Dragon"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction1.jpg" alt="Dragon"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction2.jpg" alt="Boxes"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction2.jpg" alt="Boxes"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction3.jpg" alt="Table legs 1"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction3.jpg" alt="Table legs 1"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction4.jpg" alt="Table legs 2"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction4.jpg" alt="Table legs 2"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction5.jpg" alt="Baby and adult table"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction5.jpg" alt="Baby and adult table"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" src="../src/images/AnimaPage/formandfunction6.jpg" alt="Table with opened wings"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction6.jpg" alt="Table with opened wings"/>
               </v-col>
             </v-row>
           </v-col>

@@ -1,10 +1,9 @@
 <template>
   <div>
     <img
-      class="pointer" 
       :class="this.$props.class"
       :src="this.$props.src" 
-      :style="this.$props.style" 
+      :style="{...this.$props.style, ...cursor}" 
       :alt="this.$props.alt"
       @click="openImage"
     />
@@ -39,6 +38,11 @@ export default {
       type: String,
       required: false,
       default: '',
+    },
+    zoomxs: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
     dHV: {
       type: Number,
@@ -107,6 +111,9 @@ export default {
   },
   methods: {
     openImage() {
+      if (this.$props.zoomxs === false && this.$vuetify.display.xs) {
+        return;
+      }
       this.dialog = true;
     },
     dialogMaxWidth() {
@@ -133,6 +140,16 @@ export default {
     },
   },
   computed: {
+    cursor() {
+      if (this.$props.zoomxs === false && this.$vuetify.display.xs) {
+        return {
+          cursor: 'unset'
+        };
+      }
+      return {
+        cursor: 'pointer'
+      };
+    },
     getCurrentHVal() {
       if (this.$vuetify.display.lgAndUp) {
         if (this.dLgHV !== undefined) {
@@ -313,10 +330,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-
-.pointer {
-  cursor: pointer;
-}
-</style>
