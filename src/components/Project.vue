@@ -40,8 +40,8 @@
         </v-row>
       </v-col>
       <v-col align="center" md="6" cols="12" class="pa-0 project-text-margin-bottom" :class="this.$vuetify.display.mdAndUp ? 'align-self-center' : 'align-self-start'">
-        <v-row class="pa-0 ma-sm-0 mt-2 mb-0 ml-10 mr-10 d-inline-block" style="background-color: white;">
-          <h1 class="h-neucha-regular project-header-size project-h-margin-bottom" :class="hPosition">
+        <v-row class="pa-0 ma-sm-0 mt-2 mb-0 ml-10 mr-10 d-inline-block">
+          <h1 class="h-neucha-regular project-header-size project-h-margin-bottom" :class="hPosition" style="background-color: transparent;">
             {{  headerText }}
           </h1>
           <slot></slot>
@@ -201,6 +201,7 @@ export default {
 .p-project-size {
   font-size: 1.14vw;
   width: 30.1vw;
+  background-color: white;
 }
 .project-swiper-width {
   width: 30vw;

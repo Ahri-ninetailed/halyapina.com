@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/pages/Home.vue';
 import About from '@/pages/About.vue';
-import CrownBed from '@/pages/projects/CrownBed.vue';
 import Anima from '@/pages/Anima.vue';
+//Импорт проектов
+import CrownBed from '@/pages/projects/CrownBed.vue';
+import SpaceJam from '@/pages/projects/SpaceJam.vue';
 
 const routes = [
   {
@@ -17,9 +19,14 @@ const routes = [
     path: '/anima',
     component: Anima,
   },
+  //Пути проектов
   {
     path: '/crownbed',
     component: CrownBed,
+  },
+  {
+    path: '/spacejam',
+    component: SpaceJam,
   }
 ];
 
