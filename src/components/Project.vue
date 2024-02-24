@@ -15,7 +15,7 @@
           <v-col :cols="swiperCols" class="pa-0 mt-sm-0 mt-6">
             <Splide 
               ref="splide"
-              class="project-swiper-width" 
+              class="project-swiper-width splider-white-back" 
               :options="splideOptions"
               style="margin: 3px;"
               :style="shadowBorder"
@@ -192,6 +192,9 @@ export default {
 </style>
 
 <style>
+.splider-white-back {
+  background-color: white;
+}
 .project-img-height {
   height: 19.166666666666668vw;
 }
