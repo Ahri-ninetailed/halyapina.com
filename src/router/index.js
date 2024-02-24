@@ -5,6 +5,7 @@ import Anima from '@/pages/Anima.vue';
 //Импорт проектов
 import CrownBed from '@/pages/projects/CrownBed.vue';
 import SpaceJam from '@/pages/projects/SpaceJam.vue';
+import Fennel from '@/pages/projects/Fennel.vue';
 
 const routes = [
   {
@@ -27,6 +28,10 @@ const routes = [
   {
     path: '/spacejam',
     component: SpaceJam,
+  },
+  {
+    path: '/fennel',
+    component: Fennel,
   }
 ];
 
