@@ -200,6 +200,7 @@ export default {
 }
 .p-project-size {
   font-size: 1.14vw;
+  width: 30.1vw;
 }
 .project-swiper-width {
   width: 30vw;
@@ -216,6 +217,7 @@ export default {
 }
 .p-project-size {
     font-size: 1.3vw;
+    width: 34.4vw;
 }
 .project-swiper-width {
   width: 31.84vw;
@@ -230,23 +232,10 @@ export default {
 }
 .p-project-size {
     font-size: 1.35vw;
+    width: 35.7vw;
 }
 .project-swiper-width {
   width: 31.84vw;
-}
-}
-@media (max-width: 1280px) { 
-.project-img-height {
-  height: 24vw;
-}
-.project-header-size {
-  font-size: 2.3vw;
-}
-.p-project-size {
-  font-size: 1.45vw;
-}
-.project-swiper-width {
-  width: 34.84vw;
 }
 }
 @media (max-width: 1280px) { 
@@ -258,6 +247,7 @@ export default {
 }
 .p-project-size {
   font-size: 1.6vw;
+  width: 42.3vw;
 }
 .project-swiper-width {
   width: 34.84vw;
@@ -272,6 +262,7 @@ export default {
 }
 .p-project-size {
   font-size: 2vw;
+  width: 52.8vw;
 }
 .project-swiper-width {
   width: 52vw;
@@ -295,6 +286,7 @@ export default {
 }
 .p-project-size {
   font-size: 2.5vw;
+  width: 66vw;
 }
 .project-swiper-width {
   width:67vw;
@@ -323,6 +315,7 @@ export default {
   }
   .p-project-size {
     font-size: 4vw;
+    width: 72.8vw;
   }
 }
 </style>
