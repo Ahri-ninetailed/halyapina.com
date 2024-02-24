@@ -6,6 +6,7 @@ import Anima from '@/pages/Anima.vue';
 import CrownBed from '@/pages/projects/CrownBed.vue';
 import SpaceJam from '@/pages/projects/SpaceJam.vue';
 import Fennel from '@/pages/projects/Fennel.vue';
+import Alien from '@/pages/projects/Alien.vue';
 
 const routes = [
   {
@@ -32,7 +33,11 @@ const routes = [
   {
     path: '/fennel',
     component: Fennel,
-  }
+  },
+  {
+    path: '/alien',
+    component: Alien,
+  },
 ];
 
 const router = createRouter({
