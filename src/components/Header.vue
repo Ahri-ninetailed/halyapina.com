@@ -159,20 +159,20 @@ export default {
       let url = new URL(currentUrl);
       let path = url.pathname;
       let pathParts = path.split('/').filter(Boolean);
-      let lastPart = pathParts.pop();
+      let lastPathPart = pathParts.pop();
     
-      let langKey = "";
+      let title = "";
       if (url.pathname === '/') {
-        langKey = this.$t(`header.home`)
+        title = this.$i18n.messages[this.$i18n.locale].header.home;
       } else {
-        if (lastPart in this.$i18n.messages[lang].header) {
-          langKey = this.$t(`header.${lastPart}`)
-        } else {
-          langKey = lastPart.charAt(0).toUpperCase() + lastPart.slice(1);
+        if (lastPathPart in this.$i18n.messages[this.$i18n.locale].header) {
+          title = this.$i18n.messages[this.$i18n.locale].header[lastPathPart];
+        } else if (lastPathPart in this.$i18n.messages[this.$i18n.locale].projects) {
+          title = this.$i18n.messages[this.$i18n.locale].projects[lastPathPart];
         }
       }
 
-      document.title = `${langKey} | ${this.$t('surname')}`
+      document.title = `${title} | ${this.$t('surname')}`
     },
   },
 }

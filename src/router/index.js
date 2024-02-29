@@ -47,14 +47,12 @@ const router = createRouter({
 
 import i18n from '../i18n'
 
-console.log(i18n)
 router.beforeEach((to, from, next) => {
   let title = "";
   if (to.path === '/') {
     title = i18n.global.messages[i18n.global.locale].header.home;
   } else {
     let lastPathPart = to.path.substring(1);
-    console.log(lastPathPart);
     if (lastPathPart in i18n.global.messages[i18n.global.locale].header) {
       title = i18n.global.messages[i18n.global.locale].header[lastPathPart];
     } else if (lastPathPart in i18n.global.messages[i18n.global.locale].projects) {
