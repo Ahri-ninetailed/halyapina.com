@@ -1297,13 +1297,13 @@ export default {
           return {
             paddingLeft: "25vw",
             paddingRight: "25vw",
-            paddingTop: "2500px",
+            paddingTop: "130.20833333333334vw",
           };
         } else {
           return {
             paddingLeft: "25vw",
             paddingRight: "25vw",
-            paddingTop: "2750px",
+            paddingTop: "143.22916666666666vw",
           };
         }
       } else {
@@ -1355,7 +1355,7 @@ export default {
     padding-right: 9vw;
   }
   .h-mb {
-    margin-bottom: 2vh;
+    margin-bottom: 0.9572916666666667vw;
   }
   .red-line {
     text-indent: 1.4vw;
