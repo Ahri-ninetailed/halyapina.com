@@ -7,7 +7,12 @@
             ANIMA
           </p>
           <p class="mt-1 text-center h-montserrat-regular" style="font-size: 1.2vw;">
-            Проект трансформируемого стола для детей от 3-х до 9-ти лет
+            <span v-if="$i18n.locale === 'ru'">
+              Проект трансформируемого стола для детей от 3-х до 9-ти лет
+            </span>
+            <span v-else>
+              Project of a transformable table for children from 3 to 9 years old
+            </span>
           </p>
         </v-col>
       </v-row>
