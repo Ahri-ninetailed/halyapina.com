@@ -17,7 +17,6 @@
               ref="splide"
               class="project-swiper-width splider-white-back" 
               :options="splideOptions"
-              style="margin: 3px;"
               :style="shadowBorder"
             >
               <SplideSlide class="project-swiper-width"
@@ -139,10 +138,12 @@ export default {
       if (this.$vuetify.display.smAndUp) {
         return {
           boxShadow: "0px 0px 3px 1px rgb(236, 236, 236)",
+          margin: "3px",
         }
       } else {
         return {
           boxShadow: 'unset',
+          margin: "unset",
         }
       }
       
