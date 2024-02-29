@@ -10,6 +10,12 @@ const messages = {
       },
       home: {
         h: "Projects"
+      },
+      projects: {
+        crownbed: "Crown bed",
+        spacejam: "SpaceJam",
+        fennel: "Fennel",
+        alien: "Alien",
       }
     },
     ru: {
@@ -21,6 +27,12 @@ const messages = {
       },
       home: {
         h: "Проекты"
+      },
+      projects: {
+        crownbed: "Crown bed",
+        spacejam: "SpaceJam",
+        fennel: "Fennel",
+        alien: "Alien",
       }
     }
   };
