@@ -8,7 +8,7 @@
         <a class="no-default-styles" href="/anima"><p>{{ $t('header.anima') }}</p></a>
       </v-col>
       <v-col v-if="!isAboutPage" cols="auto" class="pa-0 ml-3 ml-sm-6 align-self-center">
-        <a class="no-default-styles" href="/aboutme"><p>{{ $t('header.about') }}</p></a>
+        <a class="no-default-styles" href="/aboutme"><p>{{ $t('header.aboutme') }}</p></a>
       </v-col>
 
       <v-spacer></v-spacer>
@@ -16,7 +16,7 @@
       <v-col cols="auto" class="pa-0 align-self-center">
         <v-row class="ma-0">
           <v-col cols="auto" class="pa-0">
-            <button type="button" class="no-default-styles" :style="underLineRu" @click="setLanguage('ru')"><p>Ru</p></button>
+            <button type="button" class="no-default-styles" :style="underLineRu" @click="setLanguage('ru')"><p>Ру</p></button>
           </v-col>
           <v-col cols="auto" class="pa-0 ml-2 mr-2">
             <p>/</p>
@@ -154,6 +154,25 @@ export default {
     setLanguage(lang) {
       localStorage.setItem('language', lang);
       this.$i18n.locale = lang;
+
+      let currentUrl = window.location.href;
+      let url = new URL(currentUrl);
+      let path = url.pathname;
+      let pathParts = path.split('/').filter(Boolean);
+      let lastPart = pathParts.pop();
+    
+      let langKey = "";
+      if (url.pathname === '/') {
+        langKey = this.$t(`header.home`)
+      } else {
+        if (lastPart in this.$i18n.messages[lang].header) {
+          langKey = this.$t(`header.${lastPart}`)
+        } else {
+          langKey = lastPart.charAt(0).toUpperCase() + lastPart.slice(1);
+        }
+      }
+
+      document.title = `${langKey} | ${this.$t('surname')}`
     },
   },
 }

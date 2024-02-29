@@ -2,9 +2,10 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
     en: {
+      surname: "Halyapina",
       header: {
         home: 'Home',
-        about: 'About Me',
+        aboutme: 'About Me',
         anima: 'Anima',
       },
       home: {
@@ -12,9 +13,10 @@ const messages = {
       }
     },
     ru: {
+      surname: "Халяпина",
       header: {
         home: 'Главная',
-        about: 'О себе',
+        aboutme: 'О себе',
         anima: 'Анима',
       },
       home: {
