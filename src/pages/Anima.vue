@@ -1,6 +1,6 @@
 <template>
   <v-container class="pa-0" fluid style="overflow: hidden;">
-    <v-parallax src="../images/AnimaPage/anima.jpg" v-if="this.$vuetify.display.smAndUp">
+    <v-parallax src="../images/AnimaPage/anima.png" v-if="this.$vuetify.display.smAndUp">
       <v-row class="ma-0" style="height: 100vh;">
         <v-col cols="12" class="pa-0 align-self-center">
           <p class="text-center h-neucha-regular" style="font-weight: bold; font-size: 9.094270833333333vw;">
