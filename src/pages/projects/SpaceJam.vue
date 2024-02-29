@@ -1,5 +1,5 @@
 <template>
-  <project header-text="SpaceJam" :swiper-imgs="images" background-img="../src/images/Projects/SpaceJam/background.png">
+  <project :header-text="$t('projects.spacejam')" :swiper-imgs="images" background-img="../src/images/Projects/SpaceJam/background.png">
     <p class="h-montserrat-regular text-start p-project-size">
       <span v-if="$i18n.locale === 'ru'">
         <span v-if="this.$vuetify.display.smAndUp">

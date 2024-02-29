@@ -1,5 +1,5 @@
 <template>
-  <project header-text="Crown bed" :swiper-imgs="images" background-img="../src/images/Projects/CrownBed/background.png">
+  <project :header-text="$t('projects.crownbed')" :swiper-imgs="images" background-img="../src/images/Projects/CrownBed/background.png">
     <p class="h-montserrat-regular text-start p-project-size">
       <span v-if="$i18n.locale === 'ru'">
         <span v-if="this.$vuetify.display.smAndUp">

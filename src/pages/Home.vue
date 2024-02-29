@@ -13,31 +13,31 @@
 
     <v-row class="row-margin-horizontal pt-3">
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card name="Lines" href="lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
+        <main-card :name="$t('projects.lines')" href="lines" imgPath="src/images/MainPage/MainCards/many_chairs.jpg" imgHoverPath="src/images/MainPage/MainCards/many_chairs_hover.jpg" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card name="Dragonfly" href="dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
+        <main-card :name="$t('projects.dragonfly')" href="dragonfly" imgPath="src/images/MainPage/MainCards/flys.jpg" imgHoverPath="src/images/MainPage/MainCards/flys_hover.jpg" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card name="Firefly" href="firefly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
+        <main-card :name="$t('projects.firefly')" href="firefly" imgPath="src/images/MainPage/MainCards/another_flys.jpg" imgHoverPath="src/images/MainPage/MainCards/another_flys_hover.jpg" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card name="Fennel" href="fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
+        <main-card :name="$t('projects.fennel')" href="fennel" imgPath="src/images/MainPage/MainCards/3.jpg" imgHoverPath="src/images/MainPage/MainCards/3_hover.jpg"/>
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card name="Alien" href="alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
+        <main-card :name="$t('projects.alien')" href="alien" imgPath="src/images/MainPage/MainCards/wave.jpg" imgHoverPath="src/images/MainPage/MainCards/wave_hover.jpg" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card name="UFO" href="ufo" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
+        <main-card :name="$t('projects.ufo')" href="ufo" imgPath="src/images/MainPage/MainCards/ufo.jpg" imgHoverPath="src/images/MainPage/MainCards/ufo_hover.jpg" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card name="SpaceJam" href="/spacejam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
+        <main-card :name="$t('projects.spacejam')" href="/spacejam" imgPath="src/images/MainPage/MainCards/launch.jpg" imgHoverPath="src/images/MainPage/MainCards/launch_hover.jpg"/>
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card name="Bubble" href="/bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
+        <main-card :name="$t('projects.bubble')" href="/bubble" imgPath="src/images/MainPage/MainCards/bubble.jpg" imgHoverPath="src/images/MainPage/MainCards/bubble_hover.jpg"/>
       </v-col>
       <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-margin-padding" id="CrownBed">
-        <main-card name="Crown bed" href="/crownbed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
+        <main-card :name="$t('projects.crownbed')" href="/crownbed" imgPath="src/images/MainPage/MainCards/tree.jpg" imgHoverPath="src/images/MainPage/MainCards/tree_hover.jpg"/>
       </v-col>
       <v-col lg="3" md="4" sm="12" cols="12" :style="dawingGirlLeftMargin" class="pt-2 pl-0">
         <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">

@@ -16,6 +16,11 @@ const messages = {
         spacejam: "SpaceJam",
         fennel: "Fennel",
         alien: "Alien",
+        lines: "Lines",
+        dragonfly: "Dragonfly",
+        firefly: "Firefly",
+        ufo: "UFO",
+        bubble: "Bubble",
       }
     },
     ru: {
@@ -33,6 +38,11 @@ const messages = {
         spacejam: "SpaceJam",
         fennel: "Fennel",
         alien: "Alien",
+        lines: "Lines",
+        dragonfly: "Dragonfly",
+        firefly: "Firefly",
+        ufo: "UFO",
+        bubble: "Bubble",
       }
     }
   };
