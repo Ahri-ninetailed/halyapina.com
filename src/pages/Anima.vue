@@ -3,8 +3,11 @@
     <v-parallax src="../images/AnimaPage/anima.png" v-if="this.$vuetify.display.smAndUp">
       <v-row class="ma-0" style="height: 100vh;">
         <v-col cols="12" class="pa-0 align-self-center">
-          <p class="text-center h-neucha-regular" style="font-weight: bold; font-size: 9.094270833333333vw;">
+          <p class="mt-12 text-center h-neucha-regular" style="font-weight: bold; font-size: 9.094270833333333vw;">
             ANIMA
+          </p>
+          <p class="mt-1 text-center h-montserrat-regular" style="font-size: 1.2vw;">
+            Проект трансформируемого стола для детей от 3-х до 9-ти лет
           </p>
         </v-col>
       </v-row>
