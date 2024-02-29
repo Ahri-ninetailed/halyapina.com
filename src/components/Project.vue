@@ -162,7 +162,7 @@ export default {
 
 <style scoped>
 .background-img {
-  background-size: contain;
+  background-size: cover;
   background-position: top;
 }
 .button-borderless {
