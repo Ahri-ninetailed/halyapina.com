@@ -382,7 +382,7 @@
           </p>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
-          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" src="../src/images/AnimaPage/explosionDiagram.jpg" alt="Explosion diagram"/>
+          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" src="../src/images/AnimaPage/explosionDiagram.png" alt="Explosion diagram"/>
         </v-col>
       </v-row>
 
