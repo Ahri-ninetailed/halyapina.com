@@ -58,7 +58,7 @@
             <h1 class="h-neucha-regular h-mb">
               Anima
             </h1>
-            <p class="h-montserrat-regular">
+            <p class="h-montserrat-regular" style="width: 29.84375vw;">
               <span v-if="$i18n.locale === 'ru'">
                 Anima — в переводе с латыни «душа».<br>
                 <span style="letter-spacing: 0.3px;">
@@ -108,7 +108,7 @@
             </h1>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
-            <p class="h-montserrat-regular red-line">
+            <p class="h-montserrat-regular red-line" style="width: 30.520833333333332vw;">
               <span v-if="$i18n.locale === 'ru'">
                 Я стремилась создать детский стол,<br>
                 который будет ассоциироваться<br>
@@ -155,7 +155,7 @@
                 sensations.
               </span>
             </p>
-            <p class="h-montserrat-regular red-line">
+            <p class="h-montserrat-regular red-line" style="width: 30.729166666666668vw;">
               <span v-if="$i18n.locale === 'ru'">
                 Трансформация стола происходит<br>
                 при помощи ростовых насадок для но-<br>
@@ -261,8 +261,11 @@
               </p>
             </span>
             <span v-else>
-              <p class="h-montserrat-regular red-line">
-                In my opinion, wings always add a certain fabulousness to any, even the simplest object, 
+              <p class="h-montserrat-regular red-line" style="width: 32.03125vw">
+                In my opinion,<br>
+                wings always add a<br>
+                certain fabulousness to<br>
+                any, even the simplest object,<br>
                 because Pegasus without wings is an ordinary horse, and a dragon is an overgrown lizard. 
                 This greatly influences the image of the object, but no less important is that over time, 
                 the child will increasingly use the tabletop unfolded, and the wings supporting it will not 
@@ -280,7 +283,7 @@
                 Why without the usual fittings?
               </span>
             </p>
-            <p class="h-montserrat-regular red-line">
+            <p class="h-montserrat-regular red-line" style="width: 32.03125vw">
               <span v-if="$i18n.locale === 'ru'">
                 Я хотела, чтобы ребёнок самостоя-<br>
                 тельно взаимодействовал со столом<br>
@@ -337,7 +340,7 @@
           </h1>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0">
-          <p class="h-montserrat-regular red-line">
+          <p class="h-montserrat-regular red-line" style="width: 30.78125vw;">
             <span v-if="$i18n.locale === 'ru'">
               Материалы, выбранные для проекта,<br>
               безопасны и экологичны. Valchromat,<br>
@@ -1308,7 +1311,7 @@ export default {
           return {
             paddingLeft: "25vw",
             paddingRight: "25vw",
-            paddingTop: "143.22916666666666vw",
+            paddingTop: "132vw",
           };
         }
       } else {
