@@ -31,10 +31,10 @@
           <swiper-slide>
             <row-aboutme>
               <v-col align="start" cols="6" class="pa-0 align-self-center">
-                <img style="height: 22vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+                <img style="height: 24vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
               </v-col>
-              <v-col cols="6" class="pa-0 align-self-center">
-                <div style="display: inline-block;">
+              <v-col align="end" cols="6" class="pa-0 align-self-center">
+                <div style="display: inline-block; line-height: 1.8229166666666667vw; letter-spacing: 0.03125vw;">
                   <h1 class="text-start h-neucha-regular slide1-h">
                     <span v-if="$i18n.locale === 'ru'">
                       Образование:
@@ -53,7 +53,7 @@
                       Department of "Furniture Design"
                     </span>
                   </p>
-                  <h1 class="text-start h-neucha-regular slide1-h">
+                  <h1 class="mt-3 text-start h-neucha-regular slide1-h">
                     <span v-if="$i18n.locale === 'ru'">
                       Владение программами: 
                     </span>
@@ -61,12 +61,12 @@
                       Skills:
                     </span>
                   </h1>
-                  <p class="text-start h-montserrat-regular slides-font">Autodesk 3ds Мах, Corona,<br>
-                    AutoCAD, Adobe lllustrator,<br>
-                    Adobe Photoshop, CorelDraw,<br>
-                    SketchUp, Layout
+                  <p class="text-start h-montserrat-regular slides-font">
+                    Autodesk 3ds Мах, Corona, AutoCAD,<br>
+                    Adobe lllustrator, Adobe Photoshop,<br>
+                    CorelDraw, SketchUp, Layout
                   </p>
-                  <h1 class="text-start h-neucha-regular slide1-h">
+                  <h1 class="mt-3 text-start h-neucha-regular slide1-h">
                     <span v-if="$i18n.locale === 'ru'">
                       Контакты:
                     </span>
