@@ -1,8 +1,15 @@
 <template>
   <div>
-    <img
+    <img v-if="this.$props.lazy"
       :class="this.$props.class"
-      :src="this.$props.src" 
+      v-lazy="srcProp" 
+      :style="{...this.$props.style, ...cursor}" 
+      :alt="this.$props.alt"
+      @click="openImage"
+    />
+    <img v-else
+      :class="this.$props.class"
+      :src="srcProp" 
       :style="{...this.$props.style, ...cursor}" 
       :alt="this.$props.alt"
       @click="openImage"
@@ -43,6 +50,11 @@ export default {
       type: Boolean,
       required: false,
       default: true,
+    },
+    lazy: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
     dHV: {
       type: Number,
@@ -140,6 +152,13 @@ export default {
     },
   },
   computed: {
+    srcProp() {
+      if (this.$props.lazy) {
+        return this.$props.src.substring(3);
+      } else {
+        return this.$props.src;
+      }
+    },
     cursor() {
       if (this.$props.zoomxs === false && this.$vuetify.display.xs) {
         return {

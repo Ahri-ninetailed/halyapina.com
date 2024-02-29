@@ -8,6 +8,7 @@
 import vuetify from './vuetify'
 import router from '../router'
 import { createI18n } from 'vue-i18n';
+import vueLazyload from 'vue3-lazyload';
 
 
 const messages = {
@@ -43,4 +44,5 @@ export function registerPlugins (app) {
     .use(vuetify)
     .use(router)
     .use(i18n)
+    .use(vueLazyload)
 }
