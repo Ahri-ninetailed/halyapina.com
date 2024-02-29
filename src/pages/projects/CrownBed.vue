@@ -1,5 +1,5 @@
 <template>
-  <project :header-text="$t('projects.crownbed')" :swiper-imgs="images" background-img="../src/images/Projects/CrownBed/background.png">
+  <project :header-text="$t('projects.crownbed')" :swiper-imgs="images" :background-img="this.background">
     <p class="h-montserrat-regular text-start p-project-size">
       <span v-if="$i18n.locale === 'ru'">
         <span v-if="this.$vuetify.display.smAndUp">
@@ -29,6 +29,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
+import background from '@/images/Projects/CrownBed/background.png'
 
 export default {
   name: 'CrownBed',
@@ -37,12 +38,13 @@ export default {
   },
   data() {
     return {
+      background: background,
       images: [
-        { src: "../src/images/Projects/CrownBed/Images/bed1.jpg", alt: "Bed1" },
-        { src: "../src/images/Projects/CrownBed/Images/bed3.jpg", alt: "Bed3" },
-        { src: "../src/images/Projects/CrownBed/Images/bed2.jpg", alt: "Bed2" },
-        { src: "../src/images/Projects/CrownBed/Images/beds.jpg", alt: "Three beds" },
-        { src: "../src/images/Projects/CrownBed/Images/child_bed.jpg", alt: "Bed for child" },
+        { src: "CrownBed/Images/bed1.jpg", alt: "Bed1" },
+        { src: "CrownBed/Images/bed3.jpg", alt: "Bed3" },
+        { src: "CrownBed/Images/bed2.jpg", alt: "Bed2" },
+        { src: "CrownBed/Images/beds.jpg", alt: "Three beds" },
+        { src: "CrownBed/Images/child_bed.jpg", alt: "Bed for child" },
       ]
     }
   }

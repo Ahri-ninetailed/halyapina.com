@@ -1,5 +1,5 @@
 <template>
-  <project :header-text="$t('projects.fennel')" :swiper-imgs="images" background-img="../src/images/Projects/Fennel/background.png">
+  <project :header-text="$t('projects.fennel')" :swiper-imgs="images" :background-img="this.background">
     <p class="h-montserrat-regular text-start p-project-size">
       <span v-if="$i18n.locale === 'ru'">
         <span v-if="this.$vuetify.display.smAndUp">
@@ -33,6 +33,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
+import background from '@/images/Projects/Fennel/background.png'
 
 export default {
   name: 'FennelPage',
@@ -41,10 +42,11 @@ export default {
   },
   data() {
     return {
+      background: background,
       images: [
-        { src: "../src/images/Projects/Fennel/Images/FennelLamp.jpg", alt: "Fennel lamp" },
-        { src: "../src/images/Projects/Fennel/Images/LampInDark.jpg", alt: "Fennel lamp in dark" },
-        { src: "../src/images/Projects/Fennel/Images/LampTopView.jpg", alt: "Fennel lamp top view" },
+        { src: "Fennel/Images/FennelLamp.jpg", alt: "Fennel lamp" },
+        { src: "Fennel/Images/LampInDark.jpg", alt: "Fennel lamp in dark" },
+        { src: "Fennel/Images/LampTopView.jpg", alt: "Fennel lamp top view" },
       ]
     }
   }

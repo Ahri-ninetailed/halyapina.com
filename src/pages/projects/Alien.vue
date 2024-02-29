@@ -1,5 +1,5 @@
 <template>
-  <project :header-text="$t('projects.alien')" :swiper-imgs="images" background-img="../src/images/Projects/Alien/background.jpg">
+  <project :header-text="$t('projects.alien')" :swiper-imgs="images" :background-img="this.background">
     <p class="h-montserrat-regular text-start p-project-size">
       <span v-if="$i18n.locale === 'ru'">
         <span v-if="this.$vuetify.display.smAndUp">
@@ -34,6 +34,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
+import background from '@/images/Projects/Alien/background.jpg'
 
 export default {
   name: 'AlienPage',
@@ -42,10 +43,11 @@ export default {
   },
   data() {
     return {
+      background: background,
       images: [
-        { src: "../src/images/Projects/Alien/Images/ChaiseLounge1.jpg", alt: "Chaise lounge" },
-        { src: "../src/images/Projects/Alien/Images/ChaiseLounge2.jpg", alt: "Chaise lounge side view" },
-        { src: "../src/images/Projects/Alien/Images/ChaiseLounge3.jpg", alt: "Chaise lounge top view" },
+        { src: "Alien/Images/ChaiseLounge1.jpg", alt: "Chaise lounge" },
+        { src: "Alien/Images/ChaiseLounge2.jpg", alt: "Chaise lounge side view" },
+        { src: "Alien/Images/ChaiseLounge3.jpg", alt: "Chaise lounge top view" },
       ]
     }
   }

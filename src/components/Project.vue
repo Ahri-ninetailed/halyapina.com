@@ -23,7 +23,7 @@
                 v-for="(img, index) in this.$props.swiperImgs"
                 :key="index"
               >
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-height" :src="img.src" :alt="img.alt"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-height" :src="imgPath(img.src)" :alt="img.alt"/>
               </SplideSlide>
             </Splide>
           </v-col>
@@ -150,6 +150,9 @@ export default {
     }
   },
   methods: {
+    imgPath(img) {
+      return new URL(`../images/Projects/${img}`, import.meta.url).href;
+    },
     nextSlide() {
       this.$refs.splide.go('+1');
     },

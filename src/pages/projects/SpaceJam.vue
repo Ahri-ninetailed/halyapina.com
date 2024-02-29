@@ -1,5 +1,5 @@
 <template>
-  <project :header-text="$t('projects.spacejam')" :swiper-imgs="images" background-img="../src/images/Projects/SpaceJam/background.png">
+  <project :header-text="$t('projects.spacejam')" :swiper-imgs="images" :background-img="this.background">
     <p class="h-montserrat-regular text-start p-project-size">
       <span v-if="$i18n.locale === 'ru'">
         <span v-if="this.$vuetify.display.smAndUp">
@@ -39,6 +39,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
+import background from '@/images/Projects/SpaceJam/background.png'
 
 export default {
   name: 'SpaceJam',
@@ -47,11 +48,12 @@ export default {
   },
   data() {
     return {
+      background: background,
       images: [
-        { src: "../src/images/Projects/SpaceJam/Images/bed1.png", alt: "Bed1" },
-        { src: "../src/images/Projects/SpaceJam/Images/bed2.png", alt: "Bed3" },
-        { src: "../src/images/Projects/SpaceJam/Images/bed3.png", alt: "Bed2" },
-        { src: "../src/images/Projects/SpaceJam/Images/bed4.png", alt: "Bed4" },
+        { src: "SpaceJam/Images/bed1.png", alt: "Bed1" },
+        { src: "SpaceJam/Images/bed2.png", alt: "Bed3" },
+        { src: "SpaceJam/Images/bed3.png", alt: "Bed2" },
+        { src: "SpaceJam/Images/bed4.png", alt: "Bed4" },
       ]
     }
   }
