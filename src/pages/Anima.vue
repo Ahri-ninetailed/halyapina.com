@@ -24,32 +24,32 @@
           </p>
         </v-col>
     </v-row>
-
-    <v-row class="ma-0 background1">
+s
+    <v-row class="ma-0" :style="background1Style">
       <Splide :options="splideOptions" :extensions="extensions">
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" src="../src/images/AnimaPage/Carousel/table_with_child.jpg" :style="styleOfImageSlideProp" alt="Child near table 1"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/table_with_child.jpg')" :style="styleOfImageSlideProp" alt="Child near table 1"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" src="../src/images/AnimaPage/Carousel/2tables.jpg" :style="styleOfImageSlideProp" alt="Two tables"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src="imgPath('Carousel/2tables.jpg')" :style="styleOfImageSlideProp" alt="Two tables"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" src="../src/images/AnimaPage/Carousel/table_with_child2.jpg" :style="styleOfImageSlideProp" alt="Child near table 2"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/table_with_child2.jpg')" :style="styleOfImageSlideProp" alt="Child near table 2"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" src="../src/images/AnimaPage/Carousel/easel.jpg" :style="styleOfImageSlideProp" alt="Table's wing as easel"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/easel.jpg')" :style="styleOfImageSlideProp" alt="Table's wing as easel"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" src="../src/images/AnimaPage/Carousel/function_of_boxes.jpg" :style="styleOfImageSlideProp" alt="Functionality of boxes 1"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/function_of_boxes.jpg')" :style="styleOfImageSlideProp" alt="Functionality of boxes 1"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" src="../src/images/AnimaPage/Carousel/function_of_boxes2.jpg" :style="styleOfImageSlideProp" alt="Functionality of boxes 2"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src="imgPath('Carousel/function_of_boxes2.jpg')" :style="styleOfImageSlideProp" alt="Functionality of boxes 2"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" src="../src/images/AnimaPage/Carousel/function_of_boxes3.jpg" :style="styleOfImageSlideProp" alt="Functionality of boxes 3"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/function_of_boxes3.jpg')" :style="styleOfImageSlideProp" alt="Functionality of boxes 3"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" src="../src/images/AnimaPage/Carousel/separate_pieces2.jpg" :style="styleOfImageSlideProp" alt="Separate pieces 2"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src="imgPath('Carousel/separate_pieces2.jpg')" :style="styleOfImageSlideProp" alt="Separate pieces 2"/>
         </SplideSlide>
       </Splide>
       <v-row class="ma-0 def-pad-top padding">
@@ -86,7 +86,7 @@
             </p>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12 mb-sm-0 mb-5">
-            <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" src="../src/images/AnimaPage/interior.jpg" :zoomxs="false" alt="Interior"/>
+            <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" :src="imgPath('interior.jpg')" :zoomxs="false" alt="Interior"/>
           </v-col>
         </v-row>
 
@@ -193,10 +193,10 @@
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
               <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" src="../src/images/AnimaPage/drawingGirl.jpg" alt="Drawing girl"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" :src="imgPath('drawingGirl.jpg')" alt="Drawing girl"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" src="../src/images/AnimaPage/removableTabletop.jpg" alt="Removable table top"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" :src="imgPath('removableTabletop.jpg')" alt="Removable table top"/>
               </v-col>
             </v-row>
           </v-col>
@@ -204,11 +204,11 @@
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <v-col align="center" cols="12" class="pa-0 align-self-center">
-            <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img4-h" :zoomxs="false" src="../src/images/AnimaPage/tableDrawing.jpg" alt="Table drawing"/>
+            <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img4-h" :zoomxs="false" :src="imgPath('tableDrawing.jpg')" alt="Table drawing"/>
           </v-col>
         </v-row>
 
-        <v-row class="ma-0 def-pad-top dragon">
+        <v-row class="ma-0 def-pad-top" :style="dragonStyle">
           <v-col cols="12" class="pa-0">
             <h1 class="h-neucha-regular h-mb">
               <span v-if="$i18n.locale === 'ru'">
@@ -300,13 +300,13 @@
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
               <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" src="../src/images/AnimaPage/constructor.jpg" alt="Сonstructor"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src="imgPath('constructor.jpg')" alt="Сonstructor"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-center text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" src="../src/images/AnimaPage/table.jpg" alt="Tables"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src="imgPath('table.jpg')" alt="Tables"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" src="../src/images/AnimaPage/tableWithChild.jpg" alt="Tables with child"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src="imgPath('tableWithChild.jpg')" alt="Tables with child"/>
               </v-col>
             </v-row>
           </v-col>
@@ -314,7 +314,7 @@
       </v-row>
     </v-row>
 
-    <v-row class="ma-0 def-pad-top background2">
+    <v-row class="ma-0 def-pad-top" :style="background2Style">
       <v-row class="ma-0 padding">
         <v-col cols="12" class="pa-0">
           <h1 class="h-neucha-regular h-mb">
@@ -380,7 +380,7 @@
           </p>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
-          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" src="../src/images/AnimaPage/explosionDiagram.png" alt="Explosion diagram"/>
+          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" :src="imgPath('explosionDiagram.png')" alt="Explosion diagram"/>
         </v-col>
       </v-row>
 
@@ -769,7 +769,7 @@
             </span>
           </h1>
           <v-col cols="12" class="pa-0 h-mb">
-            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" src="../src/images/AnimaPage/sketches.jpg" alt="Sketches"/>
+            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src="imgPath('sketches.jpg')" alt="Sketches"/>
           </v-col>
           <v-col cols="12" class="pa-0 mt-sm-0 mt-12">
             <span v-if="$i18n.locale === 'ru'">
@@ -849,18 +849,18 @@
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping1.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping1.jpg')" alt="Prototyping"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping2.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping2.jpg')" alt="Prototyping"/>
               </v-col>
             </v-row>
             <v-row class="ml-0 mr-0 mb-0 mt-6 mt-md-4 mt-lg-6">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping3.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping3.jpg')" alt="Prototyping"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" src="../src/images/AnimaPage/prototyping4.jpg" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping4.jpg')" alt="Prototyping"/>
               </v-col>
             </v-row>
           </v-col>
@@ -986,30 +986,30 @@
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction1.jpg" alt="Dragon"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction1.jpg')" alt="Dragon"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction2.jpg" alt="Boxes"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction2.jpg')" alt="Boxes"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction3.jpg" alt="Table legs 1"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction3.jpg')" alt="Table legs 1"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction4.jpg" alt="Table legs 2"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction4.jpg')" alt="Table legs 2"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction5.jpg" alt="Baby and adult table"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction5.jpg')" alt="Baby and adult table"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" src="../src/images/AnimaPage/formandfunction6.jpg" alt="Table with opened wings"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction6.jpg')" alt="Table with opened wings"/>
               </v-col>
             </v-row>
           </v-col>
@@ -1257,10 +1257,17 @@
   import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
   import '@splidejs/vue-splide/css/core';
 
+  import dragon from '@/images/AnimaPage/dragon.png'
+  import background1 from '@/images/AnimaPage/background.png'
+  import background2 from '@/images/AnimaPage/background2.png'
+  
 export default {
   name: "AnimaPage",
   data() {
     return {
+      dragon: dragon,
+      background1: background1,
+      background2: background2,
       splideOptions: {
         arrows: false, 
         pagination: false, 
@@ -1285,7 +1292,55 @@ export default {
       extensions: { AutoScroll },
     };
   },
+  methods: {
+    imgPath(img) {
+      return new URL(`../images/AnimaPage/${img}`, import.meta.url).href;
+    },
+  },
   computed: {
+    dragonStyle() {
+      if (this.$vuetify.display.smAndUp) {
+        return {
+          'background-image': `url(${dragon})`,
+          'background-repeat': 'no-repeat',
+          'background-size': '35%',
+          'background-position': '20% 12.5%'
+        };
+      } else {
+        return {
+          'background-image': `url(${dragon})`,
+          'background-repeat': 'no-repeat',
+          'background-size': '60%',
+          'background-position': '96% 5%',
+        }
+      }
+    },
+    background1Style() {
+      if (this.$vuetify.display.smAndUp) {
+        return {
+          'background-image': `url(${background1})`,
+          'background-size': 'cover',
+        };
+      } else {
+        return {
+          'background-image': 'unset',
+          'background-size': 'unset',
+        }
+      }
+    },
+    background2Style() {
+      if (this.$vuetify.display.smAndUp) {
+        return {
+          'background-image': `url(${background2})`,
+          'background-size': 'cover',
+        };
+      } else {
+        return {
+          'background-image': 'unset',
+          'background-size': 'unset',
+        }
+      }
+    },
     padding2() {
       if (this.$vuetify.display.smAndUp) {
         if (this.$i18n.locale === 'ru') {
@@ -1327,21 +1382,6 @@ export default {
 </script>
 
 <style scoped>
-
-  .background1 {
-    background-image: url('../src/images/AnimaPage/background.png'); 
-    background-size: cover;
-  }
-  .background2 {
-    background-image: url('../src/images/AnimaPage/background2.png'); 
-    background-size: cover;
-  }
-  .dragon {
-    background-image: url('../src/images/AnimaPage/dragon.png');
-    background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: 20% 12.5%;
-  }
   .sheep-width {
     width: 70vw;
   }
@@ -1422,16 +1462,6 @@ export default {
       margin-bottom: 1vh;
     }
 
-    .background2 {
-      background-image: unset; 
-      background-size: unset;
-    }
-
-    .background1 {
-      background-image: unset; 
-      background-size: unset;
-    }
-
     .red-line {
       text-indent: unset;
     }
@@ -1442,13 +1472,6 @@ export default {
 
     .anima-img11-w {
       width: 80vw;
-    }
-
-    .dragon {
-      background-image: url('../src/images/AnimaPage/dragon.png');
-      background-repeat: no-repeat;
-      background-size: 60%;
-      background-position: 96% 5%;
     }
 
     .span1-width {
