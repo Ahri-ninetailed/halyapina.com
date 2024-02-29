@@ -215,7 +215,7 @@
           </v-col>
         </v-row>
 
-        <v-row class="ml-0 mr-0 mb-0 def-mar-top">
+        <v-row class="ma-0 def-pad-top dragon">
           <v-col cols="12" class="pa-0">
             <h1 class="h-neucha-regular h-mb">
               <span v-if="$i18n.locale === 'ru'">
@@ -1353,6 +1353,12 @@ export default {
     background-image: url('../src/images/AnimaPage/background2.png'); 
     background-size: cover;
   }
+  .dragon {
+    background-image: url('../src/images/AnimaPage/dragon.png');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 20% 12.5%;
+  }
   .sheep-width {
     width: 70vw;
   }
@@ -1434,6 +1440,13 @@ export default {
 
     .anima-img11-w {
       width: 80vw;
+    }
+
+    .dragon {
+      background-image: none;
+      background-repeat: none;
+      background-size: none;
+      background-position: none;
     }
   }
 </style>
