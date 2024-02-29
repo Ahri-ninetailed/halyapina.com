@@ -58,7 +58,7 @@
             <h1 class="h-neucha-regular h-mb">
               Anima
             </h1>
-            <p class="h-montserrat-regular" style="width: 29.84375vw;">
+            <p class="h-montserrat-regular span1-width">
               <span v-if="$i18n.locale === 'ru'">
                 Anima — в переводе с латыни «душа».<br>
                 <span style="letter-spacing: 0.3px;">
@@ -108,7 +108,7 @@
             </h1>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
-            <p class="h-montserrat-regular red-line" style="width: 30.520833333333332vw;">
+            <p class="h-montserrat-regular red-line span2-width">
               <span v-if="$i18n.locale === 'ru'">
                 Я стремилась создать детский стол,<br>
                 который будет ассоциироваться<br>
@@ -155,7 +155,7 @@
                 sensations.
               </span>
             </p>
-            <p class="h-montserrat-regular red-line" style="width: 30.729166666666668vw;">
+            <p class="h-montserrat-regular red-line span3-width">
               <span v-if="$i18n.locale === 'ru'">
                 Трансформация стола происходит<br>
                 при помощи ростовых насадок для но-<br>
@@ -229,7 +229,7 @@
               </span>
             </p>
             <span v-if="$i18n.locale === 'ru'">
-              <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
+              <p class="h-montserrat-regular red-line">
                 На мой взгляд,<br>
                 крылья всегда до-<br>
                 бавляют некой ска-<br>
@@ -246,22 +246,9 @@
                 ла станет более взрослым, сместив<br>
                 акцент на выразительную форму ножек.<br>
               </p>
-              <p class="h-montserrat-regular red-line" v-else>
-                На мой взгляд,
-                крылья всегда до
-                бавляют некой сказочности любому, даже
-                самому простому предмету, ведь Пегас
-                без крыльев — обычная лошадь, а дракон — ящерица-переросток. Это сильно
-                влияет на образ предмета, но не менее
-                важно то, что со временем ребёнок
-                всё чаще будет использовать столешницу в разложенном виде, 
-                а поддерживающие её крылья не будут
-                бросаться в глаза, и внешний вид стола станет более взрослым, сместив
-                акцент на выразительную форму ножек.
-              </p>
             </span>
             <span v-else>
-              <p class="h-montserrat-regular red-line" style="width: 32.03125vw">
+              <p class="h-montserrat-regular red-line span4-width">
                 In my opinion,<br>
                 wings always add a<br>
                 certain fabulousness to<br>
@@ -283,7 +270,7 @@
                 Why without the usual fittings?
               </span>
             </p>
-            <p class="h-montserrat-regular red-line" style="width: 32.03125vw">
+            <p class="h-montserrat-regular red-line span4-width">
               <span v-if="$i18n.locale === 'ru'">
                 Я хотела, чтобы ребёнок самостоя-<br>
                 тельно взаимодействовал со столом<br>
@@ -340,7 +327,7 @@
           </h1>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0">
-          <p class="h-montserrat-regular red-line" style="width: 30.78125vw;">
+          <p class="h-montserrat-regular red-line span5-width">
             <span v-if="$i18n.locale === 'ru'">
               Материалы, выбранные для проекта,<br>
               безопасны и экологичны. Valchromat,<br>
@@ -502,7 +489,7 @@
                     хочет всё делать сам, но не всегда может
                   </span>
                   <span v-else>
-                    wants to do everything himself, but he can’t always
+                    wants to do everything himself, but he can't always
                   </span>
                 </p>
               </li>
@@ -1393,6 +1380,25 @@ export default {
     width: 30vw;
   }
 
+  .span1-width {
+    width: 29.84375vw;
+  }
+  .span2-width {
+    width: 30.520833333333332vw;
+  }
+
+  .span3-width {
+    width: 30.729166666666668vw
+  }
+
+  .span4-width {
+    width: 32.03125vw;
+  }
+
+  .span5-width {
+    width: 30.78125vw;
+  }
+
   @media (max-width: 599px) { 
 
     p {
@@ -1439,10 +1445,29 @@ export default {
     }
 
     .dragon {
-      background-image: none;
-      background-repeat: none;
-      background-size: none;
-      background-position: none;
+      background-image: url('../src/images/AnimaPage/dragon.png');
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: 96% 5%;
+    }
+
+    .span1-width {
+      width: unset;
+    }
+    .span2-width {
+      width: unset;
+    }
+
+    .span3-width {
+      width: unset;
+    }
+
+    .span4-width {
+      width: unset;
+    }
+
+    .span5-width {
+      width: unset;
     }
   }
 </style>
