@@ -34,7 +34,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
-import background from '@/images/Projects/Alien/background.jpg'
+import background from '@/images/Projects/Alien/background.webp'
 
 export default {
   name: 'AlienPage',
@@ -45,9 +45,9 @@ export default {
     return {
       background: background,
       images: [
-        { src: "Alien/Images/ChaiseLounge1.jpg", alt: "Chaise lounge" },
-        { src: "Alien/Images/ChaiseLounge2.jpg", alt: "Chaise lounge side view" },
-        { src: "Alien/Images/ChaiseLounge3.jpg", alt: "Chaise lounge top view" },
+        { src: "Alien/Images/ChaiseLounge1.webp", alt: "Chaise lounge" },
+        { src: "Alien/Images/ChaiseLounge2.webp", alt: "Chaise lounge side view" },
+        { src: "Alien/Images/ChaiseLounge3.webp", alt: "Chaise lounge top view" },
       ]
     }
   }
