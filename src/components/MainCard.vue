@@ -3,7 +3,7 @@
     <v-col cols="12" class="pa-0">
       <a :href="this.$props.href">
         <!-- Основное изображение -->
-        <img id="projectSketch" @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" style="width: 29.33vh;" :src="this.currentImg" :alt="this.$props.name">
+        <img id="projectSketch" @mouseleave="handleMouseLeave" @mouseover="handleMouseOver" :style="this.$props.style" :src="this.currentImg" :alt="this.$props.name">
         <!-- Скрытый элемент для предварительной загрузки изображения -->
         <img :src="this.$props.imgHoverPath" style="display: none;" :alt="`${this.$props.name} hover`">
       </a>
@@ -18,6 +18,10 @@
 export default {
   name: 'MainCard',
   props: {
+    style: {
+      type: Object,
+      required: false,
+    },
     imgPath: {
       type: String,
       required: true,
