@@ -1,62 +1,72 @@
 <template>
-  <v-container class="pa-0" fluid style="overflow: hidden;">
-    <a href="anima">
-      <div class="home-main-pic">
-      </div>
-    </a>
+  <wait-pls :is-loaded="this.isLoaded">
+    <v-container class="pa-0" fluid style="overflow: hidden;">
+      <a href="anima">
+        <div class="home-main-pic">
+        </div>
+      </a>
 
-    <v-row class="pt-6 pb-4" >
-      <v-col>
-        <div class="main-h text-center h-neucha-regular">{{ $t('home.h') }}</div>
-      </v-col>
-    </v-row>
+      <v-row class="pt-6 pb-4" >
+        <v-col>
+          <div class="main-h text-center h-neucha-regular">{{ $t('home.h') }}</div>
+        </v-col>
+      </v-row>
 
-    <v-row class="row-margin-horizontal pt-3">
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :style="mainCardStyle" :name="$t('projects.lines')" href="lines" :imgPath="imgPath('many_chairs.webp')" :imgHoverPath="imgPath('many_chairs_hover.webp')" />
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :style="mainCardStyle" :name="$t('projects.dragonfly')" href="dragonfly" :imgPath="imgPath('flys.webp')" :imgHoverPath="imgPath('flys_hover.webp')" />
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :style="mainCardStyle" :name="$t('projects.firefly')" href="firefly" :imgPath="imgPath('another_flys.webp')" :imgHoverPath="imgPath('another_flys_hover.webp')" />
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :style="mainCardStyle" :name="$t('projects.fennel')" href="fennel" :imgPath="imgPath('3.webp')" :imgHoverPath="imgPath('3_hover.webp')"/>
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :style="mainCardStyle" :name="$t('projects.alien')" href="alien" :imgPath="imgPath('wave.webp')" :imgHoverPath="imgPath('wave_hover.webp')" />
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :style="mainCardStyle" :name="$t('projects.ufo')" href="ufo" :imgPath="imgPath('ufo.webp')" :imgHoverPath="imgPath('ufo_hover.webp')" />
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :style="mainCardStyle" :name="$t('projects.spacejam')" href="/spacejam" :imgPath="imgPath('launch.webp')" :imgHoverPath="imgPath('launch_hover.webp')"/>
-      </v-col>
-      <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :style="mainCardStyle" :name="$t('projects.bubble')" href="/bubble" :imgPath="imgPath('bubble.webp')" :imgHoverPath="imgPath('bubble_hover.webp')"/>
-      </v-col>
-      <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-margin-padding" id="CrownBed')">
-        <main-card :style="mainCardStyle" :name="$t('projects.crownbed')" href="/crownbed" :imgPath="imgPath('tree.webp')" :imgHoverPath="imgPath('tree_hover.webp')"/>
-      </v-col>
-      <v-col lg="3" md="4" sm="12" cols="12" class="drawing-margin-padding" :style="drawingGirlMargin">
-        <img class="drawing-girl" src="../images/MainPage/drawing.webp" alt="drawing_image">
-      </v-col>
-    </v-row>
-  </v-container>
+      <v-row class="row-margin-horizontal pt-3">
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
+          <main-card :style="mainCardStyle" :name="$t('projects.lines')" href="lines" :imgPath="imgPath('many_chairs.webp')" :imgHoverPath="imgPath('many_chairs_hover.webp')" />
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
+          <main-card :style="mainCardStyle" :name="$t('projects.dragonfly')" href="dragonfly" :imgPath="imgPath('flys.webp')" :imgHoverPath="imgPath('flys_hover.webp')" />
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
+          <main-card :style="mainCardStyle" :name="$t('projects.firefly')" href="firefly" :imgPath="imgPath('another_flys.webp')" :imgHoverPath="imgPath('another_flys_hover.webp')" />
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
+          <main-card :style="mainCardStyle" :name="$t('projects.fennel')" href="fennel" :imgPath="imgPath('3.webp')" :imgHoverPath="imgPath('3_hover.webp')"/>
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
+          <main-card :style="mainCardStyle" :name="$t('projects.alien')" href="alien" :imgPath="imgPath('wave.webp')" :imgHoverPath="imgPath('wave_hover.webp')" />
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
+          <main-card :style="mainCardStyle" :name="$t('projects.ufo')" href="ufo" :imgPath="imgPath('ufo.webp')" :imgHoverPath="imgPath('ufo_hover.webp')" />
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
+          <main-card :style="mainCardStyle" :name="$t('projects.spacejam')" href="/spacejam" :imgPath="imgPath('launch.webp')" :imgHoverPath="imgPath('launch_hover.webp')"/>
+        </v-col>
+        <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
+          <main-card :style="mainCardStyle" :name="$t('projects.bubble')" href="/bubble" :imgPath="imgPath('bubble.webp')" :imgHoverPath="imgPath('bubble_hover.webp')"/>
+        </v-col>
+        <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-margin-padding" id="CrownBed')">
+          <main-card :style="mainCardStyle" :name="$t('projects.crownbed')" href="/crownbed" :imgPath="imgPath('tree.webp')" :imgHoverPath="imgPath('tree_hover.webp')"/>
+        </v-col>
+        <v-col lg="3" md="4" sm="12" cols="12" class="drawing-margin-padding" :style="drawingGirlMargin">
+          <img class="drawing-girl" src="../images/MainPage/drawing.webp" alt="drawing_image">
+        </v-col>
+      </v-row>
+    </v-container>
+  </wait-pls>
+
 </template>
     
 <script>
 import MainCard from '@/components/MainCard.vue';
+import WaitPls from '@/components/WaitPls.vue';
 
 export default {
   data() {
     return {
-      mainCardWidthValue: 29.33
+      mainCardWidthValue: 29.33,
+      isLoaded: false,
     };
   },
-  components: { MainCard },
+  components: { MainCard, WaitPls },
   name: 'HomePage',
+  mounted() {
+    window.onload = () => {
+      this.isLoaded = true;
+    };
+  },
   computed: {
     mainCardStyle() {
       return {
