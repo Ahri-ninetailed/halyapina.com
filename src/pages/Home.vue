@@ -13,34 +13,34 @@
 
     <v-row class="row-margin-horizontal pt-3">
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :name="$t('projects.lines')" href="lines" :imgPath="imgPath('many_chairs.jpg')" :imgHoverPath="imgPath('many_chairs_hover.jpg')" />
+        <main-card :name="$t('projects.lines')" href="lines" :imgPath="imgPath('many_chairs.webp')" :imgHoverPath="imgPath('many_chairs_hover.webp')" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :name="$t('projects.dragonfly')" href="dragonfly" :imgPath="imgPath('flys.jpg')" :imgHoverPath="imgPath('flys_hover.jpg')" />
+        <main-card :name="$t('projects.dragonfly')" href="dragonfly" :imgPath="imgPath('flys.webp')" :imgHoverPath="imgPath('flys_hover.webp')" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :name="$t('projects.firefly')" href="firefly" :imgPath="imgPath('another_flys.jpg')" :imgHoverPath="imgPath('another_flys_hover.jpg')" />
+        <main-card :name="$t('projects.firefly')" href="firefly" :imgPath="imgPath('another_flys.webp')" :imgHoverPath="imgPath('another_flys_hover.webp')" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :name="$t('projects.fennel')" href="fennel" :imgPath="imgPath('3.jpg')" :imgHoverPath="imgPath('3_hover.jpg')"/>
+        <main-card :name="$t('projects.fennel')" href="fennel" :imgPath="imgPath('3.webp')" :imgHoverPath="imgPath('3_hover.webp')"/>
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :name="$t('projects.alien')" href="alien" :imgPath="imgPath('wave.jpg')" :imgHoverPath="imgPath('wave_hover.jpg')" />
+        <main-card :name="$t('projects.alien')" href="alien" :imgPath="imgPath('wave.webp')" :imgHoverPath="imgPath('wave_hover.webp')" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :name="$t('projects.ufo')" href="ufo" :imgPath="imgPath('ufo.jpg')" :imgHoverPath="imgPath('ufo_hover.jpg')" />
+        <main-card :name="$t('projects.ufo')" href="ufo" :imgPath="imgPath('ufo.webp')" :imgHoverPath="imgPath('ufo_hover.webp')" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :name="$t('projects.spacejam')" href="/spacejam" :imgPath="imgPath('launch.jpg')" :imgHoverPath="imgPath('launch_hover.jpg')"/>
+        <main-card :name="$t('projects.spacejam')" href="/spacejam" :imgPath="imgPath('launch.webp')" :imgHoverPath="imgPath('launch_hover.webp')"/>
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding">
-        <main-card :name="$t('projects.bubble')" href="/bubble" :imgPath="imgPath('bubble.jpg')" :imgHoverPath="imgPath('bubble_hover.jpg')"/>
+        <main-card :name="$t('projects.bubble')" href="/bubble" :imgPath="imgPath('bubble.webp')" :imgHoverPath="imgPath('bubble_hover.webp')"/>
       </v-col>
       <v-col lg="3" md="4" sm="12" cols="12" class="text-center col-margin-padding" id="CrownBed')">
-        <main-card :name="$t('projects.crownbed')" href="/crownbed" :imgPath="imgPath('tree.jpg')" :imgHoverPath="imgPath('tree_hover.jpg')"/>
+        <main-card :name="$t('projects.crownbed')" href="/crownbed" :imgPath="imgPath('tree.webp')" :imgHoverPath="imgPath('tree_hover.webp')"/>
       </v-col>
       <v-col lg="3" md="4" sm="12" cols="12" :style="dawingGirlLeftMargin" class="pt-2 pl-0">
-        <img class="drawing-girl" src="../images/MainPage/drawing.jpg" alt="drawing_image">
+        <img class="drawing-girl" src="../images/MainPage/drawing.webp" alt="drawing_image">
       </v-col>
     </v-row>
   </v-container>
