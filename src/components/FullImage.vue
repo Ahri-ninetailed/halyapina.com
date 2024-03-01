@@ -15,13 +15,15 @@
       @click="openImage"
     />
     <v-dialog v-model="dialog" :max-width="dialogMaxWidth()" :max-height="dialogMaxHeight()">
-      <img :v-if="this.isZoomImgLoaded === true" v-lazy="this.$props.srcZoom" v-lazy.loaded="isImageLoaded()" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
-      <v-progress-circular :v-if="this.isZoomImgLoaded === false"
-      color="white"
-      indeterminate
-      :size="55"
-      :width="5"
-      ></v-progress-circular>
+      <img v-lazy="this.$props.srcZoom" v-lazy.loaded="isImageLoaded()" :style="{...imgWidth, ...imgHeight, ...showImage}" style="object-fit: contain;" :alt="this.$props.alt"/>
+      <div class="progress-container" :style="showLoader">
+        <v-progress-circular
+        color="white"
+        indeterminate
+        :size="55"
+        :width="5"
+        ></v-progress-circular>
+      </div>
     </v-dialog>
   </div>
 </template>
@@ -166,6 +168,28 @@ export default {
     },
   },
   computed: {
+    showLoader() {
+      if (this.isZoomImgLoaded === false) {
+        return {
+          display: 'flex'
+        };
+      } else {
+        return {
+          display: 'none'
+        };
+      }
+    },
+    showImage() {
+      if (this.isZoomImgLoaded === true) {
+        return {
+          display: 'unset'
+        };
+      } else {
+        return {
+          display: 'none'
+        };
+      }
+    },
     cursor() {
       if (this.$props.zoomxs === false && this.$vuetify.display.xs) {
         return {
@@ -356,3 +380,12 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+</style>
