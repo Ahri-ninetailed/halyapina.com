@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img v-if="this.$props.lazy"
+    <v-lazy-image v-if="this.$props.lazy"
       :class="this.$props.class"
-      v-lazy="this.$props.src" 
+      :src="this.$props.src" 
       :style="{...this.$props.style, ...cursor}" 
       :alt="this.$props.alt"
       @click="openImage"
@@ -15,7 +15,7 @@
       @click="openImage"
     />
     <v-dialog v-model="dialog" :max-width="dialogMaxWidth()" :max-height="dialogMaxHeight()">
-      <img v-lazy="this.$props.srcZoom" v-lazy.loaded="isImageLoaded()" :style="{...imgWidth, ...imgHeight, ...showImage}" style="object-fit: contain;" :alt="this.$props.alt"/>
+      <v-lazy-image :src="this.$props.srcZoom" @load="isImageLoaded()" :style="{...imgWidth, ...imgHeight, ...showImage}" style="object-fit: contain;" :alt="this.$props.alt" />
       <div class="progress-container" :style="showLoader">
         <v-progress-circular
         color="white"
@@ -29,6 +29,8 @@
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image";
+
 export default {
   name: 'FullImage',
   data() {
@@ -36,6 +38,9 @@ export default {
       dialog: false,
       isZoomImgLoaded: false,
     }
+  },
+  components: {
+    VLazyImage
   },
   props: {
     class: {
@@ -136,6 +141,7 @@ export default {
   },
   methods: {
     isImageLoaded() {
+      console.log(123)
       this.isZoomImgLoaded = true;
     },
     openImage() {
@@ -180,14 +186,24 @@ export default {
       }
     },
     showImage() {
+      let hasWidht = this.imgWidth.width === 'unset' ? false : true;
+
       if (this.isZoomImgLoaded === true) {
-        return {
-          display: 'unset'
-        };
+        if (hasWidht) {
+          return this.imgWidth
+        } else {
+          return this.imgHeight
+        }
       } else {
-        return {
-          display: 'none'
-        };
+        if (hasWidht) {
+          return  {
+            width: '0px'
+          }
+        } else {
+          return {
+            height: '0px'
+          }
+        }
       }
     },
     cursor() {
