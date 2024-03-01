@@ -33,7 +33,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
-import background from '@/images/Projects/Fennel/background.png'
+import background from '@/images/Projects/Fennel/background.webp'
 
 export default {
   name: 'FennelPage',
@@ -44,9 +44,9 @@ export default {
     return {
       background: background,
       images: [
-        { src: "Fennel/Images/FennelLamp.jpg", alt: "Fennel lamp" },
-        { src: "Fennel/Images/LampInDark.jpg", alt: "Fennel lamp in dark" },
-        { src: "Fennel/Images/LampTopView.jpg", alt: "Fennel lamp top view" },
+        { src: "Fennel/Images/FennelLamp.webp", alt: "Fennel lamp" },
+        { src: "Fennel/Images/LampInDark.webp", alt: "Fennel lamp in dark" },
+        { src: "Fennel/Images/LampTopView.webp", alt: "Fennel lamp top view" },
       ]
     }
   }
