@@ -15,7 +15,13 @@
       @click="openImage"
     />
     <v-dialog v-model="dialog" :max-width="dialogMaxWidth()" :max-height="dialogMaxHeight()">
-      <img v-lazy="this.$props.srcZoom" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
+      <img :v-if="this.isZoomImgLoaded === true" v-lazy="this.$props.srcZoom" v-lazy.loaded="isImageLoaded()" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
+      <v-progress-circular :v-if="this.isZoomImgLoaded === false"
+      color="white"
+      indeterminate
+      :size="55"
+      :width="5"
+      ></v-progress-circular>
     </v-dialog>
   </div>
 </template>
@@ -26,6 +32,7 @@ export default {
   data() {
     return {
       dialog: false,
+      isZoomImgLoaded: false,
     }
   },
   props: {
@@ -126,6 +133,9 @@ export default {
     },
   },
   methods: {
+    isImageLoaded() {
+      this.isZoomImgLoaded = true;
+    },
     openImage() {
       if (this.$props.zoomxs === false && this.$vuetify.display.xs) {
         return;
