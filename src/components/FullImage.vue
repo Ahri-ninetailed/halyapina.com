@@ -2,20 +2,20 @@
   <div>
     <img v-if="this.$props.lazy"
       :class="this.$props.class"
-      v-lazy="srcProp" 
+      v-lazy="this.$props.src" 
       :style="{...this.$props.style, ...cursor}" 
       :alt="this.$props.alt"
       @click="openImage"
     />
     <img v-else
       :class="this.$props.class"
-      :src="srcProp" 
+      :src="this.$props.src" 
       :style="{...this.$props.style, ...cursor}" 
       :alt="this.$props.alt"
       @click="openImage"
     />
     <v-dialog v-model="dialog" :max-width="dialogMaxWidth()" :max-height="dialogMaxHeight()">
-      <img :src="this.$props.src" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
+      <img v-lazy="zoomImg" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
     </v-dialog>
   </div>
 </template>
@@ -152,12 +152,13 @@ export default {
     },
   },
   computed: {
-    srcProp() {
-      if (this.$props.lazy) {
-        return this.$props.src.substring(3);
-      } else {
-        return this.$props.src;
-      }
+    zoomImg() {
+      let lastDotIndex = this.$props.src.lastIndexOf('.');
+      let filename = this.$props.src.substring(0, lastDotIndex);
+      let extension = this.$props.src.substring(lastDotIndex);
+      let newFilePath = filename + '_zoom' + extension;
+
+      return newFilePath;
     },
     cursor() {
       if (this.$props.zoomxs === false && this.$vuetify.display.xs) {

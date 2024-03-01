@@ -31,7 +31,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col align="start" cols="6" class="pa-0 align-self-center">
-                <img style="height: 24vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+                <img style="height: 24vw;" src="../images/AboutMePage/Slide1/MyFace.webp" alt="Maria Halyapina img"/>
               </v-col>
               <v-col align="end" cols="6" class="pa-0 align-self-center">
                 <div style="display: inline-block; line-height: 1.8229166666666667vw; letter-spacing: 0.03125vw;">
@@ -88,10 +88,10 @@
               <v-col lg="5" cols="12" align="center" class="pa-0 align-self-center slide2-col-img-margin">
                 <v-row style="width: 100%;" class="ma-0">
                   <v-col :class="this.$vuetify.display.lgAndUp ? '' : 'align-self-end'" :align="this.$vuetify.display.lgAndUp ? 'start' : 'start'" lg="12" sm="6" cols="12" class="pa-0 slide2-img-margin">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" :src="imgPath('Slide2/Moodboard1.jpg')" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" :src="imgPath('Slide2/Moodboard1.webp')" alt="Moodboard"/>
                   </v-col>
                   <v-col :class="this.$vuetify.display.lgAndUp ? '' : 'align-self-end'" :align="this.$vuetify.display.lgAndUp ? 'start' : 'end'" lg="12" sm="6" cols="12" class="pa-0">
-                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" :src="imgPath('Slide2/Moodboard2.jpg')" alt="Moodboard"/>
+                    <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="aboutme-slide2-img-height" :src="imgPath('Slide2/Moodboard2.webp')" alt="Moodboard"/>
                   </v-col>
                   <v-col v-if="this.$vuetify.display.lgAndUp" cols="12" class="pa-0 mt-lg-3">
                     <p class="title slide2-title-margin">
@@ -208,40 +208,40 @@
               <v-col cols="12" class="pa-0 align-self-center">
                 <v-row v-if="this.$vuetify.display.lgAndUp" class="ma-0 slide3-row-margin">
                   <v-col cols="4" align="start" class="pa-0">
-                    <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" class="aboutme-slide3-height-img1" alt="Maria with earrings">
+                    <img src="../images/AboutMePage/Slide3/MariaWithEarrings.webp" class="aboutme-slide3-height-img1" alt="Maria with earrings">
                   </v-col>
                   <v-col cols="4" align="center" class="pa-0">
                     <v-row class="fill-height ma-0">
                       <v-col cols="12" class="pa-0 align-self-start">
-                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly1.jpg')" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly1.webp')" class="aboutme-slide3-height-img2" alt="My earrings"/>
                       </v-col>
                       <v-col cols="12" class="pa-0 align-self-end">
-                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly2.jpg')" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly2.webp')" class="aboutme-slide3-height-img2" alt="My earrings"/>
                       </v-col>
                     </v-row>
                   </v-col>
                   <v-col cols="4" align="end" class="pa-0">
-                    <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide3/prototypeOfLine.jpg')" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
+                    <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide3/prototypeOfLine.webp')" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
                   </v-col>
                 </v-row>
                 <v-row v-if="this.$vuetify.display.md || this.$vuetify.display.sm" class="ma-0 slide3-row-margin">
                   <v-col sm="6" align="end" class="pa-0 align-self-center">
                     <v-row class="slide3-row-margin-right ">
                       <v-col cols="12" class="pa-0 slide3-margin-vertical-bot">
-                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly1.jpg')" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly1.webp')" class="aboutme-slide3-height-img2" alt="My earrings"/>
                       </v-col>
                       <v-col cols="12" class="pa-0">
-                        <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" class="aboutme-slide3-height-img1" alt="Maria with earrings">
+                        <img src="../images/AboutMePage/Slide3/MariaWithEarrings.webp" class="aboutme-slide3-height-img1" alt="Maria with earrings">
                       </v-col>
                     </v-row>
                   </v-col>
                   <v-col sm="6" align="start" class="pa-0">
                     <v-row class="slide3-row-margin-left">
                       <v-col cols="12" class="pa-0">
-                        <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide3/prototypeOfLine.jpg')" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
+                        <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide3/prototypeOfLine.webp')" class="aboutme-slide3-height-img1" alt="Prototype of Line chair"/>
                       </v-col>
                       <v-col cols="12" class="pa-0 slide3-margin-vertical-top">
-                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly2.jpg')" class="aboutme-slide3-height-img2" alt="My earrings"/>
+                        <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" :src="imgPath('Slide3/dragonfly2.webp')" class="aboutme-slide3-height-img2" alt="My earrings"/>
                       </v-col>
                     </v-row>
                   </v-col>
@@ -254,7 +254,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col cols="6" class="pa-0 align-self-center" style="margin-top: 4.2vh;">
-                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide4/factory.jpg')" class="aboutme-slide4-img-height" alt="Factory" />
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide4/factory.webp')" class="aboutme-slide4-img-height" alt="Factory" />
                 <p class="title text-center slide4-title-margin">
                   <span v-if="$i18n.locale === 'ru'">
                     Посещение фабрики Ангстрем
@@ -289,7 +289,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col cols="5" align="start" class="pa-0 align-self-center" style="margin-top: 4vh;">
-                <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide5/PosterVitra.jpg')" class="aboutme-slide5-img-height" alt="Poster Vitra" />
+                <full-image :d-md-h-v=90 :d-sm-h-v=60 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide5/PosterVitra.webp')" class="aboutme-slide5-img-height" alt="Poster Vitra" />
                 <p class="text-center title slide5-title-margin">
                   <span v-if="$i18n.locale === 'ru'">
                     Плакат для Vitra
@@ -323,10 +323,10 @@
           <swiper-slide>
             <row-aboutme style="margin-top: 2vh">
               <v-col cols="6" class="pa-0 d-flex flex-column align-start justify-end">
-                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide6/DiplomaFromVitra.jpg')" class="aboutme-slide6-img-height" alt="Diploma from Vitra" />
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide6/DiplomaFromVitra.webp')" class="aboutme-slide6-img-height" alt="Diploma from Vitra" />
               </v-col>
               <v-col cols="6" class="pa-0 d-flex flex-column align-end justify-end">
-                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide6/MariaNearPoster.jpg')" class="aboutme-slide6-img-height" alt="I'm near poster" />
+                <full-image :d-sm-h-v=60 :d-md-h-v=80 :d-h-v=50 d-h-u="vh" :src="imgPath('Slide6/MariaNearPoster.webp')" class="aboutme-slide6-img-height" alt="I'm near poster" />
               </v-col>
               <v-col cols="12" class="pa-0">
                 <p class="title text-center" style="margin-top: 1.5vh;">
@@ -344,7 +344,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="5">
-                <img src="../images/AboutMePage/Slide7/Thonet.jpg" style="height: 24.4109375vw; margin-right: 4vw;" alt="Thonet chair">
+                <img src="../images/AboutMePage/Slide7/Thonet.webp" style="height: 24.4109375vw; margin-right: 4vw;" alt="Thonet chair">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
                   <p style="margin-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
@@ -378,7 +378,7 @@
           <swiper-slide>
             <row-aboutme>
               <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="12">
-                <img src="../images/AboutMePage/Slide8/AboutTheAtelier.jpg" style="height: 24.4109375vw;" alt="About the atelier">
+                <img src="../images/AboutMePage/Slide8/AboutTheAtelier.webp" style="height: 24.4109375vw;" alt="About the atelier">
               </v-col> 
             </row-aboutme>
           </swiper-slide>
@@ -411,7 +411,7 @@
     </v-row>
     <v-row v-else class="ma-0 pt-2 pl-8 pr-9 pb-12">
       <v-col align="center" cols="12" class="pa-0 align-self-center">
-        <img style="width: 83vw;" src="../images/AboutMePage/Slide1/MyFace.jpg" alt="Maria Halyapina img"/>
+        <img style="width: 83vw;" src="../images/AboutMePage/Slide1/MyFace.webp" alt="Maria Halyapina img"/>
       </v-col>
       <v-col align="start" cols="12" class="pa-0 align-self-center">
         <h1 class="text-start h-neucha-regular xs-h-size mt-5">
@@ -463,10 +463,10 @@
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
-        <img style="width: 83vw" src="../images/AboutMePage/Slide2/Moodboard1.jpg" alt="Moodboard"/>
+        <img style="width: 83vw" src="../images/AboutMePage/Slide2/Moodboard1.webp" alt="Moodboard"/>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
-        <img style="width: 83vw" src="../images/AboutMePage/Slide2/Moodboard2.jpg" alt="Moodboard"/>
+        <img style="width: 83vw" src="../images/AboutMePage/Slide2/Moodboard2.webp" alt="Moodboard"/>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center">
         <p class="title">
@@ -523,13 +523,13 @@
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
-        <img src="../images/AboutMePage/Slide3/prototypeOfLine.jpg" style="width: 80vw;" alt="Prototype of Line chair"/>
+        <img src="../images/AboutMePage/Slide3/prototypeOfLine.webp" style="width: 80vw;" alt="Prototype of Line chair"/>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
-        <img src="../images/AboutMePage/Slide3/MariaWithEarrings.jpg" style="width: 80vw;" alt="Maria with earrings"/>
+        <img src="../images/AboutMePage/Slide3/MariaWithEarrings.webp" style="width: 80vw;" alt="Maria with earrings"/>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-7">
-        <img src="../images/AboutMePage/Slide3/dragonfly1.jpg" style="width: 80vw;" alt="My earrings"/>
+        <img src="../images/AboutMePage/Slide3/dragonfly1.webp" style="width: 80vw;" alt="My earrings"/>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center">
         <p class="title">
@@ -561,7 +561,7 @@
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
-        <img src="../images/AboutMePage/Slide4/factory.jpg" style="width: 83vw" alt="Factory" />
+        <img src="../images/AboutMePage/Slide4/factory.webp" style="width: 83vw" alt="Factory" />
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center">
         <p class="title">
@@ -597,7 +597,7 @@
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
-        <img src="../images/AboutMePage/Slide5/PosterVitra.jpg" style="width: 83vw" alt="Poster Vitra" />
+        <img src="../images/AboutMePage/Slide5/PosterVitra.webp" style="width: 83vw" alt="Poster Vitra" />
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center">
         <p class="title">
@@ -610,11 +610,11 @@
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
-        <img src="../images/AboutMePage/Slide6/DiplomaFromVitra.jpg" style="width: 83vw" alt="Diploma from Vitra" />
+        <img src="../images/AboutMePage/Slide6/DiplomaFromVitra.webp" style="width: 83vw" alt="Diploma from Vitra" />
       </v-col>
       
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
-        <img src="../images/AboutMePage/Mobile/Atelier.png" style="width: 83vw;" alt="Diploma from Vitra" />
+        <img src="../images/AboutMePage/Mobile/Atelier.webp" style="width: 83vw;" alt="Diploma from Vitra" />
       </v-col>
       <v-col cols="12" class="pa-0">
         <p class="text-start h-montserrat-regular xs-text-size mt-5">
@@ -648,10 +648,10 @@
         </p>
       </v-col>
       <v-col align="center" cols="6" class="pa-0 align-self-center mt-6">
-        <img src="../images/AboutMePage/Mobile/ThonetBlue.png" style="width: 35vw;" alt="Blue thonet chair" />
+        <img src="../images/AboutMePage/Mobile/ThonetBlue.webp" style="width: 35vw;" alt="Blue thonet chair" />
       </v-col>
       <v-col align="center" cols="6" class="pa-0 align-self-center mt-6">
-        <img src="../images/AboutMePage/Mobile/ThonetWhite.png" style="width: 35vw;" alt="White thonet chair" />
+        <img src="../images/AboutMePage/Mobile/ThonetWhite.webp" style="width: 35vw;" alt="White thonet chair" />
       </v-col>
 
       <v-col cols="12" class="pa-0">
@@ -667,13 +667,13 @@
         </p>
     </v-row>
   </v-container>
-  <img v-if="this.$vuetify.display.smAndUp" class="popkorn" src="../images/AboutMePage/popkorn.png" alt="GirlWithPopkorn"/>
+  <img v-if="this.$vuetify.display.smAndUp" class="popkorn" src="../images/AboutMePage/popkorn.webp" alt="GirlWithPopkorn"/>
 </template>
 
 <script>
 import FullImage from '@/components/FullImage.vue';
 import RowAboutme from '@/components/RowAboutme.vue';
-import imagePath from '../images/AboutMePage/Slide9/background.png'
+import imagePath from '../images/AboutMePage/Slide9/background.webp'
 
 import { Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
