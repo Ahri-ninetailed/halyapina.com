@@ -45,10 +45,10 @@ export default {
     return {
       background: background,
       images: [
-        { src: "Ufo/Images/3_quarter_view.webp", alt: "3 quarter UFO table view" },
-        { src: "Ufo/Images/removable_desk_storage_cover.webp", alt: "Removable desk storage cover" },
-        { src: "Ufo/Images/child_with_table.webp", alt: "Child with UFO table" },
-        { src: "Ufo/Images/storage_night_light.webp", alt: "Storage-chair as a night light" },
+        { src: "Ufo/Images/3_quarter_view.webp", srcZoom: "Ufo/Images/3_quarter_view_zoom.webp", alt: "3 quarter UFO table view" },
+        { src: "Ufo/Images/removable_desk_storage_cover.webp", srcZoom: "Ufo/Images/removable_desk_storage_cover_zoom.webp", alt: "Removable desk storage cover" },
+        { src: "Ufo/Images/child_with_table.webp", srcZoom: "Ufo/Images/child_with_table_zoom.webp", alt: "Child with UFO table" },
+        { src: "Ufo/Images/storage_night_light.webp", srcZoom: "Ufo/Images/storage_night_light_zoom.webp", alt: "Storage-chair as a night light" },
       ]
     }
   }

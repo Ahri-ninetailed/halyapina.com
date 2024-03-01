@@ -15,7 +15,7 @@
       @click="openImage"
     />
     <v-dialog v-model="dialog" :max-width="dialogMaxWidth()" :max-height="dialogMaxHeight()">
-      <img v-lazy="zoomImg" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
+      <img v-lazy="this.$props.srcZoom" :style="{...imgWidth, ...imgHeight}" style="object-fit: contain;" :alt="this.$props.alt"/>
     </v-dialog>
   </div>
 </template>
@@ -34,6 +34,10 @@ export default {
       required: false,
     },
     src: {
+      type: String,
+      required: true,
+    },
+    srcZoom: {
       type: String,
       required: true,
     },
@@ -152,14 +156,6 @@ export default {
     },
   },
   computed: {
-    zoomImg() {
-      let lastDotIndex = this.$props.src.lastIndexOf('.');
-      let filename = this.$props.src.substring(0, lastDotIndex);
-      let extension = this.$props.src.substring(lastDotIndex);
-      let newFilePath = filename + '_zoom' + extension;
-
-      return newFilePath;
-    },
     cursor() {
       if (this.$props.zoomxs === false && this.$vuetify.display.xs) {
         return {

@@ -40,11 +40,11 @@ export default {
     return {
       background: background,
       images: [
-        { src: "CrownBed/Images/bed1.jpg", alt: "Bed1" },
-        { src: "CrownBed/Images/bed3.jpg", alt: "Bed3" },
-        { src: "CrownBed/Images/bed2.jpg", alt: "Bed2" },
-        { src: "CrownBed/Images/beds.jpg", alt: "Three beds" },
-        { src: "CrownBed/Images/child_bed.jpg", alt: "Bed for child" },
+        { src: "CrownBed/Images/bed1.jpg", srcZoom: "CrownBed/Images/bed1_zoom.jpg", alt: "Bed1" },
+        { src: "CrownBed/Images/bed3.jpg", srcZoom: "CrownBed/Images/bed3_zoom.jpg", alt: "Bed3" },
+        { src: "CrownBed/Images/bed2.jpg", srcZoom: "CrownBed/Images/bed2_zoom.jpg", alt: "Bed2" },
+        { src: "CrownBed/Images/beds.jpg", srcZoom: "CrownBed/Images/beds_zoom.jpg", alt: "Three beds" },
+        { src: "CrownBed/Images/child_bed.jpg", srcZoom: "CrownBed/Images/child_bed_zoom.jpg", alt: "Bed for child" },
       ]
     }
   }

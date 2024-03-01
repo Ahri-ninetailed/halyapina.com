@@ -50,10 +50,10 @@ export default {
     return {
       background: background,
       images: [
-        { src: "SpaceJam/Images/bed1.png", alt: "Bed1" },
-        { src: "SpaceJam/Images/bed2.png", alt: "Bed3" },
-        { src: "SpaceJam/Images/bed3.png", alt: "Bed2" },
-        { src: "SpaceJam/Images/bed4.png", alt: "Bed4" },
+        { src: "SpaceJam/Images/bed1.png", srcZoom: "SpaceJam/Images/bed1_zoom.png", alt: "Bed1" },
+        { src: "SpaceJam/Images/bed2.png", srcZoom: "SpaceJam/Images/bed2_zoom.png", alt: "Bed3" },
+        { src: "SpaceJam/Images/bed3.png", srcZoom: "SpaceJam/Images/bed3_zoom.png", alt: "Bed2" },
+        { src: "SpaceJam/Images/bed4.png", srcZoom: "SpaceJam/Images/bed4_zoom.png", alt: "Bed4" },
       ]
     }
   }

@@ -44,9 +44,9 @@ export default {
     return {
       background: background,
       images: [
-        { src: "Fennel/Images/FennelLamp.webp", alt: "Fennel lamp" },
-        { src: "Fennel/Images/LampInDark.webp", alt: "Fennel lamp in dark" },
-        { src: "Fennel/Images/LampTopView.webp", alt: "Fennel lamp top view" },
+        { src: "Fennel/Images/FennelLamp.webp", srcZoom: "Fennel/Images/FennelLamp_zoom.webp", alt: "Fennel lamp" },
+        { src: "Fennel/Images/LampInDark.webp", srcZoom: "Fennel/Images/LampInDark_zoom.webp", alt: "Fennel lamp in dark" },
+        { src: "Fennel/Images/LampTopView.webp", srcZoom: "Fennel/Images/LampTopView_zoom.webp", alt: "Fennel lamp top view" },
       ]
     }
   }

@@ -28,28 +28,28 @@
     <v-row class="ma-0" :style="background1Style">
       <Splide :options="splideOptions" :extensions="extensions">
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/table_with_child.webp')" :style="styleOfImageSlideProp" alt="Child near table 1"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src-zoom="imgPath('Carousel/table_with_child_zoom.webp')" :src="imgPath('Carousel/table_with_child.webp')" :style="styleOfImageSlideProp" alt="Child near table 1"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src="imgPath('Carousel/2tables.webp')" :style="styleOfImageSlideProp" alt="Two tables"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src-zoom="imgPath('Carousel/2tables_zoom.webp')" :src="imgPath('Carousel/2tables.webp')" :style="styleOfImageSlideProp" alt="Two tables"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/table_with_child2.webp')" :style="styleOfImageSlideProp" alt="Child near table 2"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src-zoom="imgPath('Carousel/table_with_child2_zoom.webp')" :src="imgPath('Carousel/table_with_child2.webp')" :style="styleOfImageSlideProp" alt="Child near table 2"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/easel.webp')" :style="styleOfImageSlideProp" alt="Table's wing as easel"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src-zoom="imgPath('Carousel/easel_zoom.webp')" :src="imgPath('Carousel/easel.webp')" :style="styleOfImageSlideProp" alt="Table's wing as easel"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/function_of_boxes.webp')" :style="styleOfImageSlideProp" alt="Functionality of boxes 1"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src-zoom="imgPath('Carousel/function_of_boxes_zoom.webp')" :src="imgPath('Carousel/function_of_boxes.webp')" :style="styleOfImageSlideProp" alt="Functionality of boxes 1"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src="imgPath('Carousel/function_of_boxes2.webp')" :style="styleOfImageSlideProp" alt="Functionality of boxes 2"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src-zoom="imgPath('Carousel/function_of_boxes2_zoom.webp')" :src="imgPath('Carousel/function_of_boxes2.webp')" :style="styleOfImageSlideProp" alt="Functionality of boxes 2"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src="imgPath('Carousel/function_of_boxes3.webp')" :style="styleOfImageSlideProp" alt="Functionality of boxes 3"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=49 :d-h-v=37 d-h-u="vh" :src-zoom="imgPath('Carousel/function_of_boxes3_zoom.webp')" :src="imgPath('Carousel/function_of_boxes3.webp')" :style="styleOfImageSlideProp" alt="Functionality of boxes 3"/>
         </SplideSlide>
         <SplideSlide>
-          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src="imgPath('Carousel/separate_pieces2.webp')" :style="styleOfImageSlideProp" alt="Separate pieces 2"/>
+          <full-image :d-lg-h-v=90 :d-md-h-v=70 :d-sm-h-v=56 :d-h-v=49 d-h-u="vh" :src-zoom="imgPath('Carousel/separate_pieces2_zoom.webp')" :src="imgPath('Carousel/separate_pieces2.webp')" :style="styleOfImageSlideProp" alt="Separate pieces 2"/>
         </SplideSlide>
       </Splide>
       <v-row class="ma-0 def-pad-top padding">
@@ -86,7 +86,7 @@
             </p>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12 mb-sm-0 mb-5">
-            <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" :src="imgPath('interior.webp')" :zoomxs="false" alt="Interior"/>
+            <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img1-h" :src-zoom="imgPath('interior_zoom.webp')" :src="imgPath('interior.webp')" :zoomxs="false" alt="Interior"/>
           </v-col>
         </v-row>
 
@@ -193,10 +193,10 @@
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
               <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" :src="imgPath('drawingGirl.webp')" alt="Drawing girl"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" :src-zoom="imgPath('drawingGirl_zoom.webp')" :src="imgPath('drawingGirl.webp')" alt="Drawing girl"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" :src="imgPath('removableTabletop.webp')" alt="Removable table top"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img2-img3-h" :zoomxs="false" :src-zoom="imgPath('removableTabletop_zoom.webp')" :src="imgPath('removableTabletop.webp')" alt="Removable table top"/>
               </v-col>
             </v-row>
           </v-col>
@@ -204,7 +204,7 @@
 
         <v-row class="ml-0 mr-0 mb-0 def-mar-top">
           <v-col align="center" cols="12" class="pa-0 align-self-center">
-            <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img4-h" :zoomxs="false" :src="imgPath('tableDrawing.webp')" alt="Table drawing"/>
+            <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img4-h" :zoomxs="false" :src-zoom="imgPath('tableDrawing_zoom.webp')" :src="imgPath('tableDrawing.webp')" alt="Table drawing"/>
           </v-col>
         </v-row>
 
@@ -300,13 +300,13 @@
           <v-col cols="12" sm="6" class="pa-0">
             <v-row class="ma-0 fill-height">
               <v-col cols="12" class="pa-0 align-self-sm-start text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src="imgPath('constructor.webp')" alt="Сonstructor"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src-zoom="imgPath('constructor_zoom.webp')" :src="imgPath('constructor.webp')" alt="Сonstructor"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-center text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src="imgPath('table.webp')" alt="Tables"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src-zoom="imgPath('table_zoom.webp')" :src="imgPath('table.webp')" alt="Tables"/>
               </v-col>
               <v-col cols="12" class="pa-0 align-self-sm-end text-center text-sm-right mt-sm-0 mt-12">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src="imgPath('tableWithChild.webp')" alt="Tables with child"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img567-h" :zoomxs="false" :src-zoom="imgPath('tableWithChild_zoom.webp')" :src="imgPath('tableWithChild.webp')" alt="Tables with child"/>
               </v-col>
             </v-row>
           </v-col>
@@ -380,7 +380,7 @@
           </p>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
-          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" :src="imgPath('explosionDiagram.webp')" alt="Explosion diagram"/>
+          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" :src-zoom="imgPath('explosionDiagram_zoom.webp')" :src="imgPath('explosionDiagram.webp')" alt="Explosion diagram"/>
         </v-col>
       </v-row>
 
@@ -769,7 +769,7 @@
             </span>
           </h1>
           <v-col cols="12" class="pa-0 h-mb">
-            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src="imgPath('sketches.jpg')" alt="Sketches"/>
+            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src-zoom="imgPath('sketches_zoom.jpg')" :src="imgPath('sketches.jpg')" alt="Sketches"/>
           </v-col>
           <v-col cols="12" class="pa-0 mt-sm-0 mt-12">
             <span v-if="$i18n.locale === 'ru'">
@@ -849,18 +849,18 @@
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping1.webp')" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src-zoom="imgPath('prototyping1_zoom.webp')" :src="imgPath('prototyping1.webp')" alt="Prototyping"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping2.webp')" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src-zoom="imgPath('prototyping2_zoom.webp')" :src="imgPath('prototyping2.webp')" alt="Prototyping"/>
               </v-col>
             </v-row>
             <v-row class="ml-0 mr-0 mb-0 mt-6 mt-md-4 mt-lg-6">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping3.webp')" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src-zoom="imgPath('prototyping3_zoom.webp')" :src="imgPath('prototyping3.webp')" alt="Prototyping"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end mt-6 mt-sm-0">
-                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src="imgPath('prototyping4.webp')" alt="Prototyping"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=50 :d-h-v=55 d-h-u="vw" class="anima-img9-h" :zoomxs="false" :src-zoom="imgPath('prototyping4_zoom.webp')" :src="imgPath('prototyping4.webp')" alt="Prototyping"/>
               </v-col>
             </v-row>
           </v-col>
@@ -986,30 +986,30 @@
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction1.webp')" alt="Dragon"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src-zoom="imgPath('formandfunction1_zoom.webp')" :src="imgPath('formandfunction1.webp')" alt="Dragon"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction2.webp')" alt="Boxes"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src-zoom="imgPath('formandfunction2_zoom.webp')" :src="imgPath('formandfunction2.webp')" alt="Boxes"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 mb-6 mb-lg-6 mb-md-1">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction3.webp')" alt="Table legs 1"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src-zoom="imgPath('formandfunction3_zoom.webp')" :src="imgPath('formandfunction3.webp')" alt="Table legs 1"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction4.webp')" alt="Table legs 2"/>
+                <full-image :d-lg-h-v=40 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src-zoom="imgPath('formandfunction4_zoom.webp')" :src="imgPath('formandfunction4.webp')" alt="Table legs 2"/>
               </v-col>
             </v-row>
           </v-col>
           <v-col cols="12" class="pa-0 h-mb">
             <v-row class="ma-0">
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-start">
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction5.webp')" alt="Baby and adult table"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src-zoom="imgPath('formandfunction5_zoom.webp')" :src="imgPath('formandfunction5.webp')" alt="Baby and adult table"/>
               </v-col>
               <v-col cols="12" sm="6" class="pa-0 text-center text-sm-end">
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src="imgPath('formandfunction6.webp')" alt="Table with opened wings"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="anima-img10-h" :zoomxs="false" :src-zoom="imgPath('formandfunction6_zoom.webp')" :src="imgPath('formandfunction6.webp')" alt="Table with opened wings"/>
               </v-col>
             </v-row>
           </v-col>

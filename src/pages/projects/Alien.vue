@@ -45,9 +45,9 @@ export default {
     return {
       background: background,
       images: [
-        { src: "Alien/Images/ChaiseLounge1.webp", alt: "Chaise lounge" },
-        { src: "Alien/Images/ChaiseLounge2.webp", alt: "Chaise lounge side view" },
-        { src: "Alien/Images/ChaiseLounge3.webp", alt: "Chaise lounge top view" },
+        { src: "Alien/Images/ChaiseLounge1.webp", srcZoom: "Alien/Images/ChaiseLounge1_zoom.webp", alt: "Chaise lounge" },
+        { src: "Alien/Images/ChaiseLounge2.webp", srcZoom: "Alien/Images/ChaiseLounge2_zoom.webp", alt: "Chaise lounge side view" },
+        { src: "Alien/Images/ChaiseLounge3.webp", srcZoom: "Alien/Images/ChaiseLounge3_zoom.webp", alt: "Chaise lounge top view" },
       ]
     }
   }
