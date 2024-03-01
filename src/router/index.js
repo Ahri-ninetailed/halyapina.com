@@ -7,6 +7,7 @@ import CrownBed from '@/pages/projects/CrownBed.vue';
 import SpaceJam from '@/pages/projects/SpaceJam.vue';
 import Fennel from '@/pages/projects/Fennel.vue';
 import Alien from '@/pages/projects/Alien.vue';
+import Ufo from '@/pages/projects/Ufo.vue';
 
 const routes = [
   {
@@ -37,6 +38,10 @@ const routes = [
   {
     path: '/alien',
     component: Alien,
+  },
+  {
+    path: '/ufo',
+    component: Ufo,
   },
 ];
 
