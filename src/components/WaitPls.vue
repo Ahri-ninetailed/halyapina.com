@@ -24,8 +24,12 @@ export default {
     const block = document.getElementById('waiter');
 
     block.addEventListener('transitionend', () => {
-        block.classList.add('z-index-after');
+      block.remove();
     });
+    setTimeout(() => {
+      // Удаляем элемент после завершения анимации
+      block.remove();
+    }, 2500); // Здесь 350 миллисекунд - это время анимации (0.35 секунды), нужно привести к миллисекундам
 
     this.pageScrollMounted();
   },
@@ -103,9 +107,5 @@ export default {
   height: 100vh;
   width: 100%;
   position: absolute;
-}
-
-.z-index-after {
-    z-index: -1;
 }
 </style>
