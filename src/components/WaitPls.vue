@@ -1,6 +1,6 @@
 <template>
   <div id="waiter" class="waiting-container" :style="fade">
-    <img src="../images/waiting.webp" style="height: 50vh;" alt="Wait please"/>
+    <img :src="background" style="height: 50vh;" alt="Wait please"/>
   </div>
   <div v-show="this.$props.isLoaded" style="z-index: 1;">
     <slot ></slot>
@@ -8,8 +8,11 @@
 </template>
 
 <script>
+import AboutmePageCheck from '@/mixins/aboutme-page-check.js';
+
 export default {
   name: 'WaitPls',
+  mixins: [AboutmePageCheck],
   props: {
     isLoaded: {
       type: Boolean,
@@ -23,7 +26,19 @@ export default {
         block.classList.add('z-index-after');
     });
   },
+  methods: {
+    imgPath(img) {
+      return new URL(`../images/${img}`, import.meta.url).href;
+    },
+  },
   computed: {
+    background() {
+      if (this.isAboutPage) {
+        return "";
+      } else {
+        return this.imgPath('waiting.webp');
+      }
+    },
     fade() {
       if (this.$props.isLoaded) {
         return {

@@ -31,8 +31,13 @@
 </template>
   
 <script>
+import AnimaPageCheck from '@/mixins/anima-page-check.js';
+import AboutmePageCheck from '@/mixins/aboutme-page-check.js';
+import HomePageCheck from '@/mixins/home-page-check.js';
+
 export default {
   name: 'MyHeader',
+  mixins: [AnimaPageCheck, AboutmePageCheck, HomePageCheck],
   data() {
     return {
       headerStyleStart: true,
@@ -52,15 +57,6 @@ export default {
     window.removeEventListener('scroll', this.onScroll);
   },
   computed: {
-    isHomePage() {
-      return window.location.pathname === '/'; // Замените на реальный путь главной страницы
-    },
-    isAboutPage() {
-      return window.location.pathname === '/aboutme'; // Замените на реальный путь главной страницы
-    },
-    isAnimaPage() {
-      return window.location.pathname === '/anima'; // Замените на реальный путь главной страницы
-    },
     textColor() {
       if (this.isAboutPage) {
         return {
