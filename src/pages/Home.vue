@@ -115,7 +115,7 @@ export default {
   margin-right: 1vh;
 }
 .home-main-pic {
-  background-image: url('../images/MainPage/maintable.jpg');
+  background-image: url('../images/MainPage/maintable.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

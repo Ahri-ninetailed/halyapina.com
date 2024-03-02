@@ -39,7 +39,7 @@
                     <span v-if="$i18n.locale === 'ru'">
                       Образование:
                     </span>
-                    <span v-else>
+                    <span lang="en" v-else>
                       Education:
                     </span>
                   </h1>
@@ -48,7 +48,7 @@
                       РГХПУ им. С. Г. Строганова<br>
                       кафедра «Дизайн мебели» 
                     </span>
-                    <span v-else>
+                    <span lang="en" v-else>
                       Stroganov Russian State University of Design and Applied Arts<br>
                       Department of "Furniture Design"
                     </span>
@@ -61,7 +61,7 @@
                       Skills:
                     </span>
                   </h1>
-                  <p class="text-start h-montserrat-regular slides-font">
+                  <p lang="en" class="text-start h-montserrat-regular slides-font">
                     Autodesk 3ds Мах, Corona, AutoCAD,<br>
                     Adobe lllustrator, Adobe Photoshop,<br>
                     CorelDraw, SketchUp, Layout
@@ -70,7 +70,7 @@
                     <span v-if="$i18n.locale === 'ru'">
                       Контакты:
                     </span>
-                    <span v-else>
+                    <span lang="en" v-else>
                       Contacts:
                     </span>
                   </h1>
@@ -98,7 +98,7 @@
                       <span v-if="$i18n.locale === 'ru'">
                         Мудборд концептуального проекта
                       </span>
-                      <span v-else>
+                      <span lang="en" v-else>
                         Conceptual project moodboard
                       </span>
                     </p>
@@ -118,7 +118,7 @@
                         <span style="letter-spacing: 0.014359375vw;">ствующие дизайнеры, большие профессионалы</span><br>
                         и настоящие фанаты своего дела!<br> 
                       </span>
-                      <span v-else>
+                      <span lang="en" v-else>
                         My name is Maria, I loved to draw since childhood
                         and fantasize, and these two seemingly harmless
                         habits turned me into a designer. In 2019
@@ -139,7 +139,7 @@
                         «Дизайн ме-<br>бели». Преподаватели кафедры — дей<span style="letter-spacing: 0.014359375vw;">ству-<br>ющие дизайнеры, большие профессионалы</span>
                         <br>и настоящие фанаты своего дела!
                       </span>
-                      <span v-else>
+                      <span lang="en" v-else>
                         My name is Maria, I loved to draw since childhood
                         and fantasize, and these two seemingly harmless
                         habits turned me into a designer. In 2019
@@ -163,7 +163,7 @@
                         и, конечно, всегда стремились работать над актуаль-<br>
                         ными проблемами.  
                       </span>
-                      <span v-else>
+                      <span lang="en" v-else>
                         <b>How was the training?</b><br>
                         Training from the very beginning was aimed at developing
                         development of creative thinking. We are actively engaged
@@ -186,7 +186,7 @@
                         и, конечно, всегда стреми-<br>
                         лись работать над актуальными проблемами.  
                       </span>
-                      <span v-else>
+                      <span lang="en" v-else>
                         <b>How was the training?</b>
                         Training from the very beginning was aimed at developing
                         development of creative thinking. We are actively engaged
@@ -259,7 +259,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     Посещение фабрики Ангстрем
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     Visit to the Angstrom factory
                   </span>
                 </p>
@@ -275,7 +275,7 @@
                       ТЗ, но и учитывать настоящие возможности<br>
                       производства.
                     </span>
-                    <span v-else>
+                    <span lang="en" v-else>
                       The management of the department considers it necessary to give students the 
                       opportunity to work with real customers. Thanks to this experience, you learn to 
                       follow not only technical specifications, but also take into account real production capabilities.
@@ -294,7 +294,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     Плакат для Vitra
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     Poster for Vitra
                   </span>
                 </p>
@@ -309,7 +309,7 @@
                     посыл фирмы и выразить его с помощью яркой гра-<br>
                     фической подачи.
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     During the training, they tried to familiarize us with various areas 
                     of design. Participation in the poster competition of the world famous 
                     company Vitra was a wonderful experience. We tried to identify the key 
@@ -333,7 +333,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     Диплом за 3-е место
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     Diploma for 3rd place
                   </span>
                 </p>
@@ -359,7 +359,7 @@
                       <span style="letter-spacing: -0.020vw;">из переработанного пластика. А лицом нашего ателье</span><br>
                       стала бы вечно нестареющая классика — Thonet!
                     </span>
-                    <span v-else>
+                    <span lang="en" v-else>
                       Much attention was paid to the ability to work<br>
                       in a team. To achieve this goal, not<br>
                       you need to be able to find compromises. The<br>
@@ -390,7 +390,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     Отныне я в свободном плавании, и мне не терпится применить и приумножить  свои знания!
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     From now on I am free to swim, and I can't wait to apply and increase my knowledge!
                   </span>
                 </p>
@@ -418,7 +418,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Образование:
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Education:
           </span>
         </h1>
@@ -427,7 +427,7 @@
             РГХПУ им. С. Г. Строганова<br>
             кафедра «Дизайн мебели» 
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Stroganov Russian State University of Design and Applied Arts<br>
             Department of "Furniture Design"
           </span>
@@ -436,11 +436,11 @@
           <span v-if="$i18n.locale === 'ru'">
             Владение программами: 
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Skills:
           </span>
         </h1>
-        <ul class="text-start h-montserrat-regular xs-text-size" style="color:white; width: fit-content; padding-left: 5vw;">
+        <ul lang="en" class="text-start h-montserrat-regular xs-text-size" style="color:white; width: fit-content; padding-left: 5vw;">
           <li>Autodesk 3ds Мах</li>
           <li>Corona</li>
           <li>AutoCAD</li>
@@ -453,7 +453,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Контакты:
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Contacts:
           </span>
         </h1>
@@ -473,7 +473,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Мудборд концептуального проекта
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Conceptual project moodboard
           </span>
         </p>
@@ -505,7 +505,7 @@
             и, конечно, всегда стремились<br>
             работать над актуальными проблемами.
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             My name is Maria, I loved to draw since childhood and fantasize, and these two seemingly 
             harmless habits turned me into a designer. In 2019 I entered the Russian State University
             of Arts and Sciences named after. S.G. Stroganov to the department "Furniture design". The
@@ -536,7 +536,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Макетирование
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Mockup creation
           </span>
         </p>
@@ -552,7 +552,7 @@
             ко ТЗ, но и учитывать настоящие<br>
             возможности производства.
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             The management of the department considers it necessary 
             to give students the opportunity to work with real customers. 
             Thanks to this experience, you learn to follow not only technical 
@@ -568,7 +568,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Посещение фабрики Ангстрем
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Visit to the Angstrom factory
           </span>
         </p>
@@ -586,7 +586,7 @@
             и выразить его с помощью яркой<br>
             графической подачи.
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             During the training, they tried to familiarize
             us with various areas of design. Participation 
             in the poster competition of the world famous company 
@@ -604,7 +604,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Плакат для Vitra
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Poster for Vitra
           </span>
         </p>
@@ -634,7 +634,7 @@
             нашего ателье стала бы вечно<br>
             нестареющая классика — Thonet!
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             Much attention was paid to the ability to work
             in a team. To achieve this goal, not
             you need to be able to find compromises. The
@@ -661,7 +661,7 @@
           <span v-if="$i18n.locale === 'ru'">
             Отныне я в свободном плавании, и мне не терпится применить и приумножить свои знания!
           </span>
-          <span v-else>
+          <span lang="en" v-else>
             From now on I am free to swim, and I can't wait to apply and increase my knowledge!
           </span>
         </p>

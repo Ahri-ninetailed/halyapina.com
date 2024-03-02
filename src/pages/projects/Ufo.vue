@@ -20,7 +20,7 @@
           покидать остальное богатство.
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         Thanks to the ergonomics of the table,
         the baby will learn order and self-organization
         from childhood. The plexiglass dome is designed

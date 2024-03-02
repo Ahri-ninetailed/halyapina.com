@@ -3,14 +3,14 @@
     <v-parallax src="../images/AnimaPage/anima.webp" v-if="this.$vuetify.display.smAndUp">
       <v-row class="ma-0" style="height: 100vh;">
         <v-col cols="12" class="pa-0 align-self-center">
-          <p class="mt-12 text-center h-neucha-regular" style="font-weight: bold; font-size: 9.094270833333333vw;">
+          <p lang="en" class="mt-12 text-center h-neucha-regular" style="font-weight: bold; font-size: 9.094270833333333vw;">
             ANIMA
           </p>
           <p class="mt-1 text-center h-montserrat-regular" style="font-size: 1.2vw;">
             <span v-if="$i18n.locale === 'ru'">
               Проект трансформируемого стола для детей от 3-х до 9-ти лет
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Project of a transformable table for children from 3 to 9 years old
             </span>
           </p>
@@ -19,14 +19,14 @@
     </v-parallax>
     <v-row class="ma-0" style="height: 100vh;" v-else>
         <v-col cols="12" class="pa-0 align-self-center">
-          <p class="text-center h-neucha-regular" style="font-weight: bold; font-size: 20vw;">
+          <p lang="en" class="text-center h-neucha-regular" style="font-weight: bold; font-size: 20vw;">
             ANIMA
           </p>
           <p class="mt-1 text-center h-montserrat-regular">
             <span v-if="$i18n.locale === 'ru'">
               Проект трансформируемого стола для детей от 3-х до 9-ти лет
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Project of a transformable table for children from 3 to 9 years old
             </span>
           </p>
@@ -63,7 +63,7 @@
       <v-row class="ma-0 def-pad-top padding">
         <v-row class="ma-0">
           <v-col cols="12" sm="6" class="pa-0" >
-            <h1 class="h-neucha-regular h-mb">
+            <h1 lang="en" class="h-neucha-regular h-mb">
               Anima
             </h1>
             <p class="h-montserrat-regular span1-width">
@@ -82,7 +82,7 @@
                 </span><br>
                 и интуитивными.
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Anima — means "soul" in Latin.
                 The table is transformed not only
                 in terms of ergonomics, but also evolutionary
@@ -110,7 +110,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Эргономика
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Ergonomics
               </span>
             </h1>
@@ -149,7 +149,7 @@
                 торые подарят контраст в тактильных<br>
                 ощущениях.<br>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 I wanted to create a children's table,
                 which will be associated
                 not with the first copybooks and calculations, but will be a source of inspiration and space for implementation
@@ -186,7 +186,7 @@
                 стола и вставляются в боковые пазы<br>
                 ящиков. 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Table transformation takes place
                 using growth attachments for legs and drawers, which up to a certain point are separate
                 storage system. Boxes are placed
@@ -222,7 +222,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Образ
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Image
               </span>
             </h1>
@@ -232,7 +232,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Зачем крылья?
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Why wings?
               </span>
             </p>
@@ -256,7 +256,7 @@
               </p>
             </span>
             <span v-else>
-              <p class="h-montserrat-regular red-line span4-width">
+              <p lang="en" class="h-montserrat-regular red-line span4-width">
                 In my opinion,<br>
                 wings always add a<br>
                 certain fabulousness to<br>
@@ -274,7 +274,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Почему без привычной фурнитуры?
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Why without the usual fittings?
               </span>
             </p>
@@ -294,7 +294,7 @@
                 миров, чтобы творить и расти вместе<br>
                 с детьми! 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 I wanted the child to independently interact with the table
                 without the risk of injuring yourself. I believe that harsh metal parts take away the tenderness of children's furniture
                 and lightness, and thanks to the fabric loops the table looks atypical
@@ -329,7 +329,7 @@
             <span v-if="$i18n.locale === 'ru'">
               Материалы
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Materials
             </span>
           </h1>
@@ -369,7 +369,7 @@
               и, конечно, оргстекло отважно выдер-<br>
               жит испытания пластилином и клеем!
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Materials selected for the project
               safe and environmentally friendly. Valchromat,
               used for making tabletops and wings, has long been used
@@ -398,7 +398,7 @@
             <span v-if="$i18n.locale === 'ru'">
               История создания
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               History of creation
             </span>
           </h1>
@@ -406,7 +406,7 @@
             <span v-if="$i18n.locale === 'ru'">
               История создания
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               History of creation
             </span>
           </h1>
@@ -418,7 +418,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Анализ потребностей
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Needs Analysis
               </span>
             </h1>
@@ -451,7 +451,7 @@
               </p>
             </span>
             <span v-else>
-              <p class="h-montserrat-regular red-line">
+              <p lang="en" class="h-montserrat-regular red-line">
                 Childhood — is a time filled with miracles and vivid impressions. 
                 And this is an important process of personality formation. Each 
                 stage is unique and requires appropriate solutions. For the competent, 
@@ -467,7 +467,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Раннее детство 1-3 года
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Early childhood 1-3 years
               </span>
             </p>
@@ -476,7 +476,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Ребёнок:
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Child:
               </span>
             </p>
@@ -486,7 +486,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     учится ходить и говорить, познаёт мир
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     learns to walk and talk, discovers the world
                   </span>
                 </p>
@@ -496,7 +496,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     хочет всё делать сам, но не всегда может
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     wants to do everything himself, but he can't always
                   </span>
                 </p>
@@ -506,7 +506,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     наглядно-действенное мышление
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     visual-effective thinking
                   </span>
                 </p>
@@ -517,7 +517,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Столик «Anima»: 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Table "Anima":
               </span>
             </p>
@@ -528,7 +528,7 @@
                     конструктор отлично подойдёт для развития мелкой<br>
                     моторики, которая напрямую связана с речью
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     The constructor is perfect for developing fine motor skills, which are directly related to speech.
                   </span>
                 </p>
@@ -538,7 +538,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     безопасная фурнитура, интуитивный дизайн
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     safe fittings, intuitive design
                   </span>
                 </p>
@@ -554,7 +554,7 @@
                     металла, силикона, дерева, тканевые петли в столешнице,<br>
                     оргстекло, мебельный линолеум, вальхромат)
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     tactile sensations thanks to various
                     table materials (drawer handles are made of fabric,
                     metal, silicone, wood, fabric loops in the tabletop,
@@ -568,7 +568,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Дошкольный возраст 3-7 лет  
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Preschool age 3-7 years
               </span>
             </p>
@@ -577,7 +577,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Ребёнок: 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Child:
               </span>
             </p>
@@ -587,7 +587,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     появление первых фобий и тревог
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     the appearance of the first phobias and anxieties
                   </span>
                 </p>
@@ -597,7 +597,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     поиск увлечений и способов самовыражения
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     Finding hobbies and ways to express yourself
                   </span>
                 </p>
@@ -607,7 +607,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     наглядно-образное мышление
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     visual-figurative thinking
                   </span>
                 </p>
@@ -618,7 +618,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Столик «Anima»:
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Table "Anima":
               </span>
             </p>
@@ -634,7 +634,7 @@
                       образ дружественного создания, попытка создать атмосферу собственного маленького уютного мира в детской комнате
                     </span>
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     the image of a friendly creature, an attempt to create the atmosphere of your own small cozy world in the children's room
                   </span>
                 </p>
@@ -655,7 +655,7 @@
                       макетирования, система хранения для организации
                     </span>
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     inclined planes for drawing and reading, plexiglass for modeling, prototyping, storage system for organization
                   </span>
                 </p>
@@ -666,7 +666,7 @@
                     образное решение стола навевает приятные ассоциации,<br>
                     дизайн способствует развитию воображения, фантазии
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     the figurative design of the table evokes pleasant associations,
                     design promotes the development of imagination and fantasy
                   </span>
@@ -678,7 +678,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Младший школьный возраст 7-11 лет 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Junior school age 7-11 years
               </span>
             </p>
@@ -687,7 +687,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Ребёнок: 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Child:
               </span>
             </p>
@@ -706,8 +706,8 @@
                       желание быть частью коллектива
                     </span>
                   </span>
-                  <span v-else>
-                    dependence on the opinions of others, anxiety about school performance and one’s position in society, the desire to be part of a team
+                  <span lang="en" v-else>
+                    dependence on the opinions of others, anxiety about school performance and one's position in society, the desire to be part of a team
                   </span>
                 </p>
               </li>
@@ -716,7 +716,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     словесно-логическое мышление
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     verbal-logical thinking
                   </span>
                 </p>
@@ -727,7 +727,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Столик «Anima»:
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Table "Anima":
               </span>
             </p>
@@ -738,7 +738,7 @@
                     всесторонний доступ стола позволяет нескольким людям<br>
                     одновременно заниматься, возможность социализации
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     comprehensive table access allows several people to study at the same time, the possibility of socialization
                   </span>
                 </p>
@@ -757,7 +757,7 @@
                       то можно разложить столешницу и переключить внимание на фактурные ножки 
                     </span>
                   </span>
-                  <span v-else>
+                  <span lang="en" v-else>
                     if you're tired of the wings and want a more "grown-up" 
                     table, then you can unfold the tabletop and turn your attention to the textured legs
                   </span>
@@ -772,7 +772,7 @@
             <span v-if="$i18n.locale === 'ru'">
               Эскизирование    
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Sketching
             </span>
           </h1>
@@ -824,7 +824,7 @@
               </p>    
             </span>
             <span v-else>
-              <p class="h-montserrat-regular red-line">
+              <p lang="en" class="h-montserrat-regular red-line">
                 At the beginning of sketching, I set myself the task of identifying
                 the most striking imaginative solutions and only then think through
                 structural part. I was also looking for an opportunity to customize
@@ -849,7 +849,7 @@
             <span v-if="$i18n.locale === 'ru'">
               Макетирование   
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Layout
             </span>
           </h1>
@@ -951,7 +951,7 @@
                 </p>
               </span>
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               <p class="h-montserrat-regular red-line">
                 For a better understanding of the design features, there was
                 A dimensional mock-up of the table was created. Layout, in contrast
@@ -986,7 +986,7 @@
             <span v-if="$i18n.locale === 'ru'">
               Форма и функция
             </span>
-            <span v-else>
+            <span lang="en" v-else>
               Form and function
             </span>
           </h1>
@@ -1046,7 +1046,7 @@
                   качестве хорошему столу он обязательно подойдет». 
                 </span>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 "A chair should not be "vertical" or "horizontal"
                 it should not be "expressive" or "constructivist";
                 should not be produced exclusively
@@ -1060,7 +1060,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Марсель Бройер
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Marcel Breuer
               </span>
             </p>
@@ -1085,7 +1085,7 @@
                   выполнить их деликатно.
                 </span>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 In my opinion, the decorative element becomes significantly
                 It's more interesting when logic is traced in it; form should be inextricably linked with function. Every detail
                 the table had to have a bright imagery, but given the age range and difference in perception, it was important
@@ -1097,7 +1097,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Система хранения:
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Storage system:
               </span>
             </p>
@@ -1107,7 +1107,7 @@
                 от крыльев, их невозможно со временем скрыть, да и слиш-<br>
                 ком прямолинейный образ, быстро наскучит. 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 It was decided to abandon the "big-eyed" boxes, in contrast
                 from the wings, they cannot be hidden over time, and a too straightforward image will quickly become boring.
               </span>
@@ -1116,7 +1116,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Ножки:
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Legs:
               </span>
             </p>
@@ -1145,7 +1145,7 @@
                   тяжеловесным  «взрослым» столом. 
                 </span>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Over time, the emphasis shifts to non-standard
                 legs. Their shape, expanding towards the bottom, gives the table
                 additional stability, and diagonal orientation
@@ -1159,7 +1159,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Фиксирующие оргстекло накладки: 
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Plexiglas fixing pads:
               </span>
             </p>
@@ -1182,7 +1182,7 @@
                   новой ткневой петли. 
                 </span>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 In the first renderings the overlays were too wide
                 and massive, took up a lot of space from the workspace
                 table, so the final shape became thinner,
@@ -1194,7 +1194,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 Уголок-дракончик:
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Dragon corner:
               </span>
             </p>
@@ -1217,7 +1217,7 @@
                   и превратился в зубра и носорога. 
                 </span>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 Initially, the dragon was supposed to be attached with horns
                 into the holes in the moving parts of the tabletop ("back" 37°,
                 "head" 55°, and the tail was detached and had an angle of 18°), but due to
@@ -1240,7 +1240,7 @@
                   и плодотворное сотрудничество! 
                 </span>
               </span>
-              <span v-else>
+              <span lang="en" v-else>
                 I express my deep gratitude to my thesis supervisor
                 Eva Gordeeva @evahysum. It was wonderful
                 and fruitful cooperation!
