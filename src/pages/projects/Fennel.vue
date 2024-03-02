@@ -19,7 +19,7 @@
           игру теней.
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         The Fennel lamp will be a wonderful decoration.
         both day and night. Inflorescences done
         made of thin colored glass, in which during the day

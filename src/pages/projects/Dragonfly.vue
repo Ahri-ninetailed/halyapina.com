@@ -23,7 +23,7 @@
           металлической проволоки. 
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         Insects have always been a great source of inspiration.
         The structure of their body, so different from ours, is
         amazing. The design of the Dragonfly lamps is a combination

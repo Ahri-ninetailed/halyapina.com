@@ -19,7 +19,7 @@
           бым вариантом «кроны»!
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         The Crown bed collection will create an atmosphere of unity with nature in your apartment. 
         A headboard that is universal for all models will simplify production, and you can pamper yourself with any “crown” option!
       </span>

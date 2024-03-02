@@ -25,7 +25,7 @@
           эффектно заполняя, прозрачные шарики. 
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         Everyone in childhood loved to blow soap
         bubbles and admire their fragility and rainbow
         tints. I always wanted to preserve such beauty

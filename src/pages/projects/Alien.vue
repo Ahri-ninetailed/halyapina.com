@@ -20,7 +20,7 @@
           комнаты и любимцем детей! 
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         He clearly came to us from some distant planet.
         We can only speculate about the features of his
         world. Its body is covered with soft fur, and its

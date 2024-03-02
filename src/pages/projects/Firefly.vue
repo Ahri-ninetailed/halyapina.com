@@ -18,7 +18,7 @@
           аналогичен. 
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         Warm soft light smoothly diffuses into space, passing through the
         semi-opaque glass of the Firefly lamp. Switching
         on is carried out by pressing the "wings", which

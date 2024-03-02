@@ -24,7 +24,7 @@
           покоя и защищенности.
         </span>
       </span>
-      <span v-else>
+      <span lang="en" v-else>
         I'll tell you a secret, "SpaceJam" is an unusual bed,
         it's a real starship! From now on, your children will
         go to bed without any extra persuasion, because "SpaceJam"
