@@ -106,9 +106,12 @@ export default {
   },
   computed: {
     backgroundImgProp() {
-      return {
-        backgroundImage: `url(${this.$props.backgroundImg})`,
-      };
+      if (this.$vuetify.display.smAndUp) { 
+        return {
+          backgroundImage: `url(${this.$props.backgroundImg})`,
+        };
+      }
+      return {};
     },
     hPosition() {
       if (this.$vuetify.display.mdAndUp) {
