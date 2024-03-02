@@ -51,6 +51,10 @@ const routes = [
     path: '/firefly',
     component: () => import('@/pages/projects/Firefly.vue'),
   },
+  {
+    path: '/duo',
+    component: () => import('@/pages/projects/Duo.vue'),
+  },
 ];
 
 const router = createRouter({

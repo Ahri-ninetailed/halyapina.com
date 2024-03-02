@@ -13,7 +13,7 @@
 
     <v-row class="row-margin-horizontal pt-3">
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
-        <main-card :style="mainCardStyle" :name="$t('projects.lines')" href="lines" :imgPath="imgPath('many_chairs.webp')" :imgHoverPath="imgPath('many_chairs_hover.webp')" />
+        <main-card :style="mainCardStyle" :name="$t('projects.duo')" href="duo" :imgPath="imgPath('many_chairs.webp')" :imgHoverPath="imgPath('many_chairs_hover.webp')" />
       </v-col>
       <v-col lg="3" md="4" sm="6" cols="12" class="text-center col-margin-padding pt-lg-0">
         <main-card :style="mainCardStyle" :name="$t('projects.dragonfly')" href="dragonfly" :imgPath="imgPath('flys.webp')" :imgHoverPath="imgPath('flys_hover.webp')" />
