@@ -777,7 +777,7 @@
             </span>
           </h1>
           <v-col cols="12" class="pa-0 h-mb">
-            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src-zoom="imgPath('sketches_zoom.jpg')" :src="imgPath('sketches.jpg')" alt="Sketches"/>
+            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src-zoom="imgPath('sketches_zoom.webp')" :src="imgPath('sketches.webp')" alt="Sketches"/>
           </v-col>
           <v-col cols="12" class="pa-0 mt-sm-0 mt-12">
             <span v-if="$i18n.locale === 'ru'">

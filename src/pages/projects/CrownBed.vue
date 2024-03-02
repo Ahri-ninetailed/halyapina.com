@@ -29,7 +29,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
-import background from '@/images/Projects/CrownBed/background.png'
+import background from '@/images/Projects/CrownBed/background.webp'
 
 export default {
   name: 'CrownBed',
