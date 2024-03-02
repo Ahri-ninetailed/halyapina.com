@@ -141,7 +141,6 @@ export default {
   },
   methods: {
     isImageLoaded() {
-      console.log(123)
       this.isZoomImgLoaded = true;
     },
     openImage() {
