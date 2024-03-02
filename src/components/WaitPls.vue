@@ -1,5 +1,5 @@
 <template>
-  <div id="waiter" class="waiting-container" :style="fade">
+  <div id="waiter" class="waiting-container" :style="{...fade, ...backgroundColor}">
     <img :src="background" style="height: 50vh;" alt="Wait please"/>
   </div>
   <div v-show="this.$props.isLoaded" style="z-index: 1;">
@@ -32,9 +32,20 @@ export default {
     },
   },
   computed: {
+    backgroundColor() {
+      if (this.isAboutPage) {
+        return {
+          backgroundColor: 'black',
+        }
+      } else {
+        return {
+          backgroundColor: 'white',
+        }
+      }
+    },
     background() {
       if (this.isAboutPage) {
-        return "";
+        return this.imgPath('waiting_dark.webp');
       } else {
         return this.imgPath('waiting.webp');
       }
@@ -63,7 +74,6 @@ export default {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: white;
   position: absolute;
 }
 
