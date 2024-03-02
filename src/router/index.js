@@ -8,6 +8,7 @@ import SpaceJam from '@/pages/projects/SpaceJam.vue';
 import Fennel from '@/pages/projects/Fennel.vue';
 import Alien from '@/pages/projects/Alien.vue';
 import Ufo from '@/pages/projects/Ufo.vue';
+import Bubble from '@/pages/projects/Bubble.vue';
 
 const routes = [
   {
@@ -47,6 +48,10 @@ const routes = [
   {
     path: '/ufo',
     component: Ufo,
+  },
+  {
+    path: '/bubble',
+    component: Bubble,
   },
 ];
 
