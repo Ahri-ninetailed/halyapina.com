@@ -10,6 +10,7 @@ import Alien from '@/pages/projects/Alien.vue';
 import Ufo from '@/pages/projects/Ufo.vue';
 import Bubble from '@/pages/projects/Bubble.vue';
 import Dragonfly from '@/pages/projects/Dragonfly.vue';
+import Firefly from '@/pages/projects/Firefly.vue';
 
 
 const routes = [
@@ -58,6 +59,10 @@ const routes = [
   {
     path: '/dragonfly',
     component: Dragonfly,
+  },
+  {
+    path: '/firefly',
+    component: Firefly,
   },
 ];
 
