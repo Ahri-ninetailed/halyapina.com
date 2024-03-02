@@ -15,11 +15,11 @@
           <v-col :cols="swiperCols" class="pa-0 mt-sm-0 mt-6">
             <Splide 
               ref="splide"
-              class="splider-white-back project-img-width" 
+              class="splider-white-back splide-width" 
               :options="splideOptions"
               :style="shadowBorder"
             >
-              <SplideSlide class="project-img-width"
+              <SplideSlide class="splide-width"
                 v-for="(img, index) in this.$props.swiperImgs"
                 :key="index"
               >
@@ -203,7 +203,7 @@ export default {
   --img-width1: 30vw;
   --img-width2: 32.9vw;
   --img-width3: 37.6vw;
-  --img-width4: 47vw;
+  --img-width4: 52vw;
   --img-width5: 54.8vw;
 }
 
@@ -212,6 +212,9 @@ export default {
 }
 .project-img-width {
   width: var(--img-width1);
+}
+.splide-width {
+  width: calc(var(--img-width1) + 1px);
 }
 .project-header-size {
   font-size: 1.8188541666666667vw;
@@ -229,6 +232,9 @@ export default {
 .project-img-width {
   width: var(--img-width2);
 }
+.splide-width {
+  width: calc(var(--img-width2) + 1px);
+}
 .project-header-size {
   font-size: 2vw;
 }
@@ -241,6 +247,9 @@ export default {
 @media (max-width: 1400px) { 
 .project-img-width {
   width: var(--img-width2);
+}
+.splide-width {
+  width: calc(var(--img-width2) + 1px);
 }
 .project-header-size {
   font-size: 2.2vw;
@@ -255,6 +264,9 @@ export default {
 .project-img-width {
   width: var(--img-width3);
 }
+.splide-width {
+  width: calc(var(--img-width3) + 1px);
+}
 .project-header-size {
   font-size: 2.5vw;
 }
@@ -267,6 +279,9 @@ export default {
 @media (max-width: 959px) { 
 .project-img-width {
   width: var(--img-width4);
+}
+.splide-width {
+  width: calc(var(--img-width4) + 1px);
 }
 .project-header-size {
   font-size: 3.1vw;
@@ -289,6 +304,9 @@ export default {
 @media (max-width: 750px) { 
 .project-img-width {
   width: var(--img-width5);
+}
+.splide-width {
+  width: calc(var(--img-width5) + 1px);
 }
 .project-header-size {
   font-size: 4vw;
@@ -314,7 +332,9 @@ export default {
     height: unset;
     width: 100vw;
   }
-
+  .splide-width {
+    width: 100vw;
+  }
   .project-header-size {
     font-size: 7vw;
   }
