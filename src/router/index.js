@@ -22,6 +22,11 @@ const routes = [
     path: '/anima',
     component: Anima,
   },
+  // Другие маршруты вашего приложения
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
+  },
   //Пути проектов
   {
     path: '/crownbed',
