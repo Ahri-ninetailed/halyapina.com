@@ -39,7 +39,7 @@
 
 <script>
 import Project from '@/components/Project.vue';
-import background from '@/images/Projects/SpaceJam/background.png'
+import background from '@/images/Projects/SpaceJam/background.webp'
 
 export default {
   name: 'SpaceJam',
@@ -50,10 +50,10 @@ export default {
     return {
       background: background,
       images: [
-        { src: "SpaceJam/Images/bed1.png", srcZoom: "SpaceJam/Images/bed1_zoom.png", alt: "Bed1" },
-        { src: "SpaceJam/Images/bed2.png", srcZoom: "SpaceJam/Images/bed2_zoom.png", alt: "Bed3" },
-        { src: "SpaceJam/Images/bed3.png", srcZoom: "SpaceJam/Images/bed3_zoom.png", alt: "Bed2" },
-        { src: "SpaceJam/Images/bed4.png", srcZoom: "SpaceJam/Images/bed4_zoom.png", alt: "Bed4" },
+        { src: "SpaceJam/Images/bed1.webp", srcZoom: "SpaceJam/Images/bed1_zoom.webp", alt: "SpaceJam bed" },
+        { src: "SpaceJam/Images/bed2.webp", srcZoom: "SpaceJam/Images/bed2_zoom.webp", alt: "SpaceJam bed side view" },
+        { src: "SpaceJam/Images/bed3.webp", srcZoom: "SpaceJam/Images/bed3_zoom.webp", alt: "SpaceJam bed" },
+        { src: "SpaceJam/Images/bed4.webp", srcZoom: "SpaceJam/Images/bed4_zoom.webp", alt: "SpaceJam bed side view" },
       ]
     }
   }
