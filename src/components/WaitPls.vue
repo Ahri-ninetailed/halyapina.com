@@ -9,10 +9,11 @@
 
 <script>
 import AboutmePageCheck from '@/mixins/aboutme-page-check.js';
+import ProjectsPagesCheck from '@/mixins/projects-pages-check.js';
 
 export default {
   name: 'WaitPls',
-  mixins: [AboutmePageCheck],
+  mixins: [AboutmePageCheck, ProjectsPagesCheck],
   props: {
     isLoaded: {
       type: Boolean,
@@ -25,8 +26,35 @@ export default {
     block.addEventListener('transitionend', () => {
         block.classList.add('z-index-after');
     });
+
+    this.pageScrollMounted();
+  },
+  beforeUnmount() {
+    this.pageScrollBeforeUmount();
   },
   methods: {
+    pageScrollMounted() {
+      if (this.isProjectPage) {
+        document.documentElement.style.overflow = 'hidden';
+        return;
+      }
+
+      if (this.isAboutPage && this.$vuetify.display.smAndUp) {
+        document.documentElement.style.overflow = 'hidden';
+        return;
+      }
+    },
+    pageScrollBeforeUmount() {
+      if (this.isProjectPage) {
+        document.documentElement.style.overflow = '';
+        return;
+      }
+
+      if (this.isAboutPage && this.$vuetify.display.smAndUp) {
+        document.documentElement.style.overflow = '';
+        return;
+      } 
+    },
     imgPath(img) {
       return new URL(`../images/${img}`, import.meta.url).href;
     },
