@@ -15,15 +15,15 @@
           <v-col :cols="swiperCols" class="pa-0 mt-sm-0 mt-6">
             <Splide 
               ref="splide"
-              class="project-swiper-width splider-white-back" 
+              class="splider-white-back project-img-width" 
               :options="splideOptions"
               :style="shadowBorder"
             >
-              <SplideSlide class="project-swiper-width"
+              <SplideSlide class="project-img-width"
                 v-for="(img, index) in this.$props.swiperImgs"
                 :key="index"
               >
-                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-height" :src-zoom="imgPath(img.srcZoom)" :src="imgPath(img.src)" :alt="img.alt"/>
+                <full-image :d-lg-h-v=35 :d-md-h-v=45 :d-h-v=55 d-h-u="vw" class="project-img-width" :src-zoom="imgPath(img.srcZoom)" :src="imgPath(img.src)" :alt="img.alt"/>
               </SplideSlide>
             </Splide>
           </v-col>
@@ -199,11 +199,19 @@ export default {
 </style>
 
 <style>
+:root {
+  --img-width1: 30vw;
+  --img-width2: 32.9vw;
+  --img-width3: 37.6vw;
+  --img-width4: 47vw;
+  --img-width5: 54.8vw;
+}
+
 .splider-white-back {
   background-color: white;
 }
-.project-img-height {
-  height: 19.166666666666668vw;
+.project-img-width {
+  width: var(--img-width1);
 }
 .project-header-size {
   font-size: 1.8188541666666667vw;
@@ -213,15 +221,13 @@ export default {
   width: 30.1vw;
   background-color: white;
 }
-.project-swiper-width {
-  width: 30vw;
-}
+
 .project-h-margin-bottom {
   margin-bottom: 2vh;
 }
 @media (max-width: 1625px) { 
-.project-img-height {
-  height: 21vw;
+.project-img-width {
+  width: var(--img-width2);
 }
 .project-header-size {
   font-size: 2vw;
@@ -230,13 +236,11 @@ export default {
     font-size: 1.3vw;
     width: 34.4vw;
 }
-.project-swiper-width {
-  width: 31.84vw;
-}
+
 }
 @media (max-width: 1400px) { 
-.project-img-height {
-  height: 21vw;
+.project-img-width {
+  width: var(--img-width2);
 }
 .project-header-size {
   font-size: 2.2vw;
@@ -245,13 +249,11 @@ export default {
     font-size: 1.35vw;
     width: 35.7vw;
 }
-.project-swiper-width {
-  width: 31.84vw;
-}
+
 }
 @media (max-width: 1280px) { 
-.project-img-height {
-  height: 24vw;
+.project-img-width {
+  width: var(--img-width3);
 }
 .project-header-size {
   font-size: 2.5vw;
@@ -260,13 +262,11 @@ export default {
   font-size: 1.6vw;
   width: 42.3vw;
 }
-.project-swiper-width {
-  width: 34.84vw;
-}
+
 }
 @media (max-width: 959px) { 
-.project-img-height {
-  height: 30vw;
+.project-img-width {
+  width: var(--img-width4);
 }
 .project-header-size {
   font-size: 3.1vw;
@@ -275,9 +275,7 @@ export default {
   font-size: 2vw;
   width: 52.8vw;
 }
-.project-swiper-width {
-  width: 52vw;
-}
+
 .project-text-margin-bottom {
   margin-bottom: 8vh;
 }
@@ -289,8 +287,8 @@ export default {
 }
 }
 @media (max-width: 750px) { 
-.project-img-height {
-  height: 35vw;
+.project-img-width {
+  width: var(--img-width5);
 }
 .project-header-size {
   font-size: 4vw;
@@ -299,9 +297,7 @@ export default {
   font-size: 2.5vw;
   width: 66vw;
 }
-.project-swiper-width {
-  width:67vw;
-}
+
 .project-text-margin-bottom {
   margin-bottom: 8vh;
 }
@@ -314,13 +310,11 @@ export default {
 }
 
 @media (max-width: 599px) { 
-  .project-img-height {
+  .project-img-width {
     height: unset;
     width: 100vw;
   }
-  .project-swiper-width {
-    width: 100vw;
-  }
+
   .project-header-size {
     font-size: 7vw;
   }
