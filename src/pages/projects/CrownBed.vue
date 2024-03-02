@@ -40,11 +40,11 @@ export default {
     return {
       background: background,
       images: [
-        { src: "CrownBed/Images/bed1.jpg", srcZoom: "CrownBed/Images/bed1_zoom.jpg", alt: "Bed1" },
-        { src: "CrownBed/Images/bed3.jpg", srcZoom: "CrownBed/Images/bed3_zoom.jpg", alt: "Bed3" },
-        { src: "CrownBed/Images/bed2.jpg", srcZoom: "CrownBed/Images/bed2_zoom.jpg", alt: "Bed2" },
-        { src: "CrownBed/Images/beds.jpg", srcZoom: "CrownBed/Images/beds_zoom.jpg", alt: "Three beds" },
-        { src: "CrownBed/Images/child_bed.jpg", srcZoom: "CrownBed/Images/child_bed_zoom.jpg", alt: "Bed for child" },
+        { src: "CrownBed/Images/bed1.webp", srcZoom: "CrownBed/Images/bed1_zoom.webp", alt: "Crownbed 1" },
+        { src: "CrownBed/Images/bed3.webp", srcZoom: "CrownBed/Images/bed3_zoom.webp", alt: "Crownbed 3" },
+        { src: "CrownBed/Images/bed2.webp", srcZoom: "CrownBed/Images/bed2_zoom.webp", alt: "Crownbed 2" },
+        { src: "CrownBed/Images/beds.webp", srcZoom: "CrownBed/Images/beds_zoom.webp", alt: "Three crownbeds" },
+        { src: "CrownBed/Images/child_bed.webp", srcZoom: "CrownBed/Images/child_bed_zoom.webp", alt: "Crownbed for child" },
       ]
     }
   }
