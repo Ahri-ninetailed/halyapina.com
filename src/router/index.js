@@ -9,6 +9,8 @@ import Fennel from '@/pages/projects/Fennel.vue';
 import Alien from '@/pages/projects/Alien.vue';
 import Ufo from '@/pages/projects/Ufo.vue';
 import Bubble from '@/pages/projects/Bubble.vue';
+import Dragonfly from '@/pages/projects/Dragonfly.vue';
+
 
 const routes = [
   {
@@ -52,6 +54,10 @@ const routes = [
   {
     path: '/bubble',
     component: Bubble,
+  },
+  {
+    path: '/dragonfly',
+    component: Dragonfly,
   },
 ];
 
