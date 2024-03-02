@@ -41,8 +41,8 @@ export default {
     return {
       background: background,
       images: [
-        { src: "Firefly/Images/lamps_opening.webp", srcZoom: "Firefly/Images/lamps_opening_zoom.webp", alt: "Opening the firefly lamp" },
         { src: "Firefly/Images/lamps_dark.webp", srcZoom: "Firefly/Images/lamps_dark_zoom.webp", alt: "Three firefly lamps in the dark" },
+        { src: "Firefly/Images/lamps_opening.webp", srcZoom: "Firefly/Images/lamps_opening_zoom.webp", alt: "Opening the firefly lamp" },
         { src: "Firefly/Images/lamps_interior.webp", srcZoom: "Firefly/Images/lamps_interior_zoom.webp", alt: "Firefly lamps in the interior" },
       ]
     }
