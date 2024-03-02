@@ -1250,7 +1250,8 @@
         </v-row>
 
         <v-col cols="12" class="pa-0 text-center pt-12 pb-12">
-          <img class="anima-img11-w" src="../images/AnimaPage/cyclop.webp" alt="Cyclop" />
+          <img v-if="this.$vuetify.display.smAndUp" class="anima-img11-w" src="../images/AnimaPage/cyclop.webp" alt="Cyclop" />
+          <img v-else class="anima-img11-w" src="../images/AnimaPage/cyclop_mobile.webp" alt="Cyclop" />
         </v-col>
       </v-row>
     </v-row>
