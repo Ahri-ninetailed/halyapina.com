@@ -26,10 +26,11 @@ export default {
     block.addEventListener('transitionend', () => {
       block.remove();
     });
+    
+    //заглушка, если вдруг событие не отработает
     setTimeout(() => {
-      // Удаляем элемент после завершения анимации
       block.remove();
-    }, 2500); // Здесь 350 миллисекунд - это время анимации (0.35 секунды), нужно привести к миллисекундам
+    }, 2000);
 
     this.pageScrollMounted();
   },
@@ -83,17 +84,13 @@ export default {
       }
     },
     fade() {
-      if (this.$props.isLoaded) {
-        return {
-          opacity: '0',
-          transition: 'opacity 0.35s ease'
-        }
-      } else {
+      if (!this.$props.isLoaded) {
         return {
           opacity: '1',
           zIndex: '1',
         }
-      }
+      } 
+      return {}
     }
   }
 }
@@ -107,5 +104,7 @@ export default {
   height: 100vh;
   width: 100%;
   position: absolute;
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
 </style>
