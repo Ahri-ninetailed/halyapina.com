@@ -1,59 +1,73 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+import Home from '@/pages/Home.vue';
+import About from '@/pages/About.vue';
+import Anima from '@/pages/Anima.vue';
+//Импорт проектов
+import CrownBed from '@/pages/projects/CrownBed.vue';
+import SpaceJam from '@/pages/projects/SpaceJam.vue';
+import Fennel from '@/pages/projects/Fennel.vue';
+import Alien from '@/pages/projects/Alien.vue';
+import Ufo from '@/pages/projects/Ufo.vue';
+import Bubble from '@/pages/projects/Bubble.vue';
+import Dragonfly from '@/pages/projects/Dragonfly.vue';
+import Firefly from '@/pages/projects/Firefly.vue';
+import Duo from '@/pages/projects/Firefly.vue';
+
 const routes = [
   {
     path: '/',
-    component: () => import('@/pages/Home.vue'),
+    component: Home,
   },
   {
     path: '/aboutme',
-    component: () => import('@/pages/About.vue'),
+    component: About,
   },
   {
     path: '/anima',
-    component: () => import('@/pages/Anima.vue'),
+    component: Anima,
   },
   // Другие маршруты вашего приложения
   {
     path: '/:pathMatch(.*)*',
-    redirect: () => import('@/pages/Home.vue'),
+    redirect: Home,
   },
   //Пути проектов
   {
     path: '/crownbed',
-    component: () => import('@/pages/projects/CrownBed.vue'),
+    component: CrownBed,
   },
   {
     path: '/spacejam',
-    component: () => import('@/pages/projects/SpaceJam.vue'),
+    component: SpaceJam,
   },
   {
     path: '/fennel',
-    component: () => import('@/pages/projects/Fennel.vue'),
+    component: Fennel,
   },
   {
     path: '/alien',
-    component: () => import('@/pages/projects/Alien.vue'),
+    component: Alien,
   },
   {
     path: '/ufo',
-    component: () => import('@/pages/projects/Ufo.vue'),
+    component: Ufo,
   },
   {
     path: '/bubble',
-    component: () => import('@/pages/projects/Bubble.vue'),
+    component: Bubble,
   },
   {
     path: '/dragonfly',
-    component: () => import('@/pages/projects/Dragonfly.vue'),
+    component: Dragonfly,
   },
   {
     path: '/firefly',
-    component: () => import('@/pages/projects/Firefly.vue'),
+    component: Firefly,
   },
   {
     path: '/duo',
-    component: () => import('@/pages/projects/Duo.vue'),
+    component: Duo,
   },
 ];
 
