@@ -920,7 +920,7 @@
                   </span>
                   ницы, значительно облегчив конструкцию. Благодаря макети-<br>
                   рованию были выявлены проблемные зоны и найдены нес-<br>
-                  тандартные решения. Форма и функция
+                  тандартные решения.
                 </p>
               </span>
               <span v-else>
@@ -947,7 +947,7 @@
                   столешницы, а другую сторону вклеили между мебельным
                   линолеумом и вальхроматом. Подобная конструкция оказалась более безопасной для детских пальчиков и сохранила
                   возможность использовать минимальную толщину столешницы, значительно облегчив конструкцию. Благодаря макетированию были выявлены проблемные зоны и найдены нес-
-                  тандартные решения. Форма и функция
+                  тандартные решения.
                 </p>
               </span>
             </span>
@@ -975,7 +975,7 @@
                 tabletops, and the other side was glued between the furniture
                 linoleum and valchromate. This design turned out to be safer for children’s fingers and preserved
                 the ability to use the minimum thickness of the tabletop, significantly facilitating the design. Thanks to prototyping, problem areas were identified and deficiencies were found.
-                standard solutions. Form and function
+                standard solutions.
               </p>
             </span>
           </v-col>

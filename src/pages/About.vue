@@ -34,7 +34,7 @@
                 <img style="height: 24vw;" src="../images/AboutMePage/Slide1/MyFace.webp" alt="Maria Halyapina img"/>
               </v-col>
               <v-col align="end" cols="6" class="pa-0 align-self-center">
-                <div style="display: inline-block; line-height: 1.8229166666666667vw; letter-spacing: 0.03125vw;">
+                <div style="width: 20.520833333333332vw; display: inline-block; line-height: 1.8229166666666667vw; letter-spacing: 0.03125vw;">
                   <h1 class="text-start h-neucha-regular slide1-h">
                     <span v-if="$i18n.locale === 'ru'">
                       Образование:
@@ -106,7 +106,7 @@
                 </v-row>
               </v-col>
               <v-col lg="7" cols="12" align="end" class="pa-0 slide2-text-col-margin" :class="this.$vuetify.display.lgAndUp ? 'align-self-center' : 'align-self-start'">
-                <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-0 mt-sm-0 mr-sm-0 ml-sm-0">
+                <v-row class="d-lg-inline-block ma-lg-0 ma-0 mb-sm-0 mt-sm-0 mr-sm-0 ml-sm-0" style="width: 29.427083333333332vw;">
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="mb-lg-1 pa-0">
                     <p class="text-start h-montserrat-regular slides-font" style="line-height: 3.2vh;">
                       <span v-if="$i18n.locale === 'ru'">
@@ -266,7 +266,7 @@
               </v-col>
               <v-col align="end" cols="6" class="pa-0 align-self-center">
                 <v-row class="ma-0 d-inline-block">
-                  <p class="text-start h-montserrat-regular slides4-font">
+                  <p class="text-start h-montserrat-regular slides4-font" style="width: 24.0625vw;">
                     <span v-if="$i18n.locale === 'ru'">
                       <span style="letter-spacing: 0.020vw;">Руководство кафедры считает необходи-</span><br>
                       мым дать студентам возможность работать<br>
@@ -300,7 +300,7 @@
                 </p>
               </v-col>
               <v-col class="pa-0 d-flex flex-column align-end justify-center" cols="7">
-                <p class="text-start h-montserrat-regular slides-font">
+                <p class="text-start h-montserrat-regular slides-font" style="width: 29.0625vw;">
                   <span v-if="$i18n.locale === 'ru'">
                     Во время обучения нас старались ознакомить с раз-<br>
                     личными сферами дизайна. Замечательным опытом<br>
@@ -347,7 +347,7 @@
                 <img src="../images/AboutMePage/Slide7/Thonet.webp" style="height: 24.4109375vw; margin-right: 4vw;" alt="Thonet chair">
                 </v-col>
                 <v-col class="pa-0 d-flex flex-column align-center justify-center" cols="7">
-                  <p style="margin-left: 1vw;" class="text-start h-montserrat-regular slidesFont">
+                  <p style="margin-left: 1vw; width: 30.416666666666668vw;" class="text-start h-montserrat-regular slidesFont">
                     <span v-if="$i18n.locale === 'ru'">
                       <span style="letter-spacing: 0.015vw;">Не мало внимания уделялось и умению  работать</span><br>
                       в команде. Для достижения поставленной цели не-<br>
@@ -360,15 +360,15 @@
                       стала бы вечно нестареющая классика — Thonet!
                     </span>
                     <span lang="en" v-else>
-                      Much attention was paid to the ability to work<br>
-                      in a team. To achieve this goal, not<br>
-                      you need to be able to find compromises. The<br>
-                      the project was created jointly with V. Dekalina<br>
-                      and P. Eryomicheva. The idea was to create<br>
-                      studio for restoration of antique furniture with<br>
-                      the power of replacing broken elements with parts<br>
-                      made from recycled plastic. And the face of our atelier<br>
-                      would become the ever-ageless classic — Thonet!<br>
+                      Much attention was paid to the ability to work
+                      in a team. To achieve this goal, not
+                      you need to be able to find compromises. The
+                      the project was created jointly with V. Dekalina
+                      and P. Eryomicheva. The idea was to create
+                      studio for restoration of antique furniture with
+                      the power of replacing broken elements with parts
+                      made from recycled plastic. And the face of our atelier
+                      would become the ever-ageless classic — Thonet!
                     </span>
                   </p>
                 </v-col>  

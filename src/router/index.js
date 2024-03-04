@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+import Aboutme from '@/pages/About.vue';
+
 const routes = [
   {
     path: '/',
@@ -7,7 +9,7 @@ const routes = [
   },
   {
     path: '/aboutme',
-    component: () => import('@/pages/About.vue'),
+    component: Aboutme,
   },
   {
     path: '/anima',
