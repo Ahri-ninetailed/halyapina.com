@@ -961,12 +961,6 @@ h1, p {
   .aboutme-slide2-img-height {
     height: 12vw;
   }
-  .aboutme-slide3-height-img1 {
-    height: 24.75vw;
-  }
-  .aboutme-slide3-height-img2 {
-    height: 11.4vw;
-  }
   .aboutme-slide4-img-height {
     height: 25.15vw;
   }
@@ -977,12 +971,6 @@ h1, p {
 @media (max-width: 1670px) { 
   .aboutme-slide2-img-height {
     height: 12.2vw;
-  }
-  .aboutme-slide3-height-img1 {
-    height: 25.25vw;
-  }
-  .aboutme-slide3-height-img2 {
-    height: 11.9vw;
   }
   .aboutme-slide4-img-height {
     height: 25.65vw;
