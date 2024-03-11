@@ -1430,22 +1430,22 @@ export default {
   }
 
   .span1-width {
-    width: 29.84375vw;
+    width: calc(29.85vw + 1px);
   }
   .span2-width {
-    width: 30.520833333333332vw;
+    width: calc(30.53vw + 1px);
   }
 
   .span3-width {
-    width: 30.729166666666668vw
+    width: calc(30.73vw + 1px);
   }
 
   .span4-width {
-    width: 32.03125vw;
+    width: calc(32.1vw + 1px);
   }
 
   .span5-width {
-    width: 30.78125vw;
+    width: calc(30.8vw + 1px);
   }
 
   @media (max-width: 599px) { 
