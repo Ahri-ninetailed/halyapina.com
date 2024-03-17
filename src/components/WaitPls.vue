@@ -78,9 +78,17 @@ export default {
     },
     background() {
       if (this.isAboutPage) {
-        return this.imgPath('waiting_dark.webp');
+        if (this.$i18n.locale === 'ru') {
+          return this.imgPath('waiting_dark_ru.webp');
+        } else {
+          return this.imgPath('waiting_dark_en.webp');
+        }
       } else {
-        return this.imgPath('waiting.webp');
+        if (this.$i18n.locale === 'ru') {
+          return this.imgPath('waiting_ru.webp');
+        } else {
+          return this.imgPath('waiting_en.webp');
+        }
       }
     },
     fade() {

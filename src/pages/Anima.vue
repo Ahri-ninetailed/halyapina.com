@@ -388,7 +388,7 @@
           </p>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0 text-center text-sm-right mt-sm-0 mt-12">
-          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" :src-zoom="imgPath('explosionDiagram_zoom.webp')" :src="imgPath('explosionDiagram.webp')" alt="Explosion diagram"/>
+          <full-image :d-lg-h-v=45 :d-md-h-v=60 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-img8-h" :zoomxs="false" :src-zoom="explosionaDiagramZoom" :src="explosionaDiagram" alt="Explosion diagram"/>
         </v-col>
       </v-row>
 
@@ -777,7 +777,7 @@
             </span>
           </h1>
           <v-col cols="12" class="pa-0 h-mb">
-            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src-zoom="imgPath('sketches_zoom.webp')" :src="imgPath('sketches.webp')" alt="Sketches"/>
+            <full-image :d-lg-h-v=45 :d-md-h-v=65 :d-sm-h-v=65 :d-h-v=55 d-h-u="vw" class="anima-sketches-width" :zoomxs="false" :src-zoom="sketchesZoom" :src="sketches" alt="Sketches"/>
           </v-col>
           <v-col cols="12" class="pa-0 mt-sm-0 mt-12">
             <span v-if="$i18n.locale === 'ru'">
@@ -1250,8 +1250,7 @@
         </v-row>
 
         <v-col cols="12" class="pa-0 text-center pt-12 pb-12">
-          <img v-if="this.$vuetify.display.smAndUp" class="anima-img11-w" src="../images/AnimaPage/cyclop.webp" alt="Cyclop" />
-          <img v-else class="anima-img11-w" src="../images/AnimaPage/cyclop_mobile.webp" alt="Cyclop" />
+          <img class="anima-img11-w" :src="cyclop" alt="Cyclop" />
         </v-col>
       </v-row>
     </v-row>
@@ -1307,6 +1306,49 @@ export default {
     },
   },
   computed: {
+    sketchesZoom() {
+      if (this.$i18n.locale === 'ru') {
+        return this.imgPath('sketches_zoom.webp');
+      } else {
+        return this.imgPath('sketches_en_zoom.webp');
+      }
+    },
+    sketches() {
+      if (this.$i18n.locale === 'ru') {
+        return this.imgPath('sketches.webp');
+      } else {
+        return this.imgPath('sketches_en.webp');
+      }
+    },
+    cyclop() {
+      if (this.$vuetify.display.smAndUp) {
+        if (this.$i18n.locale === 'ru') {
+          return this.imgPath('cyclop.webp');
+        } else {
+          return this.imgPath('cyclop_en.webp');
+        }
+      } else {
+        if (this.$i18n.locale === 'ru') {
+          return this.imgPath('cyclop_mobile.webp');
+        } else {
+          return this.imgPath('cyclop_mobile_en.webp');
+        }
+      }
+    },
+    explosionaDiagram() {
+      if (this.$i18n.locale === 'ru') {
+        return this.imgPath('explosionDiagram.webp');
+      } else {
+        return this.imgPath('explosionDiagram_en.webp');
+      }
+    },
+    explosionaDiagramZoom() {
+      if (this.$i18n.locale === 'ru') {
+        return this.imgPath('explosionDiagram_zoom.webp');
+      } else {
+        return this.imgPath('explosionDiagram_en_zoom.webp');
+      }
+    },
     dragonStyle() {
       if (this.$vuetify.display.smAndUp) {
         return {
