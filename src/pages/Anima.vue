@@ -66,18 +66,18 @@
             <h1 lang="en" class="h-neucha-regular h-mb">
               Anima
             </h1>
-            <p class="h-montserrat-regular span1-width">
+            <p class="h-montserrat-regular">
               <span v-if="$i18n.locale === 'ru'">
                 Anima — в переводе с латыни «душа».<br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   Столик трансформируется не только
                 </span><br>
                 в плане эргономики, но и эволюцио-<br>
                 нирует с точки зрения образного<br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   решения. Акценты смещаются, ассо-
                 </span><br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   циации становятся более сложными
                 </span><br>
                 и интуитивными.
@@ -116,7 +116,7 @@
             </h1>
           </v-col>
           <v-col cols="12" sm="6" class="pa-0">
-            <p class="h-montserrat-regular red-line span2-width">
+            <p class="h-montserrat-regular red-line">
               <span v-if="$i18n.locale === 'ru'">
                 Я стремилась создать детский стол,<br>
                 который будет ассоциироваться<br>
@@ -125,25 +125,25 @@
                 ния и пространством для реализации<br>
                 самых смелых идей малыша. Деревца<br>
                 и булыжники станут любимым конст-<br>
-                <span style="letter-spacing: -0.5px;">
+                <span class="letter-spacing-minus-05">
                   руктором и разовьют мелкую моторику,
                 </span><br>
-                <span style="letter-spacing: -0.1px;">
+                <span class="letter-spacing-minus-01">
                   которая важна при формировании ре-
                 </span><br>
-                <span style="letter-spacing: 0.2px;">
+                <span class="letter-spacing02">
                   чи. Подвижные части столешницы ос-
                 </span><br>
                 нащены отверстиями для кисточек<br>
                 и стакана с водой. Фигурки носорога<br>
-                <span style="letter-spacing: -0.2px;">
+                <span class="letter-spacing-minus-02">
                   и буйвола — функциональные элемен-
                 </span><br>
                 ты, при помощи которых регулируется<br>
-                <span style="letter-spacing: 0.2px;">
+                <span class="letter-spacing02">
                   наклон подвижных частей, а их рожки
                 </span><br>
-                <span style="letter-spacing: 0.2px;">
+                <span class="letter-spacing02">
                   выполнены из мягких материалов, ко-
                 </span><br>
                 торые подарят контраст в тактильных<br>
@@ -163,24 +163,24 @@
                 sensations.
               </span>
             </p>
-            <p class="h-montserrat-regular red-line span3-width">
+            <p class="h-montserrat-regular red-line">
               <span v-if="$i18n.locale === 'ru'">
                 Трансформация стола происходит<br>
                 при помощи ростовых насадок для но-<br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   жек и ящиков, которые до определён-
                 </span><br>
                 ного момента являются отдельной<br>
                 системой хранения. Ящики ставятся<br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   на подстолье, а сверху кладется сто-
                 </span><br>
                 лешница, попадая в пазы на крышках,<br>
                 так как их местоположение и размер<br>
-                <span style="letter-spacing: -0.3px;">
+                <span class="letter-spacing-minus-03">
                   схожи с отверстиями в подстолье, кры-
                 </span><br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   лья же вынимаются из нижней части
                 </span><br>
                 стола и вставляются в боковые пазы<br>
@@ -256,7 +256,7 @@
               </p>
             </span>
             <span v-else>
-              <p lang="en" class="h-montserrat-regular red-line span4-width">
+              <p lang="en" class="h-montserrat-regular red-line">
                 In my opinion,<br>
                 wings always add a<br>
                 certain fabulousness to<br>
@@ -278,7 +278,7 @@
                 Why without the usual fittings?
               </span>
             </p>
-            <p class="h-montserrat-regular red-line span4-width">
+            <p class="h-montserrat-regular red-line">
               <span v-if="$i18n.locale === 'ru'">
                 Я хотела, чтобы ребёнок самостоя-<br>
                 тельно взаимодействовал со столом<br>
@@ -335,20 +335,20 @@
           </h1>
         </v-col>
         <v-col cols="12" sm="6" class="pa-0">
-          <p class="h-montserrat-regular red-line span5-width">
+          <p class="h-montserrat-regular red-line">
             <span v-if="$i18n.locale === 'ru'">
               Материалы, выбранные для проекта,<br>
               безопасны и экологичны. Valchromat,<br>
               используемый для изготовления сто-<br>
-              <span style="letter-spacing: -0.3px;">
+              <span class="letter-spacing-minus-03">
                 лешницы и крыльев, давно применяют<br>
                 в отделке детских игровых помещений,<br>
               </span>
-              <span style="letter-spacing: -0.4px;">
+              <span class="letter-spacing-minus-04">
                 так как он обладает повышенной влаго-<br>
               </span>
               стойкостью, большой плотностью<br>
-              <span style="letter-spacing: 0.4px;">
+              <span class="letter-spacing04">
                 и экологичностью. Подвижные части<br>
                 столешницы с внешней стороны пок-<br>
                 рыты мебельным линолеумом Forbo<br>
@@ -359,7 +359,7 @@
               новыми выступами и накладками<br>
               из Valchromat, обеспечивающими бе-<br>
               зопасный зазор, который не позволит<br>
-              <span style="letter-spacing: 0.4px;">
+              <span class="letter-spacing04">
                 малышу придавить себе пальцы. Под<br>
               </span>
               органическое стекло можно подкла-<br>
@@ -428,13 +428,13 @@
                 чатлениями. И это важный процесс формирования личности.<br>
                 Каждый этап уникален и требует соответствующих решений.<br>
                 Для грамотного, целостного развития ребёнка необходимо<br>
-                <span style="letter-spacing: -0.3px;">
+                <span class="letter-spacing-minus-03">
                   создать благоприятные условия. Окружающая обстановка дол-
                 </span><br>
-                <span style="letter-spacing: -0.3px;">
+                <span class="letter-spacing-minus-03">
                   жна подталкивать малыша к изучению мира. Необычные вещи
                 </span><br>
-                <span style="letter-spacing: 0.1px;">
+                <span class="letter-spacing01">
                   с нестандартным набором функций или внешним видом пос-
                 </span><br>
                 пособствуют развитию гибкого мышления и фантазии.
@@ -546,7 +546,7 @@
               <li>
                 <p>
                   <span v-if="$i18n.locale === 'ru'">
-                    <span style="letter-spacing: -0.5px;">
+                    <span class="letter-spacing-minus-05">
                       тактильные ощущения благодаря разнообразным<br>
                       материалам
                     </span>
@@ -644,7 +644,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     <span v-if="this.$vuetify.display.smAndUp">
                       наклонные плоскости для рисования и чтения, оргстекло<br>
-                      <span style="letter-spacing: -0.5px;">
+                      <span class="letter-spacing-minus-05">
                         для лепки, макетирования, система хранения для органи-<br>
                         зации
                       </span>
@@ -748,7 +748,7 @@
                   <span v-if="$i18n.locale === 'ru'">
                     <span v-if="this.$vuetify.display.smAndUp">
                       если крылья надоели, хочется более «взрослый» стол,<br>
-                      <span style="letter-spacing: -0.2px;">
+                      <span class="letter-spacing-minus-02">
                         то можно разложить столешницу и переключить внимание на фактурные ножки 
                       </span>
                     </span>
@@ -783,7 +783,7 @@
             <span v-if="$i18n.locale === 'ru'">
               <p class="h-montserrat-regular red-line" v-if="this.$vuetify.display.smAndUp">
                 В начале эскизирования я ставила для себя задачу выявить<br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   наиболее яркие образные решения и лишь потом продумы-<br>
                   вать конструктивную часть. Также я искала возможность кас-<br>
                   томизировать те или иные элементы. Чтобы прийти к наибо-<br>
@@ -796,12 +796,12 @@
                 сторон. Рассматривались варианты того, чтобы стол был удо-<br>
                 бен для разновозрастных детей. Постепенно я обозначила<br>
                 для себя наиболее желаемый функционал. Обязательно<br>
-                <span style="letter-spacing: 0.3px;">
+                <span class="letter-spacing03">
                   включить наклонную плоскость, которая будет соответство-<br>
                 </span>
                 вать потребностям ребёнка в разные периоды жизни. Выде-<br>
                 лить систему хранения, как отдельный элемент, до опреде-<br>
-                <span style="letter-spacing: -0.1px;">
+                <span class="letter-spacing-minus-01">
                   лённого возраста ребёнка. Наличие собственной зоны  хране-<br>
                 </span>
                 ния с детства приучит ребёнка к порядку и самоорганизации.
@@ -880,7 +880,7 @@
                   Для лучшего понимания конструктивных особенностей был<br>
                   создан габаритный макет стола. Макетирование, в отличие<br>
                   от 3d моделирования и скетчинга, помогает нашему мозгу бо-<br>
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     лее целостно воспринять предмет. На макете, даже таком ус-<br>
                     ловном и лишённом эстетической составляющей, мы можем<br>
                     сразу обсудить сценарии использования, возможные проб-<br>
@@ -888,11 +888,11 @@
                   лемы и методы решения. 
                 </p>
                 <p class="h-montserrat-regular red-line">
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     Макет дал понимание того, что подвижным частям столеш-<br>
                   </span>
                   ницы необходима дополнительная поддержка. Также активно<br>
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     обсуждался поворотный механизм. В мастерской был изго-<br>
                     товлен небольшой прототип деревянной петли, внутрь кото-<br>
                     рой устанавливался металлический плунжер, но так как из-<br>
@@ -906,12 +906,12 @@
                   И в макете, и в прототипе была использована ткань под наз-<br>
                   ванием оксфорд, которая применяется для изготовления<br>
                   тентов торговых палаток, туристической мебели, снаряжения,<br>
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     курток, рассчитанных на экстремальные условия, отличается<br>
                     повышенной прочностью, имеет водоотталкивающую про-<br>
                   </span>
                   питку. В ткань был вшит деревянный штырь диаметром 8 мм.<br>
-                  <span style="letter-spacing: 0.4px;">
+                  <span class="letter-spacing04">
                     Далее ткань закрепили под оргстекло на статичной части<br>
                     столешницы, а другую сторону вклеили между мебельным<br>
                     линолеумом и вальхроматом. Подобная конструкция оказа-<br>
@@ -1026,12 +1026,12 @@
             <p class="h-montserrat-regular red-line h-mb" style="font-style: italic;">
               <span v-if="$i18n.locale === 'ru'">
                 <span v-if="this.$vuetify.display.smAndUp">
-                  <span style="letter-spacing: 0.7px;">
+                  <span style="letter-spacing: 0.036458333333333336vw;">
                     «Стул не должен быть «вертикальным» или «горизонталь-<br>
                     ным», он не должен быть «экспрессивным» или «конструк-<br>
                     тивистским»; не должен быть произведен исключительно<br>
                   </span>
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     из соображений целесообразности, или чтобы соответство-<br>
                   </span>
                   вать столу; он должен быть просто хорошим стулом и в таком<br>
@@ -1067,12 +1067,12 @@
             <p class="h-montserrat-regular red-line h-mb">
               <span v-if="$i18n.locale === 'ru'">
                 <span v-if="this.$vuetify.display.smAndUp">
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     На мой взгляд декоративный элемент становится в разы<br>
                   </span>
                   интереснее, когда в нём прослеживается логика, форма дол-<br>
                   жна быть неразрывно связана с функцией. Каждая деталь<br>
-                  <span style="letter-spacing: -0.3px;">
+                  <span class="letter-spacing-minus-03">
                     стола должна была иметь яркое образное решение, но учиты-<br>
                   </span>
                   вая возрастной диапазон и разницу восприятия, было важно<br>
@@ -1101,7 +1101,7 @@
                 Storage system:
               </span>
             </p>
-            <p class="h-montserrat-regular red-line h-mb" style="letter-spacing: 0.3px">
+            <p class="h-montserrat-regular red-line h-mb letter-spacing03">
               <span v-if="$i18n.locale === 'ru'">
                 Было решено отказаться от «глазастых» ящиков, в отличие<br>
                 от крыльев, их невозможно со временем скрыть, да и слиш-<br>
@@ -1125,10 +1125,10 @@
                 <span v-if="this.$vuetify.display.smAndUp">
                   С течением времени акцент смещается на нестандартные<br>
                   ножки. Их расширяющаяся к низу форма придаёт столу до-<br>
-                  <span style="letter-spacing: -0.1px;">
+                  <span class="letter-spacing-minus-01">
                     полнительную устойчивость, а диагональная направленность<br>
                   </span>
-                  <span style="letter-spacing: 0.3px;">
+                  <span class="letter-spacing03">
                     сохраняет больше пространства для ног. Пропорции ножки<br>
                     отлично сочетаются как с «маленьким» столиком, создавая<br>
                     ощущение комичных толстых лапок, так и с более высоким,<br>
@@ -1167,7 +1167,7 @@
               <span v-if="$i18n.locale === 'ru'">
                 <span v-if="this.$vuetify.display.smAndUp">
                   В первых визуализациях накладки были слишком широки-<br>
-                  <span style="letter-spacing: 0.4px;">
+                  <span class="letter-spacing04">
                     ми и массивными, забирали много места от рабочего прос-<br>
                     транства стола, поэтому финальная форма стала более тон-<br>
                     кой, имела отступы от края стола и скрывала место крепле-<br>
@@ -1201,7 +1201,7 @@
             <p class="h-montserrat-regular red-line">
               <span v-if="$i18n.locale === 'ru'">
                 <span v-if="this.$vuetify.display.smAndUp">
-                  <span style="letter-spacing: 0.4px;">
+                  <span class="letter-spacing04">
                   Изначально дракончик должен был крепиться рожками<br>
                   в отверстия в подвижных частях столешницы («спинка» 37°,<br>
                   </span>
@@ -1404,7 +1404,7 @@ export default {
           return {
             paddingLeft: "25vw",
             paddingRight: "25vw",
-            paddingTop: "132vw",
+            paddingTop: "146vw",
           };
         }
       } else {
@@ -1419,12 +1419,12 @@ export default {
       if (this.$vuetify.display.smAndUp) {
         return {
           height: "19.145833333333332vw",
-          marginRight: "25px",
+          marginRight: "1.3020833333333333vw",
         } 
       } else {
         return {
           height: "70vw",
-          marginRight: "15px",
+          marginRight: "0.78125vw",
         } 
       }
     }
@@ -1433,6 +1433,39 @@ export default {
 </script>
 
 <style scoped>
+  .letter-spacing01 {
+    letter-spacing: 0.005208333333333333vw;
+  }
+
+  .letter-spacing-minus-01 {
+    letter-spacing: -0.005208333333333333vw;
+  }
+
+  .letter-spacing02 {
+    letter-spacing: 0.010416666666666666vw;
+  }
+
+  .letter-spacing-minus-02 {
+    letter-spacing: -0.010416666666666666vw;
+  }
+
+  .letter-spacing03 {
+    letter-spacing: 0.015625vw;
+  }
+  .letter-spacing-minus-03 {
+    letter-spacing: -0.015625vw;
+  }
+
+  .letter-spacing04 {
+    letter-spacing: 0.020833333333333332vw;
+  }
+  .letter-spacing-minus-04 {
+    letter-spacing: -0.020833333333333332vw;
+  }
+
+  .letter-spacing-minus-05 {
+    letter-spacing: -0.026041666666666668vw;
+  }
   .sheep-width {
     width: 70vw;
   }
@@ -1456,11 +1489,11 @@ export default {
   }
 
   .spec-mt {
-    margin-top: 330px;
+    margin-top: 35.908596300326444vh;
   }
 
   p {
-    font-size: 1.5vw;
+    font-size: 1.481vw;
   }
 
   h1 {
@@ -1469,25 +1502,6 @@ export default {
 
   .anima-img11-w {
     width: 30vw;
-  }
-
-  .span1-width {
-    width: calc(29.85vw + 1px);
-  }
-  .span2-width {
-    width: calc(30.53vw + 1px);
-  }
-
-  .span3-width {
-    width: calc(30.73vw + 1px);
-  }
-
-  .span4-width {
-    width: calc(32.1vw + 1px);
-  }
-
-  .span5-width {
-    width: calc(30.8vw + 1px);
   }
 
   @media (max-width: 599px) { 
@@ -1523,25 +1537,6 @@ export default {
 
     .anima-img11-w {
       width: 80vw;
-    }
-
-    .span1-width {
-      width: unset;
-    }
-    .span2-width {
-      width: unset;
-    }
-
-    .span3-width {
-      width: unset;
-    }
-
-    .span4-width {
-      width: unset;
-    }
-
-    .span5-width {
-      width: unset;
     }
   }
 </style>
