@@ -76,7 +76,9 @@
                   </h1>
                   <p class="text-start h-montserrat-regular slides-font">
                     halyapinamari@gmail.com<br>
-                    WhatsApp +79671930086
+                    WhatsApp +79671930086<br>
+                    <a target="_blank" href="https://www.instagram.com/ultimate.gray/">Instagram</a>&nbsp;
+                    <a target="_blank" href="https://t.me/halyapina">Telegram</a>
                   </p>
                 </div>
               </v-col>
@@ -459,7 +461,9 @@
         </h1>
         <p class="text-start h-montserrat-regular xs-text-size">
           halyapinamari@gmail.com<br>
-          WhatsApp +79671930086
+          WhatsApp +79671930086<br>
+          <a target="_blank" href="https://www.instagram.com/ultimate.gray/">Instagram</a>&nbsp;
+          <a target="_blank" href="https://t.me/halyapina">Telegram</a>
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">
@@ -766,6 +770,13 @@ export default {
 </script>
 
 <style scoped>
+
+a {
+  color: inherit; /* Убирает стандартный цвет ссылок */
+  font-weight: normal; /* Убирает жирность текста (если применимо) */
+  background: none; /* Убирает фон */
+  border: none; /* Убирает рамку (если применимо) */
+}
 
 .title {
   font-size: 0.718vw; font-style: italic;

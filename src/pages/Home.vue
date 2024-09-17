@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-0" fluid style="overflow: hidden;">
     <a href="anima">
-      <div class="home-main-pic">
+      <div class="home-main-pic" :style="background">
       </div>
     </a>
 
@@ -63,6 +63,20 @@ export default {
         width: `${this.mainCardWidthValue}vh`,
       }
     },
+
+    background() {
+      if (this.$vuetify.display.xs) {
+        return {
+          backgroundImage: `url('${this.imgPathBackground('maintable_mobile.webp')}')`,
+        };
+      }
+      else {
+        return {
+          backgroundImage: `url('${this.imgPathBackground('maintable.webp')}')`,
+        };
+      }
+    },
+
     drawingGirlMargin() {
       let countOfCards = 0;
       if (this.$vuetify.display.lgAndUp) {
@@ -96,6 +110,9 @@ export default {
     imgPath(img) {
       return new URL(`../images/MainPage/MainCards/${img}`, import.meta.url).href;
     },
+    imgPathBackground(img) {
+      return new URL(`../images/MainPage/${img}`, import.meta.url).href;
+    },
     pxToVw(px){
       return 100 * px / window.innerWidth; // Вычисление процента
     },
@@ -115,7 +132,6 @@ export default {
   margin-right: 1vh;
 }
 .home-main-pic {
-  background-image: url('../images/MainPage/maintable.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
