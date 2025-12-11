@@ -1,0 +1,253 @@
+● Полный Код-Ревью Проекта HalyapinaLast
+
+  Обзор проекта
+
+  Портфолио-сайт дизайнера мебели Марии Халяпиной на Vue 3 + Vite + Vuetify 3 с поддержкой русского и английского
+  языков.
+
+  ---
+  1. Критические проблемы
+
+  1.1 Смешивание Options API и Composition API
+
+  Файл: src/App.vue:12-31
+
+  <script setup>
+  import MyHeader from '@/components/Header.vue';
+  </script>
+
+  <script>
+  export default {
+    // Options API
+  }
+  </script>
+
+  Смешивание <script setup> и Options API в одном компоненте - нестандартный паттерн, усложняющий поддержку кода.
+
+  1.2 Ошибка в роутере - некорректный редирект
+
+  Файл: src/router/index.js:20-22
+
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: () => import('@/pages/Home.vue'), // Ошибка!
+  }
+
+  redirect принимает строку или объект, а не динамический импорт. Должно быть:
+  redirect: '/'
+
+  1.3 Использование window.location.pathname вместо Vue Router
+
+  Файлы: Все миксины (src/mixins/*.js)
+
+  computed: {
+    isHomePage() {
+      return window.location.pathname === '/';
+    },
+  }
+
+  Это антипаттерн в Vue. Следует использовать this.$route.path или useRoute().
+
+  ---
+  2. Архитектурные проблемы
+
+  2.1 Миксины устарели
+
+  Vue 3 рекомендует Composition API (composables) вместо миксинов. Миксины создают проблемы:
+  - Неявные зависимости
+  - Конфликты имён
+  - Сложная отладка
+
+  Рекомендация: Рефакторинг в composables:
+  // composables/usePageCheck.js
+  export function usePageCheck() {
+    const route = useRoute();
+    const isHomePage = computed(() => route.path === '/');
+    return { isHomePage };
+  }
+
+  2.2 Дублирование логики установки title
+
+  Файлы: src/router/index.js:69-84 и src/components/Header.vue:160-171
+
+  Одинаковая логика для установки document.title дублируется в роутере и в Header.
+
+  2.3 Hardcoded стили в шаблонах
+
+  Файл: src/pages/About.vue - множество inline стилей с магическими числами:
+
+  <div style="width: 20.520833333333332vw; display: inline-block; line-height: 1.8229166666666667vw;">
+
+  Такая точность (20.520833333333332vw) избыточна и затрудняет поддержку.
+
+  ---
+  3. Проблемы производительности
+
+  3.1 Нет lazy-loading для About.vue
+
+  Файл: src/router/index.js:3,11-13
+
+  import Aboutme from '@/pages/About.vue'; // Синхронный импорт
+
+  {
+    path: '/aboutme',
+    component: Aboutme, // Не lazy
+  }
+
+  About.vue - самый большой файл (~950 строк). Должен загружаться лениво.
+
+  3.2 Синхронная загрузка изображения в dialogMaxWidth/dialogMaxHeight
+
+  Файл: src/components/FullImage.vue:157-172
+
+  dialogMaxWidth() {
+    const img = new Image();
+    img.src = this.$props.src; // Синхронная операция
+    let val = (this.getCurrentHVal * img.width) / img.height;
+    return `${val}${this.getCurrentHUnit}`;
+  }
+
+  img.width и img.height будут 0 до загрузки изображения.
+
+  3.3 Массивный CSS в About.vue
+
+  Файл содержит ~180 строк CSS с множеством media queries. Стоит вынести в отдельный SCSS файл.
+
+  ---
+  4. Качество кода
+
+  4.1 Избыточный доступ к props через this.$props
+
+  Файлы: MainCard.vue, FullImage.vue, Project.vue
+
+  this.$props.imgPath  // Избыточно
+  this.imgPath         // Достаточно
+
+  4.2 Дублирование computed свойств
+
+  Файл: src/components/FullImage.vue:218-373
+
+  Четыре почти идентичных computed свойства: getCurrentHVal, getCurrentHUnit, getCurrentWVal, getCurrentWUnit с
+  одинаковой логикой (~40 строк каждое). Можно объединить в один метод.
+
+  4.3 Закомментированный код
+
+  Файл: src/components/Header.vue:109-112
+
+  /*else if (this.isHomePage || this.isAnimaPage) {
+    this.backgroundColor = {
+      backgroundColor: 'unset'
+    }
+  }*/
+
+  Закомментированный код следует удалить.
+
+  4.4 Magic numbers
+
+  Файл: src/pages/Home.vue:96
+
+  const magic = 10;
+  maringLeftPx = maringLeftPx - magic;
+
+  Неочевидная константа без объяснения.
+
+  ---
+  5. Проблемы i18n
+
+  5.1 Не все тексты локализованы
+
+  Файл: src/pages/About.vue содержит hardcoded тексты на обоих языках прямо в шаблоне вместо использования ключей
+  i18n.
+
+  5.2 Дублирование названий проектов
+
+  Файл: src/i18n/index.js:36-45
+
+  Названия проектов одинаковые в обеих локалях. Если они не переводятся, можно хранить в одном месте.
+
+  ---
+  6. Безопасность
+
+  6.1 Публичный номер телефона
+
+  Файл: src/pages/About.vue:79,464
+
+  WhatsApp +79671930086
+
+  Персональные данные в коде. Рекомендуется вынести в конфигурацию.
+
+  6.2 Внешние ссылки без rel="noopener"
+
+  Файл: src/pages/About.vue:80-81
+
+  <a target="_blank" href="https://www.instagram.com/ultimate.gray/">Instagram</a>
+
+  Отсутствует rel="noopener noreferrer" для защиты от tabnabbing.
+
+  ---
+  7. Конфигурация
+
+  7.1 ESLint слишком базовый
+
+  Файл: .eslintrc.js
+
+  extends: [
+    'plugin:vue/vue3-essential',  // Только essential
+    'eslint:recommended',
+  ]
+
+  Рекомендуется plugin:vue/vue3-recommended для более строгих проверок.
+
+  7.2 Отсутствует Prettier
+
+  Нет единого форматирования кода. В проекте смешаны стили отступов.
+
+  7.3 Нет TypeScript
+
+  Проект на чистом JavaScript без типизации, что усложняет рефакторинг и отладку.
+
+  ---
+  8. Позитивные моменты
+
+  - Хорошее использование WebP для изображений
+  - Lazy loading изображений через v-lazy-image
+  - Code splitting для большинства страниц
+  - Responsive design с Vuetify breakpoints
+  - Структурированная организация папок
+
+  ---
+  9. Приоритетные рекомендации
+
+  | Приоритет | Задача                                                |
+  |-----------|-------------------------------------------------------|
+  | Высокий   | Исправить redirect в роутере                          |
+  | Высокий   | Заменить window.location.pathname на $route.path      |
+  | Высокий   | Исправить синхронную загрузку изображений в FullImage |
+  | Средний   | Lazy-load для About.vue                               |
+  | Средний   | Рефакторинг миксинов в composables                    |
+  | Средний   | Добавить rel="noopener noreferrer" к внешним ссылкам  |
+  | Низкий    | Вынести inline стили в CSS                            |
+  | Низкий    | Настроить строгий ESLint + Prettier                   |
+
+  ---
+
+● Код-ревью завершено. Главные находки:
+
+  Критические баги:
+  1. Ошибка в роутере с redirect (src/router/index.js:20-22)
+  2. Использование window.location.pathname вместо Vue Router во всех миксинах
+  3. Синхронное чтение размеров изображений до их загрузки в FullImage.vue
+
+  Архитектурные проблемы:
+  - Смешивание <script setup> и Options API
+  - Устаревшие миксины вместо composables
+  - Дублирование логики (title, responsive breakpoints)
+  - ~950 строк в About.vue с hardcoded стилями
+
+  Что хорошо:
+  - WebP изображения
+  - Code splitting для большинства роутов
+  - Lazy loading изображений
+  - Responsive design
+
+  Если нужна помощь с исправлением какой-либо из проблем - дайте знать.
