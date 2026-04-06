@@ -11,7 +11,7 @@
               Проект трансформируемого стола для детей от 3-х до 9-ти лет
             </span>
             <span lang="en" v-else>
-              Project of a transformable table for children from 3 to 9 years old
+              A transformable table project for children aged 3 to 9
             </span>
           </p>
         </v-col>
@@ -27,7 +27,7 @@
               Проект трансформируемого стола для детей от 3-х до 9-ти лет
             </span>
             <span lang="en" v-else>
-              Project of a transformable table for children from 3 to 9 years old
+              A transformable table project for children aged 3 to 9
             </span>
           </p>
         </v-col>
@@ -84,12 +84,10 @@
               </span>
               <span lang="en" v-else>
                 Anima — means "soul" in Latin.
-                The table is transformed not only
-                in terms of ergonomics, but also evolutionary
-                niziruetsya from the point of view of the figurative
-                solutions. Emphases are shifting, asso-
-                tions become more complex
-                and intuitive.
+                The table transforms not only in terms of ergonomics,
+                but also evolves in its visual concept.
+                The accents shift, and the associations become
+                more complex and intuitive.
               </span>
             </p>
           </v-col>
@@ -150,17 +148,15 @@
                 ощущениях.<br>
               </span>
               <span lang="en" v-else>
-                I wanted to create a children's table,
-                which will be associated
-                not with the first copybooks and calculations, but will be a source of inspiration and space for implementation
-                the baby's wildest ideas. Trees
-                and the cobblestones will become your favorite construction set and develop fine motor skills,
-                which is important in the formation of speech. The moving parts of the tabletop are equipped with holes for brushes
-                and glasses of water. Rhino figures
-                and buffalo - functional elements with the help of which the
-                the inclination of the moving parts, and their horns
-                made of soft materials that will provide contrast in tactile
-                sensations.
+                I wanted to create a children's table that would be associated
+                not with first copybooks and arithmetic, but would become a source of
+                inspiration and a space for bringing a child's boldest ideas to life.
+                The little trees and cobblestones become a favorite construction set
+                and develop the fine motor skills that are so important for speech development.
+                The movable parts of the tabletop are fitted with holes for brushes
+                and a glass of water. The rhino and buffalo figures are functional elements
+                used to adjust the tilt of the movable parts, and their horns are made
+                of soft materials that add a contrast in tactile sensations.
               </span>
             </p>
             <p class="h-montserrat-regular red-line">
@@ -187,14 +183,13 @@
                 ящиков. 
               </span>
               <span lang="en" v-else>
-                Table transformation takes place
-                using growth attachments for legs and drawers, which up to a certain point are separate
-                storage system. Boxes are placed
-                on the underframe, and the tabletop is placed on top, falling into the grooves on the lids,
-                because their location and size
-                similar to the holes in the underframe, the wings are removed from the bottom
-                table and inserted into the side grooves
-                boxes.
+                The table transforms with the help of height extensions for the legs
+                and the drawers, which up to a certain point function as a separate
+                storage system. The drawers are placed onto the underframe, and the
+                tabletop is then laid on top, fitting into the grooves on the lids —
+                their location and size match the holes in the underframe. The wings
+                are removed from the lower part of the table and inserted into the
+                side grooves of the drawers.
               </span>
             </p>
           </v-col>
@@ -259,13 +254,14 @@
               <p lang="en" class="h-montserrat-regular red-line">
                 In my opinion,<br>
                 wings always add a<br>
-                certain fabulousness to<br>
-                any, even the simplest object,<br>
-                because Pegasus without wings is an ordinary horse, and a dragon is an overgrown lizard. 
-                This greatly influences the image of the object, but no less important is that over time, 
-                the child will increasingly use the tabletop unfolded, and the wings supporting it will not 
-                be conspicuous, and the appearance of the table will become more adult, shifting the emphasis 
-                to the expressive shape of the legs.
+                touch of fairytale magic<br>
+                to any object, even the simplest one —<br>
+                after all, Pegasus without wings is just an ordinary horse, and a dragon
+                is an oversized lizard. This greatly influences the image of an object.
+                But no less important is the fact that over time the child will use the
+                tabletop unfolded more and more often, and the wings supporting it will
+                become less prominent, so the appearance of the table will become more
+                grown-up, shifting the emphasis to the expressive shape of the legs.
               </p>
             </span>
             
@@ -275,7 +271,7 @@
                 Почему без привычной фурнитуры?
               </span>
               <span lang="en" v-else>
-                Why without the usual fittings?
+                Why no conventional hardware?
               </span>
             </p>
             <p class="h-montserrat-regular red-line">
@@ -295,13 +291,13 @@
                 с детьми! 
               </span>
               <span lang="en" v-else>
-                I wanted the child to independently interact with the table
-                without the risk of injuring yourself. I believe that harsh metal parts take away the tenderness of children's furniture
-                and lightness, and thanks to the fabric loops the table looks atypical
-                a piece of furniture, but a fabulous designer. The "Anima" table is not just
-                a piece of furniture, but a fabulous creature that came to us from unprecedented
-                worlds to create and grow together
-                with kids!
+                I wanted the child to be able to interact with the table on their own,
+                without any risk of getting hurt. I believe that harsh metal parts strip
+                children's furniture of its tenderness and lightness, while the fabric
+                loops make the table look not like a typical piece of furniture, but
+                like a magical construction set. The "Anima" table is not just a piece
+                of furniture — it is a fairytale creature that has come to us from
+                unseen worlds to create and grow together with children!
               </span>
             </p>
           </v-col>
@@ -370,20 +366,19 @@
               жит испытания пластилином и клеем!
             </span>
             <span lang="en" v-else>
-              Materials selected for the project
-              safe and environmentally friendly. Valchromat,
-              used for making tabletops and wings, has long been used
-              in the decoration of children's playrooms,
-              since it has increased moisture resistance and high density
-              and environmental friendliness. Moving parts
-              The outside countertops are covered with Forbo furniture linoleum
-              Furniture that is easy to clean and will protect the surface from moisture and paint.
-              The tabletop is also equipped with silicone protrusions and pads
-              made of Valchromat, providing a safe gap that will not allow
-              press the baby's fingers. Under
-              organic glass can be used to lay the masterpieces of a young creator, such
-              visualization of the work process will have a beneficial effect on self-esteem,
-              and, of course, plexiglass will bravely withstand the tests of plasticine and glue!
+              The materials chosen for this project are safe and eco-friendly.
+              Valchromat, used to make the tabletop and the wings, has long been
+              used in the finishing of children's playrooms, thanks to its high
+              moisture resistance, density, and environmental friendliness. The
+              outer surfaces of the movable parts of the tabletop are covered
+              with Forbo Furniture linoleum, which is easy to maintain and
+              protects the surface from moisture and paint. The tabletop is also
+              fitted with silicone bumpers and Valchromat overlays that provide
+              a safe gap to keep the child from pinching their fingers. Beneath
+              the plexiglass you can slip in the masterpieces of a young creator —
+              such visualization of the working process has a wonderful effect
+              on self-esteem, and of course, the plexiglass will bravely withstand
+              every test of plasticine and glue!
             </span>
           </p>
         </v-col>
@@ -452,13 +447,14 @@
             </span>
             <span v-else>
               <p lang="en" class="h-montserrat-regular red-line">
-                Childhood — is a time filled with miracles and vivid impressions. 
-                And this is an important process of personality formation. Each 
-                stage is unique and requires appropriate solutions. For the competent, 
-                holistic development of a child, it is necessary to create favorable 
-                conditions. The environment should encourage the baby to explore the world. 
-                Unusual things with a non-standard set of functions or appearance will contribute
-                to the development of flexible thinking and imagination.
+                Childhood is a time filled with wonders and vivid impressions.
+                It is also an important process of personality formation. Each
+                stage is unique and calls for its own approach. To support the
+                well-rounded, holistic development of a child, you need to create
+                favorable conditions. The surroundings should encourage the child
+                to explore the world. Unusual things — with non-standard sets of
+                functions or unconventional appearances — help develop flexible
+                thinking and imagination.
               </p>
             </span>
             <br>
@@ -497,7 +493,7 @@
                     хочет всё делать сам, но не всегда может
                   </span>
                   <span lang="en" v-else>
-                    wants to do everything himself, but he can't always
+                    wants to do everything by themselves, but can't always manage
                   </span>
                 </p>
               </li>
@@ -507,7 +503,7 @@
                     наглядно-действенное мышление
                   </span>
                   <span lang="en" v-else>
-                    visual-effective thinking
+                    visual-active thinking
                   </span>
                 </p>
               </li>
@@ -529,7 +525,7 @@
                     моторики, которая напрямую связана с речью
                   </span>
                   <span lang="en" v-else>
-                    The constructor is perfect for developing fine motor skills, which are directly related to speech.
+                    the construction set is perfect for developing fine motor skills, which are directly linked to speech
                   </span>
                 </p>
               </li>
@@ -539,7 +535,7 @@
                     безопасная фурнитура, интуитивный дизайн
                   </span>
                   <span lang="en" v-else>
-                    safe fittings, intuitive design
+                    safe hardware, intuitive design
                   </span>
                 </p>
               </li>
@@ -555,10 +551,10 @@
                     оргстекло, мебельный линолеум, вальхромат)
                   </span>
                   <span lang="en" v-else>
-                    tactile sensations thanks to various
-                    table materials (drawer handles are made of fabric,
-                    metal, silicone, wood, fabric loops in the tabletop,
-                    plexiglass, furniture linoleum, valchromat)
+                    a varied tactile experience thanks to the diverse materials used
+                    in the table (drawer handles made of fabric, metal, silicone and
+                    wood; fabric loops in the tabletop; plexiglass; furniture linoleum;
+                    Valchromat)
                   </span>
                 </p>
               </li>
@@ -598,7 +594,7 @@
                     поиск увлечений и способов самовыражения
                   </span>
                   <span lang="en" v-else>
-                    Finding hobbies and ways to express yourself
+                    searching for hobbies and ways of self-expression
                   </span>
                 </p>
               </li>
@@ -635,7 +631,7 @@
                     </span>
                   </span>
                   <span lang="en" v-else>
-                    the image of a friendly creature, an attempt to create the atmosphere of your own small cozy world in the children's room
+                    the image of a friendly creature — an attempt to create the atmosphere of a small cozy world of one's own inside the child's room
                   </span>
                 </p>
               </li>
@@ -656,7 +652,7 @@
                     </span>
                   </span>
                   <span lang="en" v-else>
-                    inclined planes for drawing and reading, plexiglass for modeling, prototyping, storage system for organization
+                    inclined planes for drawing and reading, plexiglass for modeling and prototyping, a storage system to organize personal space
                   </span>
                 </p>
               </li>
@@ -667,8 +663,7 @@
                     дизайн способствует развитию воображения, фантазии
                   </span>
                   <span lang="en" v-else>
-                    the figurative design of the table evokes pleasant associations,
-                    design promotes the development of imagination and fantasy
+                    the table's figurative design evokes pleasant associations and fosters the development of imagination and creativity
                   </span>
                 </p>
               </li>
@@ -679,7 +674,7 @@
                 Младший школьный возраст 7-11 лет 
               </span>
               <span lang="en" v-else>
-                Junior school age 7-11 years
+                Primary school age 7-11 years
               </span>
             </p>
 
@@ -707,7 +702,7 @@
                     </span>
                   </span>
                   <span lang="en" v-else>
-                    dependence on the opinions of others, anxiety about school performance and one's position in society, the desire to be part of a team
+                    dependence on the opinions of others, worries about school performance and one's place in society, the desire to be part of a group
                   </span>
                 </p>
               </li>
@@ -739,7 +734,7 @@
                     одновременно заниматься, возможность социализации
                   </span>
                   <span lang="en" v-else>
-                    comprehensive table access allows several people to study at the same time, the possibility of socialization
+                    all-around access to the table lets several people work at it at the same time, opening up opportunities for socialization
                   </span>
                 </p>
               </li>
@@ -758,8 +753,7 @@
                     </span>
                   </span>
                   <span lang="en" v-else>
-                    if you're tired of the wings and want a more "grown-up" 
-                    table, then you can unfold the tabletop and turn your attention to the textured legs
+                    once the wings start to feel tired and a more "grown-up" table is wanted, the tabletop can be unfolded and the focus can shift to the textured legs
                   </span>
                 </p>
               </li>
@@ -825,20 +819,20 @@
             </span>
             <span v-else>
               <p lang="en" class="h-montserrat-regular red-line">
-                At the beginning of sketching, I set myself the task of identifying
-                the most striking imaginative solutions and only then think through
-                structural part. I was also looking for an opportunity to customize
-                certain elements. To come to the most
-                I tried to destroy the bright visual solution
-                stereotypical designs, all the crazy ones were recorded
-                ideas. It was equally important to create a piece of furniture that
-                will fit into any apartment configuration, it was necessary to make it accessible from the greatest number
-                sides Options were considered to make the table convenient for children of different ages. Gradually I identified
-                the most desired functionality for yourself. Necessarily
-                include an inclined plane that will fit
-                the needs of the child at different periods of life. Select
-                storage system, as a separate element, up to a certain
-                child's age. Having your own storage area from childhood will teach your child to order and self-organization.
+                At the start of the sketching stage, I set myself the task of finding
+                the most striking visual concepts first, and only then thinking through
+                the structural side of the design. I was also looking for opportunities
+                to customize particular elements. To arrive at the boldest visual solution,
+                I tried to break free from stereotypical designs and recorded every wild
+                idea that came to mind. It was equally important to create a piece of
+                furniture that would fit any apartment layout, so I needed to make it
+                accessible from as many sides as possible. I considered options that
+                would make the table convenient for children of different ages.
+                Gradually, I outlined the functionality I wanted most. The table absolutely
+                had to include an inclined surface that would meet the child's needs at
+                different stages of life. The storage system needed to be set apart as a
+                separate element up to a certain age — having their own storage space
+                from childhood teaches a child order and self-organization.
               </p>
             </span>
           </v-col>
@@ -850,7 +844,7 @@
               Макетирование   
             </span>
             <span lang="en" v-else>
-              Layout
+              Mock-up
             </span>
           </h1>
 
@@ -953,29 +947,34 @@
             </span>
             <span lang="en" v-else>
               <p class="h-montserrat-regular red-line">
-                For a better understanding of the design features, there was
-                A dimensional mock-up of the table was created. Layout, in contrast
-                from 3D modeling and sketching, helps our brain perceive the subject more holistically.
-                On a layout, even such a conventional one and devoid of an aesthetic component, we can
-                immediately discuss use cases, possible problems and solutions.
+                To gain a better understanding of the structural features, a full-scale
+                mock-up of the table was built. Unlike 3D modeling and sketching,
+                making a physical mock-up helps the brain perceive the object more
+                holistically. Even with such a rough mock-up, devoid of any aesthetic
+                component, we could immediately discuss usage scenarios, potential
+                problems, and ways to solve them.
               </p>
               <p class="h-montserrat-regular red-line">
-                The layout made it clear that the moving parts of the tabletop needed additional support. Also active
-                the turning mechanism was discussed. A small prototype of a wooden hinge was made in the workshop,
-                inside which a metal plunger was installed, but since the chosen thickness of the tabletop elements was 8 mm, I had to admit that
-                that introducing any accessories into it is unsafe from the point of view of service life.
+                The mock-up made it clear that the movable parts of the tabletop needed
+                additional support. The pivot mechanism was also discussed in depth.
+                A small prototype of a wooden hinge was made in the workshop, with a
+                metal plunger installed inside it, but since the chosen thickness of
+                the tabletop elements was 8 mm, we had to admit that embedding any
+                hardware in it would be unsafe in terms of long-term durability.
               </p>
               <p class="h-montserrat-regular red-line">
-                The next option was the idea of fastening made of fabric.
-                Both the mockup and the prototype used a fabric called oxford, which is used to make
-                awnings, trade tents, tourist furniture, equipment,
-                jackets designed for extreme conditions are different
-                increased strength, has water-repellent impregnation. A wooden pin with a diameter of 8 mm was sewn into the fabric.
-                Next, the fabric was secured under plexiglass on the static part
-                tabletops, and the other side was glued between the furniture
-                linoleum and valchromate. This design turned out to be safer for children’s fingers and preserved
-                the ability to use the minimum thickness of the tabletop, significantly facilitating the design. Thanks to prototyping, problem areas were identified and deficiencies were found.
-                standard solutions.
+                The next option was the idea of a fabric mount. Both the mock-up and
+                the prototype used a fabric called Oxford, which is used to make
+                awnings for market tents, camping furniture, gear, and jackets
+                designed for extreme conditions — it offers exceptional strength
+                and has a water-repellent treatment. An 8 mm wooden pin was sewn
+                into the fabric. The fabric was then fixed under the plexiglass
+                on the static part of the tabletop, while the other side was glued
+                between the furniture linoleum and the Valchromat. This design
+                proved safer for children's fingers and made it possible to keep
+                the tabletop at its minimum thickness, significantly lightening the
+                construction. Thanks to the mock-up process, problem areas were
+                identified and unconventional solutions were found.
               </p>
             </span>
           </v-col>
@@ -1047,12 +1046,11 @@
                 </span>
               </span>
               <span lang="en" v-else>
-                "A chair should not be "vertical" or "horizontal"
-                it should not be "expressive" or "constructivist";
-                should not be produced exclusively
-                for reasons of expediency, or to comply
-                table; he should just be a good chair and like that
-                It will definitely suit a good table."
+                "A chair should not be 'vertical' or 'horizontal',
+                it should not be 'expressive' or 'constructivist';
+                it should not be made purely for reasons of utility,
+                nor solely to match a table; it should simply be a good chair,
+                and as such it will undoubtedly suit a good table."
               </span>
             </p>
 
@@ -1086,10 +1084,11 @@
                 </span>
               </span>
               <span lang="en" v-else>
-                In my opinion, the decorative element becomes significantly
-                It's more interesting when logic is traced in it; form should be inextricably linked with function. Every detail
-                the table had to have a bright imagery, but given the age range and difference in perception, it was important
-                perform them delicately.
+                In my view, a decorative element becomes far more interesting when
+                there is a clear logic behind it — form should be inextricably linked
+                with function. Every detail of the table needed a vivid figurative
+                solution, but given the age range and the differences in perception,
+                it was important to handle them delicately.
               </span>
             </p>
 
@@ -1108,8 +1107,9 @@
                 ком прямолинейный образ, быстро наскучит. 
               </span>
               <span lang="en" v-else>
-                It was decided to abandon the "big-eyed" boxes, in contrast
-                from the wings, they cannot be hidden over time, and a too straightforward image will quickly become boring.
+                I decided to drop the "googly-eyed" drawers — unlike the wings,
+                they can't be hidden over time, and an image that is too literal
+                quickly grows boring.
               </span>
             </p>
             <p class="h-montserrat-regular" style="font-weight: bold;">
@@ -1146,13 +1146,12 @@
                 </span>
               </span>
               <span lang="en" v-else>
-                Over time, the emphasis shifts to non-standard
-                legs. Their shape, expanding towards the bottom, gives the table
-                additional stability, and diagonal orientation
-                saves more legroom. Leg proportions
-                go well with both a "small" table, creating
-                a feeling of comically thick paws, and with a taller one,
-                a heavy "adult" table.
+                Over time, the emphasis shifts to the unconventional legs. Their
+                shape, widening towards the bottom, gives the table extra stability,
+                while their diagonal orientation preserves more legroom. The leg
+                proportions work equally well with the "smaller" table — where they
+                create the feeling of comically chubby paws — and with the taller,
+                more substantial "grown-up" version.
               </span>
             </p>
             <p class="h-montserrat-regular" style="font-weight: bold;">
@@ -1160,7 +1159,7 @@
                 Фиксирующие оргстекло накладки: 
               </span>
               <span lang="en" v-else>
-                Plexiglas fixing pads:
+                Plexiglass fixing pads:
               </span>
             </p>
             <p class="h-montserrat-regular red-line h-mb">
@@ -1183,11 +1182,10 @@
                 </span>
               </span>
               <span lang="en" v-else>
-                In the first renderings the overlays were too wide
-                and massive, took up a lot of space from the workspace
-                table, so the final shape became thinner,
-                had indentations from the edge of the table and hid the attachment point
-                new fabric loop.
+                In the first renderings, the pads were too wide and bulky, taking
+                up a lot of room on the table's working surface, so the final shape
+                became slimmer, was inset from the edge of the table, and concealed
+                the attachment point of the new fabric loop.
               </span>
             </p>
             <p class="h-montserrat-regular" style="font-weight: bold;">
@@ -1218,11 +1216,11 @@
                 </span>
               </span>
               <span lang="en" v-else>
-                Initially, the dragon was supposed to be attached with horns
-                into the holes in the moving parts of the tabletop ("back" 37°,
-                "head" 55°, and the tail was detached and had an angle of 18°), but due to
-                new shape of the lining it has lost its stability
-                and turned into a bison and a rhinoceros.
+                Originally, the little dragon was meant to be attached by its horns
+                into the holes in the movable parts of the tabletop ("back" at 37°,
+                "head" at 55°, while the tail was detachable and set at an 18° angle),
+                but with the new shape of the pads it lost its stability and was
+                transformed into a bison and a rhinoceros.
               </span>
 
 
@@ -1241,9 +1239,8 @@
                 </span>
               </span>
               <span lang="en" v-else>
-                I express my deep gratitude to my thesis supervisor
-                Eva Gordeeva @evahysum. It was wonderful
-                and fruitful cooperation!
+                I would like to express my deepest gratitude to my thesis supervisor,
+                Eva Gordeeva @evahysum. It was a wonderful and fruitful collaboration!
               </span>
             </p>
           </v-col>
