@@ -23,14 +23,12 @@
         </span>
       </span>
       <span lang="en" v-else>
-        They are made for each other. Its rigor
-        and geometricity, its smooth lines and
-        the contrast of cold metal with soft
-        sunny upholstery. This unique pair is
-        designed for people who prefer to work
-        from home. Such a set of furniture will help
-        organize your workspace not only conveniently,
-        but also stylishly.
+        They were made for each other. His strict, geometric
+        form and her flowing lines; the contrast of cold metal
+        against soft, sunlit upholstery. This unique pair is
+        designed for those who prefer to work from home. A
+        furniture set like this helps organize your workspace
+        not only comfortably, but also stylishly.
       </span>
     </p>
   </project>

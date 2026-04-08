@@ -19,10 +19,10 @@
         </span>
       </span>
       <span lang="en" v-else>
-        Warm soft light smoothly diffuses into space, passing through the
-        semi-opaque glass of the Firefly lamp. Switching
-        on is carried out by pressing the "wings", which
-        open and activate the lamp; the switching off mechanism is similar.
+        Warm, soft light gently diffuses through the
+        semi-frosted glass of the "Firefly" lamp. It is
+        turned on by pressing the "wings", which open up
+        to activate the light; turning it off works the same way.
       </span>
     </p>
   </project>

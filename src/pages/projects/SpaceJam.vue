@@ -25,13 +25,13 @@
         </span>
       </span>
       <span lang="en" v-else>
-        I'll tell you a secret, "SpaceJam" is an unusual bed,
-        it's a real starship! From now on, your children will
-        go to bed without any extra persuasion, because "SpaceJam"
-        will give them unforgettable dreams filled with travel
-        through the boundless space! Streamlined shapes will
-        protect children from bruises, and the sides at the
-        edges will give a feeling of peace and security.
+        Let me tell you a secret: "SpaceJam" is no ordinary
+        bed — it's a real spaceship! From now on, your children
+        will go to bed without any persuasion, because "SpaceJam"
+        will fill their dreams with unforgettable journeys through
+        the boundless cosmos! Its streamlined shapes protect little
+        ones from bumps, and the side rails create a feeling of
+        calm and safety.
       </span>
     </p>
   </project>

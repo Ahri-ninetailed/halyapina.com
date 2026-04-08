@@ -20,12 +20,11 @@
         </span>
       </span>
       <span lang="en" v-else>
-        The Fennel lamp will be a wonderful decoration.
-        both day and night. Inflorescences done
-        made of thin colored glass, in which during the day
-        the sun's rays will be reflected at night
-        graphic elements create a unique
-        A game of shadows.
+        The "Fennel" lamp makes a beautiful decoration both
+        day and night. Its inflorescences are made of thin
+        colored glass that catches the sun's rays by day,
+        while at night its graphic elements create a unique
+        play of shadows.
       </span>
     </p>
   </project>

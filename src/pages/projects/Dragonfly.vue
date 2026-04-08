@@ -24,13 +24,13 @@
         </span>
       </span>
       <span lang="en" v-else>
-        Insects have always been a great source of inspiration.
-        The structure of their body, so different from ours, is
-        amazing. The design of the Dragonfly lamps is a combination
-        of transparent glass in the outer layer and frosted glass
-        inside, the first creates volumetric glare, and the second
-        hides the technical side of the project, the wings are made
-        of metal wire.
+        Insects have always been a wonderful source of inspiration.
+        The structure of their bodies, so different from ours,
+        is astonishing. The "Dragonfly" lamp combines transparent
+        glass on the outer layer with frosted glass within: the
+        former creates rich, dimensional reflections, while the
+        latter conceals the technical components. The wings are
+        crafted from metal wire.
       </span>
     </p>
   </project>

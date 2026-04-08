@@ -22,11 +22,11 @@
       </span>
       <span lang="en" v-else>
         He clearly came to us from some distant planet.
-        We can only speculate about the features of his
-        world. Its body is covered with soft fur, and its
-        body shape is smooth and graceful. The Alien chaise
-        longue is a bright, expressive piece of furniture;
-        it will decorate the room and be a children's favorite!
+        We can only guess at the features of his world.
+        His body is covered in soft fur, and his form is
+        smooth and graceful. The "Alien" chaise lounge is
+        a bright, expressive piece of furniture that will
+        adorn any room and become a favorite of children!
       </span>
     </p>
   </project>

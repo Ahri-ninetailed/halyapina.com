@@ -26,15 +26,14 @@
         </span>
       </span>
       <span lang="en" v-else>
-        Everyone in childhood loved to blow soap
-        bubbles and admire their fragility and rainbow
-        tints. I always wanted to preserve such beauty
-        for as long as possible, probably for this reason
-        the "Bubble" crane project was created. Its design
-        is the embodiment of tenderness and lightness. And
-        during operation, the user will see a small picture: the
-        water will flow and bubble, effectively filling the
-        transparent balls.
+        As children, we all loved blowing soap bubbles,
+        admiring their fragility and rainbow shimmer. I
+        have always wanted to preserve such beauty for as
+        long as possible — probably this is why the "Bubble"
+        faucet was created. Its design is the embodiment
+        of tenderness and lightness. And in use, a small
+        spectacle unfolds before the viewer: water streams
+        and bubbles, dramatically filling the transparent spheres.
       </span>
     </p>
   </project>
