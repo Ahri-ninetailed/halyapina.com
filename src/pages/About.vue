@@ -121,13 +121,13 @@
                         и настоящие фанаты своего дела!<br> 
                       </span>
                       <span lang="en" v-else>
-                        My name is Maria, I loved to draw since childhood
-                        and fantasize, and these two seemingly harmless
-                        habits turned me into a designer. In 2019
-                        I entered the Russian State University of Arts and Sciences named after. S.G. Stroganov to the department
-                        "Furniture design". The teachers of the department are active
-                        existing designers, great professionals
-                        and true fans of their business!
+                        My name is Maria. Since childhood, I have loved
+                        drawing and daydreaming, and these two seemingly
+                        harmless habits turned me into a designer. In 2019
+                        I enrolled at the Stroganov Russian State University
+                        of Design and Applied Arts, in the "Furniture Design"
+                        department. The faculty here are practicing designers,
+                        true professionals who are passionate about their craft!
                       </span>
                     </p>
                   </v-col>
@@ -142,17 +142,17 @@
                         <br>и настоящие фанаты своего дела!
                       </span>
                       <span lang="en" v-else>
-                        My name is Maria, I loved to draw since childhood
-                        and fantasize, and these two seemingly harmless
-                        habits turned me into a designer. In 2019
-                        I entered the Russian State University of Arts and Sciences named after. S.G. Stroganov to the department
-                        "Furniture design". The teachers of the department are active
-                        existing designers, great professionals
-                        and true fans of their business!
+                        My name is Maria. Since childhood, I have loved
+                        drawing and daydreaming, and these two seemingly
+                        harmless habits turned me into a designer. In 2019
+                        I enrolled at the Stroganov Russian State University
+                        of Design and Applied Arts, in the "Furniture Design"
+                        department. The faculty here are practicing designers,
+                        true professionals who are passionate about their craft!
                       </span>
                     </p>
                   </v-col>
-                  
+
                   <v-col v-if="this.$vuetify.display.lgAndUp" lg="12" sm="6" cols="12" class="pa-0">
                     <p class="text-start h-montserrat-regular slides-font slide2-p-margin" style="line-height: 3.2vh;">
                       <span v-if="$i18n.locale === 'ru'">
@@ -167,13 +167,12 @@
                       </span>
                       <span lang="en" v-else>
                         <b>How was the training?</b><br>
-                        Training from the very beginning was aimed at developing
-                        development of creative thinking. We are actively engaged
-                        were involved in prototyping, learning the features
-                        and the specifics of various materials, thought through
-                        graphic solutions for presenting our projects,
-                        and, of course, always strived to work on up-to-date
-                        new problems.
+                        From the very beginning, the program focused on
+                        developing creative thinking. We were deeply involved
+                        in prototyping, learning the properties and specifics
+                        of various materials, designing graphic solutions to
+                        present our projects, and, of course, always striving
+                        to tackle relevant, real-world problems.
                       </span>
                     </p>
                   </v-col>
@@ -190,13 +189,12 @@
                       </span>
                       <span lang="en" v-else>
                         <b>How was the training?</b>
-                        Training from the very beginning was aimed at developing
-                        development of creative thinking. We are actively engaged
-                        were involved in prototyping, learning the features
-                        and the specifics of various materials, thought through
-                        graphic solutions for presenting our projects,
-                        and, of course, always strived to work on up-to-date
-                        new problems.
+                        From the very beginning, the program focused on
+                        developing creative thinking. We were deeply involved
+                        in prototyping, learning the properties and specifics
+                        of various materials, designing graphic solutions to
+                        present our projects, and, of course, always striving
+                        to tackle relevant, real-world problems.
                       </span>
                     </p>
                   </v-col>
@@ -262,7 +260,7 @@
                     Посещение фабрики Ангстрем
                   </span>
                   <span lang="en" v-else>
-                    Visit to the Angstrom factory
+                    Visit to the Angstrem factory
                   </span>
                 </p>
               </v-col>
@@ -278,9 +276,10 @@
                       производства.
                     </span>
                     <span lang="en" v-else>
-                      The management of the department considers it necessary to give students the 
-                      opportunity to work with real customers. Thanks to this experience, you learn to 
-                      follow not only technical specifications, but also take into account real production capabilities.
+                      The faculty believes it is essential to give students
+                      the opportunity to work with real clients. This experience
+                      teaches you to follow not only the technical brief, but also
+                      to consider the actual capabilities of production.
                     </span>
                   </p>
                 </v-row>
@@ -312,10 +311,11 @@
                     фической подачи.
                   </span>
                   <span lang="en" v-else>
-                    During the training, they tried to familiarize us with various areas 
-                    of design. Participation in the poster competition of the world famous 
-                    company Vitra was a wonderful experience. We tried to identify the key 
-                    message of the company and express it with the help of a bright graphic presentation.
+                    Throughout our studies, we were introduced to various
+                    areas of design. Taking part in the poster competition
+                    for the world-famous Vitra was a wonderful experience.
+                    We aimed to identify the brand's core message and express
+                    it through bold, vivid graphics.
                   </span>
                 </p>
               </v-col>
@@ -362,15 +362,14 @@
                       стала бы вечно нестареющая классика — Thonet!
                     </span>
                     <span lang="en" v-else>
-                      Much attention was paid to the ability to work
-                      in a team. To achieve this goal, not
-                      you need to be able to find compromises. The
-                      the project was created jointly with V. Dekalina
-                      and P. Eryomicheva. The idea was to create
-                      studio for restoration of antique furniture with
-                      the power of replacing broken elements with parts
-                      made from recycled plastic. And the face of our atelier
-                      would become the ever-ageless classic — Thonet!
+                      Considerable attention was also paid to teamwork.
+                      To reach a shared goal, you have to know how to find
+                      compromises. This project was created together with
+                      V. Dekalina and P. Eryomicheva. The idea was to open
+                      an atelier that restores antique furniture by replacing
+                      broken parts with components made from recycled plastic.
+                      And the face of our atelier would be the timeless
+                      classic — Thonet!
                     </span>
                   </p>
                 </v-col>  
@@ -393,7 +392,7 @@
                     Отныне я в свободном плавании, и мне не терпится применить и приумножить  свои знания!
                   </span>
                   <span lang="en" v-else>
-                    From now on I am free to swim, and I can't wait to apply and increase my knowledge!
+                    From now on I'm setting sail on my own, and I can't wait to put my knowledge to use and grow it further!
                   </span>
                 </p>
               </v-col>  
@@ -510,19 +509,19 @@
             работать над актуальными проблемами.
           </span>
           <span lang="en" v-else>
-            My name is Maria, I loved to draw since childhood and fantasize, and these two seemingly 
-            harmless habits turned me into a designer. In 2019 I entered the Russian State University
-            of Arts and Sciences named after. S.G. Stroganov to the department "Furniture design". The
-            teachers of the department are active existing designers, great professionals and true fans
-            of their business!<br>
+            My name is Maria. Since childhood, I have loved drawing and daydreaming,
+            and these two seemingly harmless habits turned me into a designer. In 2019
+            I enrolled at the Stroganov Russian State University of Design and Applied
+            Arts, in the "Furniture Design" department. The faculty here are practicing
+            designers, true professionals who are passionate about their craft!<br>
             <br>
             <span style="font-weight: bold;">How was the training?</span>
             <br>
-            Training from the very beginning was aimed at developing development
-            of creative thinking. We are actively engaged were involved in prototyping,
-            learning the features and the specifics of various materials, thought
-            through graphic solutions for presenting our projects, and, of course,
-            always strived to work on up-to-date new problems.
+            From the very beginning, the program focused on developing creative
+            thinking. We were deeply involved in prototyping, learning the
+            properties and specifics of various materials, designing graphic
+            solutions to present our projects, and, of course, always striving
+            to tackle relevant, real-world problems.
           </span>
         </p>
       </v-col>
@@ -557,10 +556,10 @@
             возможности производства.
           </span>
           <span lang="en" v-else>
-            The management of the department considers it necessary 
-            to give students the opportunity to work with real customers. 
-            Thanks to this experience, you learn to follow not only technical 
-            specifications, but also take into account real production capabilities.
+            The faculty believes it is essential to give students the
+            opportunity to work with real clients. This experience teaches
+            you to follow not only the technical brief, but also to consider
+            the actual capabilities of production.
           </span>
         </p>
       </v-col>
@@ -591,12 +590,11 @@
             графической подачи.
           </span>
           <span lang="en" v-else>
-            During the training, they tried to familiarize
-            us with various areas of design. Participation 
-            in the poster competition of the world famous company 
-            Vitra was a wonderful experience. We tried to identify 
-            the key message of the company and express it with the 
-            help of a bright graphic presentation.
+            Throughout our studies, we were introduced to various
+            areas of design. Taking part in the poster competition
+            for the world-famous Vitra was a wonderful experience.
+            We aimed to identify the brand's core message and express
+            it through bold, vivid graphics.
           </span>
         </p>
       </v-col>
@@ -639,15 +637,13 @@
             нестареющая классика — Thonet!
           </span>
           <span lang="en" v-else>
-            Much attention was paid to the ability to work
-            in a team. To achieve this goal, not
-            you need to be able to find compromises. The
-            the project was created jointly with V. Dekalina
-            and P. Eryomicheva. The idea was to create
-            studio for restoration of antique furniture with
-            the power of replacing broken elements with parts
-            made from recycled plastic. And the face of our atelier
-            would become the ever-ageless classic — Thonet!
+            Considerable attention was also paid to teamwork.
+            To reach a shared goal, you have to know how to find
+            compromises. This project was created together with
+            my classmates. The idea was to open an atelier that
+            restores antique furniture by replacing broken parts
+            with components made from recycled plastic. And the
+            face of our atelier would be the timeless classic — Thonet!
           </span>
         </p>
       </v-col>
