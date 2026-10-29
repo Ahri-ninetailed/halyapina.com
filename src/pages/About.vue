@@ -77,8 +77,8 @@
                   <p class="text-start h-montserrat-regular slides-font">
                     halyapinamari@gmail.com<br>
                     WhatsApp +79671930086<br>
-                    <a target="_blank" href="https://www.instagram.com/ultimate.gray/">Instagram</a>&nbsp;
-                    <a target="_blank" href="https://t.me/halyapina">Telegram</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ultimate.gray/">Instagram</a>&nbsp;
+                    <a target="_blank" rel="noopener noreferrer" href="https://t.me/halyapina">Telegram</a>
                   </p>
                 </div>
               </v-col>
@@ -461,8 +461,8 @@
         <p class="text-start h-montserrat-regular xs-text-size">
           halyapinamari@gmail.com<br>
           WhatsApp +79671930086<br>
-          <a target="_blank" href="https://www.instagram.com/ultimate.gray/">Instagram</a>&nbsp;
-          <a target="_blank" href="https://t.me/halyapina">Telegram</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ultimate.gray/">Instagram</a>&nbsp;
+          <a target="_blank" rel="noopener noreferrer" href="https://t.me/halyapina">Telegram</a>
         </p>
       </v-col>
       <v-col align="center" cols="12" class="pa-0 align-self-center mt-6">

@@ -1,69 +1,31 @@
-# base
+# Halyapina
 
-## Project setup
+The portfolio website of furniture designer Maria Halyapina: [halyapina.com](https://www.halyapina.com).
 
-```
-# yarn
-yarn
+I built it in 2023–2024 as a side project, and the site has been live since.
 
-# npm
+![Home page hero: the Anima chest of drawers and table](public/og-image.jpg)
+
+## Features
+
+- **Home page.** Hand-drawn project cards that switch to another drawing on hover.
+- **Project pages.** Nine furniture and lighting projects, each with an image slider and full-screen zoom.
+- **About and Anima pages.** The designer's story and a long-read about one project.
+- **Two languages.** Russian and English through vue-i18n; the chosen language is remembered.
+- **Phones.** A separate layout for small screens, WebP images, lazy loading of the heavy ones.
+
+## Tech stack
+
+Vue 3, Vite, Vuetify 3, Vue Router, vue-i18n, Swiper, Splide, v-lazy-image.
+
+## Getting started
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# pnpm
-bun install
 ```
 
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
+```bash
 npm run dev
-
-# pnpm
-pnpm dev
-
-# bun
-bun run dev
 ```
 
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# bun
-bun run build
-```
-
-### Lints and fixes files
-
-```
-# yarn
-yarn lint
-
-# npm
-npm run lint
-
-# pnpm
-pnpm lint
-
-# bun
-bun run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+The dev server starts on port 3000. `npm run build` writes the production build to `dist`.
