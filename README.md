@@ -29,3 +29,7 @@ npm run dev
 ```
 
 The dev server starts on port 3000. `npm run build` writes the production build to `dist`.
+
+## Copyright
+
+Photos, renders, drawings and texts are the work of Maria Halyapina and may not be used without her permission. The code is published for reference; no license is granted.
