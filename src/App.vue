@@ -20,13 +20,14 @@ export default {
   components: { WaitPls, },
   data() {
     return {
-      isPageLoaded: false,
+      // Приложение монтируется после router.isReady(), к этому моменту load мог уже пройти.
+      // Тогда контент виден с первой отрисовки: слайдер Splide, смонтированный в скрытом блоке,
+      // считает ширину слайдов нулевой и показывает клон слайда, по которому клик не работает
+      isPageLoaded: document.readyState === 'complete',
     }
   },
   mounted() {
-    // Приложение монтируется после router.isReady(), к этому моменту load мог уже пройти
-    if (document.readyState === 'complete') {
-      this.isPageLoaded = true;
+    if (this.isPageLoaded) {
       return;
     }
 
