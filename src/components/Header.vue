@@ -185,6 +185,13 @@ export default {
   z-index: 1000;
 }
 
+/* На телефоне размер от ширины экрана: от высоты на высоких экранах три пункта меню не помещаются */
+@media (max-width: 599px) {
+  .header {
+    font-size: 4.6vw;
+  }
+}
+
 .no-default-styles {
   color: inherit;
   text-decoration: none;

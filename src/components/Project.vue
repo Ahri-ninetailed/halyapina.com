@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0 background-img" fluid :style="backgroundImgProp" style="overflow: hidden; height: 100vh;">
+  <v-container class="pa-0 background-img project-container" fluid :style="backgroundImgProp">
     <v-row class="ma-0 pa-0" :class="fillHeight">
       <v-col align="center" md="6" cols="12" class="pa-0 align-self-center project-swiper-margin-top">
         <v-row class="ma-0 pa-0 imgs-container">
@@ -39,7 +39,7 @@
         </v-row>
       </v-col>
       <v-col align="center" md="6" cols="12" class="pa-0 project-text-margin-bottom" :class="this.$vuetify.display.mdAndUp ? 'align-self-center' : 'align-self-start'">
-        <v-row class="pa-0 ma-sm-0 mt-2 mb-0 ml-10 mr-10 d-inline-block">
+        <v-row class="pa-0 ma-sm-0 mt-2 mb-0 ml-0 mr-0 d-inline-block">
           <h1 class="h-neucha-regular project-header-size project-h-margin-bottom" :class="hPosition" style="background-color: transparent;">
             {{  headerText }}
           </h1>
@@ -99,7 +99,10 @@ export default {
       };
   },
   mounted() {
-    document.documentElement.style.overflow = 'hidden';
+    // На телефоне текст может не влезть в экран, поэтому там прокрутку не блокируем
+    if (this.$vuetify.display.smAndUp) {
+      document.documentElement.style.overflow = 'hidden';
+    }
   },
   beforeUnmount() {
     document.documentElement.style.overflow = '';
@@ -170,6 +173,17 @@ export default {
 .background-img {
   background-size: cover;
   background-position: top;
+}
+.project-container {
+  overflow: hidden;
+  height: 100vh;
+}
+@media (max-width: 599px) {
+  .project-container {
+    overflow: visible;
+    height: auto;
+    min-height: 100vh;
+  }
 }
 .button-borderless {
   border: none !important;
@@ -339,8 +353,8 @@ export default {
     font-size: 7vw;
   }
   .p-project-size {
-    font-size: 4vw;
-    width: 72.8vw;
+    font-size: 4.3vw;
+    width: 92vw;
   }
 }
 </style>

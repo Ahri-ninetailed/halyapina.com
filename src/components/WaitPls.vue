@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     pageScrollMounted() {
-      if (this.isProjectPage) {
+      if (this.isProjectPage && this.$vuetify.display.smAndUp) {
         document.documentElement.style.overflow = 'hidden';
         return;
       }
@@ -50,7 +50,7 @@ export default {
       }
     },
     pageScrollBeforeUmount() {
-      if (this.isProjectPage) {
+      if (this.isProjectPage && this.$vuetify.display.smAndUp) {
         document.documentElement.style.overflow = '';
         return;
       }
@@ -114,5 +114,7 @@ export default {
   position: absolute;
   opacity: 0;
   transition: opacity 0.35s ease;
+  /* Прозрачная заставка лежит поверх страницы до 2 секунд, мышь должна проходить сквозь нее к карточкам */
+  pointer-events: none;
 }
 </style>
