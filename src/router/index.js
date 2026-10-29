@@ -18,7 +18,7 @@ const routes = [
   // Другие маршруты вашего приложения
   {
     path: '/:pathMatch(.*)*',
-    redirect: () => import('@/pages/Home.vue'),
+    redirect: '/',
   },
   //Пути проектов
   {

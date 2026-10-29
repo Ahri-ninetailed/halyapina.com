@@ -24,9 +24,15 @@ export default {
     }
   },
   mounted() {
-    window.onload = () => {
+    // Приложение монтируется после router.isReady(), к этому моменту load мог уже пройти
+    if (document.readyState === 'complete') {
       this.isPageLoaded = true;
-    };
+      return;
+    }
+
+    window.addEventListener('load', () => {
+      this.isPageLoaded = true;
+    }, { once: true });
   },
 };
 

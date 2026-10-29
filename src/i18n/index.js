@@ -47,8 +47,18 @@ const messages = {
     }
   };
   
+// Хранилище может быть недоступно, например при полностью заблокированных cookie
+function getSavedLanguage() {
+    try {
+        return localStorage.getItem('language');
+    } catch (e) {
+        return null;
+    }
+}
+
 const i18n = createI18n({
-    locale: 'ru',
+    // Язык из прошлого визита нужен еще до первой навигации: по нему роутер ставит заголовок вкладки
+    locale: getSavedLanguage() || 'ru',
     messages
 });
 

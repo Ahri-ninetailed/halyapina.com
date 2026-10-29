@@ -1,7 +1,7 @@
 export default {
     computed: {
       isAnimaPage() {
-        return window.location.pathname === '/anima';
+        return this.$route.path === '/anima';
       },
     },
   };

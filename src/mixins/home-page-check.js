@@ -1,7 +1,7 @@
 export default {
     computed: {
       isHomePage() {
-        return window.location.pathname === '/'; 
+        return this.$route.path === '/';
       },
     },
   };

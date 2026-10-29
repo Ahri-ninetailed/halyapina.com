@@ -6,6 +6,7 @@
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import router from '@/router'
 
 // Components
 import App from './App.vue'
@@ -23,4 +24,5 @@ app.config.globalProperties.$headerHeightUnit = 'vh';
 
 registerPlugins(app)
 
-app.mount('#app')
+// Монтируем после первой навигации, иначе в mounted() у Header и WaitPls $route еще указывает на '/'
+router.isReady().then(() => app.mount('#app'))
