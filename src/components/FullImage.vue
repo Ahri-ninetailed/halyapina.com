@@ -14,7 +14,7 @@
       :alt="this.$props.alt"
       @click="openImage"
     />
-    <v-dialog v-model="dialog" :max-width="dialogMaxWidth()" :max-height="dialogMaxHeight()">
+    <v-dialog v-model="dialog" :max-width="dialogMaxWidth" :max-height="dialogMaxHeight">
       <v-lazy-image :src="this.$props.srcZoom" @load="isImageLoaded()" :style="{...imgWidth, ...imgHeight, ...showImage}" style="object-fit: contain;" :alt="this.$props.alt" />
       <div class="progress-container" :style="showLoader">
         <v-progress-circular
@@ -37,7 +37,17 @@ export default {
     return {
       dialog: false,
       isZoomImgLoaded: false,
+      naturalWidth: 0,
+      naturalHeight: 0,
     }
+  },
+  mounted() {
+    this.preloadDimensions();
+  },
+  watch: {
+    src() {
+      this.preloadDimensions();
+    },
   },
   components: {
     VLazyImage
@@ -149,30 +159,36 @@ export default {
       }
       this.dialog = true;
     },
+    preloadDimensions() {
+      const img = new Image();
+      img.onload = () => {
+        this.naturalWidth = img.naturalWidth;
+        this.naturalHeight = img.naturalHeight;
+      };
+      img.src = this.$props.src;
+    },
+  },
+  computed: {
     dialogMaxWidth() {
       if (this.getCurrentWVal !== undefined) {
         return this.imgWidth.width;
       }
-
-      const img = new Image();
-      img.src = this.$props.src;
-      
-      let val = (this.getCurrentHVal * img.width) / img.height;
+      if (!this.naturalWidth || !this.naturalHeight) {
+        return '90vw';
+      }
+      const val = (this.getCurrentHVal * this.naturalWidth) / this.naturalHeight;
       return `${val}${this.getCurrentHUnit}`;
     },
     dialogMaxHeight() {
       if (this.getCurrentHVal !== undefined) {
         return this.imgHeight.height;
       }
-
-      const img = new Image();
-      img.src = this.$props.src;
-      
-      let val = (this.getCurrentWVal * img.height) / img.width;
+      if (!this.naturalWidth || !this.naturalHeight) {
+        return '90vh';
+      }
+      const val = (this.getCurrentWVal * this.naturalHeight) / this.naturalWidth;
       return `${val}${this.getCurrentWUnit}`;
     },
-  },
-  computed: {
     showLoader() {
       if (this.isZoomImgLoaded === false) {
         return {
